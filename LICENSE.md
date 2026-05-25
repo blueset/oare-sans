@@ -4,14 +4,14 @@ Copyright (c) 2026 Eana Hufwe, 1A23 Studio (https://1A23.studio)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
-https\\://openfontlicense.org
+https\://openfontlicense.org
 &nbsp;
 
-\\----------------------------------------------------------------------
+\----------------------------------------------------------------------
 
 #### SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 
-\\----------------------------------------------------------------------
+\----------------------------------------------------------------------
 
 &nbsp;
 
