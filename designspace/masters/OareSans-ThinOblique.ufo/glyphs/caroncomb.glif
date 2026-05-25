@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="caroncomb" format="2">
   <unicode hex="030C"/>
-  <anchor x="44.5" y="525" name="_top"/>
-  <anchor x="64.8333" y="647" name="top"/>
-  <anchor x="64.8333" y="647" name="_top.mkmk"/>
+  <anchor x="42.5" y="525" name="_top"/>
+  <anchor x="62.8333" y="647" name="top"/>
+  <anchor x="62.8333" y="647" name="_top.mkmk"/>
   <outline>
     <contour>
-      <point x="-36.3333" y="700" type="line"/>
-      <point x="37.5" y="597" type="line"/>
-      <point x="74.5" y="597" type="line"/>
-      <point x="-1.33334" y="700" type="line"/>
-    </contour>
-    <contour>
-      <point x="182.667" y="700" type="line"/>
-      <point x="147.667" y="700" type="line"/>
-      <point x="37.5" y="597" type="line"/>
-      <point x="74.5" y="597" type="line"/>
+      <point x="-38.3333" y="700" type="line"/>
+      <point x="35.5" y="597" type="line"/>
+      <point x="72.5" y="597" type="line"/>
+      <point x="180.667" y="700" type="line"/>
+      <point x="145.667" y="700" type="line"/>
+      <point x="45.507" y="606.357" type="line"/>
+      <point x="65.6119" y="606.357" type="line"/>
+      <point x="-3.33334" y="700" type="line"/>
     </contour>
   </outline>
   <guideline angle="0" x="0" y="597"/>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Scommaaccent.ss03" format="2">
+  <advance width="315"/>
+  <anchor x="168" y="670" name="top"/>
+  <anchor x="154" y="-175" name="bottom"/>
+  <outline>
+    <component base="S.ss03"/>
+    <component base="commaaccent" xOffset="154"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.recipe</key>
+  <string>S.ss03+commaaccent</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

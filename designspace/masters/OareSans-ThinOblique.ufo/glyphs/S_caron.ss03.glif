@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Scaron.ss03" format="2">
+  <advance width="306"/>
+  <anchor x="114" y="0" name="bottom"/>
+  <anchor x="257.337" y="792" name="top"/>
+  <outline>
+    <component base="S.ss03"/>
+    <component base="caroncomb" xOffset="194.504" yOffset="145"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.recipe</key>
+  <string>S.ss03+caroncomb</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

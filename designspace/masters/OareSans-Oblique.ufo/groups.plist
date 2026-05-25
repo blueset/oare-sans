@@ -137,6 +137,24 @@
     <string>Racute</string>
     <string>Rcaron</string>
   </array>
+  <key>public.kern1.S.ss03Left</key>
+  <array>
+    <string>S.ss03</string>
+    <string>Sacute.ss03</string>
+    <string>Scaron.ss03</string>
+    <string>Scedilla.ss03</string>
+    <string>Scircumflex.ss03</string>
+    <string>Scommaaccent.ss03</string>
+  </array>
+  <key>public.kern1.S.ss04Left</key>
+  <array>
+    <string>S.ss04</string>
+    <string>Sacute.ss04</string>
+    <string>Scaron.ss04</string>
+    <string>Scedilla.ss04</string>
+    <string>Scircumflex.ss04</string>
+    <string>Scommaaccent.ss04</string>
+  </array>
   <key>public.kern1.SLeft</key>
   <array>
     <string>S</string>
@@ -392,6 +410,15 @@
     <string>racute</string>
     <string>rcaron</string>
   </array>
+  <key>public.kern1.s.ss03Left</key>
+  <array>
+    <string>s.ss03</string>
+    <string>sacute.ss03</string>
+    <string>scaron.ss03</string>
+    <string>scedilla.ss03</string>
+    <string>scircumflex.ss03</string>
+    <string>scommaaccent.ss03</string>
+  </array>
   <key>public.kern1.sLeft</key>
   <array>
     <string>s</string>
@@ -570,6 +597,24 @@
     <string>Otilde</string>
     <string>Otildemacron</string>
     <string>Q</string>
+  </array>
+  <key>public.kern2.S.ss03Right</key>
+  <array>
+    <string>S.ss03</string>
+    <string>Sacute.ss03</string>
+    <string>Scaron.ss03</string>
+    <string>Scedilla.ss03</string>
+    <string>Scircumflex.ss03</string>
+    <string>Scommaaccent.ss03</string>
+  </array>
+  <key>public.kern2.S.ss04Right</key>
+  <array>
+    <string>S.ss04</string>
+    <string>Sacute.ss04</string>
+    <string>Scaron.ss04</string>
+    <string>Scedilla.ss04</string>
+    <string>Scircumflex.ss04</string>
+    <string>Scommaaccent.ss04</string>
   </array>
   <key>public.kern2.SRight</key>
   <array>
@@ -766,12 +811,23 @@
   </array>
   <key>public.kern2.oRight</key>
   <array>
+    <string>a.ss02</string>
+    <string>abreve.ss02</string>
+    <string>acaron.ss02</string>
+    <string>adieresis.ss02</string>
+    <string>adieresismacron.ss02</string>
+    <string>adotaccent.ss02</string>
+    <string>adotmacron.ss02</string>
+    <string>amacron.ss02</string>
+    <string>aogonek.ss02</string>
+    <string>aring.ss02</string>
+    <string>aringacute.ss02</string>
+    <string>atilde.ss02</string>
     <string>c</string>
     <string>cacute</string>
     <string>ccaron</string>
     <string>ccedilla</string>
     <string>cdotaccent</string>
-    <string>cent</string>
     <string>e</string>
     <string>eacute</string>
     <string>ebreve</string>
@@ -819,6 +875,15 @@
   <array>
     <string>quotedbl</string>
     <string>quotesingle</string>
+  </array>
+  <key>public.kern2.s.ss03Right</key>
+  <array>
+    <string>s.ss03</string>
+    <string>sacute.ss03</string>
+    <string>scaron.ss03</string>
+    <string>scedilla.ss03</string>
+    <string>scircumflex.ss03</string>
+    <string>scommaaccent.ss03</string>
   </array>
   <key>public.kern2.sRight</key>
   <array>

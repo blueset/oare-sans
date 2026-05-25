@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="adotmacron.ss02" format="2">
+  <advance width="488"/>
+  <anchor x="138" y="0" name="bottom"/>
+  <anchor x="413" y="0" name="ogonek"/>
+  <anchor x="349.167" y="885" name="top"/>
+  <outline>
+    <component base="adotaccent.ss02"/>
+    <component base="macroncomb" xOffset="286" yOffset="236"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.recipe</key>
+  <string>adotaccent.ss02+macroncomb</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

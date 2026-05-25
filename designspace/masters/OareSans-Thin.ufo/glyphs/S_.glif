@@ -50,7 +50,7 @@
       <point x="42" y="259" type="line"/>
     </contour>
   </outline>
-  <guideline angle="0.0605319" x="6" y="706"/>
+  <guideline angle="0" x="0" y="706"/>
   <guideline angle="0" x="0" y="-6"/>
   <guideline angle="90" x="42" y="0"/>
   <guideline angle="90" x="300" y="0"/>

@@ -6,7 +6,7 @@
   <anchor x="168.833" y="857" name="top"/>
   <outline>
     <component base="k"/>
-    <component base="caroncomb" xOffset="104" yOffset="210"/>
+    <component base="caroncomb" xOffset="106" yOffset="210"/>
   </outline>
   <lib>
   <dict>

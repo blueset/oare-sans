@@ -6,16 +6,14 @@
   <anchor x="66.1396" y="649" name="_top.mkmk"/>
   <outline>
     <contour>
-      <point x="-58.525" y="597" type="line"/>
-      <point x="20.475" y="597" type="line"/>
-      <point x="110.637" y="700" type="line"/>
-      <point x="29.637" y="700" type="line"/>
-    </contour>
-    <contour>
-      <point x="164.475" y="597" type="line"/>
-      <point x="110.637" y="700" type="line"/>
-      <point x="41.637" y="700" type="line"/>
-      <point x="97.475" y="597" type="line"/>
+      <point x="-58.53" y="597" type="line"/>
+      <point x="20.47" y="597" type="line"/>
+      <point x="77.8999" y="662.607" type="line"/>
+      <point x="60.8707" y="664.507" type="line"/>
+      <point x="97.47" y="597" type="line"/>
+      <point x="164.47" y="597" type="line"/>
+      <point x="110.63" y="700" type="line"/>
+      <point x="29.63" y="700" type="line"/>
     </contour>
   </outline>
   <guideline angle="0" x="0" y="700"/>

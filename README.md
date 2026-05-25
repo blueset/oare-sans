@@ -1,6 +1,6 @@
 # Oare Sans
 
-<!-- Version begin -->Version 0.001<!-- Version end -->
+<!-- Version begin -->Version 0.002<!-- Version end -->
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
@@ -14,6 +14,7 @@
 ![Poster 1: Thin Oblique](./documentation/Poster1.png)
 ![Poster 2: Waterfall](./documentation/Poster2.png)
 ![Poster 3: Black](./documentation/Poster3.png)
+![Poster 4: Stylistic Set](./documentation/Poster4.png)
 
 ## Download
 
@@ -26,6 +27,10 @@
 
 ## Changelog
 
+- v0.002:
+  - Adjusted the contour of `/C` in oblique styles.
+  - Simplified the contour of `/circumflexcomb`, `/caroncomb`, and `/g_j.liga`.
+  - Added `ss02` (Single story `/a/`), `ss03` (Alternative `/S` `/s` #1), and `ss04` (Alternative `/S` `/s` #2) stylistic sets.
 - v0.001: Initial test release.
 
 ## License

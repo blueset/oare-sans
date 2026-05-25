@@ -220,16 +220,40 @@
   <string>R_commaaccent.glif</string>
   <key>S</key>
   <string>S_.glif</string>
+  <key>S.ss03</key>
+  <string>S_.ss03.glif</string>
+  <key>S.ss04</key>
+  <string>S_.ss04.glif</string>
   <key>Sacute</key>
   <string>S_acute.glif</string>
+  <key>Sacute.ss03</key>
+  <string>S_acute.ss03.glif</string>
+  <key>Sacute.ss04</key>
+  <string>S_acute.ss04.glif</string>
   <key>Scaron</key>
   <string>S_caron.glif</string>
+  <key>Scaron.ss03</key>
+  <string>S_caron.ss03.glif</string>
+  <key>Scaron.ss04</key>
+  <string>S_caron.ss04.glif</string>
   <key>Scedilla</key>
   <string>S_cedilla.glif</string>
+  <key>Scedilla.ss03</key>
+  <string>S_cedilla.ss03.glif</string>
+  <key>Scedilla.ss04</key>
+  <string>S_cedilla.ss04.glif</string>
   <key>Scircumflex</key>
   <string>S_circumflex.glif</string>
+  <key>Scircumflex.ss03</key>
+  <string>S_circumflex.ss03.glif</string>
+  <key>Scircumflex.ss04</key>
+  <string>S_circumflex.ss04.glif</string>
   <key>Scommaaccent</key>
   <string>S_commaaccent.glif</string>
+  <key>Scommaaccent.ss03</key>
+  <string>S_commaaccent.ss03.glif</string>
+  <key>Scommaaccent.ss04</key>
+  <string>S_commaaccent.ss04.glif</string>
   <key>T</key>
   <string>T_.glif</string>
   <key>Tcaron</key>
@@ -308,12 +332,18 @@
   <string>Z_dotaccent.glif</string>
   <key>a</key>
   <string>a.glif</string>
+  <key>a.ss02</key>
+  <string>a.ss02.glif</string>
   <key>aacute</key>
   <string>aacute.glif</string>
   <key>abreve</key>
   <string>abreve.glif</string>
+  <key>abreve.ss02</key>
+  <string>abreve.ss02.glif</string>
   <key>acaron</key>
   <string>acaron.glif</string>
+  <key>acaron.ss02</key>
+  <string>acaron.ss02.glif</string>
   <key>acircumflex</key>
   <string>acircumflex.glif</string>
   <key>acute</key>
@@ -322,26 +352,42 @@
   <string>acutecomb.glif</string>
   <key>adieresis</key>
   <string>adieresis.glif</string>
+  <key>adieresis.ss02</key>
+  <string>adieresis.ss02.glif</string>
   <key>adieresismacron</key>
   <string>adieresismacron.glif</string>
+  <key>adieresismacron.ss02</key>
+  <string>adieresismacron.ss02.glif</string>
   <key>adotaccent</key>
   <string>adotaccent.glif</string>
+  <key>adotaccent.ss02</key>
+  <string>adotaccent.ss02.glif</string>
   <key>adotmacron</key>
   <string>adotmacron.glif</string>
+  <key>adotmacron.ss02</key>
+  <string>adotmacron.ss02.glif</string>
   <key>ae</key>
   <string>ae.glif</string>
   <key>agrave</key>
   <string>agrave.glif</string>
   <key>amacron</key>
   <string>amacron.glif</string>
+  <key>amacron.ss02</key>
+  <string>amacron.ss02.glif</string>
   <key>ampersand</key>
   <string>ampersand.glif</string>
   <key>aogonek</key>
   <string>aogonek.glif</string>
+  <key>aogonek.ss02</key>
+  <string>aogonek.ss02.glif</string>
   <key>aring</key>
   <string>aring.glif</string>
+  <key>aring.ss02</key>
+  <string>aring.ss02.glif</string>
   <key>aringacute</key>
   <string>aringacute.glif</string>
+  <key>aringacute.ss02</key>
+  <string>aringacute.ss02.glif</string>
   <key>asciicircum</key>
   <string>asciicircum.glif</string>
   <key>asciitilde</key>
@@ -352,6 +398,8 @@
   <string>at.glif</string>
   <key>atilde</key>
   <string>atilde.glif</string>
+  <key>atilde.ss02</key>
+  <string>atilde.ss02.glif</string>
   <key>b</key>
   <string>b.glif</string>
   <key>backslash</key>
@@ -754,16 +802,28 @@
   <string>ringcomb.glif</string>
   <key>s</key>
   <string>s.glif</string>
+  <key>s.ss03</key>
+  <string>s.ss03.glif</string>
   <key>sacute</key>
   <string>sacute.glif</string>
+  <key>sacute.ss03</key>
+  <string>sacute.ss03.glif</string>
   <key>scaron</key>
   <string>scaron.glif</string>
+  <key>scaron.ss03</key>
+  <string>scaron.ss03.glif</string>
   <key>scedilla</key>
   <string>scedilla.glif</string>
+  <key>scedilla.ss03</key>
+  <string>scedilla.ss03.glif</string>
   <key>scircumflex</key>
   <string>scircumflex.glif</string>
+  <key>scircumflex.ss03</key>
+  <string>scircumflex.ss03.glif</string>
   <key>scommaaccent</key>
   <string>scommaaccent.glif</string>
+  <key>scommaaccent.ss03</key>
+  <string>scommaaccent.ss03.glif</string>
   <key>section</key>
   <string>section.glif</string>
   <key>semicolon</key>

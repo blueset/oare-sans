@@ -1,3 +1,39 @@
+#> classes
+#/> tags
+@BottomMark = [cedilla ogonek];
+@BottomMarkComb = [cedillacomb commaaccent ogonekcomb];
+@ExtraLetters = [AE Dcroat Eth Germandbls Hbar Lslash OE Oslash Oslashacute Thorn ae dcroat eth gcommaaccent germandbls hbar lslash oe oslash oslashacute thorn];
+@Mark = [acutecomb brevecomb caroncomb caroncomb.alt cedillacomb circumflexcomb commaaccent dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ogonekcomb ringcomb tildecomb];
+@MarkSpacing = [acute breve caron cedilla circumflex commaturnedmod dieresis dotaccent grave hungarumlaut macron macronmod ogonek ring tilde];
+@TopMark = [acute breve caron circumflex dieresis dotaccent grave hungarumlaut macron macronmod ring tilde];
+@TopMarkComb = [acutecomb brevecomb caroncomb caroncomb.alt circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+#/< tags
+#< classes
+
+#/> classes
+#/> tags
+@BottomMark = [cedilla ogonek];
+@BottomMarkComb = [cedillacomb commaaccent ogonekcomb];
+@ExtraLetters = [AE Dcroat Eth Germandbls Hbar Lslash OE Oslash Oslashacute Thorn ae dcroat eth gcommaaccent germandbls hbar lslash oe oslash oslashacute thorn];
+@Mark = [acutecomb brevecomb caroncomb caroncomb.alt cedillacomb circumflexcomb commaaccent dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ogonekcomb ringcomb tildecomb];
+@MarkSpacing = [acute breve caron cedilla circumflex commaturnedmod dieresis dotaccent grave hungarumlaut macron macronmod ogonek ring tilde];
+@TopMark = [acute breve caron circumflex dieresis dotaccent grave hungarumlaut macron macronmod ring tilde];
+@TopMarkComb = [acutecomb brevecomb caroncomb caroncomb.alt circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+#/< tags
+#/< classes
+
+#/> classes
+#/> tags
+@BottomMark = [cedilla ogonek];
+@BottomMarkComb = [cedillacomb commaaccent ogonekcomb];
+@ExtraLetters = [AE Dcroat Eth Germandbls Hbar Lslash OE Oslash Oslashacute Thorn ae dcroat eth gcommaaccent germandbls hbar lslash oe oslash oslashacute thorn];
+@Mark = [acutecomb brevecomb caroncomb caroncomb.alt cedillacomb circumflexcomb commaaccent dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ogonekcomb ringcomb tildecomb];
+@MarkSpacing = [acute breve caron cedilla circumflex commaturnedmod dieresis dotaccent grave hungarumlaut macron macronmod ogonek ring tilde];
+@TopMark = [acute breve caron circumflex dieresis dotaccent grave hungarumlaut macron macronmod ring tilde];
+@TopMarkComb = [acutecomb brevecomb caroncomb caroncomb.alt circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+#/< tags
+#/< classes
+
 #/> classes
 #/> tags
 @BottomMark = [cedilla ogonek];
@@ -43,9 +79,12 @@ feature aalt {
 
 #> feature
   feature salt;
-  feature ss01;
   feature locl;
   feature case;
+  feature ss01;
+  feature ss02;
+  feature ss03;
+  feature ss04;
 #< feature
 } aalt;
 feature salt {
@@ -53,20 +92,33 @@ feature salt {
 
 #> feature
   sub J from [J.ss01];
+  sub S from [S.ss03 S.ss04];
+  sub Sacute from [Sacute.ss03 Sacute.ss04];
+  sub Scaron from [Scaron.ss03 Scaron.ss04];
+  sub Scedilla from [Scedilla.ss03 Scedilla.ss04];
+  sub Scircumflex from [Scircumflex.ss03 Scircumflex.ss04];
+  sub Scommaaccent from [Scommaaccent.ss03 Scommaaccent.ss04];
+  sub a from [a.ss02];
+  sub abreve from [abreve.ss02];
+  sub acaron from [acaron.ss02];
+  sub adieresis from [adieresis.ss02];
+  sub adieresismacron from [adieresismacron.ss02];
+  sub adotaccent from [adotaccent.ss02];
+  sub adotmacron from [adotmacron.ss02];
+  sub amacron from [amacron.ss02];
+  sub aogonek from [aogonek.ss02];
+  sub aring from [aring.ss02];
+  sub aringacute from [aringacute.ss02];
+  sub atilde from [atilde.ss02];
   sub caroncomb from [caroncomb.alt];
+  sub s from [s.ss03];
+  sub sacute from [sacute.ss03];
+  sub scaron from [scaron.ss03];
+  sub scedilla from [scedilla.ss03];
+  sub scircumflex from [scircumflex.ss03];
+  sub scommaaccent from [scommaaccent.ss03];
 #< feature
 } salt;
-feature ss01 {
-# Stylistic Set 01–20
-
-	featureNames {
-		name "Alternative J";
-	};
-
-#> feature
-  sub J by J.ss01;
-#< feature
-} ss01;
 feature locl {
 # Localized Forms
   # script latn; # Latin
@@ -144,3 +196,77 @@ feature case {
   sub periodcentered.CAT by periodcentered.CAT.case;
 #< feature
 } case;
+feature ss01 {
+# Stylistic Set 01–20
+
+	featureNames {
+		name "Alternative J";
+	};
+
+#> feature
+  sub J by J.ss01;
+#< feature
+} ss01;
+feature ss02 {
+# Stylistic Set 01–20
+	featureNames {
+		name "Single Story a";
+	};
+
+#> feature
+  sub a by a.ss02;
+  sub abreve by abreve.ss02;
+  sub acaron by acaron.ss02;
+  sub adieresis by adieresis.ss02;
+  sub adieresismacron by adieresismacron.ss02;
+  sub adotaccent by adotaccent.ss02;
+  sub adotmacron by adotmacron.ss02;
+  sub amacron by amacron.ss02;
+  sub aogonek by aogonek.ss02;
+  sub aring by aring.ss02;
+  sub aringacute by aringacute.ss02;
+  sub atilde by atilde.ss02;
+#< feature
+} ss02;
+feature ss03 {
+# Stylistic Set 01–20
+	featureNames {
+		name "Alternative S (1)";
+	};
+
+#> feature
+  sub S by S.ss03;
+  sub Sacute by Sacute.ss03;
+  sub Scaron by Scaron.ss03;
+  sub Scedilla by Scedilla.ss03;
+  sub Scircumflex by Scircumflex.ss03;
+  sub Scommaaccent by Scommaaccent.ss03;
+  sub s by s.ss03;
+  sub sacute by sacute.ss03;
+  sub scaron by scaron.ss03;
+  sub scedilla by scedilla.ss03;
+  sub scircumflex by scircumflex.ss03;
+  sub scommaaccent by scommaaccent.ss03;
+#< feature
+} ss03;
+feature ss04 {
+# Stylistic Set 01–20
+	featureNames {
+		name "Alternative S (2)";
+	};
+
+#> feature
+  sub S by S.ss04;
+  sub Sacute by Sacute.ss04;
+  sub Scaron by Scaron.ss04;
+  sub Scedilla by Scedilla.ss04;
+  sub Scircumflex by Scircumflex.ss04;
+  sub Scommaaccent by Scommaaccent.ss04;
+#< feature
+  sub s by s.ss03;
+  sub sacute by sacute.ss03;
+  sub scaron by scaron.ss03;
+  sub scedilla by scedilla.ss03;
+  sub scircumflex by scircumflex.ss03;
+  sub scommaaccent by scommaaccent.ss03;
+} ss04;

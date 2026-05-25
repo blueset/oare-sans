@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="d" format="2">
-  <advance width="423"/>
+  <advance width="433"/>
   <unicode hex="0064"/>
   <anchor x="411.469" y="735" name="top"/>
   <anchor x="128" y="0" name="bottom"/>
   <anchor x="450.469" y="735" name="caronapos"/>
   <outline>
     <contour>
-      <point x="450.469" y="735" type="line"/>
-      <point x="365.469" y="735" type="line"/>
-      <point x="254.83" y="71" type="line"/>
-      <point x="260.83" y="71" type="line"/>
-      <point x="249" y="0" type="line"/>
-      <point x="328" y="0" type="line"/>
+      <point x="460.469" y="735" type="line"/>
+      <point x="375.469" y="735" type="line"/>
+      <point x="264.83" y="71" type="line"/>
+      <point x="270.83" y="71" type="line"/>
+      <point x="259" y="0" type="line"/>
+      <point x="338" y="0" type="line"/>
     </contour>
     <contour>
       <point x="381.478" y="525" type="line"/>

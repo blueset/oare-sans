@@ -52,7 +52,7 @@
   </dict>
   </array>
   <key>openTypeHeadCreated</key>
-  <string>2026/03/05 22:53:07</string>
+  <string>2026/05/25 19:00:00</string>
   <key>openTypeHeadFlags</key>
   <array>
   </array>
@@ -83,7 +83,7 @@ https://openfontlicense.org</string>
   <key>openTypeNamePreferredSubfamilyName</key>
   <string>Thin Oblique</string>
   <key>openTypeNameVersion</key>
-  <string>Version 0.001</string>
+  <string>Version 0.002</string>
   <key>openTypeOS2Panose</key>
   <array>
     <integer>0</integer>
@@ -184,7 +184,7 @@ https://openfontlicense.org</string>
   <key>versionMajor</key>
   <integer>0</integer>
   <key>versionMinor</key>
-  <integer>1</integer>
+  <integer>2</integer>
   <key>xHeight</key>
   <integer>525</integer>
 </dict>

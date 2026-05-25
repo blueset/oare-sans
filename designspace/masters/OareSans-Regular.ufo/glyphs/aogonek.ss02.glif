@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aogonek.ss02" format="2">
+  <advance width="430"/>
+  <anchor x="210" y="525" name="top"/>
+  <anchor x="180" y="0" name="bottom"/>
+  <outline>
+    <component base="a.ss02"/>
+    <component base="ogonekcomb" xOffset="380"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.recipe</key>
+  <string>a.ss02+ogonekcomb</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

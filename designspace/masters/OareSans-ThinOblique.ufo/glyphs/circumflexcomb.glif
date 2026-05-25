@@ -8,14 +8,12 @@
     <contour>
       <point x="-54.5" y="597" type="line"/>
       <point x="-19.5" y="597" type="line"/>
-      <point x="90.6667" y="700" type="line"/>
-      <point x="53.6667" y="700" type="line"/>
-    </contour>
-    <contour>
+      <point x="80.6596" y="690.643" type="line"/>
+      <point x="60.5548" y="690.643" type="line"/>
+      <point x="129.5" y="597" type="line"/>
       <point x="164.5" y="597" type="line"/>
       <point x="90.6667" y="700" type="line"/>
       <point x="53.6667" y="700" type="line"/>
-      <point x="129.5" y="597" type="line"/>
     </contour>
   </outline>
   <guideline angle="0" x="0" y="700"/>

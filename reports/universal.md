@@ -47,16 +47,10 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* circumflex (U+02C6): found 2, expected one of: {1, 5}
-* caron (U+02C7): found 2, expected one of: {5, 1}
-* circumflexcomb (U+0302): found 2, expected one of: {1}
-* caroncomb (U+030C): found 2, expected one of: {1}
 * S (U+0053): found 3, expected one of: {5, 1, 2}
-* Hcaron (U+021E): found 5, expected one of: {2, 4}
-* hcaron (U+021F): found 4, expected one of: {3, 2}
-* Kcaron (U+01E8): found 5, expected one of: {4, 2, 3}
-* kcaron (U+01E9): found 5, expected one of: {4, 2, 3}
-... and 7 others [code: contour-count]
+* Sacute (U+015A): found 4, expected one of: {3, 6, 2}
+* sacute (U+015B): found 4, expected one of: {2, 3, 6}
+* scircumflex (U+015D): found 4, expected one of: {3, 6, 2} [code: contour-count]
   
   
 
@@ -116,14 +110,14 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 
 
-- ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
+- ⚠️ **WARN** The most common width is 373 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=420: minus
-width=373: less, greater
-width=380: plus
+width=390: plusminus, logicalnot
+width=360: multiply
 width=370: divide
-width=440: equal
-width=360: multiply [code: width-outliers]
+width=380: plus
+width=420: minus
+width=440: equal [code: width-outliers]
   
   
 

@@ -1,61 +1,61 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="4.0">
  <axes>
-  <axis maximum="900" default="400" minimum="100" name="weight" tag="wght">
+  <axis default="400" tag="wght" name="weight" minimum="100" maximum="900">
    <labelname xml:lang="en">Weight</labelname>
    <map output="100" input="100"/>
    <map output="400" input="400"/>
    <map output="900" input="900"/>
   </axis>
-  <axis maximum="0" default="0" minimum="-10" name="slant" tag="slnt">
+  <axis default="0" tag="slnt" name="slant" minimum="-10" maximum="0">
    <labelname xml:lang="en">Slant</labelname>
   </axis>
  </axes>
  <sources>
-  <source familyname="Oare Sans" filename="masters/OareSans-Black.ufo" stylename="Black" name="Black">
+  <source stylename="Black" filename="masters/OareSans-Black.ufo" name="Black" familyname="Oare Sans">
    <location>
-    <dimension name="weight" xvalue="900"/>
-    <dimension name="slant" xvalue="0"/>
+    <dimension xvalue="900" name="weight"/>
+    <dimension xvalue="0" name="slant"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-BlackOblique.ufo" stylename="Black Oblique" name="Black Oblique">
+  <source stylename="Black Oblique" filename="masters/OareSans-BlackOblique.ufo" name="Black Oblique" familyname="Oare Sans">
    <location>
-    <dimension name="weight" xvalue="900"/>
-    <dimension name="slant" xvalue="-10"/>
+    <dimension xvalue="900" name="weight"/>
+    <dimension xvalue="-10" name="slant"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-Bold.ufo" stylename="Black Oblique" name="Bold">
+  <source stylename="Black Oblique" filename="masters/OareSans-Bold.ufo" name="Bold" familyname="Oare Sans">
    <location>
-    <dimension name="weight" xvalue="700"/>
-    <dimension name="slant" xvalue="0"/>
+    <dimension xvalue="700" name="weight"/>
+    <dimension xvalue="0" name="slant"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-Oblique.ufo" stylename="Oblique" name="Oblique">
+  <source stylename="Oblique" filename="masters/OareSans-Oblique.ufo" name="Oblique" familyname="Oare Sans">
    <location>
-    <dimension name="weight" xvalue="400"/>
-    <dimension name="slant" xvalue="-10"/>
+    <dimension xvalue="400" name="weight"/>
+    <dimension xvalue="-10" name="slant"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-Regular.ufo" stylename="" name="Regular">
+  <source stylename="" filename="masters/OareSans-Regular.ufo" name="Regular" familyname="Oare Sans">
    <lib copy="1"/>
    <groups copy="1"/>
    <info copy="1"/>
    <features copy="1"/>
    <location>
-    <dimension name="weight" xvalue="400"/>
-    <dimension name="slant" xvalue="0"/>
+    <dimension xvalue="400" name="weight"/>
+    <dimension xvalue="0" name="slant"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-Thin.ufo" stylename="Thin" name="Thin">
+  <source stylename="Thin" filename="masters/OareSans-Thin.ufo" name="Thin" familyname="Oare Sans">
    <location>
-    <dimension name="weight" xvalue="100"/>
-    <dimension name="slant" xvalue="0"/>
+    <dimension xvalue="100" name="weight"/>
+    <dimension xvalue="0" name="slant"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-ThinOblique.ufo" stylename="Thin Oblique" name="Thin Oblique">
+  <source stylename="Thin Oblique" filename="masters/OareSans-ThinOblique.ufo" name="Thin Oblique" familyname="Oare Sans">
    <location>
-    <dimension name="weight" xvalue="100"/>
-    <dimension name="slant" xvalue="-10"/>
+    <dimension xvalue="100" name="weight"/>
+    <dimension xvalue="-10" name="slant"/>
    </location>
   </source>
  </sources>
@@ -588,10 +588,6 @@
      <string>regular</string>
      <key>styleName</key>
      <string>Regular</string>
-     <key>versionMajor</key>
-     <real>1</real>
-     <key>versionMinor</key>
-     <real>1</real>
     </dict>
     <key>remove_name_ids</key>
     <array>
@@ -714,112 +710,112 @@
   </dict>
  </lib>
  <instances>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Thin.ufo" stylename="Thin" name="Thin">
+  <instance stylename="Thin" filename="instances/OareSans-Thin.ufo" name="Thin" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="100"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="100" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ThinOblique.ufo" stylename="Thin Oblique" name="ThinOblique">
+  <instance stylename="Thin Oblique" filename="instances/OareSans-ThinOblique.ufo" name="ThinOblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="100"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="100" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraLight.ufo" stylename="ExtraLight" name="ExtraLight">
+  <instance stylename="ExtraLight" filename="instances/OareSans-ExtraLight.ufo" name="ExtraLight" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="200"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="200" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraLightOblique.ufo" stylename="ExtraLight Oblique" name="ExtraLightOblique">
+  <instance stylename="ExtraLight Oblique" filename="instances/OareSans-ExtraLightOblique.ufo" name="ExtraLightOblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="200"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="200" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Light.ufo" stylename="Light" name="Light">
+  <instance stylename="Light" filename="instances/OareSans-Light.ufo" name="Light" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="300"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="300" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-LightOblique.ufo" stylename="Light Oblique" name="LightOblique">
+  <instance stylename="Light Oblique" filename="instances/OareSans-LightOblique.ufo" name="LightOblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="300"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="300" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Regular.ufo" stylename="Regular" name="Regular">
+  <instance stylename="Regular" filename="instances/OareSans-Regular.ufo" name="Regular" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="400"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="400" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Oblique.ufo" stylename="Oblique" name="Oblique">
+  <instance stylename="Oblique" filename="instances/OareSans-Oblique.ufo" name="Oblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="400"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="400" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Medium.ufo" stylename="Medium" name="Medium">
+  <instance stylename="Medium" filename="instances/OareSans-Medium.ufo" name="Medium" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="500"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="500" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-MediumOblique.ufo" stylename="Medium Oblique" name="MediumOblique">
+  <instance stylename="Medium Oblique" filename="instances/OareSans-MediumOblique.ufo" name="MediumOblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="500"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="500" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-SemiBold.ufo" stylename="SemiBold" name="SemiBold">
+  <instance stylename="SemiBold" filename="instances/OareSans-SemiBold.ufo" name="SemiBold" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="600"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="600" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-SemiBoldOblique.ufo" stylename="SemiBold Oblique" name="SemiBoldOblique">
+  <instance stylename="SemiBold Oblique" filename="instances/OareSans-SemiBoldOblique.ufo" name="SemiBoldOblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="600"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="600" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Bold.ufo" stylename="Bold" name="Bold">
+  <instance stylename="Bold" filename="instances/OareSans-Bold.ufo" name="Bold" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="700"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="700" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-BoldOblique.ufo" stylename="Bold Oblique" name="BoldOblique">
+  <instance stylename="Bold Oblique" filename="instances/OareSans-BoldOblique.ufo" name="BoldOblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="700"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="700" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraBold.ufo" stylename="ExtraBold" name="ExtraBold">
+  <instance stylename="ExtraBold" filename="instances/OareSans-ExtraBold.ufo" name="ExtraBold" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="800"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="800" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraBoldOblique.ufo" stylename="ExtraBold Oblique" name="ExtraBoldOblique">
+  <instance stylename="ExtraBold Oblique" filename="instances/OareSans-ExtraBoldOblique.ufo" name="ExtraBoldOblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="800"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="800" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Black.ufo" stylename="Black" name="Black">
+  <instance stylename="Black" filename="instances/OareSans-Black.ufo" name="Black" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="0"/>
-    <dimension name="weight" xvalue="900"/>
+    <dimension xvalue="0" name="slant"/>
+    <dimension xvalue="900" name="weight"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-BlackOblique.ufo" stylename="Black Oblique" name="BlackOblique">
+  <instance stylename="Black Oblique" filename="instances/OareSans-BlackOblique.ufo" name="BlackOblique" familyname="Oare Sans">
    <location>
-    <dimension name="slant" xvalue="-10"/>
-    <dimension name="weight" xvalue="900"/>
+    <dimension xvalue="-10" name="slant"/>
+    <dimension xvalue="900" name="weight"/>
    </location>
   </instance>
  </instances>
@@ -828,7 +824,7 @@
    <sub with="dollar.through" name="dollar"/>
    <sub with="cent.through" name="cent"/>
    <conditionset>
-    <condition maximum="300" name="weight"/>
+    <condition name="weight" maximum="300"/>
    </conditionset>
   </rule>
  </rules>
