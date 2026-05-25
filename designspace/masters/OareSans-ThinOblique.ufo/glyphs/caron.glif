@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="caron" format="2">
+  <advance width="304"/>
+  <unicode hex="02C7"/>
+  <anchor x="215.833" y="647" name="top"/>
+  <outline>
+    <component base="caroncomb" xOffset="151"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>|circumflex</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|circumflex</string>
+  <key>com.fontlab.recipe</key>
+  <string>caroncomb</string>
+  </dict>
+  </lib>
+</glyph>

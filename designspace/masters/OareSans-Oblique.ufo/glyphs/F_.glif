@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="F" format="2">
+  <advance width="344"/>
+  <unicode hex="0046"/>
+  <outline>
+    <contour>
+      <point x="6" y="0" type="line"/>
+      <point x="91" y="0" type="line"/>
+      <point x="146.785" y="334.796" type="line"/>
+      <point x="129.32" y="320" type="line"/>
+      <point x="304.05" y="320" type="line"/>
+      <point x="317.38" y="400" type="line"/>
+      <point x="142.65" y="400" type="line"/>
+      <point x="155.185" y="385.204" type="line"/>
+      <point x="196.765" y="634.796" type="line"/>
+      <point x="179.3" y="620" type="line"/>
+      <point x="377.53" y="620" type="line"/>
+      <point x="390.86" y="700" type="line"/>
+      <point x="122.63" y="700" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>B</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>E</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

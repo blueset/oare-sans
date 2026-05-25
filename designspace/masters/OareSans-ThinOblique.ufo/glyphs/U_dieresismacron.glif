@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Udieresismacron" format="2">
+  <advance width="366"/>
+  <unicode hex="01D5"/>
+  <anchor x="137" y="0" name="bottom"/>
+  <anchor x="180" y="0" name="ogonek"/>
+  <anchor x="291.859" y="918" name="top"/>
+  <outline>
+    <component base="Udieresis"/>
+    <component base="macroncomb" xOffset="227.167" yOffset="269"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=45</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=45</string>
+  <key>com.fontlab.recipe</key>
+  <string>Udieresis+macroncomb</string>
+  </dict>
+  </lib>
+</glyph>

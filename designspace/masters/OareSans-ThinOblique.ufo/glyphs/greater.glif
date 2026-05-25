@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="greater" format="2">
+  <advance width="299"/>
+  <unicode hex="003E"/>
+  <outline>
+    <contour>
+      <point x="272.167" y="349" type="line"/>
+      <point x="276" y="372" type="line"/>
+      <point x="88.6667" y="556" type="line"/>
+      <point x="82.3333" y="521" type="line"/>
+      <point x="252.74" y="353.831" type="line"/>
+      <point x="255.963" y="373.169" type="line"/>
+      <point x="29.8333" y="206" type="line"/>
+      <point x="23.5" y="165" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="360"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>|less</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|less</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

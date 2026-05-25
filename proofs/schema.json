@@ -1,0 +1,1035 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProofDocument",
+  "description": "The top-level proof document.",
+  "type": "object",
+  "required": [
+    "fonts",
+    "sections"
+  ],
+  "properties": {
+    "fonts": {
+      "description": "Font references used in this proof.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/FontReference"
+      }
+    },
+    "page_settings": {
+      "description": "Global page settings.",
+      "default": {
+        "orientation": "landscape",
+        "preset": "letter"
+      },
+      "allOf": [
+        {
+          "$ref": "#/definitions/PageSettings"
+        }
+      ]
+    },
+    "sections": {
+      "description": "Ordered list of proof sections.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Section"
+      }
+    },
+    "version": {
+      "description": "Schema version for forward compatibility.",
+      "default": "1.0",
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "ComparisonArrangement": {
+      "description": "How styles are arranged in a comparison.",
+      "type": "string",
+      "enum": [
+        "Columns",
+        "Rows"
+      ]
+    },
+    "ComparisonOverflow": {
+      "description": "How overflow is handled in a style comparison.",
+      "type": "string",
+      "enum": [
+        "Truncate",
+        "Flow"
+      ]
+    },
+    "ContentSpec": {
+      "description": "Content specification — what text or glyphs to display.",
+      "oneOf": [
+        {
+          "description": "Literal text content.",
+          "type": "object",
+          "required": [
+            "text",
+            "type"
+          ],
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "Text"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Reference to an external text file.",
+          "type": "object",
+          "required": [
+            "path",
+            "type"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "FileRef"
+              ]
+            }
+          }
+        },
+        {
+          "description": "All glyphs in the font.",
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "AllGlyphs"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Filtered subset of glyphs.",
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "blocks": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "categories": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ranges": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "integer",
+                    "format": "uint32",
+                    "minimum": 0.0
+                  },
+                  {
+                    "type": "integer",
+                    "format": "uint32",
+                    "minimum": 0.0
+                  }
+                ],
+                "maxItems": 2,
+                "minItems": 2
+              }
+            },
+            "scripts": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "GlyphFilter"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Repeating pattern — generates text by substituting glyphs into templates, between context strings, or wrapped in pairs.",
+          "type": "object",
+          "required": [
+            "glyphs",
+            "type"
+          ],
+          "properties": {
+            "between": {
+              "description": "Context strings — test glyphs are inserted between repetitions of each context string. One output line per context string. Mutually exclusive with `templates` and `wrap`.",
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/GlyphSet"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "glyphs": {
+              "description": "Characters to iterate over. Each produces one output cycle.",
+              "allOf": [
+                {
+                  "$ref": "#/definitions/GlyphSet"
+                }
+              ]
+            },
+            "placeholder": {
+              "description": "Placeholder string in templates (default: \"?\").",
+              "default": "?",
+              "type": "string"
+            },
+            "separator": {
+              "description": "Separator between output lines (default: newline).",
+              "default": "newline",
+              "allOf": [
+                {
+                  "$ref": "#/definitions/PatternSeparator"
+                }
+              ]
+            },
+            "templates": {
+              "description": "Template strings where the placeholder is replaced with each glyph. Mutually exclusive with `between` and `wrap`.",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "Pattern"
+              ]
+            },
+            "wrap": {
+              "description": "Before/after wrap pairs — each test glyph is wrapped by all pairs. Mutually exclusive with `templates` and `between`.",
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "maxItems": 2,
+                "minItems": 2
+              }
+            }
+          }
+        },
+        {
+          "description": "Concatenate multiple content specs into one.",
+          "type": "object",
+          "required": [
+            "parts",
+            "type"
+          ],
+          "properties": {
+            "joiner": {
+              "description": "Joiner string between parts (default: \"\\n\").",
+              "default": "\n",
+              "type": "string"
+            },
+            "parts": {
+              "description": "Content parts to concatenate in order.",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ContentSpec"
+              }
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "Concat"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Custom user-provided content.",
+          "type": "object",
+          "required": [
+            "text",
+            "type"
+          ],
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "Custom"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "DesignAttributeOverrides": {
+      "description": "Partial design attribute overrides for style variants. Any field set to Some overrides the section's base value.",
+      "type": "object",
+      "properties": {
+        "features": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "integer",
+            "format": "uint32",
+            "minimum": 0.0
+          }
+        },
+        "font_size": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "format": "float"
+        },
+        "kerning": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "line_height": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "format": "float"
+        },
+        "line_limit": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "format": "uint",
+          "minimum": 0.0
+        },
+        "text_align": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/TextAlign"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tracking": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "format": "float"
+        },
+        "variations": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "y_offset": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "format": "float"
+        }
+      }
+    },
+    "DesignAttributes": {
+      "description": "Design attributes controlling typography.",
+      "type": "object",
+      "properties": {
+        "features": {
+          "description": "OpenType feature settings: tag → value (e.g., smcp: 1).",
+          "default": {},
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "uint32",
+            "minimum": 0.0
+          }
+        },
+        "font_size": {
+          "description": "Font size in points.",
+          "default": 12.0,
+          "type": "number",
+          "format": "float"
+        },
+        "kerning": {
+          "description": "Enable kerning.",
+          "default": true,
+          "type": "boolean"
+        },
+        "language": {
+          "description": "Language tag for OpenType shaping.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "line_height": {
+          "description": "Line height override (multiplier of font size).",
+          "type": [
+            "number",
+            "null"
+          ],
+          "format": "float"
+        },
+        "line_limit": {
+          "description": "Maximum number of lines to show. None = no limit.",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "format": "uint",
+          "minimum": 0.0
+        },
+        "text_align": {
+          "description": "Text alignment: left, center, right, or justified.",
+          "default": "left",
+          "allOf": [
+            {
+              "$ref": "#/definitions/TextAlign"
+            }
+          ]
+        },
+        "tracking": {
+          "description": "Additional tracking in em units.",
+          "default": 0.0,
+          "type": "number",
+          "format": "float"
+        },
+        "variations": {
+          "description": "Variation axis settings: tag → value (e.g., wght: 700).",
+          "default": {},
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "y_offset": {
+          "description": "Extra top padding (in points) between header/top edge and text on each page.",
+          "default": 0.0,
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "FontReference": {
+      "description": "A reference to a font file used in the proof.",
+      "type": "object",
+      "required": [
+        "path"
+      ],
+      "properties": {
+        "checksum": {
+          "description": "Optional checksum for detecting font changes.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "face_index": {
+          "description": "Face index within a TTC/OTC collection.",
+          "default": 0,
+          "type": "integer",
+          "format": "uint32",
+          "minimum": 0.0
+        },
+        "path": {
+          "description": "Path to the font file (relative to the .proof.yaml file).",
+          "type": "string"
+        }
+      }
+    },
+    "GlyphGridMode": {
+      "description": "Glyph grid display mode.",
+      "type": "string",
+      "enum": [
+        "Grid",
+        "Compact"
+      ]
+    },
+    "GlyphPreset": {
+      "description": "Preset glyph sets derived from the font's character map.",
+      "type": "string",
+      "enum": [
+        "uppercase",
+        "lowercase",
+        "digits",
+        "all"
+      ]
+    },
+    "GlyphSet": {
+      "description": "A set of glyphs — either a literal string or a preset from the font.",
+      "anyOf": [
+        {
+          "description": "Literal characters.",
+          "type": "string"
+        },
+        {
+          "description": "Characters split by spaces (each element is a string context).",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "description": "A preset from the font's character map.",
+          "type": "object",
+          "required": [
+            "preset"
+          ],
+          "properties": {
+            "preset": {
+              "$ref": "#/definitions/GlyphPreset"
+            }
+          }
+        }
+      ]
+    },
+    "HeaderConfig": {
+      "description": "Header configuration for a section.",
+      "type": "object",
+      "properties": {
+        "show_datetime": {
+          "default": true,
+          "type": "boolean"
+        },
+        "show_font_name": {
+          "default": true,
+          "type": "boolean"
+        },
+        "show_header": {
+          "default": true,
+          "type": "boolean"
+        },
+        "show_page_numbers": {
+          "default": true,
+          "type": "boolean"
+        }
+      }
+    },
+    "InterleaveMode": {
+      "description": "Interleave mode for multi-style proofs.",
+      "type": "string",
+      "enum": [
+        "Proofs",
+        "Sections",
+        "Pages"
+      ]
+    },
+    "LayoutType": {
+      "description": "Layout type determines how content is arranged on pages.",
+      "oneOf": [
+        {
+          "description": "Simple text block(s) at configured sizes.",
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Simple"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Same text at cascading sizes.",
+          "type": "object",
+          "required": [
+            "sizes",
+            "type"
+          ],
+          "properties": {
+            "label": {
+              "description": "Optional label text appended after size labels on each page.",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sizes": {
+              "description": "Font sizes to cascade through.",
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "float"
+              }
+            },
+            "spacing": {
+              "description": "Spacing between size blocks in points.",
+              "default": 8.0,
+              "type": "number",
+              "format": "float"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "Waterfall"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Multi-column text flow.",
+          "type": "object",
+          "required": [
+            "count",
+            "gutter",
+            "type"
+          ],
+          "properties": {
+            "column_label": {
+              "description": "Label text repeated at the top of each column.",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "count": {
+              "description": "Number of columns.",
+              "type": "integer",
+              "format": "uint",
+              "minimum": 0.0
+            },
+            "gutter": {
+              "description": "Gutter width between columns in points.",
+              "type": "number",
+              "format": "float"
+            },
+            "show_headers": {
+              "description": "Show per-column headers.",
+              "default": false,
+              "type": "boolean"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "Columns"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Glyph grid display.",
+          "type": "object",
+          "required": [
+            "mode",
+            "type"
+          ],
+          "properties": {
+            "cell_padding": {
+              "description": "Cell padding in points.",
+              "default": 4.0,
+              "type": "number",
+              "format": "float"
+            },
+            "mode": {
+              "description": "Grid or compact mode.",
+              "allOf": [
+                {
+                  "$ref": "#/definitions/GlyphGridMode"
+                }
+              ]
+            },
+            "show_metrics": {
+              "description": "Show metric lines (ascender, descender, etc.).",
+              "default": true,
+              "type": "boolean"
+            },
+            "show_names": {
+              "description": "Show glyph names/codepoints below each cell.",
+              "default": true,
+              "type": "boolean"
+            },
+            "subgrid_x": {
+              "description": "Optional variation-axis subgrid along the X (column) direction. When set, each glyph cell becomes a row of sub-cells, one per value.",
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/SubgridAxis"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "subgrid_y": {
+              "description": "Optional variation-axis subgrid along the Y (row) direction. When set, each glyph cell becomes a column of sub-cells, one per value. Combined with `subgrid_x`, the cell becomes a 2D matrix of variations.",
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/SubgridAxis"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "GlyphGrid"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Side-by-side style comparison.",
+          "type": "object",
+          "required": [
+            "arrangement",
+            "overflow",
+            "type"
+          ],
+          "properties": {
+            "arrangement": {
+              "$ref": "#/definitions/ComparisonArrangement"
+            },
+            "max_columns": {
+              "description": "Maximum columns per row (Column arrangement only). If more variants exist, they wrap to additional rows on new pages.",
+              "type": [
+                "integer",
+                "null"
+              ],
+              "format": "uint",
+              "minimum": 0.0
+            },
+            "overflow": {
+              "$ref": "#/definitions/ComparisonOverflow"
+            },
+            "spacing": {
+              "description": "Spacing between rows/columns in points.",
+              "default": 16.0,
+              "type": "number",
+              "format": "float"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "StyleComparison"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Multi-style page interleaving.",
+          "type": "object",
+          "required": [
+            "mode",
+            "type"
+          ],
+          "properties": {
+            "mode": {
+              "$ref": "#/definitions/InterleaveMode"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "Interleave"
+              ]
+            }
+          }
+        },
+        {
+          "description": "Embedded reference image.",
+          "type": "object",
+          "required": [
+            "source",
+            "type"
+          ],
+          "properties": {
+            "source": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "ImagePdf"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Orientation": {
+      "description": "Page orientation.",
+      "type": "string",
+      "enum": [
+        "portrait",
+        "landscape"
+      ]
+    },
+    "PagePreset": {
+      "description": "Named page presets.",
+      "type": "string",
+      "enum": [
+        "letter",
+        "a4",
+        "a3",
+        "tabloid"
+      ]
+    },
+    "PageSettings": {
+      "description": "Page dimensions and margins. Can be specified as a preset or custom values.",
+      "anyOf": [
+        {
+          "description": "A named preset (e.g., \"letter\", \"a4\").",
+          "type": "object",
+          "required": [
+            "preset"
+          ],
+          "properties": {
+            "orientation": {
+              "default": "landscape",
+              "allOf": [
+                {
+                  "$ref": "#/definitions/Orientation"
+                }
+              ]
+            },
+            "preset": {
+              "$ref": "#/definitions/PagePreset"
+            }
+          }
+        },
+        {
+          "description": "Custom dimensions in points.",
+          "type": "object",
+          "required": [
+            "height",
+            "width"
+          ],
+          "properties": {
+            "height": {
+              "type": "number",
+              "format": "float"
+            },
+            "margin_bottom": {
+              "default": 36.0,
+              "type": "number",
+              "format": "float"
+            },
+            "margin_left": {
+              "default": 36.0,
+              "type": "number",
+              "format": "float"
+            },
+            "margin_right": {
+              "default": 36.0,
+              "type": "number",
+              "format": "float"
+            },
+            "margin_top": {
+              "default": 36.0,
+              "type": "number",
+              "format": "float"
+            },
+            "width": {
+              "type": "number",
+              "format": "float"
+            }
+          }
+        }
+      ]
+    },
+    "PatternSeparator": {
+      "description": "Separator between pattern output lines.",
+      "type": "string",
+      "enum": [
+        "newline",
+        "space",
+        "none"
+      ]
+    },
+    "Section": {
+      "description": "A section of the proof document.",
+      "type": "object",
+      "required": [
+        "content",
+        "font_indices",
+        "layout"
+      ],
+      "properties": {
+        "content": {
+          "description": "Content specification.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ContentSpec"
+            }
+          ]
+        },
+        "design_attrs": {
+          "description": "Base design attributes (size, tracking, features, etc.).",
+          "default": {
+            "features": {},
+            "font_size": 12.0,
+            "kerning": true,
+            "text_align": "left",
+            "tracking": 0.0,
+            "variations": {},
+            "y_offset": 0.0
+          },
+          "allOf": [
+            {
+              "$ref": "#/definitions/DesignAttributes"
+            }
+          ]
+        },
+        "font_indices": {
+          "description": "Font indices into the document's font list.",
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "uint",
+            "minimum": 0.0
+          }
+        },
+        "header_config": {
+          "description": "Header configuration.",
+          "default": {
+            "show_datetime": true,
+            "show_font_name": true,
+            "show_header": true,
+            "show_page_numbers": true
+          },
+          "allOf": [
+            {
+              "$ref": "#/definitions/HeaderConfig"
+            }
+          ]
+        },
+        "layout": {
+          "description": "Layout type for this section.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/LayoutType"
+            }
+          ]
+        },
+        "name": {
+          "description": "Optional section name (shown in headers).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "styles": {
+          "description": "Style variants for StyleComparison/Interleave layouts. Each variant can override design_attrs and/or font_index. If empty, the layout uses font_indices with the base design_attrs.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/StyleVariant"
+          }
+        }
+      }
+    },
+    "StyleVariant": {
+      "description": "A style variant for comparison/interleave layouts. Overrides the section's base design_attrs and/or font.",
+      "type": "object",
+      "properties": {
+        "design_attrs": {
+          "description": "Design attribute overrides. Only specified fields override the base.",
+          "default": {},
+          "allOf": [
+            {
+              "$ref": "#/definitions/DesignAttributeOverrides"
+            }
+          ]
+        },
+        "font_index": {
+          "description": "Font index override (into document font list). If not set, uses the first entry from the section's font_indices.",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "format": "uint",
+          "minimum": 0.0
+        },
+        "label": {
+          "description": "Optional label for this style (shown in headers).",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "SubgridAxis": {
+      "description": "A single variation axis used to drive a glyph-grid subgrid.\n\nWhen attached to `LayoutType::GlyphGrid` via `subgrid_x` / `subgrid_y`, each glyph cell is rendered as a matrix of instances by combining the row/column values with `design_attrs.variations` (subgrid values silently override matching tags).",
+      "type": "object",
+      "required": [
+        "axis",
+        "values"
+      ],
+      "properties": {
+        "axis": {
+          "description": "Variation axis tag (4 ASCII characters, e.g. \"wght\" or \"wdth\").",
+          "type": "string"
+        },
+        "values": {
+          "description": "Axis values, in display order. Must contain at least one value.",
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      }
+    },
+    "TextAlign": {
+      "description": "Text alignment for a text block.",
+      "type": "string",
+      "enum": [
+        "left",
+        "center",
+        "right",
+        "justified"
+      ]
+    }
+  }
+}

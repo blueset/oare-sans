@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dieresis" format="2">
+  <advance width="348"/>
+  <unicode hex="00A8"/>
+  <anchor x="238.14" y="649" name="top"/>
+  <outline>
+    <component base="dieresiscomb" xOffset="174"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=65</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=66</string>
+  <key>com.fontlab.recipe</key>
+  <string>dieresiscomb</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="OE" format="2">
+  <advance width="592"/>
+  <unicode hex="0152"/>
+  <outline>
+    <component base="E" xOffset="247"/>
+    <contour>
+      <point x="407.637" y="700" type="line"/>
+      <point x="319.637" y="700" type="line" smooth="yes"/>
+      <point x="192.334" y="700"/>
+      <point x="105.438" y="626.782"/>
+      <point x="84.6458" y="502" type="curve" smooth="yes"/>
+      <point x="33.3253" y="194" type="line" smooth="yes"/>
+      <point x="14.4874" y="80.9444"/>
+      <point x="85.6996" y="0"/>
+      <point x="204" y="0" type="curve" smooth="yes"/>
+      <point x="291" y="0" type="line"/>
+      <point x="304.33" y="80" type="line"/>
+      <point x="217.33" y="80" type="line" smooth="yes"/>
+      <point x="137.717" y="80"/>
+      <point x="105.509" y="117.085"/>
+      <point x="118.325" y="194" type="curve" smooth="yes"/>
+      <point x="169.646" y="502" type="line" smooth="yes"/>
+      <point x="181.439" y="572.778"/>
+      <point x="236.129" y="620"/>
+      <point x="306.308" y="620" type="curve" smooth="yes"/>
+      <point x="394.308" y="620" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>O</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>E</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

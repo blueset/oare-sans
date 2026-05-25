@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="jcaron" format="2">
+  <advance width="140"/>
+  <unicode hex="01F0"/>
+  <anchor x="70" y="-175" name="bottom"/>
+  <anchor x="71" y="647" name="top"/>
+  <outline>
+    <component base="dotlessj"/>
+    <component base="caroncomb" xOffset="71"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=-57</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=55</string>
+  <key>com.fontlab.recipe</key>
+  <string>dotlessj+caroncomb</string>
+  </dict>
+  </lib>
+</glyph>

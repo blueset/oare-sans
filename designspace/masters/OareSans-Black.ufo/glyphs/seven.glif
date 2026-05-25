@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seven" format="2">
+  <advance width="425"/>
+  <unicode hex="0037"/>
+  <outline>
+    <contour>
+      <point x="5" y="540" type="line"/>
+      <point x="272.238" y="540" type="line"/>
+      <point x="232.79" y="574" type="line"/>
+      <point x="32" y="46" type="line"/>
+      <point x="195" y="-15" type="line"/>
+      <point x="420" y="574" type="line"/>
+      <point x="420" y="700" type="line"/>
+      <point x="5" y="700" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="-15"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>four</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|four</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

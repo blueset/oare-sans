@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="numbersign" format="2">
+  <advance width="553"/>
+  <unicode hex="0023"/>
+  <outline>
+    <contour>
+      <point x="55" y="0" type="line"/>
+      <point x="177" y="0" type="line"/>
+      <point x="300.429" y="700" type="line"/>
+      <point x="178.429" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="252" y="0" type="line"/>
+      <point x="374" y="0" type="line"/>
+      <point x="497.429" y="700" type="line"/>
+      <point x="375.429" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="48.41" y="422" type="line"/>
+      <point x="530.41" y="422" type="line"/>
+      <point x="547.572" y="525" type="line"/>
+      <point x="65.5717" y="525" type="line"/>
+    </contour>
+    <contour>
+      <point x="5.3862" y="178" type="line"/>
+      <point x="487.386" y="178" type="line"/>
+      <point x="504.548" y="281" type="line"/>
+      <point x="22.5479" y="281" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="80.034" x="-27" y="0"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=5</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=5</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

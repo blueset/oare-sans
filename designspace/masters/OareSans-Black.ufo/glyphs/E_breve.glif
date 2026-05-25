@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ebreve" format="2">
+  <advance width="354"/>
+  <unicode hex="0114"/>
+  <anchor x="186.61" y="0" name="bottom"/>
+  <anchor x="343" y="0" name="ogonek"/>
+  <anchor x="186.61" y="841" name="top"/>
+  <outline>
+    <component base="E"/>
+    <component base="brevecomb" xOffset="186.61" yOffset="155"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=10</string>
+  <key>com.fontlab.recipe</key>
+  <string>E+brevecomb</string>
+  </dict>
+  </lib>
+</glyph>

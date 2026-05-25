@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="odieresismacron" format="2">
+  <advance width="351"/>
+  <unicode hex="022B"/>
+  <anchor x="130" y="0" name="bottom"/>
+  <anchor x="187" y="0" name="ogonek"/>
+  <anchor x="174.084" y="773" name="top"/>
+  <outline>
+    <component base="odieresis"/>
+    <component base="macroncomb" xOffset="195.167" yOffset="124"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=45</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=45</string>
+  <key>com.fontlab.recipe</key>
+  <string>odieresis+macroncomb</string>
+  </dict>
+  </lib>
+</glyph>

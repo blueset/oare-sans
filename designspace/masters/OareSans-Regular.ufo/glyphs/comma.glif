@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="comma" format="2">
+  <advance width="193"/>
+  <unicode hex="002C"/>
+  <outline>
+    <contour>
+      <point x="35.4081" y="56.0485" type="curve" smooth="yes"/>
+      <point x="35.4081" y="19.3072"/>
+      <point x="60.2974" y="-5.582"/>
+      <point x="97.0386" y="-5.582" type="curve" smooth="yes"/>
+      <point x="104.15" y="-5.582" type="line"/>
+      <point x="95.8534" y="-38.7677"/>
+      <point x="70.9642" y="-75.509"/>
+      <point x="41.3341" y="-96.8426" type="curve"/>
+      <point x="75.705" y="-127.658" type="line"/>
+      <point x="125.484" y="-90.9166"/>
+      <point x="157.484" y="-30.4713"/>
+      <point x="157.484" y="28.7889" type="curve" smooth="yes"/>
+      <point x="157.484" y="80.9378"/>
+      <point x="132.595" y="116.494"/>
+      <point x="93.483" y="116.494" type="curve" smooth="yes"/>
+      <point x="60.2974" y="116.494"/>
+      <point x="35.4081" y="91.6046"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="116"/>
+  <guideline angle="0" x="0" y="-6"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>period</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>period</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

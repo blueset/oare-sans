@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="L" format="2">
+  <advance width="260"/>
+  <unicode hex="004C"/>
+  <anchor x="137.667" y="670" name="top"/>
+  <anchor x="108" y="0" name="bottom"/>
+  <anchor x="157.667" y="700" name="caronapos"/>
+  <outline>
+    <contour>
+      <point x="11" y="0" type="line"/>
+      <point x="41" y="0" type="line"/>
+      <point x="157.667" y="700" type="line"/>
+      <point x="127.667" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="25.4609" y="0" type="line"/>
+      <point x="194.636" y="0" type="line"/>
+      <point x="199.303" y="28" type="line"/>
+      <point x="30.1276" y="28" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>B</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>E-5</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

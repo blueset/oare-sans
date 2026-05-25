@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tilde" format="2">
+  <advance width="470"/>
+  <unicode hex="02DC"/>
+  <anchor x="301.333" y="691" name="top"/>
+  <outline>
+    <component base="tildecomb" xOffset="233"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=59</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=56</string>
+  <key>com.fontlab.recipe</key>
+  <string>tildecomb</string>
+  </dict>
+  </lib>
+</glyph>

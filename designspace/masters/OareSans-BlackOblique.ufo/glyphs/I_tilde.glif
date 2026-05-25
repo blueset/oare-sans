@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Itilde" format="2">
+  <advance width="236"/>
+  <unicode hex="0128"/>
+  <anchor x="75" y="0" name="bottom"/>
+  <anchor x="161" y="0" name="ogonek"/>
+  <anchor x="215.333" y="846" name="top"/>
+  <outline>
+    <component base="I"/>
+    <component base="tildecomb" xOffset="147" yOffset="155"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=30</string>
+  <key>com.fontlab.recipe</key>
+  <string>I+tildecomb</string>
+  </dict>
+  </lib>
+</glyph>

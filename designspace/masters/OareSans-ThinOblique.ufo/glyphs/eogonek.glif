@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="eogonek" format="2">
+  <advance width="336"/>
+  <unicode hex="0119"/>
+  <anchor x="204" y="525" name="top"/>
+  <anchor x="117" y="0" name="bottom"/>
+  <outline>
+    <component base="e"/>
+    <component base="ogonekcomb" xOffset="217"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=45</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=30</string>
+  <key>com.fontlab.recipe</key>
+  <string>e+ogonekcomb</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

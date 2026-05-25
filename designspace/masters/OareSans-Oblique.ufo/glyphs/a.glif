@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="a" format="2">
+  <advance width="421"/>
+  <unicode hex="0061"/>
+  <anchor x="257.478" y="525" name="top"/>
+  <anchor x="166" y="0" name="bottom"/>
+  <anchor x="326" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="326" y="0" type="line"/>
+      <point x="386.152" y="361" type="line" smooth="yes"/>
+      <point x="402.814" y="461"/>
+      <point x="349.478" y="525"/>
+      <point x="249.478" y="525" type="curve" smooth="yes"/>
+      <point x="158.478" y="525" type="line"/>
+      <point x="145.148" y="445" type="line"/>
+      <point x="236.148" y="445" type="line" smooth="yes"/>
+      <point x="291.148" y="445"/>
+      <point x="310.149" y="415"/>
+      <point x="301.152" y="361" type="curve" smooth="yes"/>
+      <point x="260.495" y="117" type="line"/>
+      <point x="260.496" y="87" type="line"/>
+      <point x="246" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="338.487" y="315" type="line"/>
+      <point x="183.487" y="315" type="line" smooth="yes"/>
+      <point x="83.657" y="315"/>
+      <point x="19.185" y="259.172"/>
+      <point x="2.3501" y="158.14" type="curve" smooth="yes"/>
+      <point x="-15.0775" y="53.5485"/>
+      <point x="33.126" y="-12"/>
+      <point x="127.495" y="-12" type="curve" smooth="yes"/>
+      <point x="195.407" y="-12"/>
+      <point x="249.302" y="21.9472"/>
+      <point x="287.83" y="89" type="curve"/>
+      <point x="262.995" y="132" type="line"/>
+      <point x="257.553" y="99.3451"/>
+      <point x="204.167" y="68"/>
+      <point x="153.988" y="68" type="curve" smooth="yes"/>
+      <point x="102.142" y="68"/>
+      <point x="77.906" y="101.463"/>
+      <point x="87.603" y="159.657" type="curve" smooth="yes"/>
+      <point x="96.35" y="212.156"/>
+      <point x="125.251" y="240"/>
+      <point x="170.99" y="240" type="curve" smooth="yes"/>
+      <point x="325.99" y="240" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="836"/>
+  <guideline angle="0" x="0" y="315"/>
+  <guideline angle="0" x="0" y="-12"/>
+  <guideline angle="0" x="0" y="240"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>o-15</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>n</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tcaron" format="2">
+  <advance width="340"/>
+  <unicode hex="0165"/>
+  <anchor x="208" y="0" name="bottom"/>
+  <anchor x="105" y="645" name="top"/>
+  <outline>
+    <component base="t"/>
+    <component base="caroncomb.alt" xOffset="389" yOffset="-26.7766"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>t</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=44</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Eth" format="2">
+  <advance width="355"/>
+  <unicode hex="00D0"/>
+  <outline>
+    <component base="D"/>
+    <contour>
+      <point x="25" y="342" type="line"/>
+      <point x="199" y="342" type="line"/>
+      <point x="199" y="370" type="line"/>
+      <point x="25" y="370" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>D</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>D</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

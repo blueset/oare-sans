@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="otildemacron" format="2">
+  <advance width="446"/>
+  <unicode hex="022D"/>
+  <anchor x="183" y="0" name="bottom"/>
+  <anchor x="261" y="0" name="ogonek"/>
+  <anchor x="302.823" y="770" name="top"/>
+  <outline>
+    <component base="otilde"/>
+    <component base="macroncomb" xOffset="238.684" yOffset="121"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=35</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=35</string>
+  <key>com.fontlab.recipe</key>
+  <string>otilde+macroncomb</string>
+  </dict>
+  </lib>
+</glyph>

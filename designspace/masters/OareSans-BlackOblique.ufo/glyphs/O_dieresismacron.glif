@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Odieresismacron" format="2">
+  <advance width="511"/>
+  <unicode hex="022A"/>
+  <anchor x="213" y="0" name="bottom"/>
+  <anchor x="310" y="0" name="ogonek"/>
+  <anchor x="358.583" y="959" name="top"/>
+  <outline>
+    <component base="Odieresis"/>
+    <component base="macroncomb" xOffset="295.417" yOffset="310"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=25</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=25</string>
+  <key>com.fontlab.recipe</key>
+  <string>Odieresis+macroncomb</string>
+  </dict>
+  </lib>
+</glyph>

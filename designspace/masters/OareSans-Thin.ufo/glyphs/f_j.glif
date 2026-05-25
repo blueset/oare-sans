@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="f_j" format="2">
+  <advance width="340"/>
+  <outline>
+    <component base="dotlessj" xOffset="200"/>
+    <contour>
+      <point x="262" y="735" type="line"/>
+      <point x="257" y="735"/>
+      <point x="241" y="735"/>
+      <point x="237" y="735" type="curve" smooth="yes"/>
+      <point x="128" y="735"/>
+      <point x="72" y="669"/>
+      <point x="72" y="551" type="curve" smooth="yes"/>
+      <point x="72" y="0" type="line"/>
+      <point x="102" y="0" type="line"/>
+      <point x="102" y="551" type="line" smooth="yes"/>
+      <point x="102" y="649"/>
+      <point x="149" y="707"/>
+      <point x="231" y="707" type="curve" smooth="yes"/>
+      <point x="235" y="707"/>
+      <point x="255" y="707"/>
+      <point x="262" y="707" type="curve"/>
+    </contour>
+    <contour>
+      <point x="25" y="525" type="line"/>
+      <point x="25" y="497" type="line"/>
+      <point x="200" y="497" type="line"/>
+      <point x="200" y="525" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>f</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>j</string>
+  <key>com.fontlab.recipe</key>
+  <string>f_j</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

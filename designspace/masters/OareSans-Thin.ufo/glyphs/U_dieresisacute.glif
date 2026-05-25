@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Udieresisacute" format="2">
+  <advance width="365"/>
+  <unicode hex="01D7"/>
+  <anchor x="182.5" y="0" name="bottom"/>
+  <anchor x="224" y="0" name="ogonek"/>
+  <anchor x="182.5" y="918" name="top"/>
+  <outline>
+    <component base="Udieresis"/>
+    <component base="acutecomb" xOffset="181.5" yOffset="269"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=45</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=45</string>
+  <key>com.fontlab.recipe</key>
+  <string>Udieresis+acutecomb</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Oslash" format="2">
+  <advance width="491"/>
+  <unicode hex="00D8"/>
+  <outline>
+    <component base="O"/>
+    <contour>
+      <point x="116.164" y="73" type="line"/>
+      <point x="456.14" y="631" type="line"/>
+      <point x="395.14" y="631" type="line"/>
+      <point x="51.1636" y="73" type="line"/>
+    </contour>
+    <contour>
+      <point x="48.1636" y="73" type="line"/>
+      <point x="-8" y="-12" type="line"/>
+      <point x="59" y="-12" type="line"/>
+      <point x="114.163" y="73" type="line"/>
+    </contour>
+    <contour>
+      <point x="462.14" y="631" type="line"/>
+      <point x="512.637" y="712" type="line"/>
+      <point x="448.637" y="712" type="line"/>
+      <point x="398.14" y="631" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="90" x="45" y="0"/>
+  <guideline angle="90" x="445" y="0"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>O</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>O</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

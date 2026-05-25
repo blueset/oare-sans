@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="macron" format="2">
+  <advance width="321"/>
+  <unicode hex="00AF"/>
+  <anchor x="225.14" y="649" name="top"/>
+  <outline>
+    <component base="macroncomb" xOffset="161"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=73</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=72</string>
+  <key>com.fontlab.recipe</key>
+  <string>macroncomb</string>
+  </dict>
+  </lib>
+</glyph>

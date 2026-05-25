@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessi" format="2">
+  <advance width="236"/>
+  <unicode hex="0131"/>
+  <anchor x="162" y="525" name="top"/>
+  <anchor x="75" y="0" name="bottom"/>
+  <anchor x="161" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="-14" y="0" type="line"/>
+      <point x="161" y="0" type="line"/>
+      <point x="248.5" y="525" type="line"/>
+      <point x="73.5" y="525" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="80.5377" x="74.6667" y="0"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>n</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|</string>
+  <key>com.fontlab.recipe</key>
+  <string>i%</string>
+  </dict>
+  </lib>
+</glyph>

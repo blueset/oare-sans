@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="asterisk" format="2">
+  <advance width="349"/>
+  <unicode hex="002A"/>
+  <outline>
+    <contour>
+      <point x="201.1" y="558.165" type="line"/>
+      <point x="243.98" y="558.165" type="line"/>
+      <point x="276.573" y="699.593" type="line"/>
+      <point x="215.638" y="699.593" type="line"/>
+    </contour>
+    <contour>
+      <point x="219.624" y="578.573" type="line"/>
+      <point x="226.08" y="537.792" type="line"/>
+      <point x="369.227" y="572.91" type="line"/>
+      <point x="360.053" y="630.862" type="line"/>
+    </contour>
+    <contour>
+      <point x="242.174" y="571.545" type="line"/>
+      <point x="203.284" y="546.341" type="line"/>
+      <point x="259.161" y="426.617" type="line"/>
+      <point x="314.426" y="462.434" type="line"/>
+    </contour>
+    <contour>
+      <point x="237.003" y="545.245" type="line"/>
+      <point x="206.512" y="570.449" type="line"/>
+      <point x="97.8994" y="461.338" type="line"/>
+      <point x="141.228" y="425.522" type="line"/>
+    </contour>
+    <contour>
+      <point x="213.315" y="538.472" type="line"/>
+      <point x="233.361" y="579.253" type="line"/>
+      <point x="110.358" y="631.542" type="line"/>
+      <point x="81.8716" y="573.59" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

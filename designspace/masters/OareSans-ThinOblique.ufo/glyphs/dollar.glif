@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dollar" format="2">
+  <advance width="354"/>
+  <unicode hex="0024"/>
+  <outline>
+    <component base="S" xOffset="1.782e-05"/>
+    <contour>
+      <point x="118.667" y="10" type="line"/>
+      <point x="100.333" y="-100" type="line"/>
+      <point x="127.333" y="-100" type="line"/>
+      <point x="145.667" y="10" type="line"/>
+    </contour>
+    <contour>
+      <point x="259" y="690" type="line"/>
+      <point x="277.333" y="800" type="line"/>
+      <point x="250.333" y="800" type="line"/>
+      <point x="232" y="690" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="800"/>
+  <guideline angle="0" x="0" y="-215"/>
+  <guideline angle="0" x="0" y="-100"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>S</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>S</string>
+  <key>com.fontlab.recipe</key>
+  <string>S+bar%</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hcaron" format="2">
+  <advance width="500"/>
+  <unicode hex="021F"/>
+  <anchor x="385" y="0" name="bottom"/>
+  <anchor x="118" y="821" name="top"/>
+  <outline>
+    <component base="h"/>
+    <component base="caroncomb" xOffset="118" yOffset="174"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=30</string>
+  <key>com.fontlab.recipe</key>
+  <string>h+caroncomb</string>
+  </dict>
+  </lib>
+</glyph>

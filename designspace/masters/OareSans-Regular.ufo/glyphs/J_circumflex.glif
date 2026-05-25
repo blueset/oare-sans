@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Jcircumflex" format="2">
+  <advance width="202"/>
+  <unicode hex="0134"/>
+  <anchor x="110" y="793" name="top"/>
+  <outline>
+    <component base="J"/>
+    <component base="circumflexcomb" xOffset="110" yOffset="145"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=-80</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=50</string>
+  <key>com.fontlab.recipe</key>
+  <string>J+circumflexcomb</string>
+  </dict>
+  </lib>
+</glyph>

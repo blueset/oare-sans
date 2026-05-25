@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Rcommaaccent" format="2">
+  <advance width="425"/>
+  <unicode hex="0156"/>
+  <anchor x="278.639" y="670" name="top"/>
+  <anchor x="154.841" y="-175" name="bottom"/>
+  <outline>
+    <component base="R"/>
+    <component base="commaaccent" xOffset="227"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=50</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=15</string>
+  <key>com.fontlab.recipe</key>
+  <string>R+commaaccentcomb</string>
+  </dict>
+  </lib>
+</glyph>

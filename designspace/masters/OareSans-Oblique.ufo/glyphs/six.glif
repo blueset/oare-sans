@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="six" format="2">
+  <advance width="421"/>
+  <unicode hex="0036"/>
+  <outline>
+    <contour>
+      <point x="113.268" y="270.328" type="line"/>
+      <point x="136.438" y="333.806"/>
+      <point x="181.691" y="384"/>
+      <point x="236.877" y="384" type="curve" smooth="yes"/>
+      <point x="292.802" y="384"/>
+      <point x="326.395" y="332.451"/>
+      <point x="313.323" y="254" type="curve" smooth="yes"/>
+      <point x="301.992" y="186" type="line" smooth="yes"/>
+      <point x="288.992" y="107.977"/>
+      <point x="243.815" y="64"/>
+      <point x="175.519" y="64" type="curve" smooth="yes"/>
+      <point x="109.935" y="64"/>
+      <point x="78.588" y="105.551"/>
+      <point x="90.659" y="178" type="curve" smooth="yes"/>
+      <point x="96.991" y="216" type="line"/>
+      <point x="11.991" y="216" type="line"/>
+      <point x="5.6593" y="178" type="line" smooth="yes"/>
+      <point x="-12.024" y="71.8737"/>
+      <point x="58.943" y="-16"/>
+      <point x="176.85" y="-16" type="curve" smooth="yes"/>
+      <point x="284.758" y="-16"/>
+      <point x="365.598" y="57.6021"/>
+      <point x="387.492" y="189" type="curve" smooth="yes"/>
+      <point x="398.656" y="256" type="line" smooth="yes"/>
+      <point x="415.469" y="356.904"/>
+      <point x="355.993" y="453"/>
+      <point x="258.694" y="453" type="curve" smooth="yes"/>
+      <point x="174.206" y="453"/>
+      <point x="105.696" y="380.545"/>
+      <point x="72.98" y="270.315" type="curve"/>
+    </contour>
+    <contour>
+      <point x="299.97" y="720" type="line"/>
+      <point x="133.814" y="473" type="line" smooth="yes"/>
+      <point x="63.485" y="369"/>
+      <point x="23.4881" y="285"/>
+      <point x="11.8244" y="215" type="curve"/>
+      <point x="96.824" y="215" type="line"/>
+      <point x="101.49" y="243"/>
+      <point x="119.686" y="307.756"/>
+      <point x="203.167" y="431.856" type="curve" smooth="yes"/>
+      <point x="369.324" y="678.856" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="350"/>
+  <guideline angle="0" x="0" y="-16"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=20</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=20</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yen" format="2">
+  <advance width="331"/>
+  <unicode hex="00A5"/>
+  <outline>
+    <component base="Y" xOffset="-1.72e-05"/>
+    <contour>
+      <point x="57.1853" y="312" type="line"/>
+      <point x="285.081" y="312" type="line"/>
+      <point x="289.748" y="340" type="line"/>
+      <point x="61.8523" y="340" type="line"/>
+    </contour>
+    <contour>
+      <point x="35.352" y="181" type="line"/>
+      <point x="263.248" y="181" type="line"/>
+      <point x="267.915" y="209" type="line"/>
+      <point x="40.019" y="209" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="360"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>Y</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>Y</string>
+  <key>com.fontlab.recipe</key>
+  <string>Y+equal%</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

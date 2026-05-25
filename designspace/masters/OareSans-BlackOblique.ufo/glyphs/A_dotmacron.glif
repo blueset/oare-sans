@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Adotmacron" format="2">
+  <advance width="566"/>
+  <unicode hex="01E0"/>
+  <anchor x="422" y="0" name="bottom"/>
+  <anchor x="513" y="0" name="ogonek"/>
+  <anchor x="415.667" y="1040" name="top"/>
+  <outline>
+    <component base="A"/>
+    <component base="dotaccentcomb" xOffset="312" yOffset="155"/>
+    <component base="macroncomb" xOffset="352.5" yOffset="391"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=10</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=10</string>
+  <key>com.fontlab.recipe</key>
+  <string>A+dotaccentcomb+macroncomb</string>
+  </dict>
+  </lib>
+</glyph>

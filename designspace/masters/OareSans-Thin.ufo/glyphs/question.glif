@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="question" format="2">
+  <advance width="277"/>
+  <unicode hex="003F"/>
+  <outline>
+    <component base="period" xOffset="55" yOffset="-2"/>
+    <contour>
+      <point x="60" y="538" type="line"/>
+      <point x="60" y="627"/>
+      <point x="88" y="678"/>
+      <point x="138" y="678" type="curve" smooth="yes"/>
+      <point x="181" y="678"/>
+      <point x="212" y="641"/>
+      <point x="212" y="587" type="curve" smooth="yes"/>
+      <point x="212" y="494"/>
+      <point x="123" y="433"/>
+      <point x="123" y="241" type="curve" smooth="yes"/>
+      <point x="123" y="201" type="line"/>
+      <point x="153" y="201" type="line"/>
+      <point x="153" y="241" type="line" smooth="yes"/>
+      <point x="153" y="427"/>
+      <point x="242" y="481"/>
+      <point x="242" y="584" type="curve" smooth="yes"/>
+      <point x="242" y="656"/>
+      <point x="199" y="706"/>
+      <point x="137" y="706" type="curve" smooth="yes"/>
+      <point x="69" y="706"/>
+      <point x="30" y="644"/>
+      <point x="30" y="538" type="curve"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="201"/>
+  <guideline angle="90" x="138" y="0"/>
+  <guideline angle="0" x="0" y="706"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=35</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

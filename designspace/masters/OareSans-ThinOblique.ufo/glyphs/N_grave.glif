@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ngrave" format="2">
+  <advance width="371"/>
+  <unicode hex="01F8"/>
+  <anchor x="150" y="0" name="bottom"/>
+  <anchor x="269.667" y="794" name="top"/>
+  <outline>
+    <component base="N"/>
+    <component base="gravecomb" xOffset="206.5" yOffset="145"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=55</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=55</string>
+  <key>com.fontlab.recipe</key>
+  <string>N+gravecomb</string>
+  </dict>
+  </lib>
+</glyph>

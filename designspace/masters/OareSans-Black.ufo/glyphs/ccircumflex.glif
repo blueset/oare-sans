@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ccircumflex" format="2">
+  <advance width="433"/>
+  <unicode hex="0109"/>
+  <anchor x="222" y="0" name="bottom"/>
+  <anchor x="230" y="668" name="top"/>
+  <outline>
+    <component base="c"/>
+    <component base="circumflexcomb" xOffset="230"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=23</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=-10</string>
+  <key>com.fontlab.recipe</key>
+  <string>c+circumflexcomb</string>
+  </dict>
+  </lib>
+</glyph>

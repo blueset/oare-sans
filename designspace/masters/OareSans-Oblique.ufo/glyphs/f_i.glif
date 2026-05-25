@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="f_i" format="2">
+  <advance width="425"/>
+  <unicode hex="FB01"/>
+  <outline>
+    <component base="dotlessi" xOffset="239"/>
+    <contour>
+      <point x="435.971" y="708" type="line"/>
+      <point x="405.136" y="727"/>
+      <point x="376.469" y="735"/>
+      <point x="340.469" y="735" type="curve" smooth="yes"/>
+      <point x="224.469" y="735"/>
+      <point x="126.473" y="651"/>
+      <point x="109.81" y="551" type="curve" smooth="yes"/>
+      <point x="18" y="0" type="line"/>
+      <point x="103" y="0" type="line"/>
+      <point x="194.81" y="551" type="line" smooth="yes"/>
+      <point x="204.475" y="609"/>
+      <point x="261.139" y="655"/>
+      <point x="328.139" y="655" type="curve" smooth="yes"/>
+      <point x="346.139" y="655"/>
+      <point x="361.639" y="652"/>
+      <point x="385.307" y="638" type="curve"/>
+    </contour>
+    <contour>
+      <point x="58.478" y="525" type="line"/>
+      <point x="45.148" y="445" type="line"/>
+      <point x="283.148" y="445" type="line"/>
+      <point x="296.478" y="525" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>f</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>i</string>
+  <key>com.fontlab.recipe</key>
+  <string>f_i</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

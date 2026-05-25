@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Cacute" format="2">
+  <advance width="466"/>
+  <unicode hex="0106"/>
+  <anchor x="248" y="0" name="bottom"/>
+  <anchor x="242" y="804" name="top"/>
+  <outline>
+    <component base="C"/>
+    <component base="acutecomb" xOffset="242" yOffset="155"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=25</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=-10</string>
+  <key>com.fontlab.recipe</key>
+  <string>C+acutecomb</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

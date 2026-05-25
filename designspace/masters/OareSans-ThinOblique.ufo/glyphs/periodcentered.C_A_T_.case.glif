@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="periodcentered.CAT.case" format="2">
+  <advance width="61"/>
+  <outline>
+    <component base="periodcentered" xOffset="-80"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=-25</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=34</string>
+  <key>com.fontlab.recipe</key>
+  <string>periodcentered</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

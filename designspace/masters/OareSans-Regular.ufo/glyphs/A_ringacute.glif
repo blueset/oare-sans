@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Aringacute" format="2">
+  <advance width="461"/>
+  <unicode hex="01FA"/>
+  <anchor x="410" y="0" name="bottom"/>
+  <anchor x="451" y="0" name="ogonek"/>
+  <anchor x="231" y="969" name="top"/>
+  <outline>
+    <component base="Aring"/>
+    <component base="acutecomb" xOffset="232" yOffset="320"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=10</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=10</string>
+  <key>com.fontlab.recipe</key>
+  <string>Aring+acutecomb</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tildecomb" format="2">
+  <unicode hex="0303"/>
+  <anchor x="2.5" y="525" name="_top"/>
+  <anchor x="2.5" y="631" name="_top.mkmk"/>
+  <anchor x="2.5" y="631" name="top"/>
+  <outline>
+    <contour>
+      <point x="-81" y="602" type="line"/>
+      <point x="-81" y="634.573"/>
+      <point x="-72.0609" y="655.786"/>
+      <point x="-53.915" y="656" type="curve" smooth="yes"/>
+      <point x="-23.354" y="656.36"/>
+      <point x="16.143" y="600"/>
+      <point x="61.58" y="600" type="curve" smooth="yes"/>
+      <point x="93.273" y="600"/>
+      <point x="113" y="627.421"/>
+      <point x="113" y="679" type="curve"/>
+      <point x="86" y="679" type="line"/>
+      <point x="86" y="645.077"/>
+      <point x="75.837" y="625"/>
+      <point x="58.664" y="625" type="curve" smooth="yes"/>
+      <point x="29.808" y="625"/>
+      <point x="-13.536" y="681"/>
+      <point x="-57.309" y="681" type="curve" smooth="yes"/>
+      <point x="-88.0427" y="681"/>
+      <point x="-108" y="653.395"/>
+      <point x="-108" y="602" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.604,0.6,1,1</string>
+  </dict>
+  </lib>
+</glyph>

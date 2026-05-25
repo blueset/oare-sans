@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="j" format="2">
+  <advance width="185"/>
+  <unicode hex="006A"/>
+  <anchor x="50" y="-175" name="bottom"/>
+  <anchor x="92" y="649" name="top"/>
+  <outline>
+    <component base="dotlessj"/>
+    <component base="dotaccentcomb" xOffset="92"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=-67</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>i</string>
+  <key>com.fontlab.recipe</key>
+  <string>dotlessj+dotaccentcomb</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

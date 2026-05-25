@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dollar.through" format="2">
+  <advance width="423"/>
+  <outline>
+    <component base="S"/>
+    <contour>
+      <point x="254" y="-100" type="line"/>
+      <point x="254" y="800" type="line"/>
+      <point x="184" y="800" type="line"/>
+      <point x="184" y="-100" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="800"/>
+  <guideline angle="0" x="0" y="-215"/>
+  <guideline angle="0" x="0" y="-100"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>S</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>S</string>
+  <key>com.fontlab.recipe</key>
+  <string>S+bar%</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

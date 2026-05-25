@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ring" format="2">
+  <advance width="164"/>
+  <unicode hex="02DA"/>
+  <anchor x="149" y="674" name="top"/>
+  <outline>
+    <component base="ringcomb" xOffset="82"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=20</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|</string>
+  <key>com.fontlab.recipe</key>
+  <string>ringcomb</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Kcaron" format="2">
+  <advance width="540"/>
+  <unicode hex="01E8"/>
+  <anchor x="280" y="0" name="bottom"/>
+  <anchor x="280" y="802" name="top"/>
+  <outline>
+    <component base="K"/>
+    <component base="caroncomb" xOffset="280" yOffset="155"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=10</string>
+  <key>com.fontlab.recipe</key>
+  <string>K+caroncomb</string>
+  </dict>
+  </lib>
+</glyph>

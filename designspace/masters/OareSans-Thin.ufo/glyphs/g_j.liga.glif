@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="g_j.liga" format="2">
+  <advance width="517"/>
+  <outline>
+    <component base="g"/>
+    <contour>
+      <point x="336" y="-176" type="line"/>
+      <point x="406" y="-176"/>
+      <point x="451" y="-123"/>
+      <point x="451" y="-41" type="curve" smooth="yes"/>
+      <point x="451" y="525" type="line"/>
+      <point x="421" y="525" type="line"/>
+      <point x="421" y="-41" type="line" smooth="yes"/>
+      <point x="421" y="-109"/>
+      <point x="388" y="-148"/>
+      <point x="336" y="-148" type="curve"/>
+    </contour>
+    <contour>
+      <point x="411" y="644" type="curve" smooth="yes"/>
+      <point x="411" y="628"/>
+      <point x="422" y="618"/>
+      <point x="437" y="618" type="curve" smooth="yes"/>
+      <point x="453" y="618"/>
+      <point x="462" y="628"/>
+      <point x="462" y="644" type="curve" smooth="yes"/>
+      <point x="462" y="658"/>
+      <point x="453" y="668"/>
+      <point x="437" y="668" type="curve" smooth="yes"/>
+      <point x="422" y="668"/>
+      <point x="411" y="658"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="668"/>
+  <guideline angle="0" x="0" y="618"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>g</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>j</string>
+  <key>com.fontlab.recipe</key>
+  <string>g_j</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

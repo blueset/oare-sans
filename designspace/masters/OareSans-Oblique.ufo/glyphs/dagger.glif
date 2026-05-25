@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dagger" format="2">
+  <advance width="363"/>
+  <unicode hex="2020"/>
+  <outline>
+    <contour>
+      <point x="199.978" y="534" type="line"/>
+      <point x="252.978" y="534" type="line"/>
+      <point x="286.638" y="700" type="line"/>
+      <point x="221.638" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="230.31" y="560" type="line"/>
+      <point x="221.479" y="507" type="line"/>
+      <point x="386.479" y="501" type="line"/>
+      <point x="397.31" y="566" type="line"/>
+    </contour>
+    <contour>
+      <point x="253.042" y="534.384" type="line"/>
+      <point x="200.042" y="534.384" type="line"/>
+      <point x="129.211" y="145.304" type="line"/>
+      <point x="194.211" y="145.304" type="line"/>
+    </contour>
+    <contour>
+      <point x="221.646" y="508" type="line"/>
+      <point x="230.477" y="561" type="line"/>
+      <point x="65.4764" y="567" type="line"/>
+      <point x="54.6458" y="502" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="770"/>
+  <guideline angle="0" x="0" y="-215"/>
+  <guideline angle="0" x="0" y="145"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=15</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|</string>
+  <key>com.fontlab.recipe</key>
+  <string>space+bar+hyphen%</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

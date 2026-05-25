@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="asciitilde" format="2">
+  <advance width="493"/>
+  <unicode hex="007E"/>
+  <outline>
+    <contour>
+      <point x="95.6548" y="286" type="line"/>
+      <point x="123.409" y="337.021"/>
+      <point x="148.425" y="362"/>
+      <point x="171.768" y="362" type="curve" smooth="yes"/>
+      <point x="216.318" y="362"/>
+      <point x="261.982" y="271"/>
+      <point x="336.783" y="271" type="curve" smooth="yes"/>
+      <point x="377.581" y="271"/>
+      <point x="412.692" y="298.07"/>
+      <point x="476.317" y="386" type="curve"/>
+      <point x="429.316" y="416" type="line"/>
+      <point x="394.169" y="368.575"/>
+      <point x="361.632" y="341"/>
+      <point x="340.752" y="341" type="curve" smooth="yes"/>
+      <point x="302.819" y="341"/>
+      <point x="254.809" y="432"/>
+      <point x="176.726" y="432" type="curve" smooth="yes"/>
+      <point x="129.166" y="432"/>
+      <point x="90.5855" y="398.241"/>
+      <point x="42.9873" y="306" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=36</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

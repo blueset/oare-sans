@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ecedilla" format="2">
+  <advance width="278"/>
+  <unicode hex="0228"/>
+  <anchor x="153.5" y="670" name="top"/>
+  <anchor x="253" y="0" name="ogonek"/>
+  <anchor x="154" y="-175" name="bottom"/>
+  <outline>
+    <component base="E"/>
+    <component base="cedillacomb" xOffset="153"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=55</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=25</string>
+  <key>com.fontlab.recipe</key>
+  <string>E+cedillacomb</string>
+  </dict>
+  </lib>
+</glyph>

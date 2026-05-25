@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Tcedilla" format="2">
+  <advance width="370"/>
+  <unicode hex="0162"/>
+  <anchor x="185" y="680" name="top"/>
+  <anchor x="185" y="-175" name="bottom"/>
+  <outline>
+    <component base="T"/>
+    <component base="cedillacomb" xOffset="183"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=5</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=5</string>
+  <key>com.fontlab.recipe</key>
+  <string>T+cedillacomb</string>
+  </dict>
+  </lib>
+</glyph>

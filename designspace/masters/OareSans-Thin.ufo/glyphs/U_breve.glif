@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ubreve" format="2">
+  <advance width="365"/>
+  <unicode hex="016C"/>
+  <anchor x="182.5" y="0" name="bottom"/>
+  <anchor x="224" y="0" name="ogonek"/>
+  <anchor x="182.5" y="791" name="top"/>
+  <outline>
+    <component base="U"/>
+    <component base="brevecomb" xOffset="183.5" yOffset="145"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=45</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=45</string>
+  <key>com.fontlab.recipe</key>
+  <string>U+brevecomb</string>
+  </dict>
+  </lib>
+</glyph>

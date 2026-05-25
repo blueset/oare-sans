@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="emdash" format="2">
+  <advance width="701"/>
+  <unicode hex="2014"/>
+  <outline>
+    <contour>
+      <point x="-2.5104" y="249" type="line"/>
+      <point x="697.49" y="249" type="line"/>
+      <point x="710.82" y="329" type="line"/>
+      <point x="10.8196" y="329" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=0</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

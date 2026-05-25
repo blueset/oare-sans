@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="cedilla" format="2">
+  <advance width="290"/>
+  <unicode hex="00B8"/>
+  <anchor x="73" y="-175" name="bottom"/>
+  <outline>
+    <component base="cedillacomb" xOffset="147"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=34</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=34</string>
+  <key>com.fontlab.recipe</key>
+  <string>cedillacomb</string>
+  </dict>
+  </lib>
+</glyph>

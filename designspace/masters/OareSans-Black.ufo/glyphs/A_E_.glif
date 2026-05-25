@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="AE" format="2">
+  <advance width="634"/>
+  <unicode hex="00C6"/>
+  <anchor x="467" y="680" name="top"/>
+  <anchor x="467" y="0" name="bottom"/>
+  <anchor x="623" y="0" name="ogonek"/>
+  <outline>
+    <component base="E" xScale="0.98" xOffset="287"/>
+    <contour>
+      <point x="141" y="122" type="line"/>
+      <point x="431" y="122" type="line"/>
+      <point x="431" y="272" type="line"/>
+      <point x="141" y="272" type="line"/>
+    </contour>
+    <contour>
+      <point x="5" y="0" type="line"/>
+      <point x="190" y="0" type="line"/>
+      <point x="399" y="700" type="line"/>
+      <point x="241" y="700" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>A-5</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>E</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

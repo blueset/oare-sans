@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Germandbls" format="2">
+  <advance width="375"/>
+  <unicode hex="1E9E"/>
+  <outline>
+    <contour>
+      <point x="210" y="-9" type="curve" smooth="yes"/>
+      <point x="301" y="-9"/>
+      <point x="345" y="60"/>
+      <point x="345" y="175" type="curve" smooth="yes"/>
+      <point x="345" y="213" type="line" smooth="yes"/>
+      <point x="345" y="347.201"/>
+      <point x="300.827" y="406.392"/>
+      <point x="188.894" y="415.682" type="curve"/>
+      <point x="322.276" y="672" type="line"/>
+      <point x="328" y="683" type="line"/>
+      <point x="328" y="700" type="line"/>
+      <point x="237" y="700" type="line"/>
+      <point x="237" y="672" type="line"/>
+      <point x="291.63" y="672" type="line"/>
+      <point x="162" y="422" type="line"/>
+      <point x="162" y="416.949" type="line"/>
+      <point x="162" y="387.952" type="line"/>
+      <point x="166.197" y="387.892"/>
+      <point x="170.292" y="387.779"/>
+      <point x="174.285" y="387.608" type="curve" smooth="yes"/>
+      <point x="280.185" y="383.089"/>
+      <point x="315" y="338.662"/>
+      <point x="315" y="213" type="curve" smooth="yes"/>
+      <point x="315" y="176" type="line" smooth="yes"/>
+      <point x="315" y="76"/>
+      <point x="283" y="19"/>
+      <point x="208" y="19" type="curve" smooth="yes"/>
+      <point x="170.826" y="19"/>
+      <point x="140.039" y="33.0035"/>
+      <point x="118.441" y="60.8888" type="curve"/>
+      <point x="100.325" y="39.2969" type="line"/>
+      <point x="127.502" y="7.8771"/>
+      <point x="165.283" y="-9"/>
+    </contour>
+    <contour>
+      <point x="285" y="700" type="line"/>
+      <point x="204" y="700" type="line" smooth="yes"/>
+      <point x="98" y="700"/>
+      <point x="30" y="616"/>
+      <point x="30" y="486" type="curve" smooth="yes"/>
+      <point x="30" y="0" type="line"/>
+      <point x="60" y="0" type="line"/>
+      <point x="60" y="486" type="line" smooth="yes"/>
+      <point x="60" y="598"/>
+      <point x="113" y="672"/>
+      <point x="204" y="672" type="curve" smooth="yes"/>
+      <point x="285" y="672" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="350"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>S</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>three </string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

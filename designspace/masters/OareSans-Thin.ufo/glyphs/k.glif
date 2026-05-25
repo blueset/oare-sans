@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="k" format="2">
+  <advance width="327"/>
+  <unicode hex="006B"/>
+  <anchor x="181" y="0" name="bottom"/>
+  <anchor x="70" y="735" name="top"/>
+  <outline>
+    <contour>
+      <point x="55" y="0" type="line"/>
+      <point x="85" y="0" type="line"/>
+      <point x="85" y="735" type="line"/>
+      <point x="55" y="735" type="line"/>
+    </contour>
+    <contour>
+      <point x="274" y="0" type="line"/>
+      <point x="307" y="0" type="line"/>
+      <point x="190" y="335.25" type="line"/>
+      <point x="157" y="335.25" type="line"/>
+    </contour>
+    <contour>
+      <point x="55" y="143.25" type="line"/>
+      <point x="85" y="143.25" type="line"/>
+      <point x="177" y="316.5" type="line"/>
+      <point x="182" y="321" type="line"/>
+      <point x="294" y="525" type="line"/>
+      <point x="258" y="525" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="90" x="-708" y="0"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>l</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=20</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

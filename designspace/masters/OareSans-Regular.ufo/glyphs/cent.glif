@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="cent" format="2">
+  <advance width="374"/>
+  <unicode hex="00A2"/>
+  <outline>
+    <component base="c" yOffset="86"/>
+    <contour>
+      <point x="164" y="700" type="line"/>
+      <point x="164" y="568" type="line"/>
+      <point x="234" y="568" type="line"/>
+      <point x="234" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="164" y="113" type="line"/>
+      <point x="164" y="0" type="line"/>
+      <point x="234" y="0" type="line"/>
+      <point x="234" y="113" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="725"/>
+  <guideline angle="0" x="0" y="-100"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>c</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>c</string>
+  <key>com.fontlab.recipe</key>
+  <string>c+bar%</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

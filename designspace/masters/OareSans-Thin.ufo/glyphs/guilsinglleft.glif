@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="guilsinglleft" format="2">
+  <advance width="204"/>
+  <unicode hex="2039"/>
+  <outline>
+    <contour>
+      <point x="30.02" y="328.99" type="line"/>
+      <point x="130" y="135.96" type="line"/>
+      <point x="164" y="135.96" type="line"/>
+      <point x="64.02" y="328.99" type="line"/>
+      <point x="164" y="522.03" type="line"/>
+      <point x="130" y="522.03" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=40</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="J.ss01" format="2">
+  <advance width="218"/>
+  <outline>
+    <contour>
+      <point x="-35" y="-6" type="line"/>
+      <point x="-17" y="-6" type="line" smooth="yes"/>
+      <point x="70" y="-6"/>
+      <point x="137.833" y="59"/>
+      <point x="154.333" y="158" type="curve" smooth="yes"/>
+      <point x="244.667" y="700" type="line"/>
+      <point x="214.667" y="700" type="line"/>
+      <point x="124.333" y="158" type="line" smooth="yes"/>
+      <point x="110.5" y="75"/>
+      <point x="57.6667" y="22"/>
+      <point x="-12.3333" y="22" type="curve" smooth="yes"/>
+      <point x="-30.3333" y="22" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=10</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>O</string>
+  <key>com.fontlab.recipe</key>
+  <string>J</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="endash" format="2">
+  <advance width="411"/>
+  <unicode hex="2013"/>
+  <outline>
+    <contour>
+      <point x="31.8333" y="275" type="line"/>
+      <point x="381.833" y="275" type="line"/>
+      <point x="386.5" y="303" type="line"/>
+      <point x="36.5" y="303" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>hyphen-10</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

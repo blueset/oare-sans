@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="underscore" format="2">
+  <advance width="441"/>
+  <unicode hex="005F"/>
+  <outline>
+    <contour>
+      <point x="-69.6667" y="-148" type="line"/>
+      <point x="370.333" y="-148" type="line"/>
+      <point x="393.667" y="-8" type="line"/>
+      <point x="-46.3333" y="-8" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=0</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

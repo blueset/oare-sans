@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="icaron" format="2">
+  <advance width="235"/>
+  <unicode hex="01D0"/>
+  <anchor x="117.5" y="0" name="bottom"/>
+  <anchor x="205" y="0" name="ogonek"/>
+  <anchor x="117.5" y="647" name="top"/>
+  <outline>
+    <component base="dotlessi"/>
+    <component base="caroncomb" xOffset="117.5"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=30</string>
+  <key>com.fontlab.recipe</key>
+  <string>dotlessi+caroncomb</string>
+  </dict>
+  </lib>
+</glyph>

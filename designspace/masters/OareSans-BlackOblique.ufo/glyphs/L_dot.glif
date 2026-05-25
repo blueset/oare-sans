@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ldot" format="2">
+  <advance width="462"/>
+  <unicode hex="013F"/>
+  <anchor x="186.333" y="680" name="top"/>
+  <anchor x="153.252" y="0" name="bottom"/>
+  <anchor x="277.667" y="700" name="caronapos"/>
+  <outline>
+    <component base="L"/>
+    <component base="periodcentered.CAT.case" xOffset="349"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.recipe</key>
+  <string>L_periodcentered.CAT.case</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

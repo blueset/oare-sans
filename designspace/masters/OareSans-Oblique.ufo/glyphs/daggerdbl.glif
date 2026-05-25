@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="daggerdbl" format="2">
+  <advance width="363"/>
+  <unicode hex="2021"/>
+  <outline>
+    <contour>
+      <point x="205.142" y="564.994" type="line"/>
+      <point x="258.142" y="564.994" type="line"/>
+      <point x="286.622" y="699.907" type="line"/>
+      <point x="221.622" y="699.907" type="line"/>
+    </contour>
+    <contour>
+      <point x="234.142" y="583" type="line"/>
+      <point x="225.311" y="530" type="line"/>
+      <point x="390.312" y="524" type="line"/>
+      <point x="401.142" y="589" type="line"/>
+    </contour>
+    <contour>
+      <point x="225.478" y="531" type="line"/>
+      <point x="234.309" y="584" type="line"/>
+      <point x="69.3088" y="590" type="line"/>
+      <point x="58.4781" y="525" type="line"/>
+    </contour>
+    <contour>
+      <point x="258.16" y="565.101" type="line"/>
+      <point x="205.16" y="565.101" type="line"/>
+      <point x="177.1" y="432.705" type="line"/>
+      <point x="242.1" y="432.705" type="line"/>
+    </contour>
+    <contour>
+      <point x="161.021" y="300.2" type="line"/>
+      <point x="214.021" y="300.2" type="line"/>
+      <point x="242.149" y="433" type="line"/>
+      <point x="177.149" y="433" type="line"/>
+    </contour>
+    <contour>
+      <point x="193.319" y="338" type="line"/>
+      <point x="184.488" y="285" type="line"/>
+      <point x="349.488" y="279" type="line"/>
+      <point x="360.319" y="344" type="line"/>
+    </contour>
+    <contour>
+      <point x="184.655" y="286" type="line"/>
+      <point x="193.486" y="339" type="line"/>
+      <point x="28.4857" y="345" type="line"/>
+      <point x="17.655" y="280" type="line"/>
+    </contour>
+    <contour>
+      <point x="213.945" y="299.742" type="line"/>
+      <point x="160.945" y="299.742" type="line"/>
+      <point x="129.084" y="144.542" type="line"/>
+      <point x="194.084" y="144.542" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="145"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>dagger</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>dagger</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

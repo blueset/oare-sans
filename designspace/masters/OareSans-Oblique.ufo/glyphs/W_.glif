@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="W" format="2">
+  <advance width="661"/>
+  <unicode hex="0057"/>
+  <anchor x="400" y="670" name="top"/>
+  <anchor x="282" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="92" y="0" type="line"/>
+      <point x="168" y="0" type="line"/>
+      <point x="168.165" y="37" type="line"/>
+      <point x="177.637" y="700" type="line"/>
+      <point x="92.637" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="196" y="0" type="line"/>
+      <point x="424.639" y="670" type="line"/>
+      <point x="431.637" y="700" type="line"/>
+      <point x="357.637" y="700" type="line"/>
+      <point x="126.165" y="37" type="line"/>
+      <point x="113" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="480" y="0" type="line"/>
+      <point x="712.638" y="700" type="line"/>
+      <point x="623.638" y="700" type="line"/>
+      <point x="412.165" y="37" type="line"/>
+      <point x="400" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="376" y="0" type="line"/>
+      <point x="455" y="0" type="line"/>
+      <point x="454.165" y="37" type="line"/>
+      <point x="443.637" y="700" type="line"/>
+      <point x="369.637" y="700" type="line"/>
+      <point x="370.639" y="670" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>O-25</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>|W</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

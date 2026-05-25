@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Odotaccent" format="2">
+  <advance width="511"/>
+  <unicode hex="022E"/>
+  <anchor x="213" y="0" name="bottom"/>
+  <anchor x="310" y="0" name="ogonek"/>
+  <anchor x="355" y="916" name="top"/>
+  <outline>
+    <component base="O"/>
+    <component base="dotaccentcomb" xOffset="272" yOffset="155"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=25</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=25</string>
+  <key>com.fontlab.recipe</key>
+  <string>O+dotaccentcomb</string>
+  </dict>
+  </lib>
+</glyph>

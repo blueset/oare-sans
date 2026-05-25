@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="udieresisgrave" format="2">
+  <advance width="500"/>
+  <unicode hex="01DC"/>
+  <anchor x="250" y="0" name="bottom"/>
+  <anchor x="469" y="0" name="ogonek"/>
+  <anchor x="250" y="804" name="top"/>
+  <outline>
+    <component base="udieresis"/>
+    <component base="gravecomb" xOffset="250" yOffset="155"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=30</string>
+  <key>com.fontlab.recipe</key>
+  <string>udieresis+gravecomb</string>
+  </dict>
+  </lib>
+</glyph>

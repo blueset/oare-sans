@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="trademark" format="2">
+  <advance width="440"/>
+  <unicode hex="2122"/>
+  <outline>
+    <contour>
+      <point x="83" y="370" type="line"/>
+      <point x="113" y="370" type="line"/>
+      <point x="113" y="700" type="line"/>
+      <point x="83" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="31" y="672" type="line"/>
+      <point x="164" y="672" type="line"/>
+      <point x="164" y="700" type="line"/>
+      <point x="31" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="223" y="370" type="line"/>
+      <point x="253" y="370" type="line"/>
+      <point x="253" y="655" type="line"/>
+      <point x="239" y="700" type="line"/>
+      <point x="223" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="369" y="370" type="line"/>
+      <point x="399" y="370" type="line"/>
+      <point x="399" y="700" type="line"/>
+      <point x="383" y="700" type="line"/>
+      <point x="369" y="655" type="line"/>
+    </contour>
+    <contour>
+      <point x="301" y="370" type="line"/>
+      <point x="312" y="370" type="line"/>
+      <point x="320" y="403" type="line"/>
+      <point x="244" y="700" type="line"/>
+      <point x="229" y="700" type="line"/>
+      <point x="229" y="661" type="line"/>
+    </contour>
+    <contour>
+      <point x="318" y="370" type="line"/>
+      <point x="394" y="676" type="line"/>
+      <point x="394" y="700" type="line"/>
+      <point x="375" y="700" type="line"/>
+      <point x="299" y="403" type="line"/>
+      <point x="307" y="370" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="370"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=31</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=41</string>
+  <key>com.fontlab.recipe</key>
+  <string>T_M%</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

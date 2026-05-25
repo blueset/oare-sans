@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Z" format="2">
+  <advance width="381"/>
+  <unicode hex="005A"/>
+  <anchor x="267" y="670" name="top"/>
+  <anchor x="151" y="0" name="bottom"/>
+  <anchor x="316" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="-24" y="0" type="line"/>
+      <point x="316" y="0" type="line"/>
+      <point x="329.33" y="80" type="line"/>
+      <point x="96.6403" y="80" type="line"/>
+      <point x="410.997" y="620" type="line"/>
+      <point x="422.64" y="640" type="line"/>
+      <point x="432.638" y="700" type="line"/>
+      <point x="92.6375" y="700" type="line"/>
+      <point x="79.3075" y="620" type="line"/>
+      <point x="311.997" y="620" type="line"/>
+      <point x="-2.35965" y="80" type="line"/>
+      <point x="-14.0025" y="60" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>A+10</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>V+10</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

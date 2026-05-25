@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="E" format="2">
+  <advance width="354"/>
+  <unicode hex="0045"/>
+  <anchor x="186.61" y="680" name="top"/>
+  <anchor x="186.61" y="0" name="bottom"/>
+  <anchor x="343" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="30" y="0" type="line"/>
+      <point x="343.22" y="0" type="line"/>
+      <point x="343.22" y="160" type="line"/>
+      <point x="190" y="160" type="line"/>
+      <point x="205" y="145" type="line"/>
+      <point x="205" y="293" type="line"/>
+      <point x="190" y="278" type="line"/>
+      <point x="319.73" y="278" type="line"/>
+      <point x="319.73" y="438" type="line"/>
+      <point x="190" y="438" type="line"/>
+      <point x="205" y="423" type="line"/>
+      <point x="205" y="555" type="line"/>
+      <point x="190" y="540" type="line"/>
+      <point x="343.22" y="540" type="line"/>
+      <point x="343.22" y="700" type="line"/>
+      <point x="30" y="700" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="438"/>
+  <guideline angle="0" x="0" y="278"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>B</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=10</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

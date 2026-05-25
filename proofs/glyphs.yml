@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=./schema.json
+version: '1.0'
+page_settings:
+  preset: letter
+fonts:
+- path: "..\\fonts\\variable\\OareSans-Regular-VF.ttf"
+  face_index: 0
+sections:
+- name: Glyph Grid wght=100,250,400,700,900; slnt=0,-5,-10
+  layout:
+    type: GlyphGrid
+    mode: Compact
+    show_metrics: true
+    show_names: true
+    cell_padding: 4.0
+    subgrid_x:
+      axis: wght
+      values: [100, 250, 400, 700, 900]
+    subgrid_y:
+      axis: slnt
+      values: [0, -5, -10]
+  content: { type: AllGlyphs }
+  design_attrs:
+    font_size: 40.0
+  font_indices: [0]

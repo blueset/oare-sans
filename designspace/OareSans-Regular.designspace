@@ -1,0 +1,835 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="4.0">
+ <axes>
+  <axis maximum="900" default="400" minimum="100" name="weight" tag="wght">
+   <labelname xml:lang="en">Weight</labelname>
+   <map output="100" input="100"/>
+   <map output="400" input="400"/>
+   <map output="900" input="900"/>
+  </axis>
+  <axis maximum="0" default="0" minimum="-10" name="slant" tag="slnt">
+   <labelname xml:lang="en">Slant</labelname>
+  </axis>
+ </axes>
+ <sources>
+  <source familyname="Oare Sans" filename="masters/OareSans-Black.ufo" stylename="Black" name="Black">
+   <location>
+    <dimension name="weight" xvalue="900"/>
+    <dimension name="slant" xvalue="0"/>
+   </location>
+  </source>
+  <source familyname="Oare Sans" filename="masters/OareSans-BlackOblique.ufo" stylename="Black Oblique" name="Black Oblique">
+   <location>
+    <dimension name="weight" xvalue="900"/>
+    <dimension name="slant" xvalue="-10"/>
+   </location>
+  </source>
+  <source familyname="Oare Sans" filename="masters/OareSans-Bold.ufo" stylename="Black Oblique" name="Bold">
+   <location>
+    <dimension name="weight" xvalue="700"/>
+    <dimension name="slant" xvalue="0"/>
+   </location>
+  </source>
+  <source familyname="Oare Sans" filename="masters/OareSans-Oblique.ufo" stylename="Oblique" name="Oblique">
+   <location>
+    <dimension name="weight" xvalue="400"/>
+    <dimension name="slant" xvalue="-10"/>
+   </location>
+  </source>
+  <source familyname="Oare Sans" filename="masters/OareSans-Regular.ufo" stylename="" name="Regular">
+   <lib copy="1"/>
+   <groups copy="1"/>
+   <info copy="1"/>
+   <features copy="1"/>
+   <location>
+    <dimension name="weight" xvalue="400"/>
+    <dimension name="slant" xvalue="0"/>
+   </location>
+  </source>
+  <source familyname="Oare Sans" filename="masters/OareSans-Thin.ufo" stylename="Thin" name="Thin">
+   <location>
+    <dimension name="weight" xvalue="100"/>
+    <dimension name="slant" xvalue="0"/>
+   </location>
+  </source>
+  <source familyname="Oare Sans" filename="masters/OareSans-ThinOblique.ufo" stylename="Thin Oblique" name="Thin Oblique">
+   <location>
+    <dimension name="weight" xvalue="100"/>
+    <dimension name="slant" xvalue="-10"/>
+   </location>
+  </source>
+ </sources>
+ <lib>
+  <dict>
+   <key>public.skipExportGlyphs</key>
+   <array>
+    <string>f._narrow</string>
+   </array>
+   <key>studio.1a23.flavors.defaultVF</key>
+   <dict>
+    <key>stat</key>
+    <dict>
+     <key>axis_names</key>
+     <dict>
+      <key>slnt</key>
+      <string>Slant</string>
+      <key>wght</key>
+      <string>Weight</string>
+     </dict>
+     <key>axis_order</key>
+     <array>
+      <string>wght</string>
+      <string>slnt</string>
+     </array>
+     <key>axis_value_names</key>
+     <dict>
+      <key>slnt</key>
+      <dict>
+       <key>-10</key>
+       <string>Oblique</string>
+       <key>0</key>
+       <string>Regular</string>
+      </dict>
+      <key>wght</key>
+      <dict>
+       <key>100</key>
+       <string>Thin</string>
+       <key>200</key>
+       <string>ExtraLight</string>
+       <key>300</key>
+       <string>Light</string>
+       <key>400</key>
+       <string>Regular</string>
+       <key>500</key>
+       <string>Medium</string>
+       <key>600</key>
+       <string>SemiBold</string>
+       <key>700</key>
+       <string>Bold</string>
+       <key>800</key>
+       <string>ExtraBold</string>
+       <key>900</key>
+       <string>Black</string>
+      </dict>
+     </dict>
+     <key>elided_fallback_name</key>
+     <real>2</real>
+     <key>elided_values</key>
+     <dict>
+      <key>slnt</key>
+      <array>
+       <real>0</real>
+      </array>
+      <key>wght</key>
+      <array>
+       <real>400</real>
+      </array>
+     </dict>
+     <key>linked_values</key>
+     <dict>
+      <key>slnt</key>
+      <dict>
+       <key>0</key>
+       <real>-10</real>
+      </dict>
+      <key>wght</key>
+      <dict>
+       <key>400</key>
+       <real>700</real>
+      </dict>
+     </dict>
+    </dict>
+   </dict>
+   <key>studio.1a23.flavors.googleFont</key>
+   <dict>
+    <key>enabled</key>
+    <true/>
+    <key>fvar_instances</key>
+    <array>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>100</real>
+      </dict>
+      <key>name</key>
+      <string>Thin</string>
+      <key>postscript_name</key>
+      <string>OareSans-Thin</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>100</real>
+      </dict>
+      <key>name</key>
+      <string>Thin Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-ThinItalic</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>200</real>
+      </dict>
+      <key>name</key>
+      <string>ExtraLight</string>
+      <key>postscript_name</key>
+      <string>OareSans-ExtraLight</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>200</real>
+      </dict>
+      <key>name</key>
+      <string>ExtraLight Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-ExtraLightItalic</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>300</real>
+      </dict>
+      <key>name</key>
+      <string>Light</string>
+      <key>postscript_name</key>
+      <string>OareSans-Light</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>300</real>
+      </dict>
+      <key>name</key>
+      <string>Light Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-LightItalic</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>400</real>
+      </dict>
+      <key>name</key>
+      <string>Regular</string>
+      <key>postscript_name</key>
+      <string>OareSans-Regular</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>400</real>
+      </dict>
+      <key>name</key>
+      <string>Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-Italic</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>500</real>
+      </dict>
+      <key>name</key>
+      <string>Medium</string>
+      <key>postscript_name</key>
+      <string>OareSans-Medium</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>500</real>
+      </dict>
+      <key>name</key>
+      <string>Medium Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-MediumItalic</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>600</real>
+      </dict>
+      <key>name</key>
+      <string>SemiBold</string>
+      <key>postscript_name</key>
+      <string>OareSans-SemiBold</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>600</real>
+      </dict>
+      <key>name</key>
+      <string>SemiBold Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-SemiBoldItalic</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>700</real>
+      </dict>
+      <key>name</key>
+      <string>Bold</string>
+      <key>postscript_name</key>
+      <string>OareSans-Bold</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>700</real>
+      </dict>
+      <key>name</key>
+      <string>Bold Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-BoldItalic</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>800</real>
+      </dict>
+      <key>name</key>
+      <string>ExtraBold</string>
+      <key>postscript_name</key>
+      <string>OareSans-ExtraBold</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>800</real>
+      </dict>
+      <key>name</key>
+      <string>ExtraBold Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-ExtraBoldItalic</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>0</real>
+       <key>wght</key>
+       <real>900</real>
+      </dict>
+      <key>name</key>
+      <string>Black</string>
+      <key>postscript_name</key>
+      <string>OareSans-Black</string>
+     </dict>
+     <dict>
+      <key>coordinates</key>
+      <dict>
+       <key>slnt</key>
+       <real>-10</real>
+       <key>wght</key>
+       <real>900</real>
+      </dict>
+      <key>name</key>
+      <string>Black Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-BlackItalic</string>
+     </dict>
+    </array>
+    <key>instances</key>
+    <dict>
+     <key>Black</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-Black</string>
+      <key>style_name</key>
+      <string>Black</string>
+     </dict>
+     <key>Black Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>Black Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-BlackItalic</string>
+      <key>style_name</key>
+      <string>Black Italic</string>
+     </dict>
+     <key>Bold</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-Bold</string>
+      <key>style_name</key>
+      <string>Bold</string>
+     </dict>
+     <key>Bold Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>Bold Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-BoldItalic</string>
+      <key>style_name</key>
+      <string>Bold Italic</string>
+     </dict>
+     <key>ExtraBold</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-ExtraBold</string>
+      <key>style_name</key>
+      <string>ExtraBold</string>
+     </dict>
+     <key>ExtraBold Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>ExtraBold Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-ExtraBoldItalic</string>
+      <key>style_name</key>
+      <string>ExtraBold Italic</string>
+     </dict>
+     <key>ExtraLight</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-ExtraLight</string>
+      <key>style_name</key>
+      <string>ExtraLight</string>
+     </dict>
+     <key>ExtraLight Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>ExtraLight Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-ExtraLightItalic</string>
+      <key>style_name</key>
+      <string>ExtraLight Italic</string>
+     </dict>
+     <key>Light</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-Light</string>
+      <key>style_name</key>
+      <string>Light</string>
+     </dict>
+     <key>Light Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>Light Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-LightItalic</string>
+      <key>style_name</key>
+      <string>Light Italic</string>
+     </dict>
+     <key>Medium</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-Medium</string>
+      <key>style_name</key>
+      <string>Medium</string>
+     </dict>
+     <key>Medium Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>Medium Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-MediumItalic</string>
+      <key>style_name</key>
+      <string>Medium Italic</string>
+     </dict>
+     <key>Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-Italic</string>
+      <key>style_name</key>
+      <string>Italic</string>
+     </dict>
+     <key>Regular</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-Regular</string>
+      <key>style_name</key>
+      <string>Regular</string>
+     </dict>
+     <key>SemiBold</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-SemiBold</string>
+      <key>style_name</key>
+      <string>SemiBold</string>
+     </dict>
+     <key>SemiBold Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>SemiBold Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-SemiBoldItalic</string>
+      <key>style_name</key>
+      <string>SemiBold Italic</string>
+     </dict>
+     <key>Thin</key>
+     <dict>
+      <key>postscript_name</key>
+      <string>OareSans-Thin</string>
+      <key>style_name</key>
+      <string>Thin</string>
+     </dict>
+     <key>Thin Oblique</key>
+     <dict>
+      <key>name</key>
+      <string>Thin Italic</string>
+      <key>postscript_name</key>
+      <string>OareSans-ThinItalic</string>
+      <key>style_name</key>
+      <string>Thin Italic</string>
+     </dict>
+    </dict>
+    <key>meta</key>
+    <dict>
+     <key>dlng</key>
+     <string>Latn</string>
+     <key>slng</key>
+     <string>Latn</string>
+    </dict>
+    <key>output_file</key>
+    <string>OareSans[slnt,wght].ttf</string>
+    <key>public_font_info</key>
+    <dict>
+     <key>copyright</key>
+     <string>Copyright 2026 The Oare Sans Project Authors (https://github.com/blueset/OareSans)</string>
+     <key>familyName</key>
+     <string>Oare Sans</string>
+     <key>openTypeHheaAscender</key>
+     <real>1020</real>
+     <key>openTypeHheaDescender</key>
+     <real>-250</real>
+     <key>openTypeHheaLineGap</key>
+     <real>0</real>
+     <key>openTypeNameLicense</key>
+     <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL</string>
+     <key>openTypeNameRecords</key>
+     <array>
+      <dict>
+       <key>encodingID</key>
+       <real>1</real>
+       <key>languageID</key>
+       <real>1033</real>
+       <key>nameID</key>
+       <real>25</real>
+       <key>platformID</key>
+       <real>3</real>
+       <key>string</key>
+       <string>OareSans</string>
+      </dict>
+     </array>
+     <key>openTypeOS2Selection</key>
+     <array>
+      <real>7</real>
+     </array>
+     <key>openTypeOS2TypoAscender</key>
+     <real>1020</real>
+     <key>openTypeOS2TypoDescender</key>
+     <real>-250</real>
+     <key>openTypeOS2TypoLineGap</key>
+     <real>0</real>
+     <key>openTypeOS2WinAscent</key>
+     <real>1020</real>
+     <key>openTypeOS2WinDescent</key>
+     <real>250</real>
+     <key>postscriptFontName</key>
+     <string>OareSans-Regular</string>
+     <key>styleMapFamilyName</key>
+     <string>Oare Sans</string>
+     <key>styleMapStyleName</key>
+     <string>regular</string>
+     <key>styleName</key>
+     <string>Regular</string>
+     <key>versionMajor</key>
+     <real>1</real>
+     <key>versionMinor</key>
+     <real>1</real>
+    </dict>
+    <key>remove_name_ids</key>
+    <array>
+     <real>16</real>
+     <real>17</real>
+    </array>
+    <key>sort_output_axis_tags</key>
+    <true/>
+    <key>stat</key>
+    <dict>
+     <key>axes</key>
+     <array>
+      <dict>
+       <key>name</key>
+       <string>Slant</string>
+       <key>ordering</key>
+       <real>0</real>
+       <key>tag</key>
+       <string>slnt</string>
+       <key>values</key>
+       <array>
+        <dict>
+         <key>flags</key>
+         <real>2</real>
+         <key>name</key>
+         <string>Default</string>
+         <key>value</key>
+         <real>0</real>
+        </dict>
+       </array>
+      </dict>
+      <dict>
+       <key>name</key>
+       <string>Weight</string>
+       <key>ordering</key>
+       <real>1</real>
+       <key>tag</key>
+       <string>wght</string>
+       <key>values</key>
+       <array>
+        <dict>
+         <key>name</key>
+         <string>Thin</string>
+         <key>value</key>
+         <real>100</real>
+        </dict>
+        <dict>
+         <key>name</key>
+         <string>ExtraLight</string>
+         <key>value</key>
+         <real>200</real>
+        </dict>
+        <dict>
+         <key>name</key>
+         <string>Light</string>
+         <key>value</key>
+         <real>300</real>
+        </dict>
+        <dict>
+         <key>flags</key>
+         <real>2</real>
+         <key>linkedValue</key>
+         <real>700</real>
+         <key>name</key>
+         <string>Regular</string>
+         <key>value</key>
+         <real>400</real>
+        </dict>
+        <dict>
+         <key>name</key>
+         <string>Medium</string>
+         <key>value</key>
+         <real>500</real>
+        </dict>
+        <dict>
+         <key>name</key>
+         <string>SemiBold</string>
+         <key>value</key>
+         <real>600</real>
+        </dict>
+        <dict>
+         <key>name</key>
+         <string>Bold</string>
+         <key>value</key>
+         <real>700</real>
+        </dict>
+        <dict>
+         <key>name</key>
+         <string>ExtraBold</string>
+         <key>value</key>
+         <real>800</real>
+        </dict>
+        <dict>
+         <key>name</key>
+         <string>Black</string>
+         <key>value</key>
+         <real>900</real>
+        </dict>
+       </array>
+      </dict>
+     </array>
+     <key>axis_names</key>
+     <dict>
+      <key>slnt</key>
+      <string>Slant</string>
+      <key>wght</key>
+      <string>Weight</string>
+     </dict>
+     <key>axis_value_names</key>
+     <dict>
+      <key>Regular</key>
+      <string>Regular</string>
+      <key>wght:Thin</key>
+      <string>Thin</string>
+     </dict>
+     <key>elided_fallback_name</key>
+     <real>2</real>
+    </dict>
+   </dict>
+  </dict>
+ </lib>
+ <instances>
+  <instance familyname="Oare Sans" filename="instances/OareSans-Thin.ufo" stylename="Thin" name="Thin">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="100"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-ThinOblique.ufo" stylename="Thin Oblique" name="ThinOblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="100"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraLight.ufo" stylename="ExtraLight" name="ExtraLight">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="200"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraLightOblique.ufo" stylename="ExtraLight Oblique" name="ExtraLightOblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="200"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-Light.ufo" stylename="Light" name="Light">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="300"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-LightOblique.ufo" stylename="Light Oblique" name="LightOblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="300"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-Regular.ufo" stylename="Regular" name="Regular">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="400"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-Oblique.ufo" stylename="Oblique" name="Oblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="400"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-Medium.ufo" stylename="Medium" name="Medium">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="500"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-MediumOblique.ufo" stylename="Medium Oblique" name="MediumOblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="500"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-SemiBold.ufo" stylename="SemiBold" name="SemiBold">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="600"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-SemiBoldOblique.ufo" stylename="SemiBold Oblique" name="SemiBoldOblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="600"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-Bold.ufo" stylename="Bold" name="Bold">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="700"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-BoldOblique.ufo" stylename="Bold Oblique" name="BoldOblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="700"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraBold.ufo" stylename="ExtraBold" name="ExtraBold">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="800"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraBoldOblique.ufo" stylename="ExtraBold Oblique" name="ExtraBoldOblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="800"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-Black.ufo" stylename="Black" name="Black">
+   <location>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="900"/>
+   </location>
+  </instance>
+  <instance familyname="Oare Sans" filename="instances/OareSans-BlackOblique.ufo" stylename="Black Oblique" name="BlackOblique">
+   <location>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="900"/>
+   </location>
+  </instance>
+ </instances>
+ <rules>
+  <rule>
+   <sub with="dollar.through" name="dollar"/>
+   <sub with="cent.through" name="cent"/>
+   <conditionset>
+    <condition maximum="300" name="weight"/>
+   </conditionset>
+  </rule>
+ </rules>
+</designspace>

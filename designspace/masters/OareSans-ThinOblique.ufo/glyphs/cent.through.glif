@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="cent.through" format="2">
+  <advance width="321"/>
+  <outline>
+    <component base="c" xOffset="4.33333" yOffset="86"/>
+    <contour>
+      <point x="221.667" y="700" type="line"/>
+      <point x="105" y="0" type="line"/>
+      <point x="132" y="0" type="line"/>
+      <point x="248.667" y="700" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=35</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=30</string>
+  <key>com.fontlab.recipe</key>
+  <string>cent</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

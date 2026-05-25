@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="f.ligaLeft" format="2">
+  <advance width="240"/>
+  <outline>
+    <contour>
+      <point x="287" y="735" type="line"/>
+      <point x="246" y="735" type="line" smooth="yes"/>
+      <point x="146" y="735"/>
+      <point x="62" y="651"/>
+      <point x="62" y="551" type="curve" smooth="yes"/>
+      <point x="62" y="0" type="line"/>
+      <point x="147" y="0" type="line"/>
+      <point x="147" y="551" type="line" smooth="yes"/>
+      <point x="147" y="608"/>
+      <point x="193" y="655"/>
+      <point x="246" y="655" type="curve" smooth="yes"/>
+      <point x="287" y="655" type="line"/>
+    </contour>
+    <contour>
+      <point x="15" y="525" type="line"/>
+      <point x="15" y="445" type="line"/>
+      <point x="300" y="445" type="line"/>
+      <point x="300" y="525" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=15</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=-60</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

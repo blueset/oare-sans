@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="oslash" format="2">
+  <advance width="446"/>
+  <unicode hex="00F8"/>
+  <anchor x="185" y="0" name="bottom"/>
+  <anchor x="222.24" y="525" name="top"/>
+  <anchor x="261" y="0" name="ogonek"/>
+  <outline>
+    <component base="o"/>
+    <contour>
+      <point x="398.314" y="464" type="line"/>
+      <point x="451.478" y="537" type="line"/>
+      <point x="387.478" y="537" type="line"/>
+      <point x="334.314" y="464" type="line"/>
+    </contour>
+    <contour>
+      <point x="336.314" y="464" type="line"/>
+      <point x="50.3305" y="68" type="line"/>
+      <point x="109.331" y="68" type="line"/>
+      <point x="395.314" y="464" type="line"/>
+    </contour>
+    <contour>
+      <point x="48.3305" y="68" type="line"/>
+      <point x="-10" y="-12" type="line"/>
+      <point x="54" y="-12" type="line"/>
+      <point x="112.33" y="68" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="90" x="35" y="0"/>
+  <guideline angle="90" x="410" y="0"/>
+  <guideline angle="90" x="410" y="0"/>
+  <guideline angle="0" x="0" y="-12"/>
+  <guideline angle="0" x="0" y="537"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>o</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>o</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="f_t" format="2">
+  <advance width="430"/>
+  <outline>
+    <component base="t" xOffset="177"/>
+    <contour>
+      <point x="221" y="735" type="line"/>
+      <point x="124" y="735"/>
+      <point x="72" y="669"/>
+      <point x="72" y="551" type="curve" smooth="yes"/>
+      <point x="72" y="0" type="line"/>
+      <point x="102" y="0" type="line"/>
+      <point x="102" y="551" type="line" smooth="yes"/>
+      <point x="102" y="649"/>
+      <point x="145" y="707"/>
+      <point x="221" y="707" type="curve"/>
+    </contour>
+    <contour>
+      <point x="25" y="525" type="line"/>
+      <point x="25" y="497" type="line"/>
+      <point x="258" y="497" type="line"/>
+      <point x="258" y="525" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>f</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>t</string>
+  <key>com.fontlab.recipe</key>
+  <string>f_t</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

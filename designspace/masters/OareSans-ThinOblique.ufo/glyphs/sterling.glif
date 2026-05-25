@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sterling" format="2">
+  <advance width="318"/>
+  <unicode hex="00A3"/>
+  <outline>
+    <contour>
+      <point x="-4" y="0" type="line"/>
+      <point x="233" y="0" type="line"/>
+      <point x="237.667" y="28" type="line"/>
+      <point x="0.6667" y="28" type="line"/>
+    </contour>
+    <contour>
+      <point x="344.667" y="697" type="line"/>
+      <point x="305.755" y="697" type="line" smooth="yes"/>
+      <point x="205.546" y="697"/>
+      <point x="154.738" y="650.767"/>
+      <point x="136.471" y="544.405" type="curve" smooth="yes"/>
+      <point x="62.971" y="116.438" type="line" smooth="yes"/>
+      <point x="55.8493" y="74.9709"/>
+      <point x="27.8586" y="38.9202"/>
+      <point x="2.8285" y="38.9202" type="curve"/>
+      <point x="0.0814" y="22.2391" type="line"/>
+      <point x="45.9874" y="22.2391"/>
+      <point x="81.6194" y="59.4028"/>
+      <point x="91.3971" y="115.744" type="curve" smooth="yes"/>
+      <point x="165.342" y="541.834" type="line" smooth="yes"/>
+      <point x="180.667" y="630.137"/>
+      <point x="221.291" y="669"/>
+      <point x="300.853" y="669" type="curve" smooth="yes"/>
+      <point x="340" y="669" type="line"/>
+    </contour>
+    <contour>
+      <point x="54.1667" y="349" type="line"/>
+      <point x="241.167" y="349" type="line"/>
+      <point x="245.833" y="377" type="line"/>
+      <point x="58.8333" y="377" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="377"/>
+  <guideline angle="90" x="233" y="0"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=40</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=40</string>
+  <key>com.fontlab.recipe</key>
+  <string>L+^hyphen%</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

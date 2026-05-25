@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Oogonek" format="2">
+  <advance width="510"/>
+  <unicode hex="01EA"/>
+  <anchor x="255" y="680" name="top"/>
+  <anchor x="255" y="0" name="bottom"/>
+  <outline>
+    <component base="O"/>
+    <component base="ogonekcomb" xOffset="356"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=25</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=25</string>
+  <key>com.fontlab.recipe</key>
+  <string>O+ogonekcomb</string>
+  </dict>
+  </lib>
+</glyph>

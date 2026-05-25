@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="braceleft" format="2">
+  <advance width="224"/>
+  <unicode hex="007B"/>
+  <outline>
+    <contour>
+      <point x="276.333" y="770" type="line"/>
+      <point x="266.333" y="770" type="line" smooth="yes"/>
+      <point x="211.923" y="770"/>
+      <point x="183.293" y="739.757"/>
+      <point x="171.667" y="670" type="curve" smooth="yes"/>
+      <point x="135.667" y="454" type="line" smooth="yes"/>
+      <point x="126.307" y="397.844"/>
+      <point x="95.0238" y="361.363"/>
+      <point x="56.2271" y="361.363" type="curve"/>
+      <point x="52" y="336" type="line"/>
+      <point x="106.316" y="336"/>
+      <point x="154.232" y="385.394"/>
+      <point x="165.5" y="453" type="curve" smooth="yes"/>
+      <point x="201.5" y="669" type="line" smooth="yes"/>
+      <point x="210.352" y="722.115"/>
+      <point x="226.742" y="742"/>
+      <point x="261.667" y="742" type="curve" smooth="yes"/>
+      <point x="271.667" y="742" type="line"/>
+    </contour>
+    <contour>
+      <point x="135.894" y="-72.6371" type="line"/>
+      <point x="140.56" y="-44.6371" type="line"/>
+      <point x="130.56" y="-44.6371" type="line" smooth="yes"/>
+      <point x="95.6358" y="-44.6371"/>
+      <point x="85.8747" y="-24.7517"/>
+      <point x="94.7271" y="28.3629" type="curve" smooth="yes"/>
+      <point x="130.727" y="244.363" type="line" smooth="yes"/>
+      <point x="141.995" y="311.969"/>
+      <point x="110.543" y="361.363"/>
+      <point x="56.2271" y="361.363" type="curve"/>
+      <point x="52" y="336" type="line"/>
+      <point x="92.1868" y="336"/>
+      <point x="110.255" y="301.531"/>
+      <point x="100.561" y="243.363" type="curve" smooth="yes"/>
+      <point x="64.5605" y="27.3629" type="line" smooth="yes"/>
+      <point x="54.2232" y="-34.6606"/>
+      <point x="77.5155" y="-72.6371"/>
+      <point x="125.894" y="-72.6371" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="770"/>
+  <guideline angle="0" x="0" y="-215"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=40</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=30</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

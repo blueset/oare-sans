@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="iogonek.dotless" format="2">
+  <advance width="236"/>
+  <anchor x="162" y="525" name="top"/>
+  <anchor x="75" y="0" name="bottom"/>
+  <outline>
+    <component base="dotlessi"/>
+    <component base="ogonekcomb" xOffset="206"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=30</string>
+  <key>com.fontlab.recipe</key>
+  <string>dotlessi+ogonekcomb</string>
+  </dict>
+  </lib>
+</glyph>

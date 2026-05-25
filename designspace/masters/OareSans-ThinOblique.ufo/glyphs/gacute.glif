@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gacute" format="2">
+  <advance width="362"/>
+  <unicode hex="01F5"/>
+  <anchor x="106" y="-175" name="bottom"/>
+  <anchor x="257.667" y="649" name="top"/>
+  <outline>
+    <component base="g"/>
+    <component base="acutecomb" xOffset="193.5"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=45</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=55</string>
+  <key>com.fontlab.recipe</key>
+  <string>g+acutecomb</string>
+  </dict>
+  </lib>
+</glyph>

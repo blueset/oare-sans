@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Euro" format="2">
+  <advance width="448"/>
+  <unicode hex="20AC"/>
+  <outline>
+    <component base="C" xOffset="41"/>
+    <contour>
+      <point x="50.1506" y="385" type="line"/>
+      <point x="343.151" y="385" type="line"/>
+      <point x="358.148" y="445" type="line"/>
+      <point x="65.1481" y="445" type="line"/>
+    </contour>
+    <contour>
+      <point x="32.655" y="280" type="line"/>
+      <point x="316.655" y="280" type="line"/>
+      <point x="331.652" y="340" type="line"/>
+      <point x="47.6525" y="340" type="line"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="360"/>
+  <guideline angle="85.2364" x="32.655" y="280"/>
+  <guideline angle="85.24" x="309" y="260"/>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=30</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>C</string>
+  <key>com.fontlab.recipe</key>
+  <string>zero+equal%</string>
+  <key>public.markColor</key>
+  <string>1,0.6,0.994,1</string>
+  </dict>
+  </lib>
+</glyph>

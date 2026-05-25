@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="oogonekmacron" format="2">
+  <advance width="351"/>
+  <unicode hex="01ED"/>
+  <anchor x="130" y="0" name="bottom"/>
+  <anchor x="174.084" y="649" name="top"/>
+  <outline>
+    <component base="oogonek"/>
+    <component base="macroncomb" xOffset="174.5"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=45</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=45</string>
+  <key>com.fontlab.recipe</key>
+  <string>uni01EB+uni0304</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="caroncomb.alt" format="2">
+  <anchor x="-72.5" y="735" name="_caronapos"/>
+  <outline>
+    <contour>
+      <point x="-58.7105" y="610.857" type="line"/>
+      <point x="-34.1798" y="610.857" type="line"/>
+      <point x="11.8566" y="735.738" type="line"/>
+      <point x="-18.1192" y="735.738" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=-116</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=65</string>
+  <key>com.fontlab.recipe</key>
+  <string>caroncomb</string>
+  </dict>
+  </lib>
+</glyph>

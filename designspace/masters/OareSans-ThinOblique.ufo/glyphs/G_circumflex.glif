@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Gcircumflex" format="2">
+  <advance width="356"/>
+  <unicode hex="011C"/>
+  <anchor x="138" y="0" name="bottom"/>
+  <anchor x="290.167" y="793" name="top"/>
+  <outline>
+    <component base="G"/>
+    <component base="circumflexcomb" xOffset="226.167" yOffset="145"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.metricsLeft</key>
+  <string>=45</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>=35</string>
+  <key>com.fontlab.recipe</key>
+  <string>G+circumflexcomb</string>
+  </dict>
+  </lib>
+</glyph>
