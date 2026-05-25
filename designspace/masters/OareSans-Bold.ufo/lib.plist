@@ -472,6 +472,7 @@
     <string>scaron.ss03</string>
     <string>scommaaccent.ss03</string>
     <string>scircumflex.ss03</string>
+    <string>five.ss03</string>
   </array>
   <key>public.skipExportGlyphs</key>
   <array>

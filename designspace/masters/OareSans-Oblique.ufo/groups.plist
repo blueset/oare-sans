@@ -275,6 +275,11 @@
     <string>f</string>
     <string>f_f</string>
   </array>
+  <key>public.kern1.fiveLeft</key>
+  <array>
+    <string>five</string>
+    <string>five.ss03</string>
+  </array>
   <key>public.kern1.gLeft</key>
   <array>
     <string>g</string>
@@ -742,6 +747,11 @@
     <string>f_j</string>
     <string>f_l</string>
     <string>f_t</string>
+  </array>
+  <key>public.kern2.fiveRight</key>
+  <array>
+    <string>five</string>
+    <string>five.ss03</string>
   </array>
   <key>public.kern2.gRight</key>
   <array>

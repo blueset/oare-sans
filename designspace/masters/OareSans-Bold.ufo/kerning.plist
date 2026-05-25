@@ -241,11 +241,6 @@
     <key>public.kern2.jRight</key>
     <integer>70</integer>
   </dict>
-  <key>five</key>
-  <dict>
-    <key>public.kern2.commaRight</key>
-    <integer>-15</integer>
-  </dict>
   <key>four</key>
   <dict>
     <key>nine</key>
@@ -1144,8 +1139,6 @@
     <integer>-90</integer>
     <key>eight</key>
     <integer>-15</integer>
-    <key>five</key>
-    <integer>-15</integer>
     <key>nine</key>
     <integer>-85</integer>
     <key>one</key>
@@ -1164,6 +1157,8 @@
     <integer>-70</integer>
     <key>public.kern2.YRight</key>
     <integer>-100</integer>
+    <key>public.kern2.fiveRight</key>
+    <integer>-15</integer>
     <key>public.kern2.quoteright</key>
     <integer>-50</integer>
   </dict>
@@ -1208,6 +1203,15 @@
     <integer>-25</integer>
     <key>public.kern2.wRight</key>
     <integer>-25</integer>
+  </dict>
+  <key>public.kern1.fiveLeft</key>
+  <dict>
+    <key>nine</key>
+    <integer>-5</integer>
+    <key>two</key>
+    <integer>-10</integer>
+    <key>public.kern2.commaRight</key>
+    <integer>-15</integer>
   </dict>
   <key>public.kern1.guilsinglleft</key>
   <dict>

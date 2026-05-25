@@ -2,19 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>B</key>
-  <dict>
-    <key>AE</key>
-    <integer>-10</integer>
-    <key>V</key>
-    <integer>-5</integer>
-  </dict>
   <key>F</key>
   <dict>
-    <key>AE</key>
-    <integer>-60</integer>
-    <key>J.ss01</key>
-    <integer>-70</integer>
     <key>oslash</key>
     <integer>-5</integer>
     <key>p</key>
@@ -23,10 +12,14 @@
     <integer>-5</integer>
     <key>x</key>
     <integer>-10</integer>
+    <key>public.kern2.AERight</key>
+    <integer>-60</integer>
     <key>public.kern2.ARight</key>
     <integer>-35</integer>
     <key>public.kern2.CRight</key>
     <integer>-5</integer>
+    <key>public.kern2.J.ss01Right</key>
+    <integer>-70</integer>
     <key>public.kern2.aRight</key>
     <integer>-35</integer>
     <key>public.kern2.commaRight</key>
@@ -58,18 +51,9 @@
     <key>public.kern2.zRight</key>
     <integer>-15</integer>
   </dict>
-  <key>J.ss01</key>
-  <dict>
-    <key>AE</key>
-    <integer>-15</integer>
-    <key>J.ss01</key>
-    <integer>-15</integer>
-    <key>V</key>
-    <integer>-5</integer>
-  </dict>
   <key>Oslash</key>
   <dict>
-    <key>J.ss01</key>
+    <key>public.kern2.J.ss01Right</key>
     <integer>-15</integer>
   </dict>
   <key>P</key>
@@ -104,8 +88,6 @@
   </dict>
   <key>V</key>
   <dict>
-    <key>AE</key>
-    <integer>-65</integer>
     <key>Oslash</key>
     <integer>-5</integer>
     <key>V</key>
@@ -116,6 +98,8 @@
     <integer>-10</integer>
     <key>x</key>
     <integer>-10</integer>
+    <key>public.kern2.AERight</key>
+    <integer>-65</integer>
     <key>public.kern2.ARight</key>
     <integer>-55</integer>
     <key>public.kern2.CRight</key>
@@ -239,22 +223,15 @@
     <key>v</key>
     <integer>-10</integer>
   </dict>
-  <key>five</key>
-  <dict>
-    <key>one</key>
-    <integer>-20</integer>
-    <key>two</key>
-    <integer>-10</integer>
-  </dict>
   <key>four</key>
   <dict>
-    <key>five</key>
-    <integer>-15</integer>
     <key>one</key>
     <integer>-25</integer>
     <key>seven</key>
     <integer>-15</integer>
     <key>two</key>
+    <integer>-15</integer>
+    <key>public.kern2.fiveRight</key>
     <integer>-15</integer>
   </dict>
   <key>germandbls</key>
@@ -273,6 +250,8 @@
     <key>three</key>
     <integer>-30</integer>
     <key>two</key>
+    <integer>-5</integer>
+    <key>public.kern2.fiveRight</key>
     <integer>-5</integer>
   </dict>
   <key>p</key>
@@ -354,6 +333,8 @@
     <integer>-15</integer>
     <key>zero</key>
     <integer>-10</integer>
+    <key>public.kern2.fiveRight</key>
+    <integer>-5</integer>
   </dict>
   <key>six</key>
   <dict>
@@ -384,8 +365,6 @@
   </dict>
   <key>two</key>
   <dict>
-    <key>five</key>
-    <integer>-20</integer>
     <key>four</key>
     <integer>-60</integer>
     <key>seven</key>
@@ -394,6 +373,8 @@
     <integer>-20</integer>
     <key>three</key>
     <integer>-30</integer>
+    <key>public.kern2.fiveRight</key>
+    <integer>-20</integer>
   </dict>
   <key>x</key>
   <dict>
@@ -458,6 +439,10 @@
   </dict>
   <key>public.kern1.BLeft</key>
   <dict>
+    <key>V</key>
+    <integer>-5</integer>
+    <key>public.kern2.AERight</key>
+    <integer>-10</integer>
     <key>public.kern2.TRight</key>
     <integer>-5</integer>
     <key>public.kern2.YRight</key>
@@ -570,8 +555,14 @@
   </dict>
   <key>public.kern1.J.ss01Left</key>
   <dict>
+    <key>V</key>
+    <integer>-5</integer>
+    <key>public.kern2.AERight</key>
+    <integer>-15</integer>
     <key>public.kern2.ARight</key>
     <integer>-5</integer>
+    <key>public.kern2.J.ss01Right</key>
+    <integer>-15</integer>
     <key>public.kern2.TRight</key>
     <integer>-10</integer>
     <key>public.kern2.YRight</key>
@@ -1119,6 +1110,15 @@
     <key>public.kern2.uRight</key>
     <integer>-30</integer>
   </dict>
+  <key>public.kern1.fiveLeft</key>
+  <dict>
+    <key>nine</key>
+    <integer>-5</integer>
+    <key>one</key>
+    <integer>-20</integer>
+    <key>two</key>
+    <integer>-15</integer>
+  </dict>
   <key>public.kern1.guilsinglleft</key>
   <dict>
     <key>V</key>
@@ -1271,7 +1271,7 @@
   </dict>
   <key>public.kern1.quoteright</key>
   <dict>
-    <key>A</key>
+    <key>public.kern2.ARight</key>
     <integer>-40</integer>
     <key>public.kern2.aRight</key>
     <integer>-50</integer>

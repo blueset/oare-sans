@@ -30,7 +30,7 @@
 - v0.002:
   - Adjusted the contour of `/C` in oblique styles.
   - Simplified the contour of `/circumflexcomb`, `/caroncomb`, and `/g_j.liga`.
-  - Added `ss02` (Single story `/a/`), `ss03` (Alternative `/S` `/s` #1), and `ss04` (Alternative `/S` `/s` #2) stylistic sets.
+  - Added `ss02` (Single story `/a/`), `ss03` (Alternative `/S` `/s` `/five` #1), and `ss04` (Alternative `/S` `/s` `/five` #2) stylistic sets.
 - v0.001: Initial test release.
 
 ## License

@@ -4,7 +4,7 @@
   <unicode hex="0113"/>
   <anchor x="117" y="0" name="bottom"/>
   <anchor x="172" y="0" name="ogonek"/>
-  <anchor x="224.192" y="649" name="top"/>
+  <anchor x="170.495" y="649" name="top"/>
   <outline>
     <component base="e"/>
     <component base="macroncomb" xOffset="159.5"/>

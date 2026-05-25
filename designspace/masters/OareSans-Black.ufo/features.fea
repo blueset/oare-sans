@@ -231,7 +231,7 @@ feature ss02 {
 feature ss03 {
 # Stylistic Set 01–20
 	featureNames {
-		name "Alternative S (1)";
+		name "Alternative S and 5 (1)";
 	};
 
 #> feature
@@ -241,6 +241,7 @@ feature ss03 {
   sub Scedilla by Scedilla.ss03;
   sub Scircumflex by Scircumflex.ss03;
   sub Scommaaccent by Scommaaccent.ss03;
+  sub five by five.ss03;
   sub s by s.ss03;
   sub sacute by sacute.ss03;
   sub scaron by scaron.ss03;
@@ -252,7 +253,7 @@ feature ss03 {
 feature ss04 {
 # Stylistic Set 01–20
 	featureNames {
-		name "Alternative S (2)";
+		name "Alternative S and 5 (2)";
 	};
 
 #> feature
@@ -269,4 +270,5 @@ feature ss04 {
   sub scedilla by scedilla.ss03;
   sub scircumflex by scircumflex.ss03;
   sub scommaaccent by scommaaccent.ss03;
+  sub five by five.ss03;
 } ss04;
