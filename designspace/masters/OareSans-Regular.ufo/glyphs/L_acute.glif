@@ -2,7 +2,7 @@
 <glyph name="Lacute" format="2">
   <advance width="334"/>
   <unicode hex="0139"/>
-  <anchor x="184.112" y="0" name="bottom"/>
+  <anchor x="182.612" y="0" name="bottom"/>
   <anchor x="135" y="700" name="caronapos"/>
   <anchor x="93" y="794" name="top"/>
   <outline>

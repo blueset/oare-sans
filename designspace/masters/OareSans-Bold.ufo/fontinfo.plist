@@ -90,6 +90,57 @@ https://openfontlicense.org</string>
   <string>https://1a23.studio/</string>
   <key>openTypeNamePreferredFamilyName</key>
   <string>Oare Sans</string>
+  <key>openTypeNameRecords</key>
+  <array>
+  <dict>
+    <key>nameID</key>
+    <integer>256</integer>
+    <key>platformID</key>
+    <integer>3</integer>
+    <key>encodingID</key>
+    <integer>1</integer>
+    <key>languageID</key>
+    <integer>1033</integer>
+    <key>string</key>
+    <string>Alternative J</string>
+  </dict>
+  <dict>
+    <key>nameID</key>
+    <integer>257</integer>
+    <key>platformID</key>
+    <integer>3</integer>
+    <key>encodingID</key>
+    <integer>1</integer>
+    <key>languageID</key>
+    <integer>1033</integer>
+    <key>string</key>
+    <string>Single Story a</string>
+  </dict>
+  <dict>
+    <key>nameID</key>
+    <integer>258</integer>
+    <key>platformID</key>
+    <integer>3</integer>
+    <key>encodingID</key>
+    <integer>1</integer>
+    <key>languageID</key>
+    <integer>1033</integer>
+    <key>string</key>
+    <string>Alternative S and 5 (1)</string>
+  </dict>
+  <dict>
+    <key>nameID</key>
+    <integer>259</integer>
+    <key>platformID</key>
+    <integer>3</integer>
+    <key>encodingID</key>
+    <integer>1</integer>
+    <key>languageID</key>
+    <integer>1033</integer>
+    <key>string</key>
+    <string>Alternative S and 5 (2)</string>
+  </dict>
+  </array>
   <key>openTypeNameVersion</key>
   <string>Version 0.002</string>
   <key>openTypeOS2Panose</key>

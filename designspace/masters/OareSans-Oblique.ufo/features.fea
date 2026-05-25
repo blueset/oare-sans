@@ -111,6 +111,7 @@ feature salt {
   sub aringacute from [aringacute.ss02];
   sub atilde from [atilde.ss02];
   sub caroncomb from [caroncomb.alt];
+  sub five from [five.ss03];
   sub s from [s.ss03];
   sub sacute from [sacute.ss03];
   sub scaron from [scaron.ss03];

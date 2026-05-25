@@ -60,6 +60,8 @@
   <dict>
     <key>public.kern2.ARight</key>
     <integer>-40</integer>
+    <key>public.kern2.J.ss01Right</key>
+    <integer>-80</integer>
     <key>public.kern2.YRight</key>
     <integer>-5</integer>
     <key>public.kern2.ZRight</key>

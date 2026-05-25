@@ -48,9 +48,9 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
     The following glyphs do not have the recommended number of contours:
 * S (U+0053): found 3, expected one of: {5, 1, 2}
-* Sacute (U+015A): found 4, expected one of: {6, 3, 2}
-* sacute (U+015B): found 4, expected one of: {3, 6, 2}
-* scircumflex (U+015D): found 4, expected one of: {3, 2, 6} [code: contour-count]
+* Sacute (U+015A): found 4, expected one of: {3, 2, 6}
+* sacute (U+015B): found 4, expected one of: {3, 2, 6}
+* scircumflex (U+015D): found 4, expected one of: {2, 3, 6} [code: contour-count]
   
   
 
@@ -112,12 +112,12 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 - ⚠️ **WARN** The most common width is 373 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=390: plusminus, logicalnot
+width=380: plus
+width=390: logicalnot, plusminus
+width=420: minus
 width=440: equal
 width=360: multiply
-width=370: divide
-width=380: plus
-width=420: minus [code: width-outliers]
+width=370: divide [code: width-outliers]
   
   
 
@@ -175,16 +175,14 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 | Message                                                           | Languages                    |
 |-------------------------------------------------------------------|------------------------------|
-| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
-|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           |
+| Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
+|   The following auxiliary characters are missing from the font: Ĳ |                              |
+|   The following auxiliary characters are missing from the font: ĳ |                              |
 | Auxiliary orthography codepoints:                                 | * lt_Latn (Lithuanian)       |
 |   The following auxiliary characters are missing from the font: Ẽ |                              |
 |   The following auxiliary characters are missing from the font: ẽ |                              |
-| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
-|   The following auxiliary characters are missing from the font: Ŋ |                              |
-|   The following auxiliary characters are missing from the font: Ŧ |                              |
-|   The following auxiliary characters are missing from the font: ŋ |                              |
-|   The following auxiliary characters are missing from the font: ŧ |                              |
+| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
+|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           |
 | Auxiliary orthography codepoints:                                 | * fi_Latn (Finnish)          |
 |   The following auxiliary characters are missing from the font: Ǥ |                              |
 |   The following auxiliary characters are missing from the font: Ŋ |                              |
@@ -196,9 +194,11 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŧ |                              |
 |   The following auxiliary characters are missing from the font: ʒ |                              |
 |   The following auxiliary characters are missing from the font: ǯ |                              |
-| Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
-|   The following auxiliary characters are missing from the font: Ĳ |                              |
-|   The following auxiliary characters are missing from the font: ĳ |                              | [code: warning-language-shaping]
+| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
+|   The following auxiliary characters are missing from the font: Ŋ |                              |
+|   The following auxiliary characters are missing from the font: Ŧ |                              |
+|   The following auxiliary characters are missing from the font: ŋ |                              |
+|   The following auxiliary characters are missing from the font: ŧ |                              | [code: warning-language-shaping]
   
   
 
@@ -405,11 +405,11 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and http
 * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
 * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
 * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, math, coptic
-* U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
-* U+0307 COMBINING DOT ABOVE: try adding one of: syriac, hebrew, todhri, coptic, duployan, math, canadian-aboriginal, tifinagh, malayalam, tai-le, old-permic
-* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh
+* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+* U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, malayalam, todhri, coptic, syriac, duployan, tai-le, math, canadian-aboriginal, tifinagh, old-permic
+* U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
 * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
 ... and 5 others
 
