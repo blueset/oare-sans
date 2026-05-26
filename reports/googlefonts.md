@@ -12,53 +12,6 @@ fontspector version: 1.5.2
 
 
 
-<details><summary>[1] C:\Users\ilove\Codebase\oare-sans\fonts\variable</summary>
-<div>
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. (googlefonts/metadata/unreachable_subsetting)</summary>
-    <div>
-
-
-> This check ensures that all encoded glyphs in the font are covered by a subset declared in the METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the `subsets` field and the subset definitions in the `glyphsets` repository.
-> 
-> Any encoded glyphs which are not by any of these subset definitions will not be served in the subsetted fonts, and so will be unreachable to the end user.
-
-
-
-
-Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and https://github.com/fonttools/fontbakery/pull/4273]
-
-
-
-
-
-- ⚠️ **WARN** C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
-
-* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
-* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
-* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh
-* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-* U+0307 COMBINING DOT ABOVE: try adding one of: duployan, coptic, math, syriac, tifinagh, hebrew, tai-le, canadian-aboriginal, todhri, malayalam, old-permic
-* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
-* U+030C COMBINING CARON: try adding one of: cherokee, tai-le
-... and 5 others
-
-Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin [code: unreachable-subsetting]
-  
-  
-
-</div>
-</details>
-
-
-</div>
-</details>
-
-
 <details><summary>[9] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf</summary>
 <div>
 
@@ -94,9 +47,9 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* S (U+0053): found 3, expected one of: {2, 5, 1}
-* Sacute (U+015A): found 4, expected one of: {2, 6, 3}
-* sacute (U+015B): found 4, expected one of: {6, 3, 2}
+* S (U+0053): found 3, expected one of: {2, 1, 5}
+* Sacute (U+015A): found 4, expected one of: {2, 3, 6}
+* sacute (U+015B): found 4, expected one of: {3, 6, 2}
 * scircumflex (U+015D): found 4, expected one of: {2, 6, 3} [code: contour-count]
   
   
@@ -159,10 +112,10 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 - ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=440: equal
+width=370: divide
 width=373: less, greater
 width=360: multiply
-width=370: divide
+width=440: equal
 width=420: minus
 width=380: plus [code: width-outliers]
   
@@ -222,19 +175,12 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 | Message                                                           | Languages                    |
 |-------------------------------------------------------------------|------------------------------|
-| Auxiliary orthography codepoints:                                 | * lt_Latn (Lithuanian)       |
-|   The following auxiliary characters are missing from the font: Ẽ |                              |
-|   The following auxiliary characters are missing from the font: ẽ |                              |
 | Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
 |   The following auxiliary characters are missing from the font: Ĳ |                              |
 |   The following auxiliary characters are missing from the font: ĳ |                              |
-| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
-|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           |
-| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
-|   The following auxiliary characters are missing from the font: Ŋ |                              |
-|   The following auxiliary characters are missing from the font: Ŧ |                              |
-|   The following auxiliary characters are missing from the font: ŋ |                              |
-|   The following auxiliary characters are missing from the font: ŧ |                              |
+| Auxiliary orthography codepoints:                                 | * lt_Latn (Lithuanian)       |
+|   The following auxiliary characters are missing from the font: Ẽ |                              |
+|   The following auxiliary characters are missing from the font: ẽ |                              |
 | Auxiliary orthography codepoints:                                 | * fi_Latn (Finnish)          |
 |   The following auxiliary characters are missing from the font: Ǥ |                              |
 |   The following auxiliary characters are missing from the font: Ŋ |                              |
@@ -245,7 +191,14 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŋ |                              |
 |   The following auxiliary characters are missing from the font: ŧ |                              |
 |   The following auxiliary characters are missing from the font: ʒ |                              |
-|   The following auxiliary characters are missing from the font: ǯ |                              | [code: warning-language-shaping]
+|   The following auxiliary characters are missing from the font: ǯ |                              |
+| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
+|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           |
+| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
+|   The following auxiliary characters are missing from the font: Ŋ |                              |
+|   The following auxiliary characters are missing from the font: Ŧ |                              |
+|   The following auxiliary characters are missing from the font: ŋ |                              |
+|   The following auxiliary characters are missing from the font: ŧ |                              | [code: warning-language-shaping]
   
   
 
@@ -414,6 +367,53 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3943, https:/
 - ⚠️ **WARN** OS/2 VendorID value '1A23' is not yet recognized.
 If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
+  
+  
+
+</div>
+</details>
+
+
+</div>
+</details>
+
+
+<details><summary>[1] C:\Users\ilove\Codebase\oare-sans\fonts\variable</summary>
+<div>
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. (googlefonts/metadata/unreachable_subsetting)</summary>
+    <div>
+
+
+> This check ensures that all encoded glyphs in the font are covered by a subset declared in the METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the `subsets` field and the subset definitions in the `glyphsets` repository.
+> 
+> Any encoded glyphs which are not by any of these subset definitions will not be served in the subsetted fonts, and so will be unreachable to the end user.
+
+
+
+
+Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and https://github.com/fonttools/fontbakery/pull/4273]
+
+
+
+
+
+- ⚠️ **WARN** C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
+
+* U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, coptic, math
+* U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
+* U+0307 COMBINING DOT ABOVE: try adding one of: math, todhri, syriac, tai-le, malayalam, duployan, coptic, canadian-aboriginal, hebrew, old-permic, tifinagh
+* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+* U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+... and 5 others
+
+Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin [code: unreachable-subsetting]
   
   
 

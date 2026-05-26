@@ -37,8 +37,8 @@
       <point x="188.515" y="286.009" type="line"/>
       <point x="208.515" y="630" type="line"/>
       <point x="151.5" y="540" type="line"/>
-      <point x="437" y="540" type="line"/>
-      <point x="437" y="700" type="line"/>
+      <point x="432" y="540" type="line"/>
+      <point x="432" y="700" type="line"/>
       <point x="50.9657" y="700" type="line"/>
     </contour>
   </outline>
