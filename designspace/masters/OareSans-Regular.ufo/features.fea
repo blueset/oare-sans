@@ -232,7 +232,7 @@ feature ss02 {
 feature ss03 {
 # Stylistic Set 01–20
 	featureNames {
-		name "Alternative S and 5 (1)";
+		name "Alternative S and 5 (Symmetrical S)";
 	};
 
 #> feature
@@ -254,7 +254,7 @@ feature ss03 {
 feature ss04 {
 # Stylistic Set 01–20
 	featureNames {
-		name "Alternative S and 5 (2)";
+		name "Alternative S and 5 (Asymmetrical S)";
 	};
 
 #> feature

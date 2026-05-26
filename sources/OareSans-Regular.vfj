@@ -180729,11 +180729,11 @@
       },
       {
         "name":"ss03",
-        "feature":"feature ss03 {\n# Stylistic Set 01–20\n\tfeatureNames {\n\t\tname \"Alternative S and 5 (1)\";\n\t};\n\n#> feature\n  sub S by S.ss03;\n  sub Sacute by Sacute.ss03;\n  sub Scaron by Scaron.ss03;\n  sub Scedilla by Scedilla.ss03;\n  sub Scircumflex by Scircumflex.ss03;\n  sub Scommaaccent by Scommaaccent.ss03;\n  sub five by five.ss03;\n  sub s by s.ss03;\n  sub sacute by sacute.ss03;\n  sub scaron by scaron.ss03;\n  sub scedilla by scedilla.ss03;\n  sub scircumflex by scircumflex.ss03;\n  sub scommaaccent by scommaaccent.ss03;\n#< feature\n} ss03;\n"
+        "feature":"feature ss03 {\n# Stylistic Set 01–20\n\tfeatureNames {\n\t\tname \"Alternative S and 5 (Symmetrical S)\";\n\t};\n\n#> feature\n  sub S by S.ss03;\n  sub Sacute by Sacute.ss03;\n  sub Scaron by Scaron.ss03;\n  sub Scedilla by Scedilla.ss03;\n  sub Scircumflex by Scircumflex.ss03;\n  sub Scommaaccent by Scommaaccent.ss03;\n  sub five by five.ss03;\n  sub s by s.ss03;\n  sub sacute by sacute.ss03;\n  sub scaron by scaron.ss03;\n  sub scedilla by scedilla.ss03;\n  sub scircumflex by scircumflex.ss03;\n  sub scommaaccent by scommaaccent.ss03;\n#< feature\n} ss03;\n"
       },
       {
         "name":"ss04",
-        "feature":"feature ss04 {\n# Stylistic Set 01–20\n\tfeatureNames {\n\t\tname \"Alternative S and 5 (2)\";\n\t};\n\n#> feature\n  sub S by S.ss04;\n  sub Sacute by Sacute.ss04;\n  sub Scaron by Scaron.ss04;\n  sub Scedilla by Scedilla.ss04;\n  sub Scircumflex by Scircumflex.ss04;\n  sub Scommaaccent by Scommaaccent.ss04;\n#< feature\n  sub s by s.ss03;\n  sub sacute by sacute.ss03;\n  sub scaron by scaron.ss03;\n  sub scedilla by scedilla.ss03;\n  sub scircumflex by scircumflex.ss03;\n  sub scommaaccent by scommaaccent.ss03;\n  sub five by five.ss03;\n} ss04;\n"
+        "feature":"feature ss04 {\n# Stylistic Set 01–20\n\tfeatureNames {\n\t\tname \"Alternative S and 5 (Asymmetrical S)\";\n\t};\n\n#> feature\n  sub S by S.ss04;\n  sub Sacute by Sacute.ss04;\n  sub Scaron by Scaron.ss04;\n  sub Scedilla by Scedilla.ss04;\n  sub Scircumflex by Scircumflex.ss04;\n  sub Scommaaccent by Scommaaccent.ss04;\n#< feature\n  sub s by s.ss03;\n  sub sacute by sacute.ss03;\n  sub scaron by scaron.ss03;\n  sub scedilla by scedilla.ss03;\n  sub scircumflex by scircumflex.ss03;\n  sub scommaaccent by scommaaccent.ss03;\n  sub five by five.ss03;\n} ss04;\n"
       }
     ],
     "hinting":{
