@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="J.ss01" format="2">
   <advance width="308"/>
+  <anchor x="265" y="680" name="top"/>
   <outline>
     <contour>
       <point x="-45" y="-6" type="line"/>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ordfeminine.ss02" format="2">
+  <advance width="253"/>
+  <outline>
+    <contour>
+      <point x="249.832" y="700" type="line"/>
+      <point x="205.811" y="436.939" type="line"/>
+      <point x="208.305" y="427.939" type="line"/>
+      <point x="198.609" y="370" type="line"/>
+      <point x="224.609" y="370" type="line"/>
+      <point x="279.832" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="97.2695" y="607" type="curve" smooth="yes"/>
+      <point x="74.3436" y="470" type="line" smooth="yes"/>
+      <point x="64.1357" y="409"/>
+      <point x="87.2747" y="368"/>
+      <point x="133.361" y="368" type="curve" smooth="yes"/>
+      <point x="170.343" y="368"/>
+      <point x="203.709" y="396.727"/>
+      <point x="221.987" y="444.303" type="curve"/>
+      <point x="210.161" y="462.932" type="line"/>
+      <point x="203.989" y="426.051"/>
+      <point x="173.242" y="396"/>
+      <point x="139.825" y="396" type="curve" smooth="yes"/>
+      <point x="110.341" y="396"/>
+      <point x="95.8751" y="419.394"/>
+      <point x="105.013" y="474" type="curve" smooth="yes"/>
+      <point x="127.939" y="611" type="line" smooth="yes"/>
+      <point x="133.99" y="647.16"/>
+      <point x="159.064" y="672"/>
+      <point x="190.147" y="672" type="curve" smooth="yes"/>
+      <point x="255.147" y="672" type="line"/>
+      <point x="259.832" y="700" type="line"/>
+      <point x="193.832" y="700" type="line" smooth="yes"/>
+      <point x="142.832" y="700"/>
+      <point x="107.143" y="666"/>
+    </contour>
+  </outline>
+  <guideline angle="0" x="0" y="623"/>
+  <guideline angle="0" x="0" y="836"/>
+  <guideline angle="0" x="0" y="370"/>
+  <guideline angle="0" x="0" y="896"/>
+  <guideline angle="0" x="0" y="558"/>
+  <guideline angle="0" x="0" y="364"/>
+  <guideline angle="0" x="0" y="540"/>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

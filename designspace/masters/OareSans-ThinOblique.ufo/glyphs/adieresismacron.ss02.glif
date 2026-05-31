@@ -3,7 +3,7 @@
   <advance width="361"/>
   <anchor x="123" y="0" name="bottom"/>
   <anchor x="261" y="0" name="ogonek"/>
-  <anchor x="264.359" y="773" name="top"/>
+  <anchor x="184.936" y="773" name="top"/>
   <outline>
     <component base="adieresis.ss02"/>
     <component base="macroncomb" xOffset="199.667" yOffset="124"/>

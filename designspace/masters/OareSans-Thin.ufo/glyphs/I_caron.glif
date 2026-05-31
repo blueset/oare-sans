@@ -2,7 +2,7 @@
 <glyph name="Icaron" format="2">
   <advance width="140"/>
   <unicode hex="01CF"/>
-  <anchor x="70" y="0" name="bottom"/>
+  <anchor x="69.5" y="0" name="bottom"/>
   <anchor x="85" y="0" name="ogonek"/>
   <anchor x="70" y="792" name="top"/>
   <outline>

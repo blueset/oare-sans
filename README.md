@@ -1,6 +1,6 @@
 # Oare Sans
 
-<!-- Version begin -->Version 0.002<!-- Version end -->
+<!-- Version begin -->Version 0.003<!-- Version end -->
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
@@ -16,6 +16,16 @@
 ![Poster 3: Black](./documentation/Poster3.png)
 ![Poster 4: Stylistic Set](./documentation/Poster4.png)
 
+## OpenType Features
+
+- Kerning `kern`, Ligautures `liga`, Ordinals `ordn`, Glyph Composition/Decomposition `ccmp`
+- Localized Forms `locl`: Moldavian `MOL`, Romanian `ROU`, Turkish `TUR`, Dutch `NLD`, and Catalan `CAT`
+- Stylistic Sets
+  - `ss01`: Alternative J
+  - `ss02`: Single story a
+  - `ss03`: Alternative S and 5 (Symmetrical S)
+  - `ss04`: Alternative S and 5 (Asymmetrical S)
+
 ## Download
 
 * [Variable Font](./fonts/variable/)
@@ -27,6 +37,10 @@
 
 ## Changelog
 
+- v0.003:
+  - Added precomposed glyphs: `/IJ` `/ij` `/IJ.ss01` `/Etilde` `/Ytilde` `/etilde` `/ytilde`
+  - Extending `ss01` to `/Jcircumflex.ss01` `/J.ss01`
+  - Extending `ss02` to `/agrave.ss02` `/aacute.ss02` `/acircumflex.ss02` `/ordfeminine.ss02`
 - v0.002:
   - Adjusted the contour of `/C` in oblique styles.
   - Simplified the contour of `/circumflexcomb`, `/caroncomb`, and `/g_j.liga`.

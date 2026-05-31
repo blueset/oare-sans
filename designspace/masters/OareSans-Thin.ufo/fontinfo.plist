@@ -83,7 +83,7 @@ https://openfontlicense.org</string>
   <key>openTypeNamePreferredSubfamilyName</key>
   <string>Thin</string>
   <key>openTypeNameVersion</key>
-  <string>Version 0.002</string>
+  <string>Version 0.003</string>
   <key>openTypeOS2Panose</key>
   <array>
     <integer>0</integer>
@@ -184,7 +184,7 @@ https://openfontlicense.org</string>
   <key>versionMajor</key>
   <integer>0</integer>
   <key>versionMinor</key>
-  <integer>2</integer>
+  <integer>3</integer>
   <key>xHeight</key>
   <integer>525</integer>
 </dict>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="IJ" format="2">
+  <advance width="501"/>
+  <unicode hex="0132"/>
+  <anchor x="451.333" y="680" name="top"/>
+  <anchor x="75" y="0" name="bottom"/>
+  <anchor x="161" y="0" name="ogonek"/>
+  <outline>
+    <component base="I"/>
+    <component base="J" xOffset="266"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.autolayer</key>
+  <true/>
+  <key>com.fontlab.recipe</key>
+  <string>I_J</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

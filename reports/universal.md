@@ -12,7 +12,7 @@ fontspector version: 1.5.2
 
 
 
-<details><summary>[5] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans-Regular-VF.ttf</summary>
+<details><summary>[6] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans-Regular-VF.ttf</summary>
 <div>
 
 
@@ -47,10 +47,10 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* S (U+0053): found 3, expected one of: {5, 1, 2}
-* Sacute (U+015A): found 4, expected one of: {6, 2, 3}
-* sacute (U+015B): found 4, expected one of: {3, 6, 2}
-* scircumflex (U+015D): found 4, expected one of: {3, 6, 2} [code: contour-count]
+* S (U+0053): found 3, expected one of: {1, 5, 2}
+* Sacute (U+015A): found 4, expected one of: {3, 6, 2}
+* sacute (U+015B): found 4, expected one of: {6, 3, 2}
+* scircumflex (U+015D): found 4, expected one of: {2, 3, 6} [code: contour-count]
   
   
 
@@ -112,12 +112,12 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 - ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
+width=370: divide
+width=420: minus
+width=373: greater, less
 width=380: plus
 width=440: equal
-width=373: greater, less
-width=360: multiply
-width=370: divide
-width=420: minus [code: width-outliers]
+width=360: multiply [code: width-outliers]
   
   
 
@@ -183,6 +183,44 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3170]
 </details>
 
 
+
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check font contains no unreachable glyphs (unreachable_glyphs)</summary>
+    <div>
+
+
+> Glyphs are either accessible directly through Unicode codepoints or through        substitution rules.
+> 
+> In Color Fonts, glyphs are also referenced by the COLR table. And mathematical fonts also reference glyphs via the MATH table.
+> 
+> Any glyphs not accessible by these means are redundant and serve only to increase the font's file size.
+
+
+
+
+Original proposal: [https://github.com/fonttools/fontbakery/issues/3160]
+
+
+
+
+
+- ⚠️ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+
+* Jcircumflex.ss01
+* IJ.ss01
+* agrave.ss02
+* aacute.ss02
+* acircumflex.ss02
+* ordfeminine.ss02 [code: unreachable-glyphs]
+  
+  
+
+</div>
+</details>
+
+
 </div>
 </details>
 
@@ -195,8 +233,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3170]
 
 | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
 | ---|---|---|---|
-| 5 | 1 | 87 | 26 | 
-| 4% | 1% | 73% | 22% | 
+| 6 | 2 | 85 | 26 | 
+| 5% | 2% | 71% | 22% | 
 
 
 

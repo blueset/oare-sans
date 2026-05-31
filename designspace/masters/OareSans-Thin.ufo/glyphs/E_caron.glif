@@ -2,7 +2,7 @@
 <glyph name="Ecaron" format="2">
   <advance width="278"/>
   <unicode hex="011A"/>
-  <anchor x="154" y="0" name="bottom"/>
+  <anchor x="153.5" y="0" name="bottom"/>
   <anchor x="253" y="0" name="ogonek"/>
   <anchor x="154" y="792" name="top"/>
   <outline>
