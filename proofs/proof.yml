@@ -470,3 +470,43 @@ sections:
     font_size: 48
     features: { liga: 1, kern: 1, mark: 1, mkmk: 1, ss01: 1 }
   font_indices: [0]
+- name: SS02 – Single Story a
+  layout:
+    type: Simple
+  content:
+    type: Text
+    text: |-
+      SS02 – Single Story a
+      Apple Banana Marmalade Caravan Salamander Avocado Galaxy Panorama Alabama Savanna Cathedral Magazine Carnival Awkward Façade Balance Alaska Madagascar Catamaran Aardvark Manhattan
+  design_attrs:
+    font_size: 48
+    features: { liga: 1, kern: 1, mark: 1, mkmk: 1, ss02: 1 }
+  font_indices: [0]
+- name: SS03 – Symmetrical S and 5
+  layout:
+    type: Simple
+  content:
+    type: Text
+    text: |-
+      SS03 – Symmetrical S and 5
+      Sun Snake Summit Solstice Saturn Silver Sahara Symphony Sketch Storm
+      DESSERT PASSION ISSUES CLASSIC LESSON MISSION ASSETS POSSESS GLASSES BOSSES
+      mistress passage glossy season castle dessert lesson cosmos crystal disaster
+      0123456789
+  design_attrs:
+    font_size: 48
+    features: { liga: 1, kern: 1, mark: 1, mkmk: 1, ss03: 1 }
+  font_indices: [0]
+- name: SS04 – Asymmetrical S and 5
+  layout:
+    type: Simple
+  content:
+    type: Text
+    text: |-
+      SS04 – Asymmetrical S and 5
+      Sun Snake Summit Solstice Saturn Silver Sahara Symphony Sketch Storm
+      DESSERT PASSION ISSUES CLASSIC LESSON MISSION ASSETS POSSESS GLASSES BOSSES
+  design_attrs:
+    font_size: 48
+    features: { liga: 1, kern: 1, mark: 1, mkmk: 1, ss04: 1 }
+  font_indices: [0]
