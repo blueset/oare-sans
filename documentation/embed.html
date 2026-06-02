@@ -1131,9 +1131,12 @@
 			"use strict";
 
 			function currentHeight() {
-				// `documentElement.scrollHeight` reflects the full content box,
-				// including margins collapsed into the root.
-				return Math.ceil(document.documentElement.scrollHeight);
+				// Measure the body's content box, not `documentElement`. Once the
+				// parent sizes the iframe tall, the root element's height/scrollHeight
+				// is floored at the (now tall) viewport, so it can never report a
+				// smaller value when content shrinks. `body` has `margin:0`, so its
+				// border-box height tracks content in both directions.
+				return Math.ceil(document.body.getBoundingClientRect().height);
 			}
 
 			let lastHeight = 0;
@@ -1155,7 +1158,7 @@
 				document.fonts.ready.then(report);
 			}
 			if ("ResizeObserver" in window) {
-				new ResizeObserver(report).observe(document.documentElement);
+				new ResizeObserver(report).observe(document.body);
 			} else {
 				window.addEventListener("resize", report);
 			}
