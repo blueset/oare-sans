@@ -7,6 +7,14 @@
 	<link rel="stylesheet" href="./fonts/oare-sans.css">
 	<style>
 		:root {
+			/*
+			 * Opt into both light and dark schemes so the iframe's used color
+			 * scheme can match a dark embedding page. Without this the document
+			 * defaults to light, and Chromium paints an opaque white backdrop
+			 * behind the transparent iframe when it's embedded in a dark-scheme
+			 * page, defeating `background: transparent`.
+			 */
+			color-scheme: light dark;
 			/* Primary text color, overridable via the `color` URL parameter. */
 			--text-color: #1a1a1a;
 			/* Font-size bounds used when fitting one-liners to the container. */
@@ -1110,6 +1118,55 @@
 
 				format();
 			});
+		})();
+
+		// ---- Auto-height reporting ----
+		// An iframe is a replaced element, so the parent page cannot size it to
+		// its content (CSS `height: fit-content`/`auto` have no effect, and a
+		// cross-origin parent can't read this document at all). Instead we
+		// measure our own content height and post it to the parent, which can
+		// resize the iframe in response. See the README/embed snippet for the
+		// matching parent-side listener.
+		(function () {
+			"use strict";
+
+			function currentHeight() {
+				// `documentElement.scrollHeight` reflects the full content box,
+				// including margins collapsed into the root.
+				return Math.ceil(document.documentElement.scrollHeight);
+			}
+
+			let lastHeight = 0;
+			function report() {
+				const height = currentHeight();
+				if (height === lastHeight) return;
+				lastHeight = height;
+				// `*` target origin keeps the embed drop-in; the parent should
+				// still verify `event.origin`/`event.source` before trusting it.
+				window.parent.postMessage(
+					{ type: "oare-sans:embed-height", height },
+					"*"
+				);
+			}
+
+			// Report on load, when fonts settle, and whenever content reflows.
+			window.addEventListener("load", report);
+			if (document.fonts && document.fonts.ready) {
+				document.fonts.ready.then(report);
+			}
+			if ("ResizeObserver" in window) {
+				new ResizeObserver(report).observe(document.documentElement);
+			} else {
+				window.addEventListener("resize", report);
+			}
+			// Allow the parent to request a height on demand.
+			window.addEventListener("message", (event) => {
+				if (event.data && event.data.type === "oare-sans:request-height") {
+					lastHeight = 0;
+					report();
+				}
+			});
+			report();
 		})();
 	</script>
 </body>
