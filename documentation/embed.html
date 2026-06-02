@@ -17,6 +17,8 @@
 			color-scheme: light dark;
 			/* Primary text color, overridable via the `color` URL parameter. */
 			--text-color: #1a1a1a;
+			/* Text color used on inverted stages, overridable via the `invertColor` URL parameter. */
+			--invert-text-color: #fff;
 			/* Font-size bounds used when fitting one-liners to the container. */
 			--min-font-size: 16px;
 			--max-font-size: 180px;
@@ -379,7 +381,7 @@
 		}
 
 		.tester__stage--invert .tester__text {
-			color: #fff;
+			color: var(--invert-text-color);
 		}
 
 		.flag {
@@ -621,6 +623,13 @@
 			if (color) {
 				const value = /^[0-9a-fA-F]{3,8}$/.test(color) ? "#" + color : color;
 				document.documentElement.style.setProperty("--text-color", value);
+			}
+
+			// Text color on inverted stages, e.g. ?invertColor=e63946 or ?invertColor=black
+			const invertColor = params.get("invertColor");
+			if (invertColor) {
+				const value = /^[0-9a-fA-F]{3,8}$/.test(invertColor) ? "#" + invertColor : invertColor;
+				document.documentElement.style.setProperty("--invert-text-color", value);
 			}
 
 			function clampStyle(index) {
