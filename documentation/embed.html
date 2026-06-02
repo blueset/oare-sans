@@ -280,6 +280,8 @@
 			color: var(--text-color);
 			border-radius: 4px;
 			cursor: pointer;
+			/* Anchor for the popup grid's anchor positioning. */
+			anchor-name: --flag-icon-anchor;
 		}
 
 		.flagger__icon-current svg {
@@ -289,9 +291,15 @@
 		}
 
 		.flagger__icon-grid {
-			position: absolute;
-			top: calc(100% + 0.35rem);
-			left: 0;
+			/*
+			 * Anchor the popup to the icon button and let the browser flip it
+			 * into view when it would otherwise overflow the viewport.
+			 */
+			position: fixed;
+			position-anchor: --flag-icon-anchor;
+			position-area: bottom span-right;
+			margin: 0.35rem 0;
+			position-try-fallbacks: flip-block, flip-inline, flip-block flip-inline;
 			z-index: 10;
 			display: grid;
 			grid-template-columns: repeat(4, 2rem);
@@ -893,6 +901,7 @@
 
 			weightInput.addEventListener("input", () => {
 				textEl.style.setProperty("--wght", weightInput.value);
+				updateScale();
 			});
 			lineHeightInput.addEventListener("input", updateSize);
 			window.addEventListener("resize", updateScale);
