@@ -388,12 +388,21 @@
 			/* Visual height of the flag; the text is sized to match this. */
 			--flag-height: 300px;
 			display: flex;
-			align-items: flex-end;
       justify-content: safe center;
-			overflow-x: auto;
-			overflow-y: hidden;
-			gap: 0.5rem;
+			overflow: hidden;
 			max-width: 100%;
+		}
+
+		.flag-scale {
+			display: flex;
+			align-items: flex-end;
+			gap: 0.5rem;
+			/*
+			 * Scaled down by JS (capped at 1) when the content would otherwise
+			 * overflow the available width, so the flag always fits the viewport.
+			 */
+			transform-origin: left center;
+			transform: scale(var(--flag-scale, 1));
 		}
 
 		.flag-svg {
@@ -473,6 +482,7 @@
         </div>
       </div>
       <div class="flag">
+        <div class="flag-scale">
         <div class="flag-text" id="flagText"></div>
         <svg class="flag-svg" viewBox="0 0 222 214" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M32.09 0.0317383H40.96L8.87 213.962H0L32.09 0.0317383Z" fill="url(#flagGradient)"/>
@@ -525,6 +535,7 @@
 						</symbol>
           </defs>
         </svg>
+        </div>
       </div>
     </section>
 		<section class="tester">
@@ -723,6 +734,8 @@
 
 			const textEl = document.getElementById("flagText");
 			const svg = document.querySelector(".flag-svg");
+			const flagEl = document.querySelector(".flag");
+			const scaleEl = document.querySelector(".flag-scale");
 			const weightInput = document.getElementById("flagWeight");
 			const lineHeightInput = document.getElementById("flagLineHeight");
 			const gradientToggle = document.getElementById("flagGradientToggle");
@@ -774,6 +787,20 @@
 					textEl.style.fontSize = (current * flagHeight / measured) + "px";
 				}
 				updateDedent();
+				updateScale();
+			}
+
+			// Scale the flag down (never up) so its content fits the available
+			// width. The natural size is preserved as the maximum.
+			function updateScale() {
+				if (!flagEl || !scaleEl) return;
+				scaleEl.style.setProperty("--flag-scale", 1);
+				const natural = scaleEl.getBoundingClientRect().width;
+				const available = flagEl.clientWidth;
+				const scale = natural > available && natural > 0
+					? available / natural
+					: 1;
+				scaleEl.style.setProperty("--flag-scale", scale);
 			}
 
 			// Shift each line right by (baseline distance from bottom) * tan(9.5deg).
@@ -832,6 +859,9 @@
 						// height; remeasure once it first receives content.
 						if (wasEmpty && value.length > 0) {
 							updateSize();
+						} else {
+							// Width changes as text is typed; refit the scale.
+							updateScale();
 						}
 					}
 				});
@@ -865,6 +895,7 @@
 				textEl.style.setProperty("--wght", weightInput.value);
 			});
 			lineHeightInput.addEventListener("input", updateSize);
+			window.addEventListener("resize", updateScale);
 			gradientToggle.addEventListener("click", (e) => {
 				const btn = e.target.closest("button[data-gradient]");
 				if (btn) setGradient(btn.dataset.gradient);
