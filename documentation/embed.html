@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Oare Sans Embed</title>
+	<link rel="stylesheet" href="./fonts/oare-sans.css">
+	<style>
+		:root {
+			/* Primary text color, overridable via the `color` URL parameter. */
+			--text-color: #1a1a1a;
+			/* Font-size bounds used when fitting one-liners to the container. */
+			--min-font-size: 16px;
+			--max-font-size: 180px;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			background: transparent;
+		}
+
+		body {
+			font-family: "Oare Sans", system-ui, sans-serif;
+			color: var(--text-color);
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+		}
+
+		.content {
+			padding: 1rem;
+		}
+
+		.one-liners {
+			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+		}
+
+		.one-liner {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+			/* Establish a query container so the text can size with `cqw`. */
+			container-type: inline-size;
+		}
+
+		.one-liner__style {
+			align-self: flex-start;
+			font-family: system-ui, sans-serif;
+			font-size: 0.75rem;
+			color: color-mix(in srgb, var(--text-color) 60%, transparent);
+			background: transparent;
+			border: 0px;
+			padding: 2px 4px;
+			cursor: pointer;
+		}
+
+		.one-liner__text {
+			display: block;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			line-height: 1.1;
+			outline: none;
+      text-align: center;
+			color: var(--text-color);
+      padding: 0 0.25rem;
+			/*
+			 * `--fit` is a unitless coefficient computed in JS so that
+			 * `--fit * 1cqw` equals the font size that makes the text span the
+			 * full container width. `clamp()` keeps it within the configured
+			 * bounds and `cqw` makes it track container width without JS resize.
+			 */
+			font-size: clamp(
+				var(--min-font-size),
+				calc(var(--fit, 10) * 1cqw),
+				var(--max-font-size)
+			);
+			font-variation-settings: "wght" var(--wght, 400), "slnt" var(--slnt, 0);
+		}
+
+		.one-liner__text:empty::before {
+			content: attr(data-placeholder);
+			opacity: 0.4;
+		}
+
+		/* ---- Flagger ---- */
+		.flagger {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+			margin-top: 2.5rem;
+		}
+
+		.flagger__controls {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1.25rem;
+			font-family: system-ui, sans-serif;
+			font-size: 0.8rem;
+			color: color-mix(in srgb, var(--text-color) 70%, transparent);
+		}
+
+		.flagger__controls .ctl {
+			display: flex;
+			flex-direction: column;
+			gap: 0.4rem;
+		}
+
+		/* Header row of a control: name, live value and optional reset. */
+		.ctl__label {
+			display: flex;
+			align-items: center;
+			gap: 0.4rem;
+		}
+
+		.ctl__value {
+			color: var(--text-color);
+			font-variant-numeric: tabular-nums;
+		}
+
+		.ctl__reset {
+			margin-left: auto;
+			height: 1.1rem;
+			padding: 0 0.35rem;
+			font-family: system-ui, sans-serif;
+			font-size: 0.7rem;
+			color: color-mix(in srgb, var(--text-color) 70%, transparent);
+			background: transparent;
+			border: 1px solid color-mix(in srgb, var(--text-color) 30%, transparent);
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		.ctl__reset:hover {
+			color: var(--text-color);
+			border-color: color-mix(in srgb, var(--text-color) 60%, transparent);
+		}
+
+		/* Give every control's interactive area the same height so the
+		   sliders, button groups and icon picker line up on one baseline. */
+		.flagger__controls .ctl > .flagger__toggle,
+		.flagger__controls .ctl > .flagger__icon-picker {
+			display: flex;
+			align-items: center;
+			min-height: 1.75rem;
+		}
+
+		/* ---- Minimal range sliders ---- */
+		.flagger__controls input[type="range"] {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 100%;
+			min-width: 8rem;
+			height: 1.75rem;
+			margin: 0;
+			padding: 0;
+			background: transparent;
+			cursor: pointer;
+		}
+
+		.flagger__controls input[type="range"]::-webkit-slider-runnable-track {
+			height: 2px;
+			border-radius: 2px;
+			background: color-mix(in srgb, var(--text-color) 25%, transparent);
+		}
+
+		.flagger__controls input[type="range"]::-moz-range-track {
+			height: 2px;
+			border-radius: 2px;
+			background: color-mix(in srgb, var(--text-color) 25%, transparent);
+		}
+
+		.flagger__controls input[type="range"]::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 12px;
+			height: 12px;
+			margin-top: -5px;
+			border: none;
+			border-radius: 50%;
+			background: var(--text-color);
+			transition: transform 0.1s ease;
+		}
+
+		.flagger__controls input[type="range"]::-moz-range-thumb {
+			width: 12px;
+			height: 12px;
+			border: none;
+			border-radius: 50%;
+			background: var(--text-color);
+			transition: transform 0.1s ease;
+		}
+
+		.flagger__controls input[type="range"]:hover::-webkit-slider-thumb {
+			transform: scale(1.2);
+		}
+
+		.flagger__controls input[type="range"]:hover::-moz-range-thumb {
+			transform: scale(1.2);
+		}
+
+		.flagger__controls input[type="range"]:focus-visible {
+			outline: none;
+		}
+
+		.flagger__controls input[type="range"]:focus-visible::-webkit-slider-thumb {
+			box-shadow: 0 0 0 3px color-mix(in srgb, var(--text-color) 30%, transparent);
+		}
+
+		.flagger__controls input[type="range"]:focus-visible::-moz-range-thumb {
+			box-shadow: 0 0 0 3px color-mix(in srgb, var(--text-color) 30%, transparent);
+		}
+
+		.flagger__toggle {
+			display: flex;
+			gap: 0.35rem;
+		}
+
+		.flagger__toggle button {
+			width: 2.5rem;
+			height: 1.75rem;
+			padding: 0;
+			border: 1px solid color-mix(in srgb, var(--text-color) 40%, transparent);
+			background: linear-gradient(to bottom, var(--swatch-start), var(--swatch-end));
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 0;
+		}
+
+		.flagger__toggle button[aria-pressed="true"] {
+			outline: 2px solid var(--text-color);
+			outline-offset: 1px;
+			border-color: transparent;
+		}
+
+		.flagger__toggle--text button {
+			width: auto;
+			height: 1.75rem;
+			padding: 0 0.6rem;
+			font-family: system-ui, sans-serif;
+			font-size: 0.8rem;
+			background: transparent;
+			color: color-mix(in srgb, var(--text-color) 70%, transparent);
+		}
+
+		.flagger__toggle--text button[aria-pressed="true"] {
+			outline: none;
+			background: color-mix(in srgb, var(--text-color) 12%, transparent);
+			color: var(--text-color);
+			border-color: color-mix(in srgb, var(--text-color) 70%, transparent);
+		}
+
+		/* ---- Icon picker ---- */
+		.flagger__icon-picker {
+			position: relative;
+		}
+
+		.flagger__icon-current {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 2.5rem;
+			height: 1.75rem;
+			padding: 0;
+			border: 1px solid color-mix(in srgb, var(--text-color) 40%, transparent);
+			background: transparent;
+			color: var(--text-color);
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.flagger__icon-current svg {
+			width: 1.1rem;
+			height: 1.1rem;
+			fill: currentColor;
+		}
+
+		.flagger__icon-grid {
+			position: absolute;
+			top: calc(100% + 0.35rem);
+			left: 0;
+			z-index: 10;
+			display: grid;
+			grid-template-columns: repeat(4, 2rem);
+			gap: 0.25rem;
+			padding: 0.5rem;
+			background: Canvas;
+			color: CanvasText;
+			border: 1px solid color-mix(in srgb, var(--text-color) 30%, transparent);
+			border-radius: 6px;
+			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+		}
+
+		.flagger__icon-grid[hidden] {
+			display: none;
+		}
+
+		.flagger__icon-grid button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 2rem;
+			height: 2rem;
+			padding: 0.25rem;
+			border: 1px solid transparent;
+			background: transparent;
+			color: inherit;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.flagger__icon-grid button:hover {
+			background: color-mix(in srgb, currentColor 10%, transparent);
+		}
+
+		.flagger__icon-grid button svg {
+			width: 100%;
+			height: 100%;
+			fill: currentColor;
+		}
+
+		.flagger__icon-grid button[aria-selected="true"] {
+			outline: 2px solid currentColor;
+			outline-offset: -1px;
+		}
+
+		/* ---- Tester ---- */
+		.tester {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+			margin-top: 2.5rem;
+		}
+
+		.tester__select {
+			height: 1.75rem;
+			padding: 0 0.4rem;
+			font-family: system-ui, sans-serif;
+			font-size: 0.8rem;
+			color: var(--text-color);
+			background: transparent;
+			border: 1px solid color-mix(in srgb, var(--text-color) 40%, transparent);
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.tester__stage {
+			border: 1px solid color-mix(in srgb, var(--text-color) 15%, transparent);
+			border-radius: 8px;
+			transition: background 0.15s ease;
+		}
+
+		.tester__text {
+			display: block;
+			padding: 1.25rem;
+			outline: none;
+			color: var(--text-color);
+			font-size: var(--size, 48px);
+			line-height: var(--lh, 1.3);
+			letter-spacing: var(--tracking, 0);
+			font-variation-settings: "wght" var(--wght, 400), "slnt" var(--slnt, 0);
+			font-feature-settings: var(--ssets, normal);
+		}
+
+		.tester__stage--invert {
+			background: var(--text-color);
+			border-color: transparent;
+		}
+
+		.tester__stage--invert .tester__text {
+			color: #fff;
+		}
+
+		.flag {
+			/* Visual height of the flag; the text is sized to match this. */
+			--flag-height: 300px;
+			display: flex;
+			align-items: flex-end;
+      justify-content: safe center;
+			overflow-x: auto;
+			overflow-y: hidden;
+			gap: 0.5rem;
+			max-width: 100%;
+		}
+
+		.flag-svg {
+			height: var(--flag-height);
+			width: auto;
+			flex: none;
+		}
+
+		.flag-text {
+			flex: 0 1 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			/* Line height operates as the gap between trimmed lines. */
+			gap: calc(var(--lh, 0) * 1em);
+			text-align: right;
+			color: var(--text-color);
+			line-height: 1;
+			overflow: visible;
+			/* Flag text is always oblique -10. Weight comes from the slider. */
+			font-variation-settings: "wght" var(--wght, 100), "slnt" -10;
+			font-feature-settings: var(--ssets, normal);
+		}
+
+		.flag-line {
+			display: block;
+			white-space: pre;
+			text-align: right;
+			outline: none;
+      text-box-trim: trim-both;
+      text-box-edge: cap alphabetic;
+			/*
+			 * Per-line dedent: a line whose baseline sits `x%` of the text
+			 * height above the bottom is shifted right by height * x% * tan(9.5deg).
+			 * The shift is computed in JS from the measured baseline position
+			 * because the per-line step now includes the line-height gap.
+			 */
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<section class="one-liners"></section>
+    <section class="flagger">
+      <div class="flagger__controls">
+        <label class="ctl">
+          <span class="ctl__label">Weight<output class="ctl__value"></output></span>
+          <input type="range" id="flagWeight" min="100" max="900" step="1" value="100">
+        </label>
+        <label class="ctl">
+          <span class="ctl__label">Line gap<output class="ctl__value"></output><button type="button" class="ctl__reset" aria-label="Reset line gap">Reset</button></span>
+          <input type="range" id="flagLineHeight" min="0" max="2" step="0.01" value="0.1" data-decimals="2" data-default="0.1">
+        </label>
+        <div class="ctl">Gradient
+          <div class="flagger__toggle" id="flagGradientToggle">
+            <button type="button" data-gradient="cyan" aria-pressed="true" aria-label="Cyan" style="--swatch-start: #00E5EA; --swatch-end: #00B5CC;">Cyan</button>
+            <button type="button" data-gradient="amber" aria-pressed="false" aria-label="Amber" style="--swatch-start: #FFD626; --swatch-end: #FFA300;">Amber</button>
+          </div>
+        </div>
+        <div class="ctl">Stylistic sets
+          <div class="flagger__toggle flagger__toggle--text" id="flagStylisticToggle">
+            <button type="button" data-feature="ss01" aria-pressed="false">Alt. J</button>
+            <button type="button" data-feature="ss02" aria-pressed="false">Alt. a</button>
+            <button type="button" data-feature="ss03" aria-pressed="false">Alt. Symm. S</button>
+            <button type="button" data-feature="ss04" aria-pressed="false">Alt. Asymm. S</button>
+          </div>
+        </div>
+        <div class="ctl">Icon
+          <div class="flagger__icon-picker" id="flagIconPicker">
+            <button type="button" class="flagger__icon-current" id="flagIconButton" aria-haspopup="true" aria-expanded="false" aria-label="Select icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#iconMeme"></use></svg>
+            </button>
+            <div class="flagger__icon-grid" id="flagIconGrid" role="listbox" hidden></div>
+          </div>
+        </div>
+      </div>
+      <div class="flag">
+        <div class="flag-text" id="flagText"></div>
+        <svg class="flag-svg" viewBox="0 0 222 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32.09 0.0317383H40.96L8.87 213.962H0L32.09 0.0317383Z" fill="url(#flagGradient)"/>
+          <path d="M146.21 13.402C148.4 -1.13804 83.8 0.0219644 48.93 0.0219644L36 86.192C69.36 84.252 135.5 84.192 133.21 99.462C132.07 107.042 127.68 106.752 127.11 110.542C125.59 120.682 198.05 116.162 208.26 115.062L186.4 72.122L221.1 28.832C203.63 30.642 138.63 33.772 139.99 24.682C140.72 19.812 145.4 19.122 146.21 13.402Z" fill="url(#flagGradient)"/>
+					<use id="iconContainer" href="#iconMeme" x="60" y="8" width="35" height="35" style="transform: skew(-8deg, 0);" fill="url(#iconGradient)"/>
+          <defs>
+            <linearGradient id="flagGradient" x1="45.903" y1="-5.91406" x2="45.903" y2="208.243" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00E5EA"/>
+              <stop offset="1" stop-color="#00B5CC"/>
+            </linearGradient>
+						<linearGradient id="iconGradient" x1="17.18" y1="1.17" x2="17.18" y2="34.97" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#0069A5"/>
+							<stop offset="1" stop-color="#003D6B"/>
+						</linearGradient>
+						<symbol id="iconMeme" viewBox="0 0 24 24">
+							<path d="M12.002 22.002C6.478 22.002 2 17.524 2 12.001q0-.507.05-1.001H4v2h1v1h7v-1h2v1h7v-1h.954c-.502 5.055-4.766 9.002-9.952 9.002M20.004 6H3.999a9.99 9.99 0 0 1 8.003-4.001A9.99 9.99 0 0 1 20.004 6M7.41 15.659a.75.75 0 0 0-.125 1.053a5.99 5.99 0 0 0 4.717 2.29a5.99 5.99 0 0 0 4.712-2.284a.75.75 0 1 0-1.177-.93A4.5 4.5 0 0 1 12 17.502a4.49 4.49 0 0 1-3.538-1.718a.75.75 0 0 0-1.053-.125M3 7h19v3h-1v2h-1v1h-5v-1h-1v-2h-2v2h-1v1H6v-1H5v-2H4V9H2V8h1zm-2 3V9h1v1zm0 0H0v2h1zm6-1H6v1h1v1h1v-1H7zm9 0h-1v1h1v1h1v-1h-1z" />
+						</symbol>
+						<symbol id="iconBalloon" viewBox="0 0 24 24">
+							<path d="M5 9a7 7 0 0 1 14 0c0 2.025-.67 4.236-1.85 5.956c-1.042 1.52-2.543 2.731-4.4 2.992v.302c0 .414.336.75.75.75h3.25A2.25 2.25 0 0 1 19 21.25v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 0-.75-.75H13.5a2.25 2.25 0 0 1-2.25-2.25v-.302c-1.857-.261-3.358-1.473-4.4-2.992C5.67 13.236 5 11.025 5 9m7.92-3.894a.75.75 0 0 0-.344 1.46a2.5 2.5 0 0 1 1.856 1.853a.75.75 0 1 0 1.46-.347a4 4 0 0 0-2.972-2.966" />
+						</symbol>
+						<symbol id="iconMusic" viewBox="0 0 24 24">
+						  <path d="M20 2.75a.75.75 0 0 0-.965-.718l-10 3a.75.75 0 0 0-.535.718v9.877a3.5 3.5 0 1 0 1.496 2.702L10 18.25v-7.942l8.5-2.55v5.87a3.5 3.5 0 1 0 1.496 2.702l.004-.08z" />
+						</symbol>
+						<symbol id="iconBot" viewBox="0 0 24 24">
+							<path d="M17.753 14a2.25 2.25 0 0 1 2.25 2.25v.904A3.75 3.75 0 0 1 18.696 20c-1.565 1.344-3.806 2-6.696 2s-5.128-.656-6.69-2a3.75 3.75 0 0 1-1.306-2.843v-.908A2.25 2.25 0 0 1 6.254 14zM11.9 2.006L12 2a.75.75 0 0 1 .743.648l.007.102l-.001.749h3.5a2.25 2.25 0 0 1 2.25 2.25v4.505a2.25 2.25 0 0 1-2.25 2.25h-8.5a2.25 2.25 0 0 1-2.25-2.25V5.75A2.25 2.25 0 0 1 7.75 3.5l3.5-.001V2.75a.75.75 0 0 1 .649-.743L12 2zM9.749 6.5a1.25 1.25 0 1 0 0 2.498a1.25 1.25 0 0 0 0-2.498m4.493 0a1.25 1.25 0 1 0 0 2.498a1.25 1.25 0 0 0 0-2.498" />
+						</symbol>
+						<symbol id="iconBowTie" viewBox="0 0 24 24">
+							<path d="M2 5.766c0-1.92 2.074-3.123 3.74-2.171l3.5 2q.269.154.487.363c.346-.286.79-.458 1.273-.458h2c.484 0 .927.172 1.273.458q.218-.21.487-.363l3.5-2c1.666-.952 3.74.251 3.74 2.17v5.951c0 1.916-2.067 3.12-3.733 2.175l-3.5-1.986a2.5 2.5 0 0 1-.766-.673c-.294.17-.636.268-1.001.268h-2a2 2 0 0 1-1-.268c-.204.27-.463.5-.766.673l-3.5 1.986C4.067 14.836 2 13.632 2 11.716zM8 8a.75.75 0 0 0 0 1.5h1.75V8zm8.75.75A.75.75 0 0 0 16 8h-1.75v1.5H16a.75.75 0 0 0 .75-.75m-7.023 4.025q.284-.16.528-.368c.275.07.495.3.495.584v6.259A1.75 1.75 0 0 1 9 21H6.589a1.75 1.75 0 0 1-1.678-2.247l1.158-3.908q.079-.04.158-.085zm4.017-.368c-.274.07-.494.3-.494.585v6.258c0 .966.784 1.75 1.75 1.75h2.41a1.75 1.75 0 0 0 1.679-2.247l-1.158-3.908a4 4 0 0 1-.158-.085l-3.5-1.985a3.5 3.5 0 0 1-.529-.368" />
+						</symbol>
+						<symbol id="iconCrown" viewBox="0 0 24 24">
+						  <path d="M14 5c0 .53-.206 1.012-.543 1.37l2.624 3.28a.25.25 0 0 0 .307.068l2.65-1.326A2.004 2.004 0 0 1 21 6a2 2 0 0 1 .444 3.95l-1.804 9.623A1.75 1.75 0 0 1 17.92 21H6.08a1.75 1.75 0 0 1-1.72-1.427L2.556 9.95a2 2 0 1 1 2.406-1.559l2.65 1.326a.25.25 0 0 0 .307-.068l2.624-3.28A2 2 0 1 1 14 5m-2 12a2 2 0 1 0 0-4a2 2 0 0 0 0 4" />
+						</symbol>
+						<symbol id="iconEarth" viewBox="0 0 24 24">
+							<path d="m10.946 2.047l.005.007Q11.469 2 12 2c5.522 0 10 4.477 10 10s-4.478 10-10 10a9.98 9.98 0 0 1-7.896-3.862h-.003v-.003A9.96 9.96 0 0 1 2 12c0-5.162 3.911-9.41 8.932-9.944zM12 3.5l-.16.001c.123.245.255.533.374.85c.347.923.666 2.282.1 3.487c-.522 1.113-1.424 1.4-2.09 1.573l-.084.021c-.657.17-.91.235-1.093.514c-.17.257-.144.582.061 1.25l.046.148c.082.258.18.57.23.863c.064.364.082.827-.152 1.275a2.2 2.2 0 0 1-.9.945c-.341.185-.694.256-.958.302l-.093.017c-.515.09-.761.134-1 .39c-.187.2-.307.553-.377 1.079c-.029.214-.046.427-.064.646l-.01.117c-.02.242-.044.521-.099.76v.002a8.48 8.48 0 0 0 6.27 2.76c1.576 0 3.053-.43 4.319-1.178a5 5 0 0 1-.31-.35c-.34-.428-.786-1.164-.631-2.033c.074-.418.298-.768.515-1.036a7 7 0 0 1 .72-.74l.158-.146c.179-.163.33-.301.46-.437c.172-.18.21-.262.212-.267c.068-.224-.015-.384-.106-.454a.3.3 0 0 0-.19-.061c-.084 0-.22.024-.401.14a.91.91 0 0 1-.836.085a1.02 1.02 0 0 1-.486-.432c-.144-.237-.225-.546-.278-.772c-.04-.174-.08-.372-.115-.553l-.04-.206a4 4 0 0 0-.134-.54l-.02-.037l-.064-.105a6 6 0 0 0-.227-.317l-.11-.143a13 13 0 0 1-.516-.712c-.196-.298-.417-.688-.487-1.104a1.46 1.46 0 0 1 .055-.734c.094-.264.265-.482.487-.649c.483-.362 1.193-1.172 1.823-1.959c.288-.359.544-.695.736-.95A8.46 8.46 0 0 0 12 3.5" />
+						</symbol>
+						<symbol id="iconDumbbell" viewBox="0 0 24 24">
+							<path d="M17.338 3.524a2.448 2.448 0 0 0-3.7.277a2.971 2.971 0 0 0-2.622 5.026l1.247 1.248l-1.13 1.129l1.685 1.685l1.13-1.13l1.247 1.248a2.971 2.971 0 0 0 5.026-2.622q.146-.108.277-.24a2.45 2.45 0 0 0 0-3.461l-.737-.738l.646-.646a1.191 1.191 0 1 0-1.685-1.685l-.646.646zm.428 5.34a.75.75 0 0 1-1.06 0l-1.57-1.57a.75.75 0 1 1 1.06-1.06l1.57 1.569a.75.75 0 0 1 0 1.06M4.624 11.017a2.97 2.97 0 0 1 4.201 0l4.18 4.18a2.971 2.971 0 0 1-2.622 5.026q-.108.146-.24.277a2.45 2.45 0 0 1-3.461 0l-.738-.737l-.668.667a1.191 1.191 0 0 1-1.684-1.684l.667-.668l-.737-.738a2.448 2.448 0 0 1 .277-3.7a2.97 2.97 0 0 1 .825-2.623m3.724 7.265a.75.75 0 0 0 0-1.06l-1.57-1.57a.75.75 0 1 0-1.06 1.06l1.57 1.57a.75.75 0 0 0 1.06 0" />
+						</symbol>
+						<symbol id="iconLightbulb" viewBox="0 0 24 24">
+  						<path d="m15.538 18.999l-.29 1.259a2.25 2.25 0 0 1-2.02 1.735l-.173.007h-2.111a2.25 2.25 0 0 1-2.147-1.577l-.046-.167l-.29-1.257zM12 2.001a7.25 7.25 0 0 1 7.25 7.25c0 2.137-.936 4.093-2.765 5.84a.25.25 0 0 0-.071.125l-.528 2.283H12.75V10.75a.75.75 0 0 0-1.5 0v6.75H8.114l-.526-2.283a.25.25 0 0 0-.071-.124C5.687 13.344 4.75 11.387 4.75 9.25A7.25 7.25 0 0 1 12 2.001m-.75 4.75v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0m5.03 1.465a.75.75 0 0 0-1.06 0l-1.061 1.06a.75.75 0 1 0 1.06 1.061l1.061-1.06a.75.75 0 0 0 0-1.06m-7.5 0a.75.75 0 0 0-1.06 1.06l1.06 1.061a.75.75 0 1 0 1.061-1.06z" />
+						</symbol>
+						<symbol id="iconApple" viewBox="0 0 24 24">
+							<path d="M5.471 3.42A5.18 5.18 0 0 0 6.89 7.301a5.12 5.12 0 0 0-3.66 4.216a10.46 10.46 0 0 0 1.37 6.797l.35.59l.043.063l1.416 1.906a3.462 3.462 0 0 0 5.275.336a.437.437 0 0 1 .63 0a3.462 3.462 0 0 0 5.275-.336l1.416-1.907l.042-.063l.351-.59a10.46 10.46 0 0 0 1.373-6.795a5.12 5.12 0 0 0-6.11-4.306l-1.901.394h-.003c.03-.78.152-1.62.391-2.338c.29-.868.692-1.39 1.14-1.576a.75.75 0 1 0-.578-1.385c-1.052.439-1.65 1.48-1.985 2.486l-.046.142a5.2 5.2 0 0 0-.943-1.29a5.18 5.18 0 0 0-3.98-1.51A1.367 1.367 0 0 0 5.47 3.418m2.926 7.815c-.347.069-.665.313-.864.778c-.203.474-.275 1.177-.056 2.054a.75.75 0 0 1-1.455.364c-.28-1.122-.227-2.17.132-3.009c.363-.847 1.045-1.478 1.949-1.658a.75.75 0 1 1 .294 1.47" />
+						</symbol>
+						<symbol id="iconPlant" viewBox="0 0 24 24">
+							<path d="M12.61 2.287a.93.93 0 0 0-1.22 0a7.2 7.2 0 0 0-2.487 5.282a.5.5 0 0 0 .278.449a9 9 0 0 1 1.7 1.146q.386.33.704.681c.22.242.61.242.83 0q.319-.351.704-.68a9 9 0 0 1 1.7-1.146a.5.5 0 0 0 .279-.449a7.2 7.2 0 0 0-2.487-5.283M12 18.043a8.16 8.16 0 0 1 8.17-4.06c.488.064.853.5.815 1.004A7.596 7.596 0 0 1 13.41 22h-2.82a7.596 7.596 0 0 1-7.574-7.013a.94.94 0 0 1 .815-1.004a8.16 8.16 0 0 1 8.17 4.06m7.646-5.113c-1.847-.102-3.654.38-5.126 1.165c-.882.47-1.69 1.075-2.322 1.771a.27.27 0 0 1-.396 0c-.63-.697-1.439-1.301-2.321-1.771c-1.469-.783-3.27-1.264-5.112-1.165c-.73-1.15-1.23-2.47-1.35-3.8a.96.96 0 0 1 .874-1.04c2.455-.205 4.504.28 6.342 1.837c.83.703 1.386 1.547 1.766 2.267c.379-.72.936-1.564 1.765-2.267c1.84-1.558 3.903-2.042 6.356-1.837a.96.96 0 0 1 .875 1.04c-.121 1.33-.621 2.651-1.35 3.8" />
+						</symbol>
+						<symbol id="iconPizza" viewBox="0 0 24 24">
+							<path d="M5.003 4.66c0-1.496 1.231-2.804 2.821-2.647A20.78 20.78 0 0 1 21.266 8.84c1.07 1.193.737 2.964-.479 3.845l-.423.307l-.363-.54l-.008-.011c-3.19-4.407-8.38-7.275-14.24-7.275h-.75zm13.768 8.65l.378.563l-3.947 2.865l-.202.15v2.102a1 1 0 0 1-2 0v-.06a.5.5 0 0 0-.996.06v1.501a1 1 0 0 1-1.995.1l-1.44 1.04c-1.489 1.074-3.57.011-3.569-1.826l.003-13.14h.75c5.354 0 10.096 2.617 13.018 6.645m-9.767-2.32a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4 2.998a1 1 0 1 0 0-2a1 1 0 0 0 0 2m-4 2.998a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+						</symbol>
+          </defs>
+        </svg>
+      </div>
+    </section>
+		<section class="tester">
+			<div class="flagger__controls">
+				<label class="ctl">Instance
+					<select class="tester__select" id="testInstance"></select>
+				</label>
+				<label class="ctl">
+					<span class="ctl__label">Font size<output class="ctl__value"></output></span>
+					<input type="range" id="testSize" min="12" max="160" step="1" value="60" data-unit="px">
+				</label>
+				<label class="ctl">
+					<span class="ctl__label">Weight<output class="ctl__value"></output></span>
+					<input type="range" id="testWeight" min="100" max="900" step="1" value="400">
+				</label>
+				<label class="ctl">
+					<span class="ctl__label">Slant<output class="ctl__value"></output></span>
+					<input type="range" id="testSlant" min="-10" max="0" step="1" value="0" data-unit="°">
+				</label>
+				<label class="ctl">
+					<span class="ctl__label">Line height<output class="ctl__value"></output><button type="button" class="ctl__reset" aria-label="Reset line height">Reset</button></span>
+					<input type="range" id="testLineHeight" min="0.8" max="2.5" step="0.01" value="1.2" data-decimals="2" data-default="1.2">
+				</label>
+				<label class="ctl">
+					<span class="ctl__label">Letter spacing<output class="ctl__value"></output><button type="button" class="ctl__reset" aria-label="Reset letter spacing">Reset</button></span>
+					<input type="range" id="testTracking" min="-0.05" max="0.5" step="0.005" value="0" data-decimals="3" data-unit="em" data-default="0">
+				</label>
+				<div class="ctl">Stylistic sets
+					<div class="flagger__toggle flagger__toggle--text" id="testStylisticToggle">
+						<button type="button" data-feature="ss01" aria-pressed="false">Alt. J</button>
+						<button type="button" data-feature="ss02" aria-pressed="false">Alt. a</button>
+						<button type="button" data-feature="ss03" aria-pressed="false">Alt. Symm. S</button>
+						<button type="button" data-feature="ss04" aria-pressed="false">Alt. Asymm. S</button>
+					</div>
+				</div>
+				<div class="ctl">Color
+					<div class="flagger__toggle flagger__toggle--text" id="testInvertToggle">
+						<button type="button" data-invert aria-pressed="false" aria-label="Invert colors">
+							<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+								<path d="M0 0h24v24H0z" fill="none" />
+								<path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10m0-2V4a8 8 0 1 1 0 16" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="tester__stage" id="testStage">
+				<div class="tester__text" id="testText" contenteditable="plaintext-only" spellcheck="false">Quousque tandem abutere, Catilina, patientia nostra?</div>
+			</div>
+		</section>
+	</div>
+
+	<script>
+		(function () {
+			"use strict";
+
+			const STYLES = [
+				{ name: "Oare Sans Thin", wght: 100, slnt: 0 },
+				{ name: "Oare Sans Thin Oblique", wght: 100, slnt: -10 },
+				{ name: "Oare Sans ExtraLight", wght: 200, slnt: 0 },
+				{ name: "Oare Sans ExtraLight Oblique", wght: 200, slnt: -10 },
+				{ name: "Oare Sans Light", wght: 300, slnt: 0 },
+				{ name: "Oare Sans Light Oblique", wght: 300, slnt: -10 },
+				{ name: "Oare Sans", wght: 400, slnt: 0 },
+				{ name: "Oare Sans Oblique", wght: 400, slnt: -10 },
+				{ name: "Oare Sans Medium", wght: 500, slnt: 0 },
+				{ name: "Oare Sans Medium Oblique", wght: 500, slnt: -10 },
+				{ name: "Oare Sans SemiBold", wght: 600, slnt: 0 },
+				{ name: "Oare Sans SemiBold Oblique", wght: 600, slnt: -10 },
+				{ name: "Oare Sans Bold", wght: 700, slnt: 0 },
+				{ name: "Oare Sans Bold Oblique", wght: 700, slnt: -10 },
+				{ name: "Oare Sans ExtraBold", wght: 800, slnt: 0 },
+				{ name: "Oare Sans ExtraBold Oblique", wght: 800, slnt: -10 },
+				{ name: "Oare Sans Black", wght: 900, slnt: 0 },
+				{ name: "Oare Sans Black Oblique", wght: 900, slnt: -10 }
+			];
+
+			// Hardcoded row configuration. Each row sets a `styleIndex` (0-17,
+			// matching the STYLES array above) and the `text` to display.
+			const ROWS = [
+				{ styleIndex: 1 /* Thin Oblique */, text: "Ethnocentrically Thermostatically" },
+        { styleIndex: 2 /* ExtraLight */, text: "Circumstantiates Indemnifying" },
+        { styleIndex: 5 /* Light Oblique */, text: "Counterfeiter Dissymmetrical" },
+        { styleIndex: 6 /* Regular */, text: "Chromatography Handicraft" },
+        { styleIndex: 9 /* Medium Oblique */, text: "Usurpation Immunologists" },
+        { styleIndex: 10 /* SemiBold */, text: "Allegorise Dematerializing" },
+        { styleIndex: 13 /* Bold Oblique */, text: "Beholder Conscientiously" },
+        { styleIndex: 14 /* ExtraBold */, text: "Inoculate Dessertspoons" },
+        { styleIndex: 17 /* Black Oblique */, text: "Councilmen Capsulation" }
+			];
+
+			const params = new URLSearchParams(window.location.search);
+
+			// Primary text color, e.g. ?color=e63946 or ?color=red
+			const color = params.get("color");
+			if (color) {
+				const value = /^[0-9a-fA-F]{3,8}$/.test(color) ? "#" + color : color;
+				document.documentElement.style.setProperty("--text-color", value);
+			}
+
+			function clampStyle(index) {
+				if (Number.isNaN(index) || index < 0 || index >= STYLES.length) return 0;
+				return index;
+			}
+
+			// Measure the text at a reference size and derive the `--fit`
+			// coefficient so that `--fit * 1cqw` fills the container width. CSS
+			// `clamp()` + `cqw` then handle bounds and live resizing.
+			const REFERENCE_FONT_SIZE = 100;
+			function fitText(textEl) {
+				textEl.style.fontSize = REFERENCE_FONT_SIZE + "px";
+				const textWidth = textEl.scrollWidth;
+				textEl.style.fontSize = "";
+				if (textWidth <= 0) return;
+				// 100cqw === container width, so the coefficient is
+				// 100 * referenceSize / textWidthAtReference.
+				const coefficient = (100 * REFERENCE_FONT_SIZE) / textWidth;
+				textEl.style.setProperty("--fit", coefficient);
+			}
+
+			function applyStyle(textEl, styleIndex) {
+				const style = STYLES[styleIndex];
+				textEl.style.setProperty("--wght", style.wght);
+				textEl.style.setProperty("--slnt", style.slnt);
+			}
+
+			function buildRow(config) {
+				const row = document.createElement("div");
+				row.className = "one-liner";
+
+				const select = document.createElement("select");
+				select.className = "one-liner__style";
+				STYLES.forEach((style, index) => {
+					const option = document.createElement("option");
+					option.value = String(index);
+					option.textContent = style.name;
+					select.appendChild(option);
+				});
+				select.value = String(config.styleIndex);
+
+				const text = document.createElement("div");
+				text.className = "one-liner__text";
+				text.contentEditable = "plaintext-only";
+				text.spellcheck = false;
+				text.setAttribute("data-placeholder", STYLES[config.styleIndex].name);
+				text.textContent = config.text || STYLES[config.styleIndex].name;
+
+				row.appendChild(select);
+				row.appendChild(text);
+
+				const refit = () => fitText(text);
+
+				select.addEventListener("change", () => {
+					const index = clampStyle(parseInt(select.value, 10));
+					applyStyle(text, index);
+					text.setAttribute("data-placeholder", STYLES[index].name);
+					refit();
+				});
+
+				text.addEventListener("input", refit);
+
+				applyStyle(text, config.styleIndex);
+				return { row, refit };
+			}
+
+			const container = document.querySelector(".one-liners");
+			const rows = ROWS.map((config) => buildRow({
+				styleIndex: clampStyle(config.styleIndex),
+				text: config.text
+			}));
+			rows.forEach(({ row }) => container.appendChild(row));
+
+			function refitAll() {
+				rows.forEach(({ refit }) => refit());
+			}
+
+			// Recompute the coefficient once fonts are ready. Container width
+			// changes are handled automatically by `cqw`, so no resize listener
+			// is needed.
+			if (document.fonts && document.fonts.ready) {
+				document.fonts.ready.then(refitAll);
+			}
+			refitAll();
+		})();
+
+		// ---- Flagger ----
+		(function () {
+			"use strict";
+
+			const textEl = document.getElementById("flagText");
+			const svg = document.querySelector(".flag-svg");
+			const weightInput = document.getElementById("flagWeight");
+			const lineHeightInput = document.getElementById("flagLineHeight");
+			const gradientToggle = document.getElementById("flagGradientToggle");
+			const stylisticToggle = document.getElementById("flagStylisticToggle");
+			if (!textEl || !svg) return;
+
+			const GRADIENTS = {
+				cyan: ["#00E5EA", "#00B5CC"],
+				amber: ["#FFD626", "#FFA300"]
+			};
+
+			// Editable text model: one entry per line.
+			let lines = ["KIKAKU", "MUNDO"];
+
+			function getCaret(lineEl) {
+				const sel = window.getSelection();
+				if (!sel || !sel.rangeCount) return 0;
+				return sel.getRangeAt(0).startOffset;
+			}
+
+			function setCaret(lineEl, offset) {
+				const len = lineEl.textContent.length;
+				const off = Math.max(0, Math.min(offset, len));
+				const range = document.createRange();
+				if (lineEl.firstChild) {
+					range.setStart(lineEl.firstChild, off);
+				} else {
+					range.setStart(lineEl, 0);
+				}
+				range.collapse(true);
+				const sel = window.getSelection();
+				sel.removeAllRanges();
+				sel.addRange(range);
+			}
+
+			// Size the text so the combined height of all lines (including the
+			// line-height gaps) equals the flag height. Because the gap is em-based,
+			// the whole block scales linearly with font size, so we measure at the
+			// current size and rescale to the target, then update the dedent.
+			const TAN_9_5 = Math.tan((9.5 * Math.PI) / 180);
+			function updateSize() {
+				const lh = parseFloat(lineHeightInput.value) || 0;
+				const flagHeight = svg.getBoundingClientRect().height;
+				if (flagHeight <= 0) return;
+				textEl.style.setProperty("--lh", lh);
+				const current = parseFloat(getComputedStyle(textEl).fontSize) || 100;
+				const measured = textEl.getBoundingClientRect().height;
+				if (measured > 0) {
+					textEl.style.fontSize = (current * flagHeight / measured) + "px";
+				}
+				updateDedent();
+			}
+
+			// Shift each line right by (baseline distance from bottom) * tan(9.5deg).
+			// With cap/alphabetic trimming each line box bottom sits on its baseline.
+			function updateDedent() {
+				const bottom = textEl.getBoundingClientRect().bottom;
+				Array.from(textEl.children).forEach((line) => {
+					const baselineFromBottom = bottom - line.getBoundingClientRect().bottom;
+					line.style.transform = "translateX(" + (baselineFromBottom * TAN_9_5) + "px)";
+				});
+			}
+
+			function bindLine(div, index) {
+				div.addEventListener("keydown", (e) => {
+					if (e.key === "Enter") {
+						e.preventDefault();
+						const caret = getCaret(div);
+						const value = div.textContent;
+						lines.splice(index, 1, value.slice(0, caret), value.slice(caret));
+						render();
+						const next = textEl.children[index + 1];
+						next.focus();
+						setCaret(next, 0);
+					} else if (e.key === "Backspace" && getCaret(div) === 0 && index > 0) {
+						e.preventDefault();
+						const prevLen = lines[index - 1].length;
+						lines.splice(index - 1, 2, lines[index - 1] + div.textContent);
+						render();
+						const target = textEl.children[index - 1];
+						target.focus();
+						setCaret(target, prevLen);
+					} else if (e.key === "Delete" && getCaret(div) === div.textContent.length && index < lines.length - 1) {
+						e.preventDefault();
+						const here = div.textContent.length;
+						lines.splice(index, 2, div.textContent + lines[index + 1]);
+						render();
+						const target = textEl.children[index];
+						target.focus();
+						setCaret(target, here);
+					}
+				});
+
+				div.addEventListener("input", () => {
+					const value = div.textContent;
+					if (value.includes("\n")) {
+						const parts = value.split("\n");
+						lines.splice(index, 1, ...parts);
+						render();
+						const target = textEl.children[index + parts.length - 1];
+						target.focus();
+						setCaret(target, target.textContent.length);
+					} else {
+						const wasEmpty = lines[index].length === 0;
+						lines[index] = value;
+						// A new line starts empty and contributes no measurable
+						// height; remeasure once it first receives content.
+						if (wasEmpty && value.length > 0) {
+							updateSize();
+						}
+					}
+				});
+			}
+
+			function render() {
+				textEl.textContent = "";
+				lines.forEach((line, i) => {
+					const div = document.createElement("div");
+					div.className = "flag-line";
+					div.contentEditable = "plaintext-only";
+					div.spellcheck = false;
+					div.textContent = line;
+					bindLine(div, i);
+					textEl.appendChild(div);
+				});
+				updateSize();
+			}
+
+			function setGradient(key) {
+				const preset = GRADIENTS[key] || GRADIENTS.cyan;
+				const stops = svg.querySelectorAll("#flagGradient stop");
+				if (stops[0]) stops[0].setAttribute("stop-color", preset[0]);
+				if (stops[1]) stops[1].setAttribute("stop-color", preset[1]);
+				Array.from(gradientToggle.querySelectorAll("button")).forEach((btn) => {
+					btn.setAttribute("aria-pressed", String(btn.dataset.gradient === key));
+				});
+			}
+
+			weightInput.addEventListener("input", () => {
+				textEl.style.setProperty("--wght", weightInput.value);
+			});
+			lineHeightInput.addEventListener("input", updateSize);
+			gradientToggle.addEventListener("click", (e) => {
+				const btn = e.target.closest("button[data-gradient]");
+				if (btn) setGradient(btn.dataset.gradient);
+			});
+
+			function updateStylisticSets() {
+				const active = Array.from(
+					stylisticToggle.querySelectorAll('button[aria-pressed="true"]')
+				).map((btn) => '"' + btn.dataset.feature + '" 1');
+				textEl.style.setProperty("--ssets", active.length ? active.join(", ") : "normal");
+			}
+
+			stylisticToggle.addEventListener("click", (e) => {
+				const btn = e.target.closest("button[data-feature]");
+				if (!btn) return;
+				const pressed = btn.getAttribute("aria-pressed") === "true";
+				btn.setAttribute("aria-pressed", String(!pressed));
+				updateStylisticSets();
+			});
+
+			// ---- Icon picker ----
+			const iconContainer = svg.querySelector("#iconContainer");
+			const iconButton = document.getElementById("flagIconButton");
+			const iconGrid = document.getElementById("flagIconGrid");
+			const iconPicker = document.getElementById("flagIconPicker");
+
+			if (iconContainer && iconButton && iconGrid && iconPicker) {
+				// Available icons, derived from the <symbol> definitions in the SVG.
+				const ICONS = Array.from(svg.querySelectorAll("symbol[id^='icon']"))
+					.map((sym) => "#" + sym.id);
+				let currentIcon = iconContainer.getAttribute("href") || ICONS[0];
+
+				function setIcon(href) {
+					currentIcon = href;
+					iconContainer.setAttribute("href", href);
+					iconButton.querySelector("use").setAttribute("href", href);
+					Array.from(iconGrid.children).forEach((btn) => {
+						btn.setAttribute("aria-selected", String(btn.dataset.icon === href));
+					});
+				}
+
+				function openGrid() {
+					iconGrid.hidden = false;
+					iconButton.setAttribute("aria-expanded", "true");
+				}
+
+				function closeGrid() {
+					iconGrid.hidden = true;
+					iconButton.setAttribute("aria-expanded", "false");
+				}
+
+				ICONS.forEach((href) => {
+					const btn = document.createElement("button");
+					btn.type = "button";
+					btn.dataset.icon = href;
+					btn.setAttribute("role", "option");
+					btn.innerHTML =
+						'<svg viewBox="0 0 24 24" aria-hidden="true"><use href="' + href + '"></use></svg>';
+					btn.addEventListener("click", () => {
+						setIcon(href);
+						closeGrid();
+					});
+					iconGrid.appendChild(btn);
+				});
+
+				iconButton.addEventListener("click", () => {
+					if (iconGrid.hidden) openGrid();
+					else closeGrid();
+				});
+
+				document.addEventListener("click", (e) => {
+					if (!iconPicker.contains(e.target)) closeGrid();
+				});
+
+				setIcon(currentIcon);
+			}
+
+			// Initial state.
+			textEl.style.setProperty("--wght", weightInput.value);
+			setGradient("cyan");
+			updateStylisticSets();
+			render();
+
+			if (document.fonts && document.fonts.ready) {
+				document.fonts.ready.then(updateSize);
+			}
+			if (typeof ResizeObserver !== "undefined") {
+				new ResizeObserver(updateSize).observe(svg);
+			}
+		})();
+
+		// ---- Tester ----
+		(function () {
+			"use strict";
+
+			// Named instances exposed in the dropdown. Each maps to a weight and
+			// slant; the dropdown drives the sliders and vice versa.
+			const INSTANCES = [
+				{ name: "Thin", wght: 100, slnt: 0 },
+				{ name: "Thin Oblique", wght: 100, slnt: -10 },
+				{ name: "ExtraLight", wght: 200, slnt: 0 },
+				{ name: "ExtraLight Oblique", wght: 200, slnt: -10 },
+				{ name: "Light", wght: 300, slnt: 0 },
+				{ name: "Light Oblique", wght: 300, slnt: -10 },
+				{ name: "Regular", wght: 400, slnt: 0 },
+				{ name: "Oblique", wght: 400, slnt: -10 },
+				{ name: "Medium", wght: 500, slnt: 0 },
+				{ name: "Medium Oblique", wght: 500, slnt: -10 },
+				{ name: "SemiBold", wght: 600, slnt: 0 },
+				{ name: "SemiBold Oblique", wght: 600, slnt: -10 },
+				{ name: "Bold", wght: 700, slnt: 0 },
+				{ name: "Bold Oblique", wght: 700, slnt: -10 },
+				{ name: "ExtraBold", wght: 800, slnt: 0 },
+				{ name: "ExtraBold Oblique", wght: 800, slnt: -10 },
+				{ name: "Black", wght: 900, slnt: 0 },
+				{ name: "Black Oblique", wght: 900, slnt: -10 }
+			];
+
+			const instanceSelect = document.getElementById("testInstance");
+			const sizeInput = document.getElementById("testSize");
+			const weightInput = document.getElementById("testWeight");
+			const slantInput = document.getElementById("testSlant");
+			const lineHeightInput = document.getElementById("testLineHeight");
+			const trackingInput = document.getElementById("testTracking");
+			const stylisticToggle = document.getElementById("testStylisticToggle");
+			const invertToggle = document.getElementById("testInvertToggle");
+			const stage = document.getElementById("testStage");
+			const textEl = document.getElementById("testText");
+			if (!textEl) return;
+
+			INSTANCES.forEach((inst, index) => {
+				const option = document.createElement("option");
+				option.value = String(index);
+				option.textContent = inst.name;
+				instanceSelect.appendChild(option);
+			});
+
+			// Pick the instance whose weight/slant is nearest to the sliders. The
+			// weight span (800) dwarfs the slant span (10), so normalise each axis
+			// before comparing.
+			function closestInstance(wght, slnt) {
+				let best = 0;
+				let bestDist = Infinity;
+				INSTANCES.forEach((inst, index) => {
+					const dw = (inst.wght - wght) / 800;
+					const ds = (inst.slnt - slnt) / 10;
+					const dist = dw * dw + ds * ds;
+					if (dist < bestDist) {
+						bestDist = dist;
+						best = index;
+					}
+				});
+				return best;
+			}
+
+			function applyVariation() {
+				textEl.style.setProperty("--wght", weightInput.value);
+				textEl.style.setProperty("--slnt", slantInput.value);
+			}
+
+			function syncInstanceFromSliders() {
+				const index = closestInstance(
+					parseFloat(weightInput.value),
+					parseFloat(slantInput.value)
+				);
+				instanceSelect.value = String(index);
+			}
+
+			instanceSelect.addEventListener("change", () => {
+				const inst = INSTANCES[parseInt(instanceSelect.value, 10)] || INSTANCES[0];
+				weightInput.value = String(inst.wght);
+				slantInput.value = String(inst.slnt);
+				applyVariation();
+			});
+
+			weightInput.addEventListener("input", () => {
+				applyVariation();
+				syncInstanceFromSliders();
+			});
+			slantInput.addEventListener("input", () => {
+				applyVariation();
+				syncInstanceFromSliders();
+			});
+
+			sizeInput.addEventListener("input", () => {
+				textEl.style.setProperty("--size", sizeInput.value + "px");
+			});
+			lineHeightInput.addEventListener("input", () => {
+				textEl.style.setProperty("--lh", lineHeightInput.value);
+			});
+			trackingInput.addEventListener("input", () => {
+				textEl.style.setProperty("--tracking", trackingInput.value + "em");
+			});
+
+			function updateStylisticSets() {
+				const active = Array.from(
+					stylisticToggle.querySelectorAll('button[aria-pressed="true"]')
+				).map((btn) => '"' + btn.dataset.feature + '" 1');
+				textEl.style.setProperty("--ssets", active.length ? active.join(", ") : "normal");
+			}
+
+			stylisticToggle.addEventListener("click", (e) => {
+				const btn = e.target.closest("button[data-feature]");
+				if (!btn) return;
+				const pressed = btn.getAttribute("aria-pressed") === "true";
+				btn.setAttribute("aria-pressed", String(!pressed));
+				updateStylisticSets();
+			});
+
+			invertToggle.addEventListener("click", (e) => {
+				const btn = e.target.closest("button[data-invert]");
+				if (!btn) return;
+				const pressed = btn.getAttribute("aria-pressed") === "true";
+				btn.setAttribute("aria-pressed", String(!pressed));
+				stage.classList.toggle("tester__stage--invert", !pressed);
+			});
+
+			// Initial state.
+			textEl.style.setProperty("--size", sizeInput.value + "px");
+			textEl.style.setProperty("--lh", lineHeightInput.value);
+			textEl.style.setProperty("--tracking", trackingInput.value + "em");
+			applyVariation();
+			syncInstanceFromSliders();
+			updateStylisticSets();
+		})();
+
+		// ---- Slider value displays + resets ----
+		(function () {
+			"use strict";
+
+			// Wire every range slider to its live value display and optional reset
+			// button. Formatting comes from data-decimals / data-unit on the input;
+			// the default value for reset comes from data-default.
+			document.querySelectorAll(".ctl").forEach((ctl) => {
+				const input = ctl.querySelector('input[type="range"]');
+				if (!input) return;
+				const output = ctl.querySelector(".ctl__value");
+				const reset = ctl.querySelector(".ctl__reset");
+				const decimals = parseInt(input.dataset.decimals || "0", 10);
+				const unit = input.dataset.unit || "";
+
+				const format = () => {
+					if (!output) return;
+					const value = decimals
+						? parseFloat(input.value).toFixed(decimals)
+						: input.value;
+					output.textContent = value + unit;
+				};
+
+				input.addEventListener("input", format);
+
+				if (reset) {
+					reset.addEventListener("click", () => {
+						if (input.dataset.default !== undefined) {
+							input.value = input.dataset.default;
+						}
+						// Let the owning section react to the change, then refresh
+						// the value display.
+						input.dispatchEvent(new Event("input", { bubbles: true }));
+					});
+				}
+
+				format();
+			});
+		})();
+	</script>
+</body>
+</html>

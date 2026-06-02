@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Oare Sans";
+  src: url("./OareSans-Regular-VF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+}
+
+@font-feature-values "Oare Sans" {
+  @styleset {
+    ss01: 1; ss02: 2; ss03: 3; ss04: 4;
+    alt-j: 1;
+    single-story-a: 2;
+    alt-symetrical-s: 3;
+    alt-asymetrical-s: 4;
+  }
+}
