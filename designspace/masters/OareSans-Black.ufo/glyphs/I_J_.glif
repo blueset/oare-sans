@@ -2,8 +2,8 @@
 <glyph name="IJ" format="2">
   <advance width="500"/>
   <unicode hex="0132"/>
-  <anchor x="250" y="680" name="top"/>
-  <anchor x="250" y="0" name="bottom"/>
+  <anchor x="382" y="680" name="top"/>
+  <anchor x="117.5" y="0" name="bottom"/>
   <anchor x="205" y="0" name="ogonek"/>
   <outline>
     <component base="I"/>

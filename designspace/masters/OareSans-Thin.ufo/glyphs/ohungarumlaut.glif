@@ -2,7 +2,7 @@
 <glyph name="ohungarumlaut" format="2">
   <advance width="350"/>
   <unicode hex="0151"/>
-  <anchor x="175" y="0" name="bottom"/>
+  <anchor x="178" y="0" name="bottom"/>
   <anchor x="231" y="0" name="ogonek"/>
   <anchor x="175" y="649" name="top"/>
   <outline>

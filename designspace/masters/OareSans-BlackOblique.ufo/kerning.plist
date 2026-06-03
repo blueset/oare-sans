@@ -15,6 +15,8 @@
   <dict>
     <key>AE</key>
     <integer>-70</integer>
+    <key>J.ss01</key>
+    <integer>-70</integer>
     <key>oslash</key>
     <integer>-10</integer>
     <key>v</key>
@@ -23,8 +25,6 @@
     <integer>-25</integer>
     <key>public.kern2.ARight</key>
     <integer>-50</integer>
-    <key>public.kern2.J.ss01Right</key>
-    <integer>-70</integer>
     <key>public.kern2.aRight</key>
     <integer>-50</integer>
     <key>public.kern2.colon</key>
@@ -62,75 +62,12 @@
     <key>public.kern2.zRight</key>
     <integer>-10</integer>
   </dict>
-  <key>H</key>
+  <key>J.ss01</key>
   <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Hbar</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Hcaron</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Hcircumflex</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>I</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Iacute</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Icaron</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Icircumflex</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Idieresis</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Idotaccent</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Igrave</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Imacron</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Iogonek</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Itilde</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
+    <key>AE</key>
+    <integer>-50</integer>
+    <key>J.ss01</key>
+    <integer>-20</integer>
   </dict>
   <key>L</key>
   <dict>
@@ -296,56 +233,21 @@
     <key>public.kern2.yRight</key>
     <integer>-85</integer>
   </dict>
-  <key>M</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>N</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Nacute</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Ncaron</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Ncommaaccent</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Ngrave</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
-  <key>Ntilde</key>
-  <dict>
-    <key>public.kern2.WRight</key>
-    <integer>-5</integer>
-  </dict>
   <key>Oslash</key>
   <dict>
+    <key>J.ss01</key>
+    <integer>-10</integer>
     <key>V</key>
     <integer>-20</integer>
-    <key>public.kern2.J.ss01Right</key>
-    <integer>-10</integer>
     <key>public.kern2.TRight</key>
     <integer>-5</integer>
   </dict>
   <key>P</key>
   <dict>
+    <key>J.ss01</key>
+    <integer>-60</integer>
     <key>public.kern2.ARight</key>
     <integer>-40</integer>
-    <key>public.kern2.J.ss01Right</key>
-    <integer>-60</integer>
     <key>public.kern2.YRight</key>
     <integer>-15</integer>
     <key>public.kern2.aRight</key>
@@ -359,7 +261,7 @@
   </dict>
   <key>Thorn</key>
   <dict>
-    <key>public.kern2.AERight</key>
+    <key>AE</key>
     <integer>-60</integer>
     <key>public.kern2.aRight</key>
     <integer>-15</integer>
@@ -385,9 +287,9 @@
     <key>public.kern2.Oright</key>
     <integer>-10</integer>
     <key>public.kern2.S.ss03Right</key>
-    <integer>-20</integer>
+    <integer>-10</integer>
     <key>public.kern2.S.ss04Right</key>
-    <integer>-30</integer>
+    <integer>-25</integer>
     <key>public.kern2.SRight</key>
     <integer>-20</integer>
     <key>public.kern2.aRight</key>
@@ -487,6 +389,11 @@
     <key>seven</key>
     <integer>-10</integer>
   </dict>
+  <key>lcaron</key>
+  <dict>
+    <key>public.kern2.S.ss03Right</key>
+    <integer>100</integer>
+  </dict>
   <key>nine</key>
   <dict>
     <key>four</key>
@@ -518,7 +425,7 @@
   </dict>
   <key>parenleft</key>
   <dict>
-    <key>public.kern2.J.ss01Right</key>
+    <key>J.ss01</key>
     <integer>20</integer>
     <key>public.kern2.JRight</key>
     <integer>80</integer>
@@ -638,6 +545,10 @@
     <integer>30</integer>
     <key>public.kern2.Oright</key>
     <integer>-30</integer>
+    <key>public.kern2.S.ss03Right</key>
+    <integer>-20</integer>
+    <key>public.kern2.S.ss04Right</key>
+    <integer>-20</integer>
     <key>public.kern2.SRight</key>
     <integer>-20</integer>
     <key>public.kern2.TRight</key>
@@ -778,15 +689,13 @@
   <dict>
     <key>public.kern2.JRight</key>
     <integer>30</integer>
+    <key>public.kern2.WRight</key>
+    <integer>-5</integer>
   </dict>
   <key>public.kern1.J.ss01Left</key>
   <dict>
-    <key>public.kern2.AERight</key>
-    <integer>-50</integer>
     <key>public.kern2.ARight</key>
     <integer>-30</integer>
-    <key>public.kern2.J.ss01Right</key>
-    <integer>-20</integer>
     <key>public.kern2.commaRight</key>
     <integer>-20</integer>
   </dict>
@@ -901,6 +810,21 @@
     <key>public.kern2.qRight</key>
     <integer>-10</integer>
   </dict>
+  <key>public.kern1.S.ss03Left</key>
+  <dict>
+    <key>V</key>
+    <integer>-15</integer>
+    <key>public.kern2.AERight</key>
+    <integer>-30</integer>
+    <key>public.kern2.ARight</key>
+    <integer>-10</integer>
+    <key>public.kern2.tRight</key>
+    <integer>-10</integer>
+    <key>public.kern2.wRight</key>
+    <integer>-20</integer>
+    <key>public.kern2.yRight</key>
+    <integer>-30</integer>
+  </dict>
   <key>public.kern1.S.ss04Left</key>
   <dict>
     <key>V</key>
@@ -926,7 +850,7 @@
     <key>public.kern2.wRight</key>
     <integer>-30</integer>
     <key>public.kern2.yRight</key>
-    <integer>-56</integer>
+    <integer>-55</integer>
     <key>public.kern2.zRight</key>
     <integer>-5</integer>
   </dict>
@@ -1338,6 +1262,10 @@
     <integer>130</integer>
     <key>public.kern2.Oright</key>
     <integer>100</integer>
+    <key>public.kern2.S.ss03Right</key>
+    <integer>100</integer>
+    <key>public.kern2.S.ss04Right</key>
+    <integer>80</integer>
     <key>public.kern2.SRight</key>
     <integer>90</integer>
     <key>public.kern2.TRight</key>

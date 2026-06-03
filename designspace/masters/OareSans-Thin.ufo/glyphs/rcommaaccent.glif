@@ -2,7 +2,7 @@
 <glyph name="rcommaaccent" format="2">
   <advance width="224"/>
   <unicode hex="0157"/>
-  <anchor x="129.5" y="525" name="top"/>
+  <anchor x="125.75" y="525" name="top"/>
   <anchor x="74.5" y="-175" name="bottom"/>
   <outline>
     <component base="r"/>

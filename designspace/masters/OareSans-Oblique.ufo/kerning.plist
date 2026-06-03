@@ -119,7 +119,7 @@
     <key>public.kern2.S.ss03Right</key>
     <integer>-20</integer>
     <key>public.kern2.S.ss04Right</key>
-    <integer>-30</integer>
+    <integer>-25</integer>
     <key>public.kern2.SRight</key>
     <integer>-10</integer>
     <key>public.kern2.YRight</key>
@@ -448,6 +448,10 @@
     <integer>10</integer>
     <key>public.kern2.Oright</key>
     <integer>-20</integer>
+    <key>public.kern2.S.ss03Right</key>
+    <integer>-10</integer>
+    <key>public.kern2.S.ss04Right</key>
+    <integer>-10</integer>
     <key>public.kern2.SRight</key>
     <integer>-10</integer>
     <key>public.kern2.TRight</key>
@@ -759,8 +763,6 @@
     <integer>-10</integer>
     <key>public.kern2.Oright</key>
     <integer>-10</integer>
-    <key>public.kern2.SRight</key>
-    <integer>-10</integer>
     <key>public.kern2.URight</key>
     <integer>-5</integer>
     <key>public.kern2.WRight</key>
@@ -783,6 +785,21 @@
     <integer>-30</integer>
     <key>public.kern2.yRight</key>
     <integer>-10</integer>
+  </dict>
+  <key>public.kern1.S.ss03Left</key>
+  <dict>
+    <key>V</key>
+    <integer>-5</integer>
+    <key>public.kern2.AERight</key>
+    <integer>-10</integer>
+    <key>public.kern2.ARight</key>
+    <integer>-10</integer>
+    <key>public.kern2.tRight</key>
+    <integer>-20</integer>
+    <key>public.kern2.wRight</key>
+    <integer>-30</integer>
+    <key>public.kern2.yRight</key>
+    <integer>-50</integer>
   </dict>
   <key>public.kern1.S.ss04Left</key>
   <dict>
@@ -809,7 +826,7 @@
     <key>public.kern2.wRight</key>
     <integer>-30</integer>
     <key>public.kern2.yRight</key>
-    <integer>-59</integer>
+    <integer>-60</integer>
   </dict>
   <key>public.kern1.SLeft</key>
   <dict>
@@ -1034,7 +1051,7 @@
     <key>public.kern2.S.ss03Right</key>
     <integer>-20</integer>
     <key>public.kern2.S.ss04Right</key>
-    <integer>-50</integer>
+    <integer>-30</integer>
     <key>public.kern2.SRight</key>
     <integer>-20</integer>
     <key>public.kern2.TRight</key>
@@ -1307,6 +1324,10 @@
     <integer>90</integer>
     <key>public.kern2.Oright</key>
     <integer>50</integer>
+    <key>public.kern2.S.ss03Right</key>
+    <integer>55</integer>
+    <key>public.kern2.S.ss04Right</key>
+    <integer>45</integer>
     <key>public.kern2.SRight</key>
     <integer>55</integer>
     <key>public.kern2.TRight</key>

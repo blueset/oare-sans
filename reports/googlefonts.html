@@ -387,10 +387,10 @@ codepoint assignment of these to make sure they are correct.</p>
 <pre><code>The following glyphs do not have the recommended number of contours:
 </code></pre>
 <ul>
-<li>S (U+0053): found 3, expected one of: {1, 2, 5}</li>
+<li>S (U+0053): found 3, expected one of: {2, 1, 5}</li>
 <li>Sacute (U+015A): found 4, expected one of: {2, 6, 3}</li>
-<li>sacute (U+015B): found 4, expected one of: {2, 6, 3}</li>
-<li>scircumflex (U+015D): found 4, expected one of: {6, 2, 3}</li>
+<li>sacute (U+015B): found 4, expected one of: {3, 6, 2}</li>
+<li>scircumflex (U+015D): found 4, expected one of: {2, 6, 3}</li>
 </ul>
                                 
                                 
@@ -538,12 +538,12 @@ codepoint assignment of these to make sure they are correct.</p>
                                 
                                     <p>The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=380: plus
-width=420: minus
-width=440: equal
-width=373: less, greater
 width=370: divide
-width=360: multiply</p>
+width=420: minus
+width=380: plus
+width=373: greater, less
+width=360: multiply
+width=440: equal</p>
                                 
                                 
                                      [code: width-outliers]
@@ -815,12 +815,12 @@ width=360: multiply</p>
                                 
                                     <p>C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, cherokee, tifinagh</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, tifinagh, math</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, coptic, duployan, tai-le, hebrew, canadian-aboriginal, old-permic, syriac, malayalam, tifinagh, todhri</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, math, tifinagh, duployan, hebrew, todhri, coptic, malayalam, old-permic, tai-le, syriac</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee

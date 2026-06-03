@@ -36,12 +36,12 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and http
 
 - ⚠️ **WARN** C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
 
-* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
-* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
-* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, cherokee, tifinagh
+* U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+* U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, tifinagh, math
 * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-* U+0307 COMBINING DOT ABOVE: try adding one of: math, coptic, duployan, tai-le, hebrew, canadian-aboriginal, old-permic, syriac, malayalam, tifinagh, todhri
+* U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, math, tifinagh, duployan, hebrew, todhri, coptic, malayalam, old-permic, tai-le, syriac
 * U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
 * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
 * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
@@ -94,10 +94,10 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* S (U+0053): found 3, expected one of: {1, 2, 5}
+* S (U+0053): found 3, expected one of: {2, 1, 5}
 * Sacute (U+015A): found 4, expected one of: {2, 6, 3}
-* sacute (U+015B): found 4, expected one of: {2, 6, 3}
-* scircumflex (U+015D): found 4, expected one of: {6, 2, 3} [code: contour-count]
+* sacute (U+015B): found 4, expected one of: {3, 6, 2}
+* scircumflex (U+015D): found 4, expected one of: {2, 6, 3} [code: contour-count]
   
   
 
@@ -159,12 +159,12 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 - ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=380: plus
-width=420: minus
-width=440: equal
-width=373: less, greater
 width=370: divide
-width=360: multiply [code: width-outliers]
+width=420: minus
+width=380: plus
+width=373: greater, less
+width=360: multiply
+width=440: equal [code: width-outliers]
   
   
 

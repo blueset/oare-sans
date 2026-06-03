@@ -1,6 +1,6 @@
 # Oare Sans
 
-<!-- Version begin -->Version 0.003<!-- Version end -->
+<!-- Version begin -->Version 0.004<!-- Version end -->
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
@@ -37,6 +37,8 @@
 
 ## Changelog
 
+- v0.004:
+  - Adjusted kernings for `/S`, `/S.ss03`, and `/S.ss04`.
 - v0.003:
   - Added precomposed glyphs: `/IJ` `/ij` `/IJ.ss01` `/Etilde` `/Ytilde` `/etilde` `/ytilde`
   - Extending `ss01` to `/Jcircumflex.ss01` `/J.ss01`

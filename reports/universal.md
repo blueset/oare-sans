@@ -47,10 +47,10 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* S (U+0053): found 3, expected one of: {1, 5, 2}
-* Sacute (U+015A): found 4, expected one of: {3, 6, 2}
+* S (U+0053): found 3, expected one of: {2, 5, 1}
+* Sacute (U+015A): found 4, expected one of: {6, 3, 2}
 * sacute (U+015B): found 4, expected one of: {6, 3, 2}
-* scircumflex (U+015D): found 4, expected one of: {2, 3, 6} [code: contour-count]
+* scircumflex (U+015D): found 4, expected one of: {6, 2, 3} [code: contour-count]
   
   
 
@@ -110,14 +110,14 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 
 
-- ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
+- ⚠️ **WARN** The most common width is 373 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=370: divide
-width=420: minus
-width=373: greater, less
 width=380: plus
 width=440: equal
-width=360: multiply [code: width-outliers]
+width=360: multiply
+width=390: plusminus, logicalnot
+width=370: divide
+width=420: minus [code: width-outliers]
   
   
 
