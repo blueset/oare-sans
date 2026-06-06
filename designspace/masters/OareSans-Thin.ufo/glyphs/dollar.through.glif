@@ -4,10 +4,10 @@
   <outline>
     <component base="S"/>
     <contour>
-      <point x="190" y="-100" type="line"/>
-      <point x="190" y="800" type="line"/>
-      <point x="160" y="800" type="line"/>
-      <point x="160" y="-100" type="line"/>
+      <point x="185" y="-100" type="line"/>
+      <point x="185" y="800" type="line"/>
+      <point x="165" y="800" type="line"/>
+      <point x="165" y="-100" type="line"/>
     </contour>
   </outline>
   <guideline angle="0" x="0" y="800"/>

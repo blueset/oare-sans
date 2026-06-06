@@ -1463,7 +1463,7 @@
     <key>public.kern2.hyphen</key>
     <integer>-50</integer>
     <key>public.kern2.oRight</key>
-    <integer>-15</integer>
+    <integer>-10</integer>
     <key>public.kern2.qRight</key>
     <integer>-10</integer>
     <key>public.kern2.quoteright</key>
@@ -1522,7 +1522,7 @@
   <key>public.kern1.wLeft</key>
   <dict>
     <key>public.kern2.aRight</key>
-    <integer>-25</integer>
+    <integer>-20</integer>
     <key>public.kern2.commaRight</key>
     <integer>-50</integer>
     <key>public.kern2.dRight</key>

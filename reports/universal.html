@@ -279,10 +279,10 @@ you're checking.</p>
         <th>⚠️ WARN</th><th>ℹ️ INFO</th><th>✅ PASS</th><th>⏩ SKIP</th>
     </tr>
     <tr>
-        <td>6 </td> <td>2 </td> <td>85 </td> <td>26 </td> 
+        <td>5 </td> <td>2 </td> <td>86 </td> <td>26 </td> 
     </tr>
     <tr>
-        <td>5%</td> <td>2%</td> <td>71%</td> <td>22%</td> 
+        <td>4%</td> <td>2%</td> <td>72%</td> <td>22%</td> 
     </tr>
 </table>
 
@@ -393,7 +393,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <ul>
 <li>S (U+0053): found 3, expected one of: {2, 5, 1}</li>
 <li>Sacute (U+015A): found 4, expected one of: {6, 3, 2}</li>
-<li>sacute (U+015B): found 4, expected one of: {6, 3, 2}</li>
+<li>sacute (U+015B): found 4, expected one of: {3, 6, 2}</li>
 <li>scircumflex (U+015D): found 4, expected one of: {6, 2, 3}</li>
 </ul>
                                 
@@ -542,12 +542,12 @@ codepoint assignment of these to make sure they are correct.</p>
 
                             <span class='details_text'>
                                 
-                                    <p>The most common width is 373 among a set of 9  math glyphs.
+                                    <p>The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=380: plus
-width=440: equal
+width=373: greater, less
 width=360: multiply
-width=390: plusminus, logicalnot
+width=440: equal
+width=380: plus
 width=370: divide
 width=420: minus</p>
                                 
@@ -717,69 +717,6 @@ width=420: minus</p>
     
 
     
-
-    
-        <h3>Check font contains no unreachable glyphs</h3>
-<div class='check__idlabel'>Check ID: unreachable_glyphs</div>
-
-<div class="rationale">
-    
-        <p>Glyphs are either accessible directly through Unicode codepoints or through        substitution rules.</p>
-<p>In Color Fonts, glyphs are also referenced by the COLR table. And mathematical fonts also reference glyphs via the MATH table.</p>
-<p>Any glyphs not accessible by these means are redundant and serve only to increase the font's file size.</p>
-
-
-    <ul>
-    
-        
-            <li>Original proposal: <a href="https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontbakery&#x2F;issues&#x2F;3160">https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontbakery&#x2F;issues&#x2F;3160</a></li>
-        
-    
-    </ul>
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                ⚠️
-                OareSans-Regular-VF.ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
-
-                            <span class='details_text'>
-                                
-                                    <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<ul>
-<li>Jcircumflex.ss01</li>
-<li>IJ.ss01</li>
-<li>agrave.ss02</li>
-<li>aacute.ss02</li>
-<li>acircumflex.ss02</li>
-<li>ordfeminine.ss02</li>
-</ul>
-                                
-                                
-                                     [code: unreachable-glyphs]
-                                
-                            </span>
-                        </li>
-                
-                
-                </ul>
-            </div>
-        </details>
-    
-
 
     
 

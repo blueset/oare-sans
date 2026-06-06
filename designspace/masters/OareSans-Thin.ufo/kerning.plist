@@ -1382,7 +1382,7 @@
   <key>public.kern1.wLeft</key>
   <dict>
     <key>public.kern2.aRight</key>
-    <integer>-25</integer>
+    <integer>-15</integer>
     <key>public.kern2.commaRight</key>
     <integer>-50</integer>
     <key>public.kern2.dRight</key>

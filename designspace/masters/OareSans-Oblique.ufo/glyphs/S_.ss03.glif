@@ -5,18 +5,18 @@
   <anchor x="139" y="0" name="bottom"/>
   <outline>
     <contour>
-      <point x="343.406" y="181.697" type="curve" smooth="yes"/>
+      <point x="343.406" y="181.698" type="curve" smooth="yes"/>
       <point x="376.977" y="382.314"/>
-      <point x="140.409" y="390.98"/>
+      <point x="140.41" y="390.98"/>
       <point x="164.897" y="537.313" type="curve" smooth="yes"/>
       <point x="174.202" y="592.915"/>
-      <point x="215.116" y="632.061"/>
-      <point x="263.411" y="632.061" type="curve" smooth="yes"/>
-      <point x="291.018" y="632.061"/>
+      <point x="215.117" y="632.061"/>
+      <point x="263.412" y="632.061" type="curve" smooth="yes"/>
+      <point x="291.019" y="632.061"/>
       <point x="316.74" y="619.27"/>
       <point x="360.633" y="584.061" type="curve"/>
-      <point x="422.008" y="646.061" type="line"/>
-      <point x="364.11" y="693.921"/>
+      <point x="422.009" y="646.061" type="line"/>
+      <point x="364.111" y="693.921"/>
       <point x="322.763" y="712.061"/>
       <point x="271.705" y="712.061" type="curve" smooth="yes"/>
       <point x="173.032" y="712.061"/>

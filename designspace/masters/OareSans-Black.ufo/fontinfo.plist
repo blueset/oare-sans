@@ -82,8 +82,59 @@ https://openfontlicense.org</string>
   <string>Oare Sans</string>
   <key>openTypeNamePreferredSubfamilyName</key>
   <string>Black</string>
+  <key>openTypeNameRecords</key>
+  <array>
+  <dict>
+    <key>nameID</key>
+    <integer>256</integer>
+    <key>platformID</key>
+    <integer>3</integer>
+    <key>encodingID</key>
+    <integer>1</integer>
+    <key>languageID</key>
+    <integer>1033</integer>
+    <key>string</key>
+    <string>Alternative J</string>
+  </dict>
+  <dict>
+    <key>nameID</key>
+    <integer>257</integer>
+    <key>platformID</key>
+    <integer>3</integer>
+    <key>encodingID</key>
+    <integer>1</integer>
+    <key>languageID</key>
+    <integer>1033</integer>
+    <key>string</key>
+    <string>Single Story a</string>
+  </dict>
+  <dict>
+    <key>nameID</key>
+    <integer>258</integer>
+    <key>platformID</key>
+    <integer>3</integer>
+    <key>encodingID</key>
+    <integer>1</integer>
+    <key>languageID</key>
+    <integer>1033</integer>
+    <key>string</key>
+    <string>Alternative S and 5 (Symmetrical S)</string>
+  </dict>
+  <dict>
+    <key>nameID</key>
+    <integer>259</integer>
+    <key>platformID</key>
+    <integer>3</integer>
+    <key>encodingID</key>
+    <integer>1</integer>
+    <key>languageID</key>
+    <integer>1033</integer>
+    <key>string</key>
+    <string>Alternative S and 5 (Asymmetrical S)</string>
+  </dict>
+  </array>
   <key>openTypeNameVersion</key>
-  <string>Version 0.004</string>
+  <string>Version 0.005</string>
   <key>openTypeOS2Panose</key>
   <array>
     <integer>0</integer>
@@ -184,7 +235,7 @@ https://openfontlicense.org</string>
   <key>versionMajor</key>
   <integer>0</integer>
   <key>versionMinor</key>
-  <integer>4</integer>
+  <integer>5</integer>
   <key>xHeight</key>
   <integer>525</integer>
 </dict>

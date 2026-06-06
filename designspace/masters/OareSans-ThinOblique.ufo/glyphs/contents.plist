@@ -496,8 +496,16 @@
   <string>divide.glif</string>
   <key>dollar</key>
   <string>dollar.glif</string>
+  <key>dollar.ss03</key>
+  <string>dollar.ss03.glif</string>
+  <key>dollar.ss04</key>
+  <string>dollar.ss04.glif</string>
   <key>dollar.through</key>
   <string>dollar.through.glif</string>
+  <key>dollar.through.ss03</key>
+  <string>dollar.through.ss03.glif</string>
+  <key>dollar.through.ss04</key>
+  <string>dollar.through.ss04.glif</string>
   <key>dotaccent</key>
   <string>dotaccent.glif</string>
   <key>dotaccentcomb</key>

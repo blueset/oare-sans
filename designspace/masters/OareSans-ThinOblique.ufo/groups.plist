@@ -145,6 +145,8 @@
     <string>Scedilla.ss03</string>
     <string>Scircumflex.ss03</string>
     <string>Scommaaccent.ss03</string>
+    <string>dollar.ss03</string>
+    <string>dollar.through.ss03</string>
   </array>
   <key>public.kern1.S.ss04Left</key>
   <array>
@@ -154,6 +156,8 @@
     <string>Scedilla.ss04</string>
     <string>Scircumflex.ss04</string>
     <string>Scommaaccent.ss04</string>
+    <string>dollar.ss04</string>
+    <string>dollar.through.ss04</string>
   </array>
   <key>public.kern1.SLeft</key>
   <array>
@@ -631,6 +635,8 @@
     <string>Scedilla.ss03</string>
     <string>Scircumflex.ss03</string>
     <string>Scommaaccent.ss03</string>
+    <string>dollar.ss03</string>
+    <string>dollar.through.ss03</string>
   </array>
   <key>public.kern2.S.ss04Right</key>
   <array>
@@ -640,6 +646,8 @@
     <string>Scedilla.ss04</string>
     <string>Scircumflex.ss04</string>
     <string>Scommaaccent.ss04</string>
+    <string>dollar.ss04</string>
+    <string>dollar.through.ss04</string>
   </array>
   <key>public.kern2.SRight</key>
   <array>

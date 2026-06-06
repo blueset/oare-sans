@@ -12,54 +12,7 @@ fontspector version: 1.5.2
 
 
 
-<details><summary>[1] C:\Users\ilove\Codebase\oare-sans\fonts\variable</summary>
-<div>
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. (googlefonts/metadata/unreachable_subsetting)</summary>
-    <div>
-
-
-> This check ensures that all encoded glyphs in the font are covered by a subset declared in the METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the `subsets` field and the subset definitions in the `glyphsets` repository.
-> 
-> Any encoded glyphs which are not by any of these subset definitions will not be served in the subsetted fonts, and so will be unreachable to the end user.
-
-
-
-
-Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and https://github.com/fonttools/fontbakery/pull/4273]
-
-
-
-
-
-- ⚠️ **WARN** C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
-
-* U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
-* U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
-* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, tifinagh, math
-* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-* U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, math, tifinagh, duployan, hebrew, todhri, coptic, malayalam, old-permic, tai-le, syriac
-* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
-* U+030C COMBINING CARON: try adding one of: tai-le, cherokee
-... and 7 others
-
-Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin [code: unreachable-subsetting]
-  
-  
-
-</div>
-</details>
-
-
-</div>
-</details>
-
-
-<details><summary>[10] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf</summary>
+<details><summary>[9] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf</summary>
 <div>
 
 
@@ -94,10 +47,10 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* S (U+0053): found 3, expected one of: {2, 1, 5}
-* Sacute (U+015A): found 4, expected one of: {2, 6, 3}
-* sacute (U+015B): found 4, expected one of: {3, 6, 2}
-* scircumflex (U+015D): found 4, expected one of: {2, 6, 3} [code: contour-count]
+* S (U+0053): found 3, expected one of: {1, 2, 5}
+* Sacute (U+015A): found 4, expected one of: {6, 2, 3}
+* sacute (U+015B): found 4, expected one of: {2, 3, 6}
+* scircumflex (U+015D): found 4, expected one of: {2, 3, 6} [code: contour-count]
   
   
 
@@ -159,12 +112,12 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 - ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
+width=440: equal
+width=380: plus
+width=360: multiply
 width=370: divide
 width=420: minus
-width=380: plus
-width=373: greater, less
-width=360: multiply
-width=440: equal [code: width-outliers]
+width=373: less, greater [code: width-outliers]
   
   
 
@@ -192,44 +145,6 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/2967]
 
 
 - ⚠️ **WARN** Font is missing the Indian Rupee Sign glyph. Please add a glyph for Indian Rupee Sign (₹) at codepoint U+20B9. [code: missing-rupee]
-  
-  
-
-</div>
-</details>
-
-
-
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check font contains no unreachable glyphs (unreachable_glyphs)</summary>
-    <div>
-
-
-> Glyphs are either accessible directly through Unicode codepoints or through        substitution rules.
-> 
-> In Color Fonts, glyphs are also referenced by the COLR table. And mathematical fonts also reference glyphs via the MATH table.
-> 
-> Any glyphs not accessible by these means are redundant and serve only to increase the font's file size.
-
-
-
-
-Original proposal: [https://github.com/fonttools/fontbakery/issues/3160]
-
-
-
-
-
-- ⚠️ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-* Jcircumflex.ss01
-* IJ.ss01
-* agrave.ss02
-* aacute.ss02
-* acircumflex.ss02
-* ordfeminine.ss02 [code: unreachable-glyphs]
   
   
 
@@ -271,13 +186,13 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŧ |                              |
 |   The following auxiliary characters are missing from the font: ʒ |                              |
 |   The following auxiliary characters are missing from the font: ǯ |                              |
+| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
+|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           |
 | Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
 |   The following auxiliary characters are missing from the font: Ŋ |                              |
 |   The following auxiliary characters are missing from the font: Ŧ |                              |
 |   The following auxiliary characters are missing from the font: ŋ |                              |
-|   The following auxiliary characters are missing from the font: ŧ |                              |
-| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
-|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           | [code: warning-language-shaping]
+|   The following auxiliary characters are missing from the font: ŧ |                              | [code: warning-language-shaping]
   
   
 
@@ -457,6 +372,53 @@ If you registered it recently, then it's safe to ignore this warning message. Ot
 </details>
 
 
+<details><summary>[1] C:\Users\ilove\Codebase\oare-sans\fonts\variable</summary>
+<div>
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. (googlefonts/metadata/unreachable_subsetting)</summary>
+    <div>
+
+
+> This check ensures that all encoded glyphs in the font are covered by a subset declared in the METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the `subsets` field and the subset definitions in the `glyphsets` repository.
+> 
+> Any encoded glyphs which are not by any of these subset definitions will not be served in the subsetted fonts, and so will be unreachable to the end user.
+
+
+
+
+Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and https://github.com/fonttools/fontbakery/pull/4273]
+
+
+
+
+
+- ⚠️ **WARN** C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
+
+* U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+* U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, math, coptic
+* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+* U+0307 COMBINING DOT ABOVE: try adding one of: todhri, math, hebrew, duployan, malayalam, tai-le, canadian-aboriginal, coptic, tifinagh, old-permic, syriac
+* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+* U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+... and 7 others
+
+Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin [code: unreachable-subsetting]
+  
+  
+
+</div>
+</details>
+
+
+</div>
+</details>
+
+
 
 
 
@@ -465,8 +427,8 @@ If you registered it recently, then it's safe to ignore this warning message. Ot
 
 | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
 | ---|---|---|---|
-| 11 | 8 | 111 | 58 | 
-| 6% | 4% | 59% | 31% | 
+| 10 | 8 | 112 | 58 | 
+| 5% | 4% | 60% | 31% | 
 
 
 

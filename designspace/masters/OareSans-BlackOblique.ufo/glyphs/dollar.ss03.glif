@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dollar.ss03" format="2">
+  <advance width="454"/>
+  <outline>
+    <component base="S.ss03"/>
+    <contour>
+      <point x="100.333" y="26" type="line"/>
+      <point x="79.3333" y="-100" type="line"/>
+      <point x="239.333" y="-100" type="line"/>
+      <point x="260.333" y="26" type="line"/>
+    </contour>
+    <contour>
+      <point x="380.667" y="670" type="line"/>
+      <point x="402.333" y="800" type="line"/>
+      <point x="242.333" y="800" type="line"/>
+      <point x="220.667" y="670" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.metricsLeft</key>
+  <string>S.ss03</string>
+  <key>com.fontlab.metricsRight</key>
+  <string>S.ss03</string>
+  <key>com.fontlab.recipe</key>
+  <string>dollar</string>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

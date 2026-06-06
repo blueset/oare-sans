@@ -1,6 +1,6 @@
 # Oare Sans
 
-<!-- Version begin -->Version 0.004<!-- Version end -->
+<!-- Version begin -->Version 0.005<!-- Version end -->
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
@@ -28,15 +28,18 @@
 
 ## Download
 
-* [Variable Font](./fonts/variable/)
-  * `OareSans-Regular-VF`: Default flavor
-  * `OareSans[slnt,wght]`: Google Fonts flavor with metadata optimized for Google Fonts
-* [Static TTF](./fonts/ttf/)
-* [Static OTF](./fonts/otf/)
-* [Static WOFF2](./fonts/woff2/)
+- [Variable Font](./fonts/variable/)
+  - `OareSans-Regular-VF`: Default flavor
+  - `OareSans[slnt,wght]`: Google Fonts flavor with metadata optimized for Google Fonts
+- [Static TTF](./fonts/ttf/)
+- [Static OTF](./fonts/otf/)
+- [Static WOFF2](./fonts/woff2/)
 
 ## Changelog
 
+- v0.005:
+  - Extended `ss03` and `ss04` to `/dollar` and `/dollar.through`.
+  - Adjusted some kerning pairs.
 - v0.004:
   - Adjusted kernings for `/S`, `/S.ss03`, and `/S.ss04`.
 - v0.003:

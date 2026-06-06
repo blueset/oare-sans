@@ -477,7 +477,7 @@ sections:
     type: Text
     text: |-
       SS02 – Single Story a
-      Apple Banana Marmalade Caravan Salamander Avocado Galaxy Panorama Alabama Savanna Cathedral Magazine Carnival Awkward Façade Balance Alaska Madagascar Catamaran Aardvark Manhattan
+      Apple Banana Àvila Ámbar Âge Manhã Kläranlage Åland Rāga Mărgărit Mąka Hǎo Salamander Château Voilà Panorama Façade Awkward Madagascar Aardvark 1ª 2ª 3ª edição
   design_attrs:
     font_size: 48
     features: { liga: 1, kern: 1, mark: 1, mkmk: 1, ss02: 1 }
@@ -492,7 +492,7 @@ sections:
       Sun Snake Summit Solstice Saturn Silver Sahara Symphony Sketch Storm
       DESSERT PASSION ISSUES CLASSIC LESSON MISSION ASSETS POSSESS GLASSES BOSSES
       mistress passage glossy season castle dessert lesson cosmos crystal disaster
-      0123456789
+      $0123456789
   design_attrs:
     font_size: 48
     features: { liga: 1, kern: 1, mark: 1, mkmk: 1, ss03: 1 }
@@ -506,6 +506,7 @@ sections:
       SS04 – Asymmetrical S and 5
       Sun Snake Summit Solstice Saturn Silver Sahara Symphony Sketch Storm
       DESSERT PASSION ISSUES CLASSIC LESSON MISSION ASSETS POSSESS GLASSES BOSSES
+      $0123456789
   design_attrs:
     font_size: 48
     features: { liga: 1, kern: 1, mark: 1, mkmk: 1, ss04: 1 }
