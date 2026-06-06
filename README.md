@@ -14,6 +14,8 @@
 ![Poster 1: Thin Oblique](./documentation/Poster1.png)
 ![Poster 2: Waterfall](./documentation/Poster2.png)
 ![Poster 3: Black](./documentation/Poster3.png)
+![Poster 5: Type Specimen](./documentation/Poster5.png)
+![Poster 6: Type Specimen](./documentation/Poster6.png)
 ![Poster 4: Stylistic Set](./documentation/Poster4.png)
 
 ## OpenType Features
