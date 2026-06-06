@@ -487,6 +487,12 @@
             <button type="button" data-feature="ss04" aria-pressed="false">Alt. Asymm. S</button>
           </div>
         </div>
+        <div class="ctl">Features
+          <div class="flagger__toggle flagger__toggle--text" id="flagFeatureToggle">
+            <button type="button" data-feature="case" aria-pressed="false">Case</button>
+            <button type="button" data-feature="tnum" aria-pressed="false">Tab. Num.</button>
+          </div>
+        </div>
         <div class="ctl">Icon
           <div class="flagger__icon-picker" id="flagIconPicker">
             <button type="button" class="flagger__icon-current" id="flagIconButton" aria-haspopup="true" aria-expanded="false" aria-label="Select icon">
@@ -584,6 +590,12 @@
 						<button type="button" data-feature="ss02" aria-pressed="false">Alt. a</button>
 						<button type="button" data-feature="ss03" aria-pressed="false">Alt. Symm. S</button>
 						<button type="button" data-feature="ss04" aria-pressed="false">Alt. Asymm. S</button>
+					</div>
+				</div>
+				<div class="ctl">Features
+					<div class="flagger__toggle flagger__toggle--text" id="testFeatureToggle">
+						<button type="button" data-feature="case" aria-pressed="false">Case</button>
+						<button type="button" data-feature="tnum" aria-pressed="false">Tab. Num.</button>
 					</div>
 				</div>
 				<div class="ctl">Color
@@ -755,6 +767,7 @@
 			const lineHeightInput = document.getElementById("flagLineHeight");
 			const gradientToggle = document.getElementById("flagGradientToggle");
 			const stylisticToggle = document.getElementById("flagStylisticToggle");
+			const featureToggle = document.getElementById("flagFeatureToggle");
 			if (!textEl || !svg) return;
 
 			const GRADIENTS = {
@@ -920,18 +933,20 @@
 			});
 
 			function updateStylisticSets() {
-				const active = Array.from(
-					stylisticToggle.querySelectorAll('button[aria-pressed="true"]')
+				const active = [stylisticToggle, featureToggle].flatMap((toggle) =>
+					Array.from(toggle.querySelectorAll('button[aria-pressed="true"]'))
 				).map((btn) => '"' + btn.dataset.feature + '" 1');
 				textEl.style.setProperty("--ssets", active.length ? active.join(", ") : "normal");
 			}
 
-			stylisticToggle.addEventListener("click", (e) => {
-				const btn = e.target.closest("button[data-feature]");
-				if (!btn) return;
-				const pressed = btn.getAttribute("aria-pressed") === "true";
-				btn.setAttribute("aria-pressed", String(!pressed));
-				updateStylisticSets();
+			[stylisticToggle, featureToggle].forEach((toggle) => {
+				toggle.addEventListener("click", (e) => {
+					const btn = e.target.closest("button[data-feature]");
+					if (!btn) return;
+					const pressed = btn.getAttribute("aria-pressed") === "true";
+					btn.setAttribute("aria-pressed", String(!pressed));
+					updateStylisticSets();
+				});
 			});
 
 			// ---- Icon picker ----
@@ -1039,6 +1054,7 @@
 			const lineHeightInput = document.getElementById("testLineHeight");
 			const trackingInput = document.getElementById("testTracking");
 			const stylisticToggle = document.getElementById("testStylisticToggle");
+			const featureToggle = document.getElementById("testFeatureToggle");
 			const invertToggle = document.getElementById("testInvertToggle");
 			const stage = document.getElementById("testStage");
 			const textEl = document.getElementById("testText");
@@ -1109,18 +1125,20 @@
 			});
 
 			function updateStylisticSets() {
-				const active = Array.from(
-					stylisticToggle.querySelectorAll('button[aria-pressed="true"]')
+				const active = [stylisticToggle, featureToggle].flatMap((toggle) =>
+					Array.from(toggle.querySelectorAll('button[aria-pressed="true"]'))
 				).map((btn) => '"' + btn.dataset.feature + '" 1');
 				textEl.style.setProperty("--ssets", active.length ? active.join(", ") : "normal");
 			}
 
-			stylisticToggle.addEventListener("click", (e) => {
-				const btn = e.target.closest("button[data-feature]");
-				if (!btn) return;
-				const pressed = btn.getAttribute("aria-pressed") === "true";
-				btn.setAttribute("aria-pressed", String(!pressed));
-				updateStylisticSets();
+			[stylisticToggle, featureToggle].forEach((toggle) => {
+				toggle.addEventListener("click", (e) => {
+					const btn = e.target.closest("button[data-feature]");
+					if (!btn) return;
+					const pressed = btn.getAttribute("aria-pressed") === "true";
+					btn.setAttribute("aria-pressed", String(!pressed));
+					updateStylisticSets();
+				});
 			});
 
 			invertToggle.addEventListener("click", (e) => {

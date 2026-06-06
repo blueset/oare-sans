@@ -511,3 +511,32 @@ sections:
     font_size: 48
     features: { liga: 1, kern: 1, mark: 1, mkmk: 1, ss04: 1 }
   font_indices: [0]
+- name: case – Case-Sensitive Forms
+  layout:
+    type: Simple
+  content:
+    type: Text
+    text: |-
+      case – Case-Sensitive Forms
+      H-H–H—H‹H«H»H›H
+      H¡H¿H?H!H 12:34 * 56:78
+      OARE-SANS@EXAMPLE.COM
+  design_attrs:
+    font_size: 48
+    features: { liga: 1, kern: 1, mark: 1, mkmk: 1, case: 1 }
+  font_indices: [0]
+- name: tnum – Tabular Figures
+  layout:
+    type: Simple
+  content:
+    type: Text
+    text: |-
+      tnum – Tabular Figures
+      01234567890 21314151617
+      0$2¢3€4£5¥6 7+8−9×0÷1=2
+      123,456.789/3<4>5
+      012:345;678*901~2
+  design_attrs:
+    font_size: 48
+    features: { liga: 1, kern: 1, mark: 1, mkmk: 1, tnum: 1 }
+  font_indices: [0]

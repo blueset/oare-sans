@@ -1,61 +1,61 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="4.0">
  <axes>
-  <axis maximum="900" minimum="100" default="400" name="weight" tag="wght">
+  <axis name="weight" minimum="100" tag="wght" maximum="900" default="400">
    <labelname xml:lang="en">Weight</labelname>
    <map output="100" input="100"/>
    <map output="400" input="400"/>
    <map output="900" input="900"/>
   </axis>
-  <axis maximum="0" minimum="-10" default="0" name="slant" tag="slnt">
+  <axis name="slant" minimum="-10" tag="slnt" maximum="0" default="0">
    <labelname xml:lang="en">Slant</labelname>
   </axis>
  </axes>
  <sources>
-  <source familyname="Oare Sans" filename="masters/OareSans-Black.ufo" stylename="Black" name="Black">
+  <source name="Black" stylename="Black" familyname="Oare Sans" filename="masters/OareSans-Black.ufo">
    <location>
-    <dimension xvalue="900" name="weight"/>
-    <dimension xvalue="0" name="slant"/>
+    <dimension name="weight" xvalue="900"/>
+    <dimension name="slant" xvalue="0"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-BlackOblique.ufo" stylename="Black Oblique" name="Black Oblique">
+  <source name="Black Oblique" stylename="Black Oblique" familyname="Oare Sans" filename="masters/OareSans-BlackOblique.ufo">
    <location>
-    <dimension xvalue="900" name="weight"/>
-    <dimension xvalue="-10" name="slant"/>
+    <dimension name="weight" xvalue="900"/>
+    <dimension name="slant" xvalue="-10"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-Bold.ufo" stylename="Black Oblique" name="Bold">
+  <source name="Bold" stylename="Black Oblique" familyname="Oare Sans" filename="masters/OareSans-Bold.ufo">
    <location>
-    <dimension xvalue="700" name="weight"/>
-    <dimension xvalue="0" name="slant"/>
+    <dimension name="weight" xvalue="700"/>
+    <dimension name="slant" xvalue="0"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-Oblique.ufo" stylename="Oblique" name="Oblique">
+  <source name="Oblique" stylename="Oblique" familyname="Oare Sans" filename="masters/OareSans-Oblique.ufo">
    <location>
-    <dimension xvalue="400" name="weight"/>
-    <dimension xvalue="-10" name="slant"/>
+    <dimension name="weight" xvalue="400"/>
+    <dimension name="slant" xvalue="-10"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-Regular.ufo" stylename="" name="Regular">
+  <source name="Regular" stylename="" familyname="Oare Sans" filename="masters/OareSans-Regular.ufo">
    <lib copy="1"/>
    <groups copy="1"/>
    <info copy="1"/>
    <features copy="1"/>
    <location>
-    <dimension xvalue="400" name="weight"/>
-    <dimension xvalue="0" name="slant"/>
+    <dimension name="weight" xvalue="400"/>
+    <dimension name="slant" xvalue="0"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-Thin.ufo" stylename="Thin" name="Thin">
+  <source name="Thin" stylename="Thin" familyname="Oare Sans" filename="masters/OareSans-Thin.ufo">
    <location>
-    <dimension xvalue="100" name="weight"/>
-    <dimension xvalue="0" name="slant"/>
+    <dimension name="weight" xvalue="100"/>
+    <dimension name="slant" xvalue="0"/>
    </location>
   </source>
-  <source familyname="Oare Sans" filename="masters/OareSans-ThinOblique.ufo" stylename="Thin Oblique" name="Thin Oblique">
+  <source name="Thin Oblique" stylename="Thin Oblique" familyname="Oare Sans" filename="masters/OareSans-ThinOblique.ufo">
    <location>
-    <dimension xvalue="100" name="weight"/>
-    <dimension xvalue="-10" name="slant"/>
+    <dimension name="weight" xvalue="100"/>
+    <dimension name="slant" xvalue="-10"/>
    </location>
   </source>
  </sources>
@@ -113,16 +113,16 @@
       </dict>
      </dict>
      <key>elided_fallback_name</key>
-     <real>2</real>
+     <integer>2</integer>
      <key>elided_values</key>
      <dict>
       <key>slnt</key>
       <array>
-       <real>0</real>
+       <integer>0</integer>
       </array>
       <key>wght</key>
       <array>
-       <real>400</real>
+       <integer>400</integer>
       </array>
      </dict>
      <key>linked_values</key>
@@ -130,12 +130,12 @@
       <key>slnt</key>
       <dict>
        <key>0</key>
-       <real>-10</real>
+       <integer>-10</integer>
       </dict>
       <key>wght</key>
       <dict>
        <key>400</key>
-       <real>700</real>
+       <integer>700</integer>
       </dict>
      </dict>
     </dict>
@@ -150,9 +150,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>100</real>
+       <integer>100</integer>
       </dict>
       <key>name</key>
       <string>Thin</string>
@@ -163,9 +163,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>100</real>
+       <integer>100</integer>
       </dict>
       <key>name</key>
       <string>Thin Italic</string>
@@ -176,9 +176,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>200</real>
+       <integer>200</integer>
       </dict>
       <key>name</key>
       <string>ExtraLight</string>
@@ -189,9 +189,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>200</real>
+       <integer>200</integer>
       </dict>
       <key>name</key>
       <string>ExtraLight Italic</string>
@@ -202,9 +202,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>300</real>
+       <integer>300</integer>
       </dict>
       <key>name</key>
       <string>Light</string>
@@ -215,9 +215,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>300</real>
+       <integer>300</integer>
       </dict>
       <key>name</key>
       <string>Light Italic</string>
@@ -228,9 +228,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>400</real>
+       <integer>400</integer>
       </dict>
       <key>name</key>
       <string>Regular</string>
@@ -241,9 +241,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>400</real>
+       <integer>400</integer>
       </dict>
       <key>name</key>
       <string>Italic</string>
@@ -254,9 +254,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>500</real>
+       <integer>500</integer>
       </dict>
       <key>name</key>
       <string>Medium</string>
@@ -267,9 +267,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>500</real>
+       <integer>500</integer>
       </dict>
       <key>name</key>
       <string>Medium Italic</string>
@@ -280,9 +280,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>600</real>
+       <integer>600</integer>
       </dict>
       <key>name</key>
       <string>SemiBold</string>
@@ -293,9 +293,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>600</real>
+       <integer>600</integer>
       </dict>
       <key>name</key>
       <string>SemiBold Italic</string>
@@ -306,9 +306,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>700</real>
+       <integer>700</integer>
       </dict>
       <key>name</key>
       <string>Bold</string>
@@ -319,9 +319,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>700</real>
+       <integer>700</integer>
       </dict>
       <key>name</key>
       <string>Bold Italic</string>
@@ -332,9 +332,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>800</real>
+       <integer>800</integer>
       </dict>
       <key>name</key>
       <string>ExtraBold</string>
@@ -345,9 +345,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>800</real>
+       <integer>800</integer>
       </dict>
       <key>name</key>
       <string>ExtraBold Italic</string>
@@ -358,9 +358,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>wght</key>
-       <real>900</real>
+       <integer>900</integer>
       </dict>
       <key>name</key>
       <string>Black</string>
@@ -371,9 +371,9 @@
       <key>coordinates</key>
       <dict>
        <key>slnt</key>
-       <real>-10</real>
+       <integer>-10</integer>
        <key>wght</key>
-       <real>900</real>
+       <integer>900</integer>
       </dict>
       <key>name</key>
       <string>Black Italic</string>
@@ -544,42 +544,42 @@
      <key>familyName</key>
      <string>Oare Sans</string>
      <key>openTypeHheaAscender</key>
-     <real>1020</real>
+     <integer>1020</integer>
      <key>openTypeHheaDescender</key>
-     <real>-250</real>
+     <integer>-250</integer>
      <key>openTypeHheaLineGap</key>
-     <real>0</real>
+     <integer>0</integer>
      <key>openTypeNameLicense</key>
      <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL</string>
      <key>openTypeNameRecords</key>
      <array>
       <dict>
        <key>encodingID</key>
-       <real>1</real>
+       <integer>1</integer>
        <key>languageID</key>
-       <real>1033</real>
+       <integer>1033</integer>
        <key>nameID</key>
-       <real>25</real>
+       <integer>25</integer>
        <key>platformID</key>
-       <real>3</real>
+       <integer>3</integer>
        <key>string</key>
        <string>OareSans</string>
       </dict>
      </array>
      <key>openTypeOS2Selection</key>
      <array>
-      <real>7</real>
+      <integer>7</integer>
      </array>
      <key>openTypeOS2TypoAscender</key>
-     <real>1020</real>
+     <integer>1020</integer>
      <key>openTypeOS2TypoDescender</key>
-     <real>-250</real>
+     <integer>-250</integer>
      <key>openTypeOS2TypoLineGap</key>
-     <real>0</real>
+     <integer>0</integer>
      <key>openTypeOS2WinAscent</key>
-     <real>1020</real>
+     <integer>1020</integer>
      <key>openTypeOS2WinDescent</key>
-     <real>250</real>
+     <integer>250</integer>
      <key>postscriptFontName</key>
      <string>OareSans-Regular</string>
      <key>styleMapFamilyName</key>
@@ -591,8 +591,8 @@
     </dict>
     <key>remove_name_ids</key>
     <array>
-     <real>16</real>
-     <real>17</real>
+     <integer>16</integer>
+     <integer>17</integer>
     </array>
     <key>sort_output_axis_tags</key>
     <true/>
@@ -604,18 +604,18 @@
        <key>name</key>
        <string>Slant</string>
        <key>ordering</key>
-       <real>0</real>
+       <integer>0</integer>
        <key>tag</key>
        <string>slnt</string>
        <key>values</key>
        <array>
         <dict>
          <key>flags</key>
-         <real>2</real>
+         <integer>2</integer>
          <key>name</key>
          <string>Default</string>
          <key>value</key>
-         <real>0</real>
+         <integer>0</integer>
         </dict>
        </array>
       </dict>
@@ -623,7 +623,7 @@
        <key>name</key>
        <string>Weight</string>
        <key>ordering</key>
-       <real>1</real>
+       <integer>1</integer>
        <key>tag</key>
        <string>wght</string>
        <key>values</key>
@@ -632,59 +632,59 @@
          <key>name</key>
          <string>Thin</string>
          <key>value</key>
-         <real>100</real>
+         <integer>100</integer>
         </dict>
         <dict>
          <key>name</key>
          <string>ExtraLight</string>
          <key>value</key>
-         <real>200</real>
+         <integer>200</integer>
         </dict>
         <dict>
          <key>name</key>
          <string>Light</string>
          <key>value</key>
-         <real>300</real>
+         <integer>300</integer>
         </dict>
         <dict>
          <key>flags</key>
-         <real>2</real>
+         <integer>2</integer>
          <key>linkedValue</key>
-         <real>700</real>
+         <integer>700</integer>
          <key>name</key>
          <string>Regular</string>
          <key>value</key>
-         <real>400</real>
+         <integer>400</integer>
         </dict>
         <dict>
          <key>name</key>
          <string>Medium</string>
          <key>value</key>
-         <real>500</real>
+         <integer>500</integer>
         </dict>
         <dict>
          <key>name</key>
          <string>SemiBold</string>
          <key>value</key>
-         <real>600</real>
+         <integer>600</integer>
         </dict>
         <dict>
          <key>name</key>
          <string>Bold</string>
          <key>value</key>
-         <real>700</real>
+         <integer>700</integer>
         </dict>
         <dict>
          <key>name</key>
          <string>ExtraBold</string>
          <key>value</key>
-         <real>800</real>
+         <integer>800</integer>
         </dict>
         <dict>
          <key>name</key>
          <string>Black</string>
          <key>value</key>
-         <real>900</real>
+         <integer>900</integer>
         </dict>
        </array>
       </dict>
@@ -704,129 +704,129 @@
       <string>Thin</string>
      </dict>
      <key>elided_fallback_name</key>
-     <real>2</real>
+     <integer>2</integer>
     </dict>
    </dict>
   </dict>
  </lib>
  <instances>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Thin.ufo" stylename="Thin" name="Thin">
+  <instance name="Thin" stylename="Thin" familyname="Oare Sans" filename="instances/OareSans-Thin.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="100" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="100"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ThinOblique.ufo" stylename="Thin Oblique" name="ThinOblique">
+  <instance name="ThinOblique" stylename="Thin Oblique" familyname="Oare Sans" filename="instances/OareSans-ThinOblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="100" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="100"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraLight.ufo" stylename="ExtraLight" name="ExtraLight">
+  <instance name="ExtraLight" stylename="ExtraLight" familyname="Oare Sans" filename="instances/OareSans-ExtraLight.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="200" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="200"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraLightOblique.ufo" stylename="ExtraLight Oblique" name="ExtraLightOblique">
+  <instance name="ExtraLightOblique" stylename="ExtraLight Oblique" familyname="Oare Sans" filename="instances/OareSans-ExtraLightOblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="200" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="200"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Light.ufo" stylename="Light" name="Light">
+  <instance name="Light" stylename="Light" familyname="Oare Sans" filename="instances/OareSans-Light.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="300" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="300"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-LightOblique.ufo" stylename="Light Oblique" name="LightOblique">
+  <instance name="LightOblique" stylename="Light Oblique" familyname="Oare Sans" filename="instances/OareSans-LightOblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="300" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="300"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Regular.ufo" stylename="Regular" name="Regular">
+  <instance name="Regular" stylename="Regular" familyname="Oare Sans" filename="instances/OareSans-Regular.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="400" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="400"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Oblique.ufo" stylename="Oblique" name="Oblique">
+  <instance name="Oblique" stylename="Oblique" familyname="Oare Sans" filename="instances/OareSans-Oblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="400" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="400"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Medium.ufo" stylename="Medium" name="Medium">
+  <instance name="Medium" stylename="Medium" familyname="Oare Sans" filename="instances/OareSans-Medium.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="500" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="500"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-MediumOblique.ufo" stylename="Medium Oblique" name="MediumOblique">
+  <instance name="MediumOblique" stylename="Medium Oblique" familyname="Oare Sans" filename="instances/OareSans-MediumOblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="500" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="500"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-SemiBold.ufo" stylename="SemiBold" name="SemiBold">
+  <instance name="SemiBold" stylename="SemiBold" familyname="Oare Sans" filename="instances/OareSans-SemiBold.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="600" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="600"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-SemiBoldOblique.ufo" stylename="SemiBold Oblique" name="SemiBoldOblique">
+  <instance name="SemiBoldOblique" stylename="SemiBold Oblique" familyname="Oare Sans" filename="instances/OareSans-SemiBoldOblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="600" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="600"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Bold.ufo" stylename="Bold" name="Bold">
+  <instance name="Bold" stylename="Bold" familyname="Oare Sans" filename="instances/OareSans-Bold.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="700" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="700"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-BoldOblique.ufo" stylename="Bold Oblique" name="BoldOblique">
+  <instance name="BoldOblique" stylename="Bold Oblique" familyname="Oare Sans" filename="instances/OareSans-BoldOblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="700" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="700"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraBold.ufo" stylename="ExtraBold" name="ExtraBold">
+  <instance name="ExtraBold" stylename="ExtraBold" familyname="Oare Sans" filename="instances/OareSans-ExtraBold.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="800" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="800"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-ExtraBoldOblique.ufo" stylename="ExtraBold Oblique" name="ExtraBoldOblique">
+  <instance name="ExtraBoldOblique" stylename="ExtraBold Oblique" familyname="Oare Sans" filename="instances/OareSans-ExtraBoldOblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="800" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="800"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-Black.ufo" stylename="Black" name="Black">
+  <instance name="Black" stylename="Black" familyname="Oare Sans" filename="instances/OareSans-Black.ufo">
    <location>
-    <dimension xvalue="0" name="slant"/>
-    <dimension xvalue="900" name="weight"/>
+    <dimension name="slant" xvalue="0"/>
+    <dimension name="weight" xvalue="900"/>
    </location>
   </instance>
-  <instance familyname="Oare Sans" filename="instances/OareSans-BlackOblique.ufo" stylename="Black Oblique" name="BlackOblique">
+  <instance name="BlackOblique" stylename="Black Oblique" familyname="Oare Sans" filename="instances/OareSans-BlackOblique.ufo">
    <location>
-    <dimension xvalue="-10" name="slant"/>
-    <dimension xvalue="900" name="weight"/>
+    <dimension name="slant" xvalue="-10"/>
+    <dimension name="weight" xvalue="900"/>
    </location>
   </instance>
  </instances>
  <rules>
   <rule>
-   <sub with="dollar.through" name="dollar"/>
-   <sub with="cent.through" name="cent"/>
-   <sub with="dollar.through.ss03" name="dollar.ss03"/>
-   <sub with="dollar.through.ss04" name="dollar.ss04"/>
+   <sub name="dollar" with="dollar.through.tf"/>
+   <sub name="cent" with="cent.through"/>
+   <sub name="dollar.ss03" with="dollar.through.ss03.tf"/>
+   <sub name="dollar.ss04" with="dollar.through.ss04.tf"/>
    <conditionset>
-    <condition maximum="300" name="weight"/>
+    <condition name="weight" maximum="300"/>
    </conditionset>
   </rule>
  </rules>

@@ -896,7 +896,7 @@
     <key>public.kern2.YRight</key>
     <integer>10</integer>
     <key>public.kern2.aRight</key>
-    <integer>-60</integer>
+    <integer>-30</integer>
     <key>public.kern2.colon</key>
     <integer>-30</integer>
     <key>public.kern2.commaRight</key>

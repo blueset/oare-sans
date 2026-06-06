@@ -34,16 +34,6 @@
     <key>y</key>
     <integer>670</integer>
   </dict>
-  <dict>
-    <key>angle</key>
-    <integer>90</integer>
-    <key>name</key>
-    <string>f</string>
-    <key>x</key>
-    <integer>-5226</integer>
-    <key>y</key>
-    <integer>0</integer>
-  </dict>
   </array>
   <key>italicAngle</key>
   <integer>0</integer>
@@ -142,7 +132,7 @@ https://openfontlicense.org</string>
   </dict>
   </array>
   <key>openTypeNameVersion</key>
-  <string>Version 0.005</string>
+  <string>Version 0.006</string>
   <key>openTypeOS2Panose</key>
   <array>
     <integer>0</integer>
@@ -243,7 +233,7 @@ https://openfontlicense.org</string>
   <key>versionMajor</key>
   <integer>0</integer>
   <key>versionMinor</key>
-  <integer>5</integer>
+  <integer>6</integer>
   <key>xHeight</key>
   <integer>525</integer>
 </dict>

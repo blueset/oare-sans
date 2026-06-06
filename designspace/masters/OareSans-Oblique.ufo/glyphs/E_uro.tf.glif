@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Euro.tf" format="2">
+  <advance width="430"/>
+  <outline>
+    <component base="Euro" xOffset="-26"/>
+  </outline>
+  <guideline angle="0" x="0" y="360"/>
+  <guideline angle="85.2364" x="25.655" y="280"/>
+  <guideline angle="85.24" x="302" y="260"/>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.6,0.602,1,1</string>
+  </dict>
+  </lib>
+</glyph>

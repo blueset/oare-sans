@@ -38,6 +38,42 @@
 #/> tags
 @BottomMark = [cedilla ogonek];
 @BottomMarkComb = [cedillacomb commaaccent ogonekcomb];
+@ExtraLetters = [AE Dcroat Eth Germandbls Hbar Lslash OE Oslash Oslashacute Thorn ae dcroat eth gcommaaccent germandbls hbar lslash oe oslash oslashacute thorn];
+@Mark = [acutecomb brevecomb caroncomb caroncomb.alt cedillacomb circumflexcomb commaaccent dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ogonekcomb ringcomb tildecomb];
+@MarkSpacing = [acute breve caron cedilla circumflex commaturnedmod dieresis dotaccent grave hungarumlaut macron macronmod ogonek ring tilde];
+@TopMark = [acute breve caron circumflex dieresis dotaccent grave hungarumlaut macron macronmod ring tilde];
+@TopMarkComb = [acutecomb brevecomb caroncomb caroncomb.alt circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+#/< tags
+#/< classes
+
+#/> classes
+#/> tags
+@BottomMark = [cedilla ogonek];
+@BottomMarkComb = [cedillacomb commaaccent ogonekcomb];
+@ExtraLetters = [AE Dcroat Eth Germandbls Hbar Lslash OE Oslash Oslashacute Thorn ae dcroat eth gcommaaccent germandbls hbar lslash oe oslash oslashacute thorn];
+@Mark = [acutecomb brevecomb caroncomb caroncomb.alt cedillacomb circumflexcomb commaaccent dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ogonekcomb ringcomb tildecomb];
+@MarkSpacing = [acute breve caron cedilla circumflex commaturnedmod dieresis dotaccent grave hungarumlaut macron macronmod ogonek ring tilde];
+@TopMark = [acute breve caron circumflex dieresis dotaccent grave hungarumlaut macron macronmod ring tilde];
+@TopMarkComb = [acutecomb brevecomb caroncomb caroncomb.alt circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+#/< tags
+#/< classes
+
+#/> classes
+#/> tags
+@BottomMark = [cedilla ogonek];
+@BottomMarkComb = [cedillacomb commaaccent ogonekcomb];
+@ExtraLetters = [AE Dcroat Eth Germandbls Hbar Lslash OE Oslash Oslashacute Thorn ae dcroat eth gcommaaccent germandbls hbar lslash oe oslash oslashacute thorn];
+@Mark = [acutecomb brevecomb caroncomb caroncomb.alt cedillacomb circumflexcomb commaaccent dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ogonekcomb ringcomb tildecomb];
+@MarkSpacing = [acute breve caron cedilla circumflex commaturnedmod dieresis dotaccent grave hungarumlaut macron macronmod ogonek ring tilde];
+@TopMark = [acute breve caron circumflex dieresis dotaccent grave hungarumlaut macron macronmod ring tilde];
+@TopMarkComb = [acutecomb brevecomb caroncomb caroncomb.alt circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+#/< tags
+#/< classes
+
+#/> classes
+#/> tags
+@BottomMark = [cedilla ogonek];
+@BottomMarkComb = [cedillacomb commaaccent ogonekcomb];
 @ExtraLetters = [AE Dcroat Eth Germandbls Hbar Lslash OE Oslash Thorn ae dcroat eth gcommaaccent germandbls hbar lslash oe oslash thorn];
 @Mark = [acutecomb brevecomb caroncomb caroncomb.alt cedillacomb circumflexcomb commaaccent dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ogonekcomb ringcomb tildecomb];
 @MarkSpacing = [acute breve caron cedilla circumflex dieresis dotaccent grave hungarumlaut macron ogonek ring tilde];
@@ -74,6 +110,7 @@ languagesystem latn TRK;
 #
 # Lookup definitions
 #
+
 feature aalt {
 # Access All Alternates
 
@@ -85,6 +122,8 @@ feature aalt {
   feature ss02;
   feature ss03;
   feature ss04;
+  feature pnum;
+  feature tnum;
 #< feature
 } aalt;
 feature salt {
@@ -117,8 +156,11 @@ feature salt {
   sub atilde from [atilde.ss02];
   sub caroncomb from [caroncomb.alt];
   sub dollar from [dollar.ss03 dollar.ss04];
+  sub dollar.tf from [dollar.ss03.tf dollar.ss04.tf];
   sub dollar.through from [dollar.through.ss03 dollar.through.ss04];
+  sub dollar.through.tf from [dollar.through.ss03.tf dollar.through.ss04.tf];
   sub five from [five.ss03];
+  sub five.tf from [five.ss03.tf];
   sub ordfeminine from [ordfeminine.ss02];
   sub s from [s.ss03];
   sub sacute from [sacute.ss03];
@@ -128,6 +170,7 @@ feature salt {
   sub scommaaccent from [scommaaccent.ss03];
 #< feature
 } salt;
+
 feature locl {
 # Localized Forms
   # script latn; # Latin
@@ -160,6 +203,7 @@ feature locl {
 	sub l periodcentered' l by periodcentered.CAT;
 	sub L periodcentered' L by periodcentered.CAT.case;
 } locl;
+
 feature liga {
 # Standard Ligatures
 
@@ -177,6 +221,7 @@ feature liga {
   sub f f t by f_f_t;
 #< feature
 } liga;
+
 feature ordn {
 # Ordinals
 
@@ -185,6 +230,7 @@ feature ordn {
   sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
 #< feature
 } ordn;
+
 feature ccmp {
 # Glyph Composition/Decomposition
 
@@ -198,13 +244,27 @@ feature ccmp {
 	# QJ descender collision
 	sub Q J' by J.ss01;
 } ccmp;
+
 feature case {
 # Case Sensitive Forms
 
 #> feature
+  sub asterisk by asterisk.case;
+  sub at by at.case;
+  sub colon by colon.case;
+  sub emdash by emdash.case;
+  sub endash by endash.case;
+  sub exclamdown by exclamdown.case;
+  sub guillemotleft by guillemotleft.case;
+  sub guillemotright by guillemotright.case;
+  sub guilsinglleft by guilsinglleft.case;
+  sub guilsinglright by guilsinglright.case;
+  sub hyphen by hyphen.case;
   sub periodcentered.CAT by periodcentered.CAT.case;
+  sub questiondown by questiondown.case;
 #< feature
 } case;
+
 feature ss01 {
 # Stylistic Set 01–20
 
@@ -218,6 +278,7 @@ feature ss01 {
   sub Jcircumflex by Jcircumflex.ss01;
 #< feature
 } ss01;
+
 feature ss02 {
 # Stylistic Set 01–20
 	featureNames {
@@ -243,6 +304,7 @@ feature ss02 {
   sub ordfeminine by ordfeminine.ss02;
 #< feature
 } ss02;
+
 feature ss03 {
 # Stylistic Set 01–20
 	featureNames {
@@ -267,6 +329,7 @@ feature ss03 {
   sub scommaaccent by scommaaccent.ss03;
 #< feature
 } ss03;
+
 feature ss04 {
 # Stylistic Set 01–20
 	featureNames {
@@ -291,3 +354,83 @@ feature ss04 {
   sub scommaaccent by scommaaccent.ss03;
   sub five by five.ss03;
 } ss04;
+
+feature pnum {
+# Proportional Figures
+
+#> feature
+  sub Euro.tf by Euro;
+  sub asciitilde.tf by asciitilde;
+  sub asterisk.tf by asterisk;
+  sub cent.tf by cent;
+  sub divide.tf by divide;
+  sub dollar.tf by dollar;
+  sub eight.tf by eight;
+  sub equal.tf by equal;
+  sub five.tf by five;
+  sub four.tf by four;
+  sub greater.tf by greater;
+  sub less.tf by less;
+  sub logicalnot.tf by logicalnot;
+  sub minus.tf by minus;
+  sub multiply.tf by multiply;
+  sub nine.tf by nine;
+  sub numbersign.tf by numbersign;
+  sub one.tf by one;
+  sub plus.tf by plus;
+  sub plusminus.tf by plusminus;
+  sub seven.tf by seven;
+  sub six.tf by six;
+  sub slash.tf by slash;
+  sub space.tf by space;
+  sub sterling.tf by sterling;
+  sub three.tf by three;
+  sub two.tf by two;
+  sub yen.tf by yen;
+  sub zero.tf by zero;
+#< feature
+} pnum;
+
+feature tnum {
+# Tabular Figures
+
+#> feature
+  sub Euro by Euro.tf;
+  sub asciitilde by asciitilde.tf;
+  sub asterisk by asterisk.tf;
+  sub cent by cent.tf;
+  sub divide by divide.tf;
+  sub dollar by dollar.tf;
+  sub eight by eight.tf;
+  sub equal by equal.tf;
+  sub five by five.tf;
+  sub four by four.tf;
+  sub greater by greater.tf;
+  sub less by less.tf;
+  sub logicalnot by logicalnot.tf;
+  sub minus by minus.tf;
+  sub multiply by multiply.tf;
+  sub nine by nine.tf;
+  sub numbersign by numbersign.tf;
+  sub one by one.tf;
+  sub plus by plus.tf;
+  sub plusminus by plusminus.tf;
+  sub seven by seven.tf;
+  sub six by six.tf;
+  sub slash by slash.tf;
+  sub space by space.tf;
+  sub sterling by sterling.tf;
+  sub three by three.tf;
+  sub two by two.tf;
+  sub yen by yen.tf;
+  sub zero by zero.tf;
+#< feature
+  sub five.ss03 by five.ss03.tf;
+  sub colon by colon.case;
+  sub dollar.through by dollar.through.tf;
+  sub dollar.ss03 by dollar.ss03.tf;
+  sub dollar.through.ss03 by dollar.through.ss03.tf;
+  sub dollar.ss04 by dollar.ss04.tf;
+  sub dollar.through.ss04 by dollar.through.ss04.tf;
+} tnum;
+

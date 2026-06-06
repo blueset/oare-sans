@@ -489,6 +489,53 @@
     <string>scommaaccent.ss03</string>
     <string>scircumflex.ss03</string>
     <string>five.ss03</string>
+    <string>hyphen.case</string>
+    <string>endash.case</string>
+    <string>emdash.case</string>
+    <string>guillemotleft.case</string>
+    <string>guillemotright.case</string>
+    <string>guilsinglleft.case</string>
+    <string>guilsinglright.case</string>
+    <string>exclamdown.case</string>
+    <string>questiondown.case</string>
+    <string>colon.case</string>
+    <string>asterisk.case</string>
+    <string>at.case</string>
+    <string>zero.tf</string>
+    <string>one.tf</string>
+    <string>two.tf</string>
+    <string>three.tf</string>
+    <string>four.tf</string>
+    <string>five.tf</string>
+    <string>five.ss03.tf</string>
+    <string>six.tf</string>
+    <string>seven.tf</string>
+    <string>eight.tf</string>
+    <string>nine.tf</string>
+    <string>dollar.tf</string>
+    <string>dollar.through.tf</string>
+    <string>dollar.ss03.tf</string>
+    <string>dollar.through.ss03.tf</string>
+    <string>dollar.ss04.tf</string>
+    <string>dollar.through.ss04.tf</string>
+    <string>cent.tf</string>
+    <string>sterling.tf</string>
+    <string>yen.tf</string>
+    <string>Euro.tf</string>
+    <string>numbersign.tf</string>
+    <string>plus.tf</string>
+    <string>minus.tf</string>
+    <string>equal.tf</string>
+    <string>multiply.tf</string>
+    <string>divide.tf</string>
+    <string>plusminus.tf</string>
+    <string>less.tf</string>
+    <string>greater.tf</string>
+    <string>logicalnot.tf</string>
+    <string>asciitilde.tf</string>
+    <string>slash.tf</string>
+    <string>asterisk.tf</string>
+    <string>space.tf</string>
   </array>
   <key>public.skipExportGlyphs</key>
   <array>

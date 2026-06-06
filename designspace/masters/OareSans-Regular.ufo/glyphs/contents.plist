@@ -84,6 +84,8 @@
   <string>E_tilde.glif</string>
   <key>Euro</key>
   <string>E_uro.glif</string>
+  <key>Euro.tf</key>
+  <string>E_uro.tf.glif</string>
   <key>F</key>
   <string>F_.glif</string>
   <key>G</key>
@@ -408,10 +410,18 @@
   <string>asciicircum.glif</string>
   <key>asciitilde</key>
   <string>asciitilde.glif</string>
+  <key>asciitilde.tf</key>
+  <string>asciitilde.tf.glif</string>
   <key>asterisk</key>
   <string>asterisk.glif</string>
+  <key>asterisk.case</key>
+  <string>asterisk.case.glif</string>
+  <key>asterisk.tf</key>
+  <string>asterisk.tf.glif</string>
   <key>at</key>
   <string>at.glif</string>
+  <key>at.case</key>
+  <string>at.case.glif</string>
   <key>atilde</key>
   <string>atilde.glif</string>
   <key>atilde.ss02</key>
@@ -460,6 +470,8 @@
   <string>cedillacomb.glif</string>
   <key>cent</key>
   <string>cent.glif</string>
+  <key>cent.tf</key>
+  <string>cent.tf.glif</string>
   <key>cent.through</key>
   <string>cent.through.glif</string>
   <key>circumflex</key>
@@ -468,6 +480,8 @@
   <string>circumflexcomb.glif</string>
   <key>colon</key>
   <string>colon.glif</string>
+  <key>colon.case</key>
+  <string>colon.case.glif</string>
   <key>comma</key>
   <string>comma.glif</string>
   <key>commaaccent</key>
@@ -494,18 +508,32 @@
   <string>dieresiscomb.glif</string>
   <key>divide</key>
   <string>divide.glif</string>
+  <key>divide.tf</key>
+  <string>divide.tf.glif</string>
   <key>dollar</key>
   <string>dollar.glif</string>
   <key>dollar.ss03</key>
   <string>dollar.ss03.glif</string>
+  <key>dollar.ss03.tf</key>
+  <string>dollar.ss03.tf.glif</string>
   <key>dollar.ss04</key>
   <string>dollar.ss04.glif</string>
+  <key>dollar.ss04.tf</key>
+  <string>dollar.ss04.tf.glif</string>
+  <key>dollar.tf</key>
+  <string>dollar.tf.glif</string>
   <key>dollar.through</key>
   <string>dollar.through.glif</string>
   <key>dollar.through.ss03</key>
   <string>dollar.through.ss03.glif</string>
+  <key>dollar.through.ss03.tf</key>
+  <string>dollar.through.ss03.tf.glif</string>
   <key>dollar.through.ss04</key>
   <string>dollar.through.ss04.glif</string>
+  <key>dollar.through.ss04.tf</key>
+  <string>dollar.through.ss04.tf.glif</string>
+  <key>dollar.through.tf</key>
+  <string>dollar.through.tf.glif</string>
   <key>dotaccent</key>
   <string>dotaccent.glif</string>
   <key>dotaccentcomb</key>
@@ -536,18 +564,26 @@
   <string>egrave.glif</string>
   <key>eight</key>
   <string>eight.glif</string>
+  <key>eight.tf</key>
+  <string>eight.tf.glif</string>
   <key>ellipsis</key>
   <string>ellipsis.glif</string>
   <key>emacron</key>
   <string>emacron.glif</string>
   <key>emdash</key>
   <string>emdash.glif</string>
+  <key>emdash.case</key>
+  <string>emdash.case.glif</string>
   <key>endash</key>
   <string>endash.glif</string>
+  <key>endash.case</key>
+  <string>endash.case.glif</string>
   <key>eogonek</key>
   <string>eogonek.glif</string>
   <key>equal</key>
   <string>equal.glif</string>
+  <key>equal.tf</key>
+  <string>equal.tf.glif</string>
   <key>eth</key>
   <string>eth.glif</string>
   <key>etilde</key>
@@ -556,6 +592,8 @@
   <string>exclam.glif</string>
   <key>exclamdown</key>
   <string>exclamdown.glif</string>
+  <key>exclamdown.case</key>
+  <string>exclamdown.case.glif</string>
   <key>f</key>
   <string>f.glif</string>
   <key>f._narrow</key>
@@ -584,8 +622,14 @@
   <string>five.glif</string>
   <key>five.ss03</key>
   <string>five.ss03.glif</string>
+  <key>five.ss03.tf</key>
+  <string>five.ss03.tf.glif</string>
+  <key>five.tf</key>
+  <string>five.tf.glif</string>
   <key>four</key>
   <string>four.glif</string>
+  <key>four.tf</key>
+  <string>four.tf.glif</string>
   <key>fraction</key>
   <string>fraction.glif</string>
   <key>g</key>
@@ -612,14 +656,24 @@
   <string>gravecomb.glif</string>
   <key>greater</key>
   <string>greater.glif</string>
+  <key>greater.tf</key>
+  <string>greater.tf.glif</string>
   <key>guillemotleft</key>
   <string>guillemotleft.glif</string>
+  <key>guillemotleft.case</key>
+  <string>guillemotleft.case.glif</string>
   <key>guillemotright</key>
   <string>guillemotright.glif</string>
+  <key>guillemotright.case</key>
+  <string>guillemotright.case.glif</string>
   <key>guilsinglleft</key>
   <string>guilsinglleft.glif</string>
+  <key>guilsinglleft.case</key>
+  <string>guilsinglleft.case.glif</string>
   <key>guilsinglright</key>
   <string>guilsinglright.glif</string>
+  <key>guilsinglright.case</key>
+  <string>guilsinglright.case.glif</string>
   <key>h</key>
   <string>h.glif</string>
   <key>hbar</key>
@@ -634,6 +688,8 @@
   <string>hungarumlautcomb.glif</string>
   <key>hyphen</key>
   <string>hyphen.glif</string>
+  <key>hyphen.case</key>
+  <string>hyphen.case.glif</string>
   <key>i</key>
   <string>i.glif</string>
   <key>i.loclTRK</key>
@@ -686,10 +742,14 @@
   <string>ldot.glif</string>
   <key>less</key>
   <string>less.glif</string>
+  <key>less.tf</key>
+  <string>less.tf.glif</string>
   <key>lineseparator</key>
   <string>lineseparator.glif</string>
   <key>logicalnot</key>
   <string>logicalnot.glif</string>
+  <key>logicalnot.tf</key>
+  <string>logicalnot.tf.glif</string>
   <key>lslash</key>
   <string>lslash.glif</string>
   <key>m</key>
@@ -702,8 +762,12 @@
   <string>macronmod.glif</string>
   <key>minus</key>
   <string>minus.glif</string>
+  <key>minus.tf</key>
+  <string>minus.tf.glif</string>
   <key>multiply</key>
   <string>multiply.glif</string>
+  <key>multiply.tf</key>
+  <string>multiply.tf.glif</string>
   <key>n</key>
   <string>n.glif</string>
   <key>nacute</key>
@@ -716,10 +780,14 @@
   <string>ngrave.glif</string>
   <key>nine</key>
   <string>nine.glif</string>
+  <key>nine.tf</key>
+  <string>nine.tf.glif</string>
   <key>ntilde</key>
   <string>ntilde.glif</string>
   <key>numbersign</key>
   <string>numbersign.glif</string>
+  <key>numbersign.tf</key>
+  <string>numbersign.tf.glif</string>
   <key>o</key>
   <string>o.glif</string>
   <key>oacute</key>
@@ -750,6 +818,8 @@
   <string>omacron.glif</string>
   <key>one</key>
   <string>one.glif</string>
+  <key>one.tf</key>
+  <string>one.tf.glif</string>
   <key>oogonek</key>
   <string>oogonek.glif</string>
   <key>oogonekmacron</key>
@@ -792,8 +862,12 @@
   <string>perthousand.glif</string>
   <key>plus</key>
   <string>plus.glif</string>
+  <key>plus.tf</key>
+  <string>plus.tf.glif</string>
   <key>plusminus</key>
   <string>plusminus.glif</string>
+  <key>plusminus.tf</key>
+  <string>plusminus.tf.glif</string>
   <key>q</key>
   <string>q.glif</string>
   <key>q_j.liga</key>
@@ -802,6 +876,8 @@
   <string>question.glif</string>
   <key>questiondown</key>
   <string>questiondown.glif</string>
+  <key>questiondown.case</key>
+  <string>questiondown.case.glif</string>
   <key>quotedbl</key>
   <string>quotedbl.glif</string>
   <key>quotedblbase</key>
@@ -862,14 +938,24 @@
   <string>semicolon.glif</string>
   <key>seven</key>
   <string>seven.glif</string>
+  <key>seven.tf</key>
+  <string>seven.tf.glif</string>
   <key>six</key>
   <string>six.glif</string>
+  <key>six.tf</key>
+  <string>six.tf.glif</string>
   <key>slash</key>
   <string>slash.glif</string>
+  <key>slash.tf</key>
+  <string>slash.tf.glif</string>
   <key>space</key>
   <string>space.glif</string>
+  <key>space.tf</key>
+  <string>space.tf.glif</string>
   <key>sterling</key>
   <string>sterling.glif</string>
+  <key>sterling.tf</key>
+  <string>sterling.tf.glif</string>
   <key>t</key>
   <string>t.glif</string>
   <key>tcaron</key>
@@ -882,6 +968,8 @@
   <string>thorn.glif</string>
   <key>three</key>
   <string>three.glif</string>
+  <key>three.tf</key>
+  <string>three.tf.glif</string>
   <key>tilde</key>
   <string>tilde.glif</string>
   <key>tildecomb</key>
@@ -890,6 +978,8 @@
   <string>trademark.glif</string>
   <key>two</key>
   <string>two.glif</string>
+  <key>two.tf</key>
+  <string>two.tf.glif</string>
   <key>u</key>
   <string>u.glif</string>
   <key>uacute</key>
@@ -950,6 +1040,8 @@
   <string>ydieresis.glif</string>
   <key>yen</key>
   <string>yen.glif</string>
+  <key>yen.tf</key>
+  <string>yen.tf.glif</string>
   <key>ygrave</key>
   <string>ygrave.glif</string>
   <key>ymacron</key>
@@ -966,6 +1058,8 @@
   <string>zdotaccent.glif</string>
   <key>zero</key>
   <string>zero.glif</string>
+  <key>zero.tf</key>
+  <string>zero.tf.glif</string>
   <key>zerowidthspace</key>
   <string>zerowidthspace.glif</string>
 </dict>

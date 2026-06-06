@@ -2,8 +2,8 @@
 <glyph name="ldot" format="2">
   <advance width="378"/>
   <unicode hex="0140"/>
-  <anchor x="92.5" y="735" name="top"/>
-  <anchor x="92.5" y="0" name="bottom"/>
+  <anchor x="196.242" y="735" name="top"/>
+  <anchor x="196.242" y="0" name="bottom"/>
   <anchor x="135" y="735" name="caronapos"/>
   <outline>
     <component base="l"/>

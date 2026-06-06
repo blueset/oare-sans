@@ -826,7 +826,7 @@
     <key>public.kern2.SRight</key>
     <integer>-20</integer>
     <key>public.kern2.aRight</key>
-    <integer>-45</integer>
+    <integer>-35</integer>
     <key>public.kern2.colon</key>
     <integer>-20</integer>
     <key>public.kern2.commaRight</key>

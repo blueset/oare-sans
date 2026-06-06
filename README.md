@@ -1,6 +1,6 @@
 # Oare Sans
 
-<!-- Version begin -->Version 0.005<!-- Version end -->
+<!-- Version begin -->Version 0.006<!-- Version end -->
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
@@ -20,6 +20,8 @@
 
 - Kerning `kern`, Ligautures `liga`, Ordinals `ordn`, Glyph Composition/Decomposition `ccmp`
 - Localized Forms `locl`: Moldavian `MOL`, Romanian `ROU`, Turkish `TUR`, Dutch `NLD`, and Catalan `CAT`
+- Case-Sensitive Forms `case`
+- Tabular Figures `tnum`
 - Stylistic Sets
   - `ss01`: Alternative J
   - `ss02`: Single story a
@@ -37,6 +39,9 @@
 
 ## Changelog
 
+- v0.006:
+  - Added feature `case` (Case-Sensitive Forms) to glyphs `/hyphen`, `/endash`, `/emdash`, `/guillemotleft`, `/guillemotright`, `/guilsinglleft`, `/guilsinglright`, `/exclamdown`, `/questiondown`, `/colon`, `/asterisk`, and `/at`.
+  - Added feature `tnum` (Tabular Figures) to glyphs `/zero` to `/nine`, `/dollar`, `/cent`, `/sterling`, `/yen`, `/Euro`, `/numbersign`, `/plus`, `/minus`, `/equal`, `/multiply`, `/divide`, `/plusminus`, `/less`, `/greater`, `/logicalnot`, `/asciitilde`, `/period`, `/comma`, `/colon`, `/semicolon`, `/slash`, and `/space`.
 - v0.005:
   - Extended `ss03` and `ss04` to `/dollar` and `/dollar.through`.
   - Adjusted some kerning pairs.
