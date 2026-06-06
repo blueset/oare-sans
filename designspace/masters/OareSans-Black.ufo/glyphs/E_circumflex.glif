@@ -2,7 +2,7 @@
 <glyph name="Ecircumflex" format="2">
   <advance width="354"/>
   <unicode hex="00CA"/>
-  <anchor x="186.61" y="0" name="bottom"/>
+  <anchor x="186.11" y="0" name="bottom"/>
   <anchor x="343" y="0" name="ogonek"/>
   <anchor x="186.61" y="823" name="top"/>
   <outline>

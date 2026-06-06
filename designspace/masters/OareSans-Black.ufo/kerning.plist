@@ -41,6 +41,8 @@
     <integer>-25</integer>
     <key>public.kern2.hyphen</key>
     <integer>-15</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-10</integer>
     <key>public.kern2.nRight</key>
     <integer>-15</integer>
     <key>public.kern2.oRight</key>
@@ -406,6 +408,8 @@
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
     <integer>-30</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-10</integer>
     <key>public.kern2.nRight</key>
     <integer>-10</integer>
     <key>public.kern2.oRight</key>
@@ -444,6 +448,8 @@
     <key>public.kern2.gRight</key>
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
+    <integer>-30</integer>
+    <key>public.kern2.hyphen.case</key>
     <integer>-30</integer>
     <key>public.kern2.oRight</key>
     <integer>-10</integer>
@@ -534,6 +540,15 @@
     <key>public.kern2.YRight</key>
     <integer>-120</integer>
   </dict>
+  <key>questiondown.case</key>
+  <dict>
+    <key>V</key>
+    <integer>-40</integer>
+    <key>public.kern2.TRight</key>
+    <integer>-60</integer>
+    <key>public.kern2.YRight</key>
+    <integer>-100</integer>
+  </dict>
   <key>quotesinglbase</key>
   <dict>
     <key>V</key>
@@ -619,6 +634,8 @@
   <dict>
     <key>public.kern2.hyphen</key>
     <integer>-40</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-20</integer>
     <key>public.kern2.oRight</key>
     <integer>-25</integer>
   </dict>
@@ -660,6 +677,8 @@
     <integer>-20</integer>
     <key>public.kern2.hyphen</key>
     <integer>-15</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-20</integer>
     <key>public.kern2.oRight</key>
     <integer>-10</integer>
     <key>public.kern2.qRight</key>
@@ -841,6 +860,8 @@
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
     <integer>-40</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-50</integer>
     <key>public.kern2.nRight</key>
     <integer>-5</integer>
     <key>public.kern2.oRight</key>
@@ -1018,6 +1039,8 @@
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
     <integer>-55</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-20</integer>
     <key>public.kern2.nRight</key>
     <integer>-15</integer>
     <key>public.kern2.oRight</key>
@@ -1084,6 +1107,8 @@
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
     <integer>-40</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-10</integer>
     <key>public.kern2.nRight</key>
     <integer>-20</integer>
     <key>public.kern2.oRight</key>
@@ -1145,6 +1170,8 @@
     <integer>-60</integer>
     <key>public.kern2.hyphen</key>
     <integer>-75</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-40</integer>
     <key>public.kern2.nRight</key>
     <integer>-30</integer>
     <key>public.kern2.oRight</key>
@@ -1179,6 +1206,8 @@
     <key>public.kern2.gRight</key>
     <integer>-10</integer>
     <key>public.kern2.hyphen</key>
+    <integer>-30</integer>
+    <key>public.kern2.hyphen.case</key>
     <integer>-30</integer>
     <key>public.kern2.oRight</key>
     <integer>-10</integer>
@@ -1274,6 +1303,13 @@
     <key>public.kern2.uRight</key>
     <integer>-10</integer>
   </dict>
+  <key>public.kern1.guillemotleft.case</key>
+  <dict>
+    <key>public.kern2.TRight</key>
+    <integer>10</integer>
+    <key>public.kern2.YRight</key>
+    <integer>-10</integer>
+  </dict>
   <key>public.kern1.guilsinglleft</key>
   <dict>
     <key>V</key>
@@ -1319,6 +1355,23 @@
     <key>public.kern2.YRight</key>
     <integer>-80</integer>
   </dict>
+  <key>public.kern1.hyphen.case</key>
+  <dict>
+    <key>V</key>
+    <integer>-10</integer>
+    <key>X</key>
+    <integer>-40</integer>
+    <key>x</key>
+    <integer>-10</integer>
+    <key>public.kern2.ARight</key>
+    <integer>-20</integer>
+    <key>public.kern2.TRight</key>
+    <integer>-40</integer>
+    <key>public.kern2.WRight</key>
+    <integer>-10</integer>
+    <key>public.kern2.YRight</key>
+    <integer>-40</integer>
+  </dict>
   <key>public.kern1.iLeft</key>
   <dict>
     <key>public.kern2.aRight</key>
@@ -1338,6 +1391,8 @@
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
     <integer>-40</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-30</integer>
     <key>public.kern2.oRight</key>
     <integer>-30</integer>
     <key>public.kern2.tRight</key>
@@ -1540,6 +1595,8 @@
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
     <integer>-40</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-5</integer>
     <key>public.kern2.oRight</key>
     <integer>-25</integer>
     <key>public.kern2.s.ss03Right</key>

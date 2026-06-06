@@ -32,6 +32,8 @@
     <integer>-20</integer>
     <key>public.kern2.hyphen</key>
     <integer>-10</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-10</integer>
     <key>public.kern2.nRight</key>
     <integer>-5</integer>
     <key>public.kern2.qRight</key>
@@ -76,6 +78,8 @@
     <integer>-5</integer>
     <key>public.kern2.hyphen</key>
     <integer>-25</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-10</integer>
     <key>public.kern2.qRight</key>
     <integer>-5</integer>
     <key>public.kern2.sRight</key>
@@ -136,6 +140,8 @@
     <integer>-20</integer>
     <key>public.kern2.hyphen</key>
     <integer>-30</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-20</integer>
     <key>public.kern2.iRight</key>
     <integer>-10</integer>
     <key>public.kern2.jRight</key>
@@ -181,6 +187,8 @@
     <integer>-25</integer>
     <key>public.kern2.hyphen</key>
     <integer>-40</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-50</integer>
     <key>public.kern2.iRight</key>
     <integer>-5</integer>
     <key>public.kern2.jRight</key>
@@ -292,6 +300,15 @@
     <key>public.kern2.YRight</key>
     <integer>-80</integer>
   </dict>
+  <key>questiondown.case</key>
+  <dict>
+    <key>V</key>
+    <integer>-40</integer>
+    <key>public.kern2.TRight</key>
+    <integer>-30</integer>
+    <key>public.kern2.YRight</key>
+    <integer>-50</integer>
+  </dict>
   <key>quotesinglbase</key>
   <dict>
     <key>V</key>
@@ -384,6 +401,8 @@
   <dict>
     <key>public.kern2.hyphen</key>
     <integer>-30</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-40</integer>
     <key>public.kern2.oRight</key>
     <integer>-5</integer>
   </dict>
@@ -424,6 +443,8 @@
     <integer>-5</integer>
     <key>public.kern2.hyphen</key>
     <integer>-15</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-35</integer>
     <key>public.kern2.oRight</key>
     <integer>-5</integer>
     <key>public.kern2.qRight</key>
@@ -608,6 +629,8 @@
     <integer>-5</integer>
     <key>public.kern2.hyphen</key>
     <integer>-35</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-60</integer>
     <key>public.kern2.oRight</key>
     <integer>-5</integer>
     <key>public.kern2.qRight</key>
@@ -709,6 +732,8 @@
     <integer>-10</integer>
     <key>public.kern2.hyphen</key>
     <integer>-25</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-10</integer>
     <key>public.kern2.qRight</key>
     <integer>-10</integer>
     <key>public.kern2.quoteright</key>
@@ -841,6 +866,8 @@
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
     <integer>-35</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-50</integer>
     <key>public.kern2.iRight</key>
     <integer>-5</integer>
     <key>public.kern2.jRight</key>
@@ -921,6 +948,8 @@
     <integer>-10</integer>
     <key>public.kern2.hyphen</key>
     <integer>-30</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-20</integer>
     <key>public.kern2.iRight</key>
     <integer>-15</integer>
     <key>public.kern2.jRight</key>
@@ -992,6 +1021,8 @@
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
     <integer>-50</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-50</integer>
     <key>public.kern2.iRight</key>
     <integer>-10</integer>
     <key>public.kern2.jRight</key>
@@ -1034,6 +1065,8 @@
     <key>public.kern2.gRight</key>
     <integer>-30</integer>
     <key>public.kern2.hyphen</key>
+    <integer>-40</integer>
+    <key>public.kern2.hyphen.case</key>
     <integer>-40</integer>
     <key>public.kern2.oRight</key>
     <integer>-25</integer>
@@ -1131,6 +1164,17 @@
     <key>two</key>
     <integer>-15</integer>
   </dict>
+  <key>public.kern1.guillemotleft.case</key>
+  <dict>
+    <key>V</key>
+    <integer>-10</integer>
+    <key>public.kern2.TRight</key>
+    <integer>-20</integer>
+    <key>public.kern2.WRight</key>
+    <integer>-10</integer>
+    <key>public.kern2.YRight</key>
+    <integer>-30</integer>
+  </dict>
   <key>public.kern1.guilsinglleft</key>
   <dict>
     <key>V</key>
@@ -1172,6 +1216,23 @@
     <key>public.kern2.YRight</key>
     <integer>-50</integer>
   </dict>
+  <key>public.kern1.hyphen.case</key>
+  <dict>
+    <key>V</key>
+    <integer>-20</integer>
+    <key>X</key>
+    <integer>-60</integer>
+    <key>x</key>
+    <integer>-20</integer>
+    <key>public.kern2.ARight</key>
+    <integer>-20</integer>
+    <key>public.kern2.TRight</key>
+    <integer>-30</integer>
+    <key>public.kern2.WRight</key>
+    <integer>-10</integer>
+    <key>public.kern2.YRight</key>
+    <integer>-40</integer>
+  </dict>
   <key>public.kern1.kLeft</key>
   <dict>
     <key>oslash</key>
@@ -1184,6 +1245,8 @@
     <integer>-5</integer>
     <key>public.kern2.hyphen</key>
     <integer>-35</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-30</integer>
     <key>public.kern2.oRight</key>
     <integer>-5</integer>
     <key>public.kern2.tRight</key>
@@ -1327,6 +1390,8 @@
     <integer>-20</integer>
     <key>public.kern2.hyphen</key>
     <integer>-30</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-30</integer>
     <key>public.kern2.oRight</key>
     <integer>-10</integer>
     <key>public.kern2.qRight</key>
@@ -1353,6 +1418,8 @@
     <integer>-15</integer>
     <key>public.kern2.hyphen</key>
     <integer>-20</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-30</integer>
     <key>public.kern2.oRight</key>
     <integer>-10</integer>
   </dict>
@@ -1374,6 +1441,8 @@
     <integer>-10</integer>
     <key>public.kern2.hyphen</key>
     <integer>-15</integer>
+    <key>public.kern2.hyphen.case</key>
+    <integer>-10</integer>
     <key>public.kern2.oRight</key>
     <integer>-5</integer>
     <key>public.kern2.s.ss03Right</key>
@@ -1388,6 +1457,8 @@
     <key>public.kern2.dRight</key>
     <integer>-5</integer>
     <key>public.kern2.hyphen</key>
+    <integer>-10</integer>
+    <key>public.kern2.hyphen.case</key>
     <integer>-10</integer>
     <key>public.kern2.oRight</key>
     <integer>-5</integer>

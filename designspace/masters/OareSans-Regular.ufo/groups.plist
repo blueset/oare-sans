@@ -314,6 +314,16 @@
     <string>circumflex</string>
     <string>grave</string>
   </array>
+  <key>public.kern1.guillemotleft.case</key>
+  <array>
+    <string>guillemotleft.case</string>
+    <string>guilsinglleft.case</string>
+  </array>
+  <key>public.kern1.guillemotright.case</key>
+  <array>
+    <string>guillemotright.case</string>
+    <string>guilsinglright.case</string>
+  </array>
   <key>public.kern1.guilsinglleft</key>
   <array>
     <string>guillemotleft</string>
@@ -331,6 +341,12 @@
     <string>emdash</string>
     <string>endash</string>
     <string>hyphen</string>
+  </array>
+  <key>public.kern1.hyphen.case</key>
+  <array>
+    <string>emdash.case</string>
+    <string>endash.case</string>
+    <string>hyphen.case</string>
   </array>
   <key>public.kern1.iLeft</key>
   <array>
@@ -790,6 +806,11 @@
     <string>gcommaaccent</string>
     <string>gdotaccent</string>
   </array>
+  <key>public.kern2.guillemotright.case</key>
+  <array>
+    <string>guillemotright.case</string>
+    <string>guilsinglright.case</string>
+  </array>
   <key>public.kern2.guilsinglright</key>
   <array>
     <string>guillemotright</string>
@@ -800,6 +821,12 @@
     <string>emdash</string>
     <string>endash</string>
     <string>hyphen</string>
+  </array>
+  <key>public.kern2.hyphen.case</key>
+  <array>
+    <string>emdash.case</string>
+    <string>endash.case</string>
+    <string>hyphen.case</string>
   </array>
   <key>public.kern2.iRight</key>
   <array>

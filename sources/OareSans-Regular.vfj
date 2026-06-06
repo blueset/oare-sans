@@ -12894,7 +12894,6 @@
                   "xOffset":-45,
                   "yOffset":173
                 },
-                "active":true,
                 "stroke":{
                   "miter_limit":2
                 }
@@ -12909,6 +12908,7 @@
                   "xOffset":-260,
                   "yOffset":647
                 },
+                "active":true,
                 "stroke":{
                   "miter_limit":2
                 }
@@ -12988,7 +12988,6 @@
                   "xOffset":-45,
                   "yOffset":173
                 },
-                "active":true,
                 "stroke":{
                   "miter_limit":2
                 }
@@ -13003,6 +13002,7 @@
                   "xOffset":-260,
                   "yOffset":647
                 },
+                "active":true,
                 "stroke":{
                   "miter_limit":2
                 }
@@ -14284,7 +14284,8 @@
                 "transform":{
                   "yOffset":400
                 },
-                "locked":true
+                "locked":true,
+                "active":true
               },
               {
                 "elementData":{
@@ -14315,7 +14316,8 @@
                   "xOffset":1,
                   "yOffset":462
                 },
-                "locked":true
+                "locked":true,
+                "active":true
               },
               {
                 "elementData":{
@@ -18800,7 +18802,8 @@
                   "yScale":-1,
                   "xOffset":264.47183228,
                   "yOffset":1179.00012207
-                }
+                },
+                "active":true
               }
             ],
             "color":"#fe4a46",
@@ -18827,7 +18830,8 @@
                   "xOffset":240,
                   "yOffset":1290
                 },
-                "locked":true
+                "locked":true,
+                "active":true
               }
             ],
             "color":"#3989c2"
@@ -18852,7 +18856,8 @@
                   "yScale":-1,
                   "xOffset":201,
                   "yOffset":1083
-                }
+                },
+                "active":true
               }
             ],
             "color":"#00cce5"
@@ -18877,7 +18882,8 @@
                   "yScale":-1,
                   "xOffset":157,
                   "yOffset":1179
-                }
+                },
+                "active":true
               }
             ],
             "color":"#bac000"
@@ -77291,17 +77297,13 @@
             "metricsRight":"|",
             "elements":[
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"dotlessi"
-                  }
+                "component":{
+                  "glyphName":"dotlessi"
                 }
               },
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"dotaccentcomb"
-                  }
+                "component":{
+                  "glyphName":"dotaccentcomb"
                 },
                 "transform":{
                   "xOffset":93
@@ -77392,17 +77394,13 @@
             "metricsRight":"|",
             "elements":[
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"dotlessi"
-                  }
+                "component":{
+                  "glyphName":"dotlessi"
                 }
               },
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"dotaccentcomb"
-                  }
+                "component":{
+                  "glyphName":"dotaccentcomb"
                 },
                 "transform":{
                   "xOffset":117.5
@@ -77492,17 +77490,13 @@
             "metricsRight":"|",
             "elements":[
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"dotlessi"
-                  }
+                "component":{
+                  "glyphName":"dotlessi"
                 }
               },
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"dotaccentcomb"
-                  }
+                "component":{
+                  "glyphName":"dotaccentcomb"
                 },
                 "transform":{
                   "xOffset":70
@@ -77597,17 +77591,13 @@
             "metricsRight":"i-1",
             "elements":[
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"dotlessj"
-                  }
+                "component":{
+                  "glyphName":"dotlessj"
                 }
               },
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"dotaccentcomb"
-                  }
+                "component":{
+                  "glyphName":"dotaccentcomb"
                 },
                 "transform":{
                   "xOffset":91.478
@@ -91320,7 +91310,7 @@
               },
               {
                 "name":"top",
-                "point":"379.333 846",
+                "point":"266 846",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -93255,7 +93245,7 @@
               },
               {
                 "name":"top",
-                "point":"154.154 794",
+                "point":"188.57 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -93397,7 +93387,7 @@
               },
               {
                 "name":"top",
-                "point":"174.026 794",
+                "point":"174.5 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -94447,7 +94437,7 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"280.5 680",
+                "point":"280.652 680",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
@@ -96130,7 +96120,7 @@
               },
               {
                 "name":"top",
-                "point":"164.487 918",
+                "point":"188.57 918",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -96299,7 +96289,7 @@
               },
               {
                 "name":"top",
-                "point":"174.026 918",
+                "point":"174.5 918",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -97338,7 +97328,7 @@
               },
               {
                 "name":"top",
-                "point":"164.154 913",
+                "point":"188.57 913",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -97507,7 +97497,7 @@
               },
               {
                 "name":"top",
-                "point":"174.026 912",
+                "point":"174.5 912",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -100459,7 +100449,7 @@
               },
               {
                 "name":"top",
-                "point":"242 917",
+                "point":"233 917",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -100501,7 +100491,7 @@
               },
               {
                 "name":"top",
-                "point":"230 794",
+                "point":"203 794",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -100543,7 +100533,7 @@
               },
               {
                 "name":"top",
-                "point":"190 788",
+                "point":"157.5 788",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -100758,7 +100748,7 @@
               },
               {
                 "name":"top",
-                "point":"193 649",
+                "point":"187 649",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -104880,7 +104870,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"186.61 0",
+                "point":"186.11 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -104976,7 +104966,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"154 0",
+                "point":"153.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -106162,7 +106152,7 @@
               },
               {
                 "name":"top",
-                "point":"153.526 794",
+                "point":"154 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -106654,7 +106644,7 @@
               },
               {
                 "name":"top",
-                "point":"186.61 917",
+                "point":"177 917",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -106703,7 +106693,7 @@
               },
               {
                 "name":"top",
-                "point":"184.11 794",
+                "point":"172 794",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -106752,7 +106742,7 @@
               },
               {
                 "name":"top",
-                "point":"154 788",
+                "point":"139 788",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -107213,14 +107203,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"186.61 680",
+                "point":"186.652 680",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"186.61 0",
+                "point":"186.652 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -107755,7 +107745,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"186.61 0",
+                "point":"186.11 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -107851,7 +107841,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"154 0",
+                "point":"153.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -108999,7 +108989,7 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"154 670",
+                "point":"153.5 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
@@ -109354,7 +109344,7 @@
               },
               {
                 "name":"top",
-                "point":"280.333 846",
+                "point":"227 846",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -111036,7 +111026,7 @@
               },
               {
                 "name":"top",
-                "point":"250 917",
+                "point":"252.5 917",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -111078,7 +111068,7 @@
               },
               {
                 "name":"top",
-                "point":"241 794",
+                "point":"223 794",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -111120,7 +111110,7 @@
               },
               {
                 "name":"top",
-                "point":"202 788",
+                "point":"177.5 788",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -114545,7 +114535,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"117.5 0",
+                "point":"84.25 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -114593,7 +114583,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"61 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -114641,7 +114631,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"46 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -115129,7 +115119,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"117.5 0",
+                "point":"151.25 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -115177,7 +115167,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"123 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -115225,7 +115215,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"101 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -115713,7 +115703,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"117.5 0",
+                "point":"117 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -115761,7 +115751,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"92 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -115809,7 +115799,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"69.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -116346,7 +116336,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"91.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -116394,7 +116384,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"71 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -116848,7 +116838,7 @@
               },
               {
                 "name":"top",
-                "point":"115.654 794",
+                "point":"84.3333 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -116884,7 +116874,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"117.5 0",
+                "point":"117.218 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -116932,7 +116922,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"92.0255 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -116980,7 +116970,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"69.5256 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -117452,14 +117442,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"117.5 680",
+                "point":"117.652 680",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"117.5 0",
+                "point":"117.652 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -117495,14 +117485,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"92.5 670",
+                "point":"63 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"63 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -117538,14 +117528,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"70 670",
+                "point":"36 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"36 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -118038,7 +118028,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"92.6176 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -118087,7 +118077,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"71 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -118481,7 +118471,7 @@
               },
               {
                 "name":"top",
-                "point":"215.333 846",
+                "point":"194.5 846",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -118657,7 +118647,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"91.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -119184,7 +119174,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"117.5 0",
+                "point":"117 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -119231,7 +119221,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"92 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -119278,7 +119268,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"69.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -119837,7 +119827,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"70.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -120770,14 +120760,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"382 680",
+                "point":"250 680",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"117.5 0",
+                "point":"250 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -120815,14 +120805,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"295 670",
+                "point":"193.5 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"92.5 0",
+                "point":"193.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -120860,14 +120850,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"209 670",
+                "point":"134 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"134 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -123856,7 +123846,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"184.112 0",
+                "point":"182.612 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -123904,7 +123894,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"146.818 0",
+                "point":"141.818 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -124964,7 +124954,7 @@
               },
               {
                 "name":"bottom",
-                "point":"183.919 0",
+                "point":"203 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -125934,7 +125924,7 @@
               },
               {
                 "name":"bottom",
-                "point":"183.919 0",
+                "point":"245.206 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -125978,7 +125968,7 @@
               },
               {
                 "name":"bottom",
-                "point":"184.112 0",
+                "point":"210.742 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -126022,7 +126012,7 @@
               },
               {
                 "name":"bottom",
-                "point":"146.818 0",
+                "point":"170 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -130649,7 +130639,7 @@
               },
               {
                 "name":"top",
-                "point":"339.333 846",
+                "point":"269.594 846",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -132595,7 +132585,7 @@
               },
               {
                 "name":"top",
-                "point":"196.131 794",
+                "point":"196.836 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -132737,7 +132727,7 @@
               },
               {
                 "name":"top",
-                "point":"182.026 794",
+                "point":"182.5 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -134284,7 +134274,7 @@
               },
               {
                 "name":"top",
-                "point":"196.131 794",
+                "point":"196.836 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -134408,7 +134398,7 @@
               },
               {
                 "name":"top",
-                "point":"182.026 794",
+                "point":"182.5 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -135375,7 +135365,7 @@
               },
               {
                 "name":"top",
-                "point":"196.131 918",
+                "point":"196.836 918",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -135517,7 +135507,7 @@
               },
               {
                 "name":"top",
-                "point":"182.026 918",
+                "point":"182.5 918",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -135953,7 +135943,7 @@
               },
               {
                 "name":"top",
-                "point":"200.23 900",
+                "point":"196.836 900",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -136095,7 +136085,7 @@
               },
               {
                 "name":"top",
-                "point":"182.026 900",
+                "point":"182.5 900",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -137527,7 +137517,7 @@
               },
               {
                 "name":"top",
-                "point":"220.739 525",
+                "point":"222.24 525",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"x_height"
@@ -152905,7 +152895,7 @@
               },
               {
                 "name":"top",
-                "point":"208.985 794",
+                "point":"196.273 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -153050,7 +153040,7 @@
               },
               {
                 "name":"top",
-                "point":"182.026 794",
+                "point":"182.5 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -155660,7 +155650,7 @@
               },
               {
                 "name":"top",
-                "point":"347.333 846",
+                "point":"284.885 846",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -156899,7 +156889,7 @@
               },
               {
                 "name":"top",
-                "point":"208.985 918",
+                "point":"196.273 918",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -157041,7 +157031,7 @@
               },
               {
                 "name":"top",
-                "point":"182.026 918",
+                "point":"182.5 918",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -162768,7 +162758,7 @@
               },
               {
                 "name":"top",
-                "point":"237.667 794",
+                "point":"179.097 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -162892,7 +162882,7 @@
               },
               {
                 "name":"top",
-                "point":"164.526 794",
+                "point":"165 794",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -163184,7 +163174,7 @@
               },
               {
                 "name":"top",
-                "point":"327.333 846",
+                "point":"316.167 846",
                 "appearance":5,
                 "exprX":"center"
               }
@@ -173758,14 +173748,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"432 680",
+                "point":"273.5 680",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"117.5 0",
+                "point":"273.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -173848,14 +173838,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"297 670",
+                "point":"183.5 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"70 0",
+                "point":"183.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"bottom"
@@ -184849,8 +184839,7 @@
                   "xOffset":16.73426091,
                   "yOffset":100
                 },
-                "locked":true,
-                "active":true
+                "locked":true
               }
             ],
             "color":"#1f964d"
@@ -184947,8 +184936,7 @@
                 "transform":{
                   "yOffset":78
                 },
-                "locked":true,
-                "active":true
+                "locked":true
               }
             ],
             "color":"#ff34ff"
@@ -185231,7 +185219,7 @@
       },
       {
         "name":"guillemotleft.case",
-        "lastModified":"2026-06-06 15:08:11",
+        "lastModified":"2026-06-06 18:34:03",
         "colorFlag":240,
         "layers":[
           {
@@ -185495,7 +185483,7 @@
       },
       {
         "name":"guilsinglleft.case",
-        "lastModified":"2026-06-06 15:08:11",
+        "lastModified":"2026-06-06 18:34:03",
         "colorFlag":240,
         "layers":[
           {
@@ -190287,8 +190275,7 @@
                         },
                         "transform":{
                           "xOffset":4
-                        },
-                        "active":true
+                        }
                       },
                       {
                         "elementData":"elementdata.71",
@@ -192381,7 +192368,8 @@
                 "transform":{
                   "xOffset":51
                 },
-                "locked":true
+                "locked":true,
+                "active":true
               }
             ],
             "color":"#00cce5"
@@ -192399,7 +192387,8 @@
                 "transform":{
                   "xOffset":34
                 },
-                "locked":true
+                "locked":true,
+                "active":true
               }
             ],
             "color":"#ff34ff"
@@ -193025,7 +193014,7 @@
       },
       {
         "name":"pnum",
-        "feature":"feature pnum {\n# Proportional Figures\n\n#> feature\n  sub Euro.tf by Euro;\n  sub asciitilde.tf by asciitilde;\n  sub cent.tf by cent;\n  sub colon.tf by colon;\n  sub comma.tf by comma;\n  sub divide.tf by divide;\n  sub dollar.tf by dollar;\n  sub eight.tf by eight;\n  sub equal.tf by equal;\n  sub five.tf by five;\n  sub four.tf by four;\n  sub greater.tf by greater;\n  sub less.tf by less;\n  sub logicalnot.tf by logicalnot;\n  sub minus.tf by minus;\n  sub multiply.tf by multiply;\n  sub nine.tf by nine;\n  sub numbersign.tf by numbersign;\n  sub one.tf by one;\n  sub period.tf by period;\n  sub plus.tf by plus;\n  sub plusminus.tf by plusminus;\n  sub semicolon.tf by semicolon;\n  sub seven.tf by seven;\n  sub six.tf by six;\n  sub slash.tf by slash;\n  sub space.tf by space;\n  sub sterling.tf by sterling;\n  sub three.tf by three;\n  sub two.tf by two;\n  sub yen.tf by yen;\n  sub zero.tf by zero;\n#< feature\n} pnum;\n\n"
+        "feature":"feature pnum {\n# Proportional Figures\n\n#> feature\n  sub Euro.tf by Euro;\n  sub asciitilde.tf by asciitilde;\n  sub asterisk.tf by asterisk;\n  sub cent.tf by cent;\n  sub divide.tf by divide;\n  sub dollar.tf by dollar;\n  sub eight.tf by eight;\n  sub equal.tf by equal;\n  sub five.tf by five;\n  sub four.tf by four;\n  sub greater.tf by greater;\n  sub less.tf by less;\n  sub logicalnot.tf by logicalnot;\n  sub minus.tf by minus;\n  sub multiply.tf by multiply;\n  sub nine.tf by nine;\n  sub numbersign.tf by numbersign;\n  sub one.tf by one;\n  sub plus.tf by plus;\n  sub plusminus.tf by plusminus;\n  sub seven.tf by seven;\n  sub six.tf by six;\n  sub slash.tf by slash;\n  sub space.tf by space;\n  sub sterling.tf by sterling;\n  sub three.tf by three;\n  sub two.tf by two;\n  sub yen.tf by yen;\n  sub zero.tf by zero;\n#< feature\n} pnum;\n\n"
       },
       {
         "name":"tnum",
@@ -194398,6 +194387,25 @@
                   "dollar.ss04",
                   "dollar.through.ss04"
                 ]
+              },
+              {
+                "name":"hyphen.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "emdash.case",
+                  "endash.case",
+                  "hyphen.case"
+                ]
+              },
+              {
+                "name":"guillemotleft.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "guillemotleft.case",
+                  "guilsinglleft.case"
+                ]
               }
             ],
             "pairs":{
@@ -194413,6 +194421,7 @@
                 "@fRight":"-15",
                 "@gRight":"-5",
                 "@hyphen":"-15",
+                "@hyphen.case":"-35",
                 "@oRight":"-5",
                 "@qRight":"-5",
                 "@quoteright":"-65",
@@ -194508,6 +194517,7 @@
                 "@fRight":"-10",
                 "@gRight":"-5",
                 "@hyphen":"-35",
+                "@hyphen.case":"-60",
                 "@oRight":"-5",
                 "@qRight":"-5",
                 "@tRight":"-15",
@@ -194563,6 +194573,7 @@
                 "@dRight":"-5",
                 "@gRight":"-10",
                 "@hyphen":"-25",
+                "@hyphen.case":"-10",
                 "@qRight":"-10",
                 "@quoteright":"-5",
                 "V":"-5"
@@ -194627,6 +194638,7 @@
                 "@gRight":"-45",
                 "@guilsinglright":"-30",
                 "@hyphen":"-35",
+                "@hyphen.case":"-50",
                 "@iRight":"-5",
                 "@jRight":"-15",
                 "@nRight":"-40",
@@ -194669,6 +194681,7 @@
                 "@gRight":"-30",
                 "@guilsinglright":"-10",
                 "@hyphen":"-30",
+                "@hyphen.case":"-20",
                 "@iRight":"-15",
                 "@jRight":"-15",
                 "@nRight":"-20",
@@ -194705,6 +194718,7 @@
                 "@gRight":"-65",
                 "@guilsinglright":"-30",
                 "@hyphen":"-50",
+                "@hyphen.case":"-50",
                 "@iRight":"-10",
                 "@jRight":"-20",
                 "@nRight":"-45",
@@ -194730,6 +194744,7 @@
                 "@fRight":"-20",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-40",
                 "@oRight":"-25",
                 "@qRight":"-20",
                 "@tRight":"-20",
@@ -194783,6 +194798,12 @@
                 "one":"-20",
                 "two":"-15"
               },
+              "@guillemotleft.case":{
+                "@TRight":"-20",
+                "@WRight":"-10",
+                "@YRight":"-30",
+                "V":"-10"
+              },
               "@guilsinglleft":{
                 "@TRight":"-30",
                 "@WRight":"-10",
@@ -194805,10 +194826,20 @@
                 "X":"-40",
                 "x":"-30"
               },
+              "@hyphen.case":{
+                "@ARight":"-20",
+                "@TRight":"-30",
+                "@WRight":"-10",
+                "@YRight":"-40",
+                "V":"-20",
+                "X":"-60",
+                "x":"-20"
+              },
               "@kLeft":{
                 "@dRight":"-5",
                 "@gRight":"-5",
                 "@hyphen":"-35",
+                "@hyphen.case":"-30",
                 "@oRight":"-5",
                 "@tRight":"-5",
                 "@uRight":"-5",
@@ -194884,6 +194915,7 @@
                 "@dRight":"-20",
                 "@gRight":"-20",
                 "@hyphen":"-30",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "@qRight":"-20",
                 "eth":"-15",
@@ -194899,6 +194931,7 @@
                 "@dRight":"-5",
                 "@gRight":"-15",
                 "@hyphen":"-20",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "oslash":"-5"
               },
@@ -194909,6 +194942,7 @@
                 "@dRight":"-10",
                 "@gRight":"-10",
                 "@hyphen":"-15",
+                "@hyphen.case":"-10",
                 "@oRight":"-5",
                 "@s.ss03Right":"-5",
                 "eth":"-10",
@@ -194919,6 +194953,7 @@
                 "@commaRight":"-50",
                 "@dRight":"-5",
                 "@hyphen":"-10",
+                "@hyphen.case":"-10",
                 "@oRight":"-5",
                 "@sRight":"-5"
               },
@@ -194938,6 +194973,7 @@
                 "@gRight":"-5",
                 "@guilsinglright":"-20",
                 "@hyphen":"-10",
+                "@hyphen.case":"-10",
                 "@nRight":"-5",
                 "@qRight":"-5",
                 "@s.ss03Right":"-10",
@@ -194965,6 +195001,7 @@
                 "@dRight":"-5",
                 "@gRight":"-5",
                 "@hyphen":"-25",
+                "@hyphen.case":"-10",
                 "@qRight":"-5",
                 "@sRight":"-5",
                 "@zRight":"-5"
@@ -194991,6 +195028,7 @@
                 "@gRight":"-35",
                 "@guilsinglright":"-20",
                 "@hyphen":"-30",
+                "@hyphen.case":"-20",
                 "@iRight":"-10",
                 "@jRight":"-10",
                 "@nRight":"-15",
@@ -195018,6 +195056,7 @@
                 "@fRight":"-15",
                 "@gRight":"-25",
                 "@hyphen":"-40",
+                "@hyphen.case":"-50",
                 "@iRight":"-5",
                 "@jRight":"-5",
                 "@oRight":"-15",
@@ -195080,6 +195119,11 @@
                 "@YRight":"-80",
                 "V":"-70"
               },
+              "questiondown.case":{
+                "@TRight":"-30",
+                "@YRight":"-50",
+                "V":"-40"
+              },
               "quotesinglbase":{
                 "@CRight":"-5",
                 "@GRight":"-5",
@@ -195129,6 +195173,7 @@
               },
               "x":{
                 "@hyphen":"-30",
+                "@hyphen.case":"-40",
                 "@oRight":"-5"
               },
               "zero":{
@@ -196495,6 +196540,34 @@
                   "dollar.ss03",
                   "dollar.through.ss03"
                 ]
+              },
+              {
+                "name":"hyphen.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "emdash.case",
+                  "endash.case",
+                  "hyphen.case"
+                ]
+              },
+              {
+                "name":"guillemotleft.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "guillemotleft.case",
+                  "guilsinglleft.case"
+                ]
+              },
+              {
+                "name":"guillemotright.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "guillemotright.case",
+                  "guilsinglright.case"
+                ]
               }
             ],
             "pairs":{
@@ -196512,6 +196585,7 @@
                 "@fRight":"-30",
                 "@gRight":"-30",
                 "@hyphen":"-20",
+                "@hyphen.case":"-30",
                 "@oRight":"-30",
                 "@qRight":"-20",
                 "@quoteright":"-60",
@@ -196613,6 +196687,7 @@
                 "@fRight":"-15",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-40",
                 "@nRight":"-15",
                 "@oRight":"-20",
                 "@qRight":"-30",
@@ -196671,6 +196746,7 @@
                 "@dRight":"-10",
                 "@gRight":"-20",
                 "@hyphen":"-30",
+                "@hyphen.case":"-10",
                 "@oRight":"-10",
                 "@qRight":"-20",
                 "@quoteright":"-10",
@@ -196741,6 +196817,7 @@
                 "@gRight":"-60",
                 "@guilsinglright":"-30",
                 "@hyphen":"-50",
+                "@hyphen.case":"-30",
                 "@iRight":"-10",
                 "@nRight":"-40",
                 "@oRight":"-61",
@@ -196787,6 +196864,7 @@
                 "@gRight":"-50",
                 "@guilsinglright":"-10",
                 "@hyphen":"-40",
+                "@hyphen.case":"-20",
                 "@iRight":"-20",
                 "@jRight":"-10",
                 "@nRight":"-40",
@@ -196824,6 +196902,7 @@
                 "@gRight":"-95",
                 "@guilsinglright":"-30",
                 "@hyphen":"-70",
+                "@hyphen.case":"-40",
                 "@iRight":"-10",
                 "@jRight":"-10",
                 "@nRight":"-50",
@@ -196847,6 +196926,7 @@
                 "@Oright":"-20",
                 "@fRight":"-10",
                 "@hyphen":"-50",
+                "@hyphen.case":"-50",
                 "@oRight":"-20",
                 "@tRight":"-20",
                 "@uRight":"-20",
@@ -196911,6 +196991,12 @@
                 "nine":"-5",
                 "two":"-10"
               },
+              "@guillemotleft.case":{
+                "@TRight":"-10",
+                "@WRight":"-10",
+                "@YRight":"-20",
+                "V":"-10"
+              },
               "@guilsinglleft":{
                 "@TRight":"-50",
                 "@WRight":"-10",
@@ -196936,11 +197022,21 @@
                 "X":"-60",
                 "x":"-50"
               },
+              "@hyphen.case":{
+                "@ARight":"-40",
+                "@TRight":"-30",
+                "@WRight":"-20",
+                "@YRight":"-30",
+                "V":"-20",
+                "X":"-50",
+                "x":"-20"
+              },
               "@kLeft":{
                 "@aRight":"-15",
                 "@dRight":"-20",
                 "@gRight":"-20",
                 "@hyphen":"-60",
+                "@hyphen.case":"-30",
                 "@oRight":"-15",
                 "@tRight":"-20",
                 "@uRight":"-20",
@@ -197032,6 +197128,7 @@
                 "@dRight":"-5",
                 "@gRight":"-10",
                 "@hyphen":"-50",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "@qRight":"-10",
                 "@quoteright":"20",
@@ -197048,6 +197145,7 @@
               "@tLeft":{
                 "@gRight":"-11",
                 "@hyphen":"-40",
+                "@hyphen.case":"-30",
                 "@oRight":"-5"
               },
               "@vLeft":{
@@ -197057,6 +197155,7 @@
                 "@dRight":"-20",
                 "@gRight":"-20",
                 "@hyphen":"-20",
+                "@hyphen.case":"-20",
                 "@oRight":"-20",
                 "@quoteright":"10",
                 "@s.ss03Right":"-15",
@@ -197069,6 +197168,7 @@
                 "@commaRight":"-50",
                 "@dRight":"-10",
                 "@hyphen":"-20",
+                "@hyphen.case":"-10",
                 "@oRight":"-10",
                 "@quoteright":"10",
                 "@s.ss03Right":"-5",
@@ -197089,6 +197189,7 @@
                 "@gRight":"-40",
                 "@guilsinglright":"-30",
                 "@hyphen":"-20",
+                "@hyphen.case":"-10",
                 "@nRight":"-30",
                 "@oRight":"-30",
                 "@qRight":"-30",
@@ -197140,6 +197241,7 @@
                 "@gRight":"-40",
                 "@guilsinglright":"-20",
                 "@hyphen":"-40",
+                "@hyphen.case":"-30",
                 "@nRight":"-50",
                 "@oRight":"-40",
                 "@qRight":"-50",
@@ -197166,6 +197268,7 @@
                 "@fRight":"-20",
                 "@gRight":"-50",
                 "@hyphen":"-60",
+                "@hyphen.case":"-60",
                 "@nRight":"-20",
                 "@oRight":"-40",
                 "@qRight":"-40",
@@ -197242,6 +197345,11 @@
                 "@jRight":"60",
                 "V":"-90"
               },
+              "questiondown.case":{
+                "@TRight":"-30",
+                "@YRight":"-60",
+                "V":"-40"
+              },
               "quotesinglbase":{
                 "@ARight":"10",
                 "@CRight":"-10",
@@ -197295,6 +197403,7 @@
               },
               "x":{
                 "@hyphen":"-50",
+                "@hyphen.case":"-30",
                 "@oRight":"-20",
                 "@tRight":"-5"
               },
@@ -198661,6 +198770,25 @@
                   "dollar.ss04",
                   "dollar.through.ss04"
                 ]
+              },
+              {
+                "name":"hyphen.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "emdash.case",
+                  "endash.case",
+                  "hyphen.case"
+                ]
+              },
+              {
+                "name":"guillemotleft.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "guillemotleft.case",
+                  "guilsinglleft.case"
+                ]
               }
             ],
             "pairs":{
@@ -198680,6 +198808,7 @@
                 "@fRight":"-30",
                 "@gRight":"-20",
                 "@hyphen":"-15",
+                "@hyphen.case":"-20",
                 "@oRight":"-10",
                 "@qRight":"-10",
                 "@quoteright":"-50",
@@ -198774,6 +198903,7 @@
                 "@fRight":"-30",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-50",
                 "@nRight":"-5",
                 "@oRight":"-30",
                 "@qRight":"-25",
@@ -198865,6 +198995,7 @@
                 "@gRight":"-65",
                 "@guilsinglright":"-30",
                 "@hyphen":"-55",
+                "@hyphen.case":"-20",
                 "@nRight":"-15",
                 "@oRight":"-65",
                 "@qRight":"-65",
@@ -198901,6 +199032,7 @@
                 "@gRight":"-40",
                 "@guilsinglright":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-10",
                 "@nRight":"-20",
                 "@oRight":"-40",
                 "@qRight":"-50",
@@ -198932,6 +199064,7 @@
                 "@gRight":"-90",
                 "@guilsinglright":"-60",
                 "@hyphen":"-75",
+                "@hyphen.case":"-40",
                 "@nRight":"-30",
                 "@oRight":"-65",
                 "@qRight":"-90",
@@ -198953,6 +199086,7 @@
                 "@fRight":"-10",
                 "@gRight":"-10",
                 "@hyphen":"-30",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "@qRight":"-10",
                 "@tRight":"-10",
@@ -199003,6 +199137,10 @@
                 "eth":"-25",
                 "oslash":"-25"
               },
+              "@guillemotleft.case":{
+                "@TRight":"10",
+                "@YRight":"-10"
+              },
               "@guilsinglleft":{
                 "@TRight":"-50",
                 "@WRight":"-40",
@@ -199027,6 +199165,15 @@
                 "X":"-25",
                 "x":"-45"
               },
+              "@hyphen.case":{
+                "@ARight":"-20",
+                "@TRight":"-40",
+                "@WRight":"-10",
+                "@YRight":"-40",
+                "V":"-10",
+                "X":"-40",
+                "x":"-10"
+              },
               "@iLeft":{
                 "@aRight":"-5"
               },
@@ -199035,6 +199182,7 @@
                 "@dRight":"-20",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-30",
                 "@oRight":"-30",
                 "@tRight":"-15",
                 "@uRight":"-20",
@@ -199141,6 +199289,7 @@
                 "@dRight":"-25",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-5",
                 "@oRight":"-25",
                 "@s.ss03Right":"-30",
                 "@sRight":"-30",
@@ -199172,6 +199321,7 @@
                 "@gRight":"-15",
                 "@guilsinglright":"-25",
                 "@hyphen":"-15",
+                "@hyphen.case":"-10",
                 "@nRight":"-15",
                 "@oRight":"-15",
                 "@qRight":"-10",
@@ -199368,6 +199518,7 @@
                 "@gRight":"-40",
                 "@guilsinglright":"-30",
                 "@hyphen":"-30",
+                "@hyphen.case":"-10",
                 "@nRight":"-10",
                 "@oRight":"-35",
                 "@qRight":"-35",
@@ -199392,6 +199543,7 @@
                 "@fRight":"-20",
                 "@gRight":"-30",
                 "@hyphen":"-30",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "@qRight":"-10",
                 "@tRight":"-20",
@@ -199442,6 +199594,11 @@
                 "@YRight":"-120",
                 "V":"-80"
               },
+              "questiondown.case":{
+                "@TRight":"-60",
+                "@YRight":"-100",
+                "V":"-40"
+              },
               "quotesinglbase":{
                 "@CRight":"-20",
                 "@GRight":"-15",
@@ -199488,6 +199645,7 @@
               },
               "x":{
                 "@hyphen":"-40",
+                "@hyphen.case":"-20",
                 "@oRight":"-25"
               }
             }
@@ -200851,6 +201009,25 @@
                   "dollar.ss04",
                   "dollar.through.ss04"
                 ]
+              },
+              {
+                "name":"hyphen.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "emdash.case",
+                  "endash.case",
+                  "hyphen.case"
+                ]
+              },
+              {
+                "name":"guillemotleft.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "guillemotleft.case",
+                  "guilsinglleft.case"
+                ]
               }
             ],
             "pairs":{
@@ -200866,6 +201043,7 @@
                 "@fRight":"-15",
                 "@gRight":"-5",
                 "@hyphen":"-15",
+                "@hyphen.case":"-35",
                 "@oRight":"-5",
                 "@qRight":"-5",
                 "@quoteright":"-65",
@@ -200961,6 +201139,7 @@
                 "@fRight":"-10",
                 "@gRight":"-5",
                 "@hyphen":"-35",
+                "@hyphen.case":"-60",
                 "@oRight":"-5",
                 "@qRight":"-5",
                 "@tRight":"-15",
@@ -201016,6 +201195,7 @@
                 "@dRight":"-5",
                 "@gRight":"-10",
                 "@hyphen":"-25",
+                "@hyphen.case":"-10",
                 "@qRight":"-10",
                 "@quoteright":"-5",
                 "V":"-5"
@@ -201079,6 +201259,7 @@
                 "@gRight":"-45",
                 "@guilsinglright":"-30",
                 "@hyphen":"-35",
+                "@hyphen.case":"-50",
                 "@iRight":"-5",
                 "@jRight":"-15",
                 "@nRight":"-40",
@@ -201120,6 +201301,7 @@
                 "@gRight":"-30",
                 "@guilsinglright":"-10",
                 "@hyphen":"-30",
+                "@hyphen.case":"-20",
                 "@iRight":"-15",
                 "@jRight":"-15",
                 "@nRight":"-20",
@@ -201155,6 +201337,7 @@
                 "@gRight":"-65",
                 "@guilsinglright":"-30",
                 "@hyphen":"-50",
+                "@hyphen.case":"-50",
                 "@iRight":"-10",
                 "@jRight":"-20",
                 "@nRight":"-45",
@@ -201180,6 +201363,7 @@
                 "@fRight":"-20",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-40",
                 "@oRight":"-25",
                 "@qRight":"-20",
                 "@tRight":"-20",
@@ -201232,6 +201416,12 @@
                 "one":"-20",
                 "two":"-15"
               },
+              "@guillemotleft.case":{
+                "@TRight":"-20",
+                "@WRight":"-10",
+                "@YRight":"-30",
+                "V":"-10"
+              },
               "@guilsinglleft":{
                 "@TRight":"-30",
                 "@WRight":"-10",
@@ -201254,10 +201444,20 @@
                 "X":"-40",
                 "x":"-30"
               },
+              "@hyphen.case":{
+                "@ARight":"-20",
+                "@TRight":"-30",
+                "@WRight":"-10",
+                "@YRight":"-40",
+                "V":"-20",
+                "X":"-60",
+                "x":"-20"
+              },
               "@kLeft":{
                 "@dRight":"-5",
                 "@gRight":"-5",
                 "@hyphen":"-35",
+                "@hyphen.case":"-30",
                 "@oRight":"-5",
                 "@tRight":"-5",
                 "@uRight":"-5",
@@ -201333,6 +201533,7 @@
                 "@dRight":"-20",
                 "@gRight":"-20",
                 "@hyphen":"-30",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "@qRight":"-20",
                 "eth":"-15",
@@ -201348,6 +201549,7 @@
                 "@dRight":"-5",
                 "@gRight":"-15",
                 "@hyphen":"-20",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "oslash":"-5"
               },
@@ -201358,6 +201560,7 @@
                 "@dRight":"-10",
                 "@gRight":"-10",
                 "@hyphen":"-15",
+                "@hyphen.case":"-10",
                 "@oRight":"-5",
                 "@s.ss03Right":"-5",
                 "eth":"-10",
@@ -201368,6 +201571,7 @@
                 "@commaRight":"-50",
                 "@dRight":"-5",
                 "@hyphen":"-10",
+                "@hyphen.case":"-10",
                 "@oRight":"-5",
                 "@sRight":"-5"
               },
@@ -201387,6 +201591,7 @@
                 "@gRight":"-5",
                 "@guilsinglright":"-20",
                 "@hyphen":"-10",
+                "@hyphen.case":"-10",
                 "@nRight":"-5",
                 "@qRight":"-5",
                 "@s.ss03Right":"-10",
@@ -201414,6 +201619,7 @@
                 "@dRight":"-5",
                 "@gRight":"-5",
                 "@hyphen":"-25",
+                "@hyphen.case":"-10",
                 "@qRight":"-5",
                 "@sRight":"-5",
                 "@zRight":"-5"
@@ -201439,6 +201645,7 @@
                 "@gRight":"-35",
                 "@guilsinglright":"-20",
                 "@hyphen":"-30",
+                "@hyphen.case":"-20",
                 "@iRight":"-10",
                 "@jRight":"-10",
                 "@nRight":"-15",
@@ -201466,6 +201673,7 @@
                 "@fRight":"-15",
                 "@gRight":"-25",
                 "@hyphen":"-40",
+                "@hyphen.case":"-50",
                 "@iRight":"-5",
                 "@jRight":"-5",
                 "@oRight":"-15",
@@ -201528,6 +201736,11 @@
                 "@YRight":"-80",
                 "V":"-70"
               },
+              "questiondown.case":{
+                "@TRight":"-30",
+                "@YRight":"-50",
+                "V":"-40"
+              },
               "quotesinglbase":{
                 "@CRight":"-5",
                 "@GRight":"-5",
@@ -201577,6 +201790,7 @@
               },
               "x":{
                 "@hyphen":"-30",
+                "@hyphen.case":"-40",
                 "@oRight":"-5"
               },
               "zero":{
@@ -202922,6 +203136,25 @@
                   "dollar.ss04",
                   "dollar.through.ss04"
                 ]
+              },
+              {
+                "name":"hyphen.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "emdash.case",
+                  "endash.case",
+                  "hyphen.case"
+                ]
+              },
+              {
+                "name":"guillemotleft.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "guillemotleft.case",
+                  "guilsinglleft.case"
+                ]
               }
             ],
             "pairs":{
@@ -202941,6 +203174,7 @@
                 "@fRight":"-30",
                 "@gRight":"-30",
                 "@hyphen":"-20",
+                "@hyphen.case":"-30",
                 "@oRight":"-30",
                 "@qRight":"-20",
                 "@quoteright":"-60",
@@ -203042,6 +203276,7 @@
                 "@fRight":"-15",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-40",
                 "@nRight":"-15",
                 "@oRight":"-20",
                 "@qRight":"-30",
@@ -203100,6 +203335,7 @@
                 "@dRight":"-10",
                 "@gRight":"-20",
                 "@hyphen":"-30",
+                "@hyphen.case":"-10",
                 "@oRight":"-10",
                 "@qRight":"-20",
                 "@quoteright":"-10",
@@ -203170,6 +203406,7 @@
                 "@gRight":"-60",
                 "@guilsinglright":"-30",
                 "@hyphen":"-50",
+                "@hyphen.case":"-30",
                 "@iRight":"-10",
                 "@nRight":"-40",
                 "@oRight":"-61",
@@ -203216,6 +203453,7 @@
                 "@gRight":"-50",
                 "@guilsinglright":"-10",
                 "@hyphen":"-40",
+                "@hyphen.case":"-20",
                 "@iRight":"-20",
                 "@jRight":"-10",
                 "@nRight":"-40",
@@ -203253,6 +203491,7 @@
                 "@gRight":"-95",
                 "@guilsinglright":"-30",
                 "@hyphen":"-70",
+                "@hyphen.case":"-40",
                 "@iRight":"-10",
                 "@jRight":"-10",
                 "@nRight":"-50",
@@ -203276,6 +203515,7 @@
                 "@Oright":"-20",
                 "@fRight":"-10",
                 "@hyphen":"-50",
+                "@hyphen.case":"-50",
                 "@oRight":"-20",
                 "@tRight":"-20",
                 "@uRight":"-20",
@@ -203339,6 +203579,12 @@
                 "nine":"-5",
                 "two":"-10"
               },
+              "@guillemotleft.case":{
+                "@TRight":"-10",
+                "@WRight":"-10",
+                "@YRight":"-20",
+                "V":"-10"
+              },
               "@guilsinglleft":{
                 "@TRight":"-50",
                 "@WRight":"-10",
@@ -203364,11 +203610,21 @@
                 "X":"-60",
                 "x":"-50"
               },
+              "@hyphen.case":{
+                "@ARight":"-40",
+                "@TRight":"-30",
+                "@WRight":"-20",
+                "@YRight":"-30",
+                "V":"-20",
+                "X":"-50",
+                "x":"-20"
+              },
               "@kLeft":{
                 "@aRight":"-15",
                 "@dRight":"-20",
                 "@gRight":"-20",
                 "@hyphen":"-60",
+                "@hyphen.case":"-30",
                 "@oRight":"-15",
                 "@tRight":"-20",
                 "@uRight":"-20",
@@ -203460,6 +203716,7 @@
                 "@dRight":"-5",
                 "@gRight":"-10",
                 "@hyphen":"-50",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "@qRight":"-10",
                 "@quoteright":"20",
@@ -203476,6 +203733,7 @@
               "@tLeft":{
                 "@gRight":"-11",
                 "@hyphen":"-40",
+                "@hyphen.case":"-30",
                 "@oRight":"-5"
               },
               "@vLeft":{
@@ -203485,6 +203743,7 @@
                 "@dRight":"-20",
                 "@gRight":"-20",
                 "@hyphen":"-20",
+                "@hyphen.case":"-20",
                 "@oRight":"-20",
                 "@quoteright":"10",
                 "@s.ss03Right":"-15",
@@ -203497,6 +203756,7 @@
                 "@commaRight":"-50",
                 "@dRight":"-10",
                 "@hyphen":"-20",
+                "@hyphen.case":"-10",
                 "@oRight":"-10",
                 "@quoteright":"10",
                 "@s.ss03Right":"-5",
@@ -203517,6 +203777,7 @@
                 "@gRight":"-40",
                 "@guilsinglright":"-30",
                 "@hyphen":"-20",
+                "@hyphen.case":"-10",
                 "@nRight":"-30",
                 "@oRight":"-30",
                 "@qRight":"-30",
@@ -203568,6 +203829,7 @@
                 "@gRight":"-40",
                 "@guilsinglright":"-20",
                 "@hyphen":"-40",
+                "@hyphen.case":"-30",
                 "@nRight":"-50",
                 "@oRight":"-40",
                 "@qRight":"-50",
@@ -203594,6 +203856,7 @@
                 "@fRight":"-20",
                 "@gRight":"-50",
                 "@hyphen":"-60",
+                "@hyphen.case":"-60",
                 "@nRight":"-20",
                 "@oRight":"-40",
                 "@qRight":"-40",
@@ -203670,6 +203933,11 @@
                 "@jRight":"60",
                 "V":"-90"
               },
+              "questiondown.case":{
+                "@TRight":"-30",
+                "@YRight":"-60",
+                "V":"-40"
+              },
               "quotesinglbase":{
                 "@ARight":"10",
                 "@CRight":"-10",
@@ -203723,6 +203991,7 @@
               },
               "x":{
                 "@hyphen":"-50",
+                "@hyphen.case":"-30",
                 "@oRight":"-20",
                 "@tRight":"-5"
               },
@@ -205092,6 +205361,25 @@
                   "dollar.ss04",
                   "dollar.through.ss04"
                 ]
+              },
+              {
+                "name":"hyphen.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "emdash.case",
+                  "endash.case",
+                  "hyphen.case"
+                ]
+              },
+              {
+                "name":"guillemotleft.case",
+                "1st":true,
+                "2nd":true,
+                "names":[
+                  "guillemotleft.case",
+                  "guilsinglleft.case"
+                ]
               }
             ],
             "pairs":{
@@ -205111,6 +205399,7 @@
                 "@fRight":"-30",
                 "@gRight":"-20",
                 "@hyphen":"-15",
+                "@hyphen.case":"-20",
                 "@oRight":"-10",
                 "@qRight":"-10",
                 "@quoteright":"-50",
@@ -205204,6 +205493,7 @@
                 "@fRight":"-30",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-50",
                 "@nRight":"-5",
                 "@oRight":"-30",
                 "@qRight":"-25",
@@ -205294,6 +205584,7 @@
                 "@gRight":"-65",
                 "@guilsinglright":"-30",
                 "@hyphen":"-55",
+                "@hyphen.case":"-20",
                 "@nRight":"-15",
                 "@oRight":"-65",
                 "@qRight":"-65",
@@ -205330,6 +205621,7 @@
                 "@gRight":"-40",
                 "@guilsinglright":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-10",
                 "@nRight":"-20",
                 "@oRight":"-40",
                 "@qRight":"-50",
@@ -205360,6 +205652,7 @@
                 "@gRight":"-90",
                 "@guilsinglright":"-60",
                 "@hyphen":"-75",
+                "@hyphen.case":"-40",
                 "@nRight":"-30",
                 "@oRight":"-65",
                 "@qRight":"-90",
@@ -205381,6 +205674,7 @@
                 "@fRight":"-10",
                 "@gRight":"-10",
                 "@hyphen":"-30",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "@qRight":"-10",
                 "@tRight":"-10",
@@ -205431,6 +205725,9 @@
                 "eth":"-25",
                 "oslash":"-25"
               },
+              "@guillemotleft.case":{
+                "@YRight":"-10"
+              },
               "@guilsinglleft":{
                 "@TRight":"-50",
                 "@WRight":"-40",
@@ -205455,6 +205752,15 @@
                 "X":"-25",
                 "x":"-45"
               },
+              "@hyphen.case":{
+                "@ARight":"-20",
+                "@TRight":"-40",
+                "@WRight":"-10",
+                "@YRight":"-40",
+                "V":"-10",
+                "X":"-40",
+                "x":"-10"
+              },
               "@iLeft":{
                 "@aRight":"-5"
               },
@@ -205463,6 +205769,7 @@
                 "@dRight":"-20",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-30",
                 "@oRight":"-30",
                 "@tRight":"-15",
                 "@uRight":"-20",
@@ -205569,6 +205876,7 @@
                 "@dRight":"-25",
                 "@gRight":"-30",
                 "@hyphen":"-40",
+                "@hyphen.case":"-5",
                 "@oRight":"-25",
                 "@s.ss03Right":"-30",
                 "@sRight":"-30",
@@ -205599,6 +205907,7 @@
                 "@gRight":"-15",
                 "@guilsinglright":"-25",
                 "@hyphen":"-15",
+                "@hyphen.case":"-10",
                 "@nRight":"-15",
                 "@oRight":"-15",
                 "@qRight":"-10",
@@ -205737,6 +206046,7 @@
                 "@gRight":"-40",
                 "@guilsinglright":"-30",
                 "@hyphen":"-30",
+                "@hyphen.case":"-10",
                 "@nRight":"-10",
                 "@oRight":"-35",
                 "@qRight":"-35",
@@ -205761,6 +206071,7 @@
                 "@fRight":"-20",
                 "@gRight":"-30",
                 "@hyphen":"-30",
+                "@hyphen.case":"-30",
                 "@oRight":"-10",
                 "@qRight":"-10",
                 "@tRight":"-20",
@@ -205814,6 +206125,11 @@
                 "@YRight":"-120",
                 "V":"-80"
               },
+              "questiondown.case":{
+                "@TRight":"-60",
+                "@YRight":"-100",
+                "V":"-40"
+              },
               "quotesinglbase":{
                 "@CRight":"-20",
                 "@GRight":"-15",
@@ -205860,6 +206176,7 @@
               },
               "x":{
                 "@hyphen":"-40",
+                "@hyphen.case":"-20",
                 "@oRight":"-25"
               }
             }
