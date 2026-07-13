@@ -442,14 +442,28 @@
 			white-space: pre;
 			text-align: right;
 			outline: none;
-      text-box-trim: trim-both;
-      text-box-edge: cap alphabetic;
+			text-box-trim: trim-both;
+			text-box-edge: cap alphabetic;
 			/*
 			 * Per-line dedent: a line whose baseline sits `x%` of the text
 			 * height above the bottom is shifted right by height * x% * tan(9.5deg).
 			 * The shift is computed in JS from the measured baseline position
 			 * because the per-line step now includes the line-height gap.
 			 */
+		}
+
+		html.text-box-trim-polyfill .flag-line::before,
+		html.text-box-trim-polyfill .flag-line::after {
+			content: "";
+			display: table;
+		}
+
+		html.text-box-trim-polyfill .flag-line::before {
+			margin-bottom: var(--text-box-trim-start, 0);
+		}
+
+		html.text-box-trim-polyfill .flag-line::after {
+			margin-top: var(--text-box-trim-end, 0);
 		}
 
 		option {
@@ -770,6 +784,13 @@
 			const featureToggle = document.getElementById("flagFeatureToggle");
 			if (!textEl || !svg) return;
 
+			const supportsTextBoxTrim = window.CSS
+				&& CSS.supports("text-box-trim", "trim-both")
+				&& CSS.supports("text-box-edge", "cap alphabetic");
+			if (!supportsTextBoxTrim) {
+				document.documentElement.classList.add("text-box-trim-polyfill");
+			}
+
 			const GRADIENTS = {
 				cyan: ["#00E5EA", "#00B5CC"],
 				amber: ["#FFD626", "#FFA300"],
@@ -806,6 +827,42 @@
 			// the whole block scales linearly with font size, so we measure at the
 			// current size and rescale to the target, then update the dedent.
 			const TAN_9_5 = Math.tan((9.5 * Math.PI) / 180);
+			function updateTextBoxTrimPolyfill() {
+				if (supportsTextBoxTrim) return;
+
+				const fontSize = 100;
+				const computed = getComputedStyle(textEl);
+				const sample = document.createElement("div");
+				const marker = document.createElement("span");
+				sample.textContent = "H";
+				sample.style.cssText = "position:absolute;visibility:hidden;width:max-content;margin:0;padding:0;border:0;line-height:1;white-space:nowrap;";
+				sample.style.fontFamily = computed.fontFamily;
+				sample.style.fontSize = fontSize + "px";
+				sample.style.fontVariationSettings = computed.fontVariationSettings;
+				marker.style.cssText = "display:inline-block;width:0;height:0;vertical-align:baseline;";
+				sample.appendChild(marker);
+				document.body.appendChild(sample);
+
+				const sampleRect = sample.getBoundingClientRect();
+				const baseline = marker.getBoundingClientRect().top;
+				const canvas = document.createElement("canvas");
+				const context = canvas.getContext("2d");
+				let capHeight = fontSize * 0.7;
+				if (context) {
+					context.font = weightInput.value + " " + fontSize + "px " + computed.fontFamily;
+					const measuredCapHeight = context.measureText("H").actualBoundingBoxAscent;
+					if (Number.isFinite(measuredCapHeight) && measuredCapHeight > 0) {
+						capHeight = measuredCapHeight;
+					}
+				}
+
+				const startTrim = baseline - sampleRect.top - capHeight;
+				const endTrim = sampleRect.bottom - baseline;
+				textEl.style.setProperty("--text-box-trim-start", (-startTrim / fontSize) + "em");
+				textEl.style.setProperty("--text-box-trim-end", (-endTrim / fontSize) + "em");
+				sample.remove();
+			}
+
 			function updateSize() {
 				const lh = parseFloat(lineHeightInput.value) || 0;
 				const flagHeight = svg.getBoundingClientRect().height;
@@ -1008,12 +1065,16 @@
 
 			// Initial state.
 			textEl.style.setProperty("--wght", weightInput.value);
+			updateTextBoxTrimPolyfill();
 			setGradient("cyan");
 			updateStylisticSets();
 			render();
 
 			if (document.fonts && document.fonts.ready) {
-				document.fonts.ready.then(updateSize);
+				document.fonts.ready.then(() => {
+					updateTextBoxTrimPolyfill();
+					updateSize();
+				});
 			}
 			if (typeof ResizeObserver !== "undefined") {
 				new ResizeObserver(updateSize).observe(svg);
