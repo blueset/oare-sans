@@ -1,0 +1,29 @@
+{
+  "name": "oare-sans-animations",
+  "private": true,
+  "description": "Instagram animations for Oare Sans, built with Remotion",
+  "scripts": {
+    "predev": "node scripts/sync-font.mjs",
+    "dev": "remotion studio",
+    "prerender": "node scripts/sync-font.mjs",
+    "render": "node scripts/render-all.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.529",
+    "@remotion/cli": "4.0.529",
+    "@remotion/fonts": "4.0.529",
+    "@remotion/google-fonts": "4.0.529",
+    "@remotion/media": "4.0.529",
+    "@remotion/renderer": "4.0.529",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}
