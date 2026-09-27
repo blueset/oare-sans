@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Ngrave" format="2">
-  <advance width="504"/>
+  <advance width="501"/>
   <unicode hex="01F8"/>
-  <anchor x="216" y="0" name="bottom"/>
-  <anchor x="341.662" y="794" name="top"/>
+  <anchor x="213" y="0" name="bottom"/>
+  <anchor x="338.662" y="794" name="top"/>
   <outline>
     <component base="N"/>
-    <component base="gravecomb" xOffset="277.522" yOffset="145"/>
+    <component base="gravecomb" xOffset="274.522" yOffset="145"/>
   </outline>
   <lib>
   <dict>

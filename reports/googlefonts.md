@@ -12,7 +12,7 @@ fontspector version: 1.5.2
 
 
 
-<details><summary>[9] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf</summary>
+<details><summary>[8] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf</summary>
 <div>
 
 
@@ -47,11 +47,6 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* S (U+0053): found 3, expected one of: {2, 5, 1}
-* Sacute (U+015A): found 4, expected one of: {2, 6, 3}
-* sacute (U+015B): found 4, expected one of: {6, 2, 3}
-* scircumflex (U+015D): found 4, expected one of: {2, 6, 3}
-* dollar.tf (unencoded): found 5, expected one of: {2, 1, 3}
 * plusminus.tf (unencoded): found 3, expected one of: {2} [code: contour-count]
   
   
@@ -112,14 +107,14 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 
 
-- ⚠️ **WARN** The most common width is 373 among a set of 9  math glyphs.
+- ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=360: multiply
-width=370: divide
-width=440: equal
-width=390: logicalnot, plusminus
 width=420: minus
-width=380: plus [code: width-outliers]
+width=360: multiply
+width=373: less, greater
+width=380: plus
+width=440: equal
+width=370: divide [code: width-outliers]
   
   
 
@@ -177,11 +172,8 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 | Message                                                           | Languages                    |
 |-------------------------------------------------------------------|------------------------------|
-| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
-|   The following auxiliary characters are missing from the font: Ŋ |                              |
-|   The following auxiliary characters are missing from the font: Ŧ |                              |
-|   The following auxiliary characters are missing from the font: ŋ |                              |
-|   The following auxiliary characters are missing from the font: ŧ |                              |
+| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
+|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           |
 | Auxiliary orthography codepoints:                                 | * fi_Latn (Finnish)          |
 |   The following auxiliary characters are missing from the font: Ǥ |                              |
 |   The following auxiliary characters are missing from the font: Ŋ |                              |
@@ -193,8 +185,11 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŧ |                              |
 |   The following auxiliary characters are missing from the font: ʒ |                              |
 |   The following auxiliary characters are missing from the font: ǯ |                              |
-| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
-|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           | [code: warning-language-shaping]
+| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
+|   The following auxiliary characters are missing from the font: Ŋ |                              |
+|   The following auxiliary characters are missing from the font: Ŧ |                              |
+|   The following auxiliary characters are missing from the font: ŋ |                              |
+|   The following auxiliary characters are missing from the font: ŧ |                              | [code: warning-language-shaping]
   
   
 
@@ -235,45 +230,6 @@ Original proposal: [https://github.com/fonttools/fontbakery/pull/3088]
 * - Scommaaccent (U+0218): X=318.5,Y=698 (should be at cap-height 700?)
 * - Scircumflex (U+015C): X=318.5,Y=698 (should be at cap-height 700?)
 ... and 3 others [code: found-misalignments]
-  
-  
-
-</div>
-</details>
-
-
-
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check there are no overlapping path segments (overlapping_path_segments)</summary>
-    <div>
-
-
-> Some rasterizers encounter difficulties when rendering glyphs with overlapping path segments.
-> 
-> A path segment is a section of a path defined by two on-curve points. When two segments share the same coordinates, they are considered overlapping.
-
-
-
-
-Original proposal: [https://github.com/google/fonts/issues/7594#issuecomment-2401909084]
-
-
-
-
-
-- ⚠️ **WARN** The following glyphs have overlapping path segments:
-
-* B (U+0042): Line(Line { p0: (87.0, 338.0), p1: (87.0, 410.0) }) has the same coordinates as a previous segment.
-* X (U+0058): Line(Line { p0: (181.0, 350.0), p1: (271.0, 350.0) }) has the same coordinates as a previous segment.
-* X (U+0058): Line(Line { p0: (201.0, 350.0), p1: (291.0, 350.0) }) has the same coordinates as a previous segment.
-* x (U+0078): Line(Line { p0: (139.0, 263.0), p1: (225.0, 263.0) }) has the same coordinates as a previous segment.
-* x (U+0078): Line(Line { p0: (155.0, 263.0), p1: (241.0, 263.0) }) has the same coordinates as a previous segment.
-* dagger (U+2020): Line(Line { p0: (155.0, 534.0), p1: (208.0, 534.0) }) has the same coordinates as a previous segment.
-* daggerdbl (U+2021): Line(Line { p0: (155.0, 565.0), p1: (208.0, 565.0) }) has the same coordinates as a previous segment.
-* daggerdbl (U+2021): Line(Line { p0: (149.0, 433.0), p1: (214.0, 433.0) }) has the same coordinates as a previous segment.
-* daggerdbl (U+2021): Line(Line { p0: (155.0, 300.0), p1: (208.0, 300.0) }) has the same coordinates as a previous segment. [code: overlapping-path-segments]
   
   
 
@@ -400,11 +356,11 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and http
 
 * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
 * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
-* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, tifinagh, coptic
-* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-* U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, syriac, tai-le, malayalam, hebrew, duployan, old-permic, coptic, todhri, tifinagh, math
-* U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
+* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, tifinagh, math
+* U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
+* U+0307 COMBINING DOT ABOVE: try adding one of: duployan, hebrew, todhri, math, coptic, syriac, malayalam, old-permic, tifinagh, canadian-aboriginal, tai-le
+* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
 * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
 * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
 ... and 7 others
@@ -429,8 +385,8 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 
 | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
 | ---|---|---|---|
-| 10 | 8 | 113 | 57 | 
-| 5% | 4% | 60% | 30% | 
+| 9 | 8 | 114 | 57 | 
+| 5% | 4% | 61% | 30% | 
 
 
 

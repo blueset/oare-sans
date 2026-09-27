@@ -9,21 +9,17 @@
       <point x="55" y="0" type="line"/>
       <point x="85" y="0" type="line"/>
       <point x="85" y="545" type="line"/>
-      <point x="77" y="700" type="line"/>
-      <point x="55" y="700" type="line"/>
-    </contour>
-    <contour>
-      <point x="293" y="0" type="line"/>
+      <point x="79.5261" y="650.96" type="line"/>
+      <point x="75.7654" y="650.278" type="line"/>
+      <point x="282" y="0" type="line"/>
       <point x="315" y="0" type="line"/>
       <point x="315" y="700" type="line"/>
       <point x="285" y="700" type="line"/>
       <point x="285" y="155" type="line"/>
-    </contour>
-    <contour>
-      <point x="282" y="0" type="line"/>
-      <point x="310" y="0" type="line"/>
+      <point x="290.474" y="49.04" type="line"/>
+      <point x="294.235" y="49.7218" type="line"/>
       <point x="88" y="700" type="line"/>
-      <point x="60" y="700" type="line"/>
+      <point x="55" y="700" type="line"/>
     </contour>
   </outline>
   <lib>

@@ -1,2 +1,4 @@
 .vscode
 documentation/fonts/*.woff2
+sources/*.backup
+sources/OareSans

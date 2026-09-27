@@ -8,20 +8,16 @@
     <contour>
       <point x="55" y="0" type="line"/>
       <point x="85" y="0" type="line"/>
-      <point x="85" y="700" type="line"/>
-      <point x="55" y="700" type="line"/>
-    </contour>
-    <contour>
+      <point x="85" y="358" type="line"/>
+      <point x="285" y="358" type="line"/>
       <point x="285" y="0" type="line"/>
       <point x="315" y="0" type="line"/>
       <point x="315" y="700" type="line"/>
       <point x="285" y="700" type="line"/>
-    </contour>
-    <contour>
-      <point x="69.8472" y="358" type="line"/>
-      <point x="300.706" y="358" type="line"/>
-      <point x="300.706" y="386" type="line"/>
-      <point x="69.8472" y="386" type="line"/>
+      <point x="285" y="386" type="line"/>
+      <point x="85" y="386" type="line"/>
+      <point x="85" y="700" type="line"/>
+      <point x="55" y="700" type="line"/>
     </contour>
   </outline>
   <lib>

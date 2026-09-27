@@ -4,10 +4,10 @@
   <unicode hex="013B"/>
   <anchor x="93" y="670" name="top"/>
   <anchor x="135" y="700" name="caronapos"/>
-  <anchor x="183.612" y="-175" name="bottom"/>
+  <anchor x="183.61" y="-175" name="bottom"/>
   <outline>
     <component base="L"/>
-    <component base="commaaccent" xOffset="185.612"/>
+    <component base="commaaccent" xOffset="185.61"/>
   </outline>
   <lib>
   <dict>

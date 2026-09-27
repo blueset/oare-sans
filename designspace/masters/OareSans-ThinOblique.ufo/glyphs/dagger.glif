@@ -4,28 +4,20 @@
   <unicode hex="2020"/>
   <outline>
     <contour>
-      <point x="226" y="534" type="line"/>
+      <point x="237.83" y="545" type="line"/>
+      <point x="72.66" y="550" type="line"/>
+      <point x="67.48" y="519" type="line"/>
+      <point x="234.33" y="524" type="line"/>
+      <point x="399.5" y="519" type="line"/>
+      <point x="404.66" y="550" type="line"/>
+    </contour>
+    <contour>
+      <point x="156.21" y="145.3" type="line"/>
+      <point x="187.21" y="145.3" type="line"/>
       <point x="247" y="534" type="line"/>
-      <point x="279.667" y="700" type="line"/>
-      <point x="248.667" y="700" type="line"/>
-    </contour>
-    <contour>
-      <point x="237.667" y="544" type="line"/>
-      <point x="234.167" y="523" type="line"/>
-      <point x="399.333" y="518" type="line"/>
-      <point x="404.5" y="549" type="line"/>
-    </contour>
-    <contour>
-      <point x="247.064" y="534.384" type="line"/>
-      <point x="226.064" y="534.384" type="line"/>
-      <point x="156.217" y="145.304" type="line"/>
-      <point x="187.217" y="145.304" type="line"/>
-    </contour>
-    <contour>
-      <point x="234.333" y="524" type="line"/>
-      <point x="237.833" y="545" type="line"/>
-      <point x="72.6666" y="550" type="line"/>
-      <point x="67.5" y="519" type="line"/>
+      <point x="279.66" y="700" type="line"/>
+      <point x="248.66" y="700" type="line"/>
+      <point x="226.03" y="534.19" type="line"/>
     </contour>
   </outline>
   <guideline angle="0" x="0" y="770"/>

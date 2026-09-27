@@ -2,7 +2,7 @@
 <glyph name="equal.tf" format="2">
   <advance width="485"/>
   <outline>
-    <component base="equal" xOffset="17" yOffset="1.13687e-13"/>
+    <component base="equal" xOffset="17"/>
   </outline>
   <guideline angle="0" x="0" y="360"/>
   <lib>

@@ -2,7 +2,7 @@
 <glyph name="guillemotright.case" format="2">
   <advance width="281"/>
   <outline>
-    <component base="guillemotright" xOffset="2.04636e-12" yOffset="43"/>
+    <component base="guillemotright" yOffset="43"/>
   </outline>
   <lib>
   <dict>

@@ -110,7 +110,6 @@ languagesystem latn TRK;
 #
 # Lookup definitions
 #
-
 feature aalt {
 # Access All Alternates
 
@@ -170,7 +169,6 @@ feature salt {
   sub scommaaccent from [scommaaccent.ss03];
 #< feature
 } salt;
-
 feature locl {
 # Localized Forms
   # script latn; # Latin
@@ -203,7 +201,6 @@ feature locl {
 	sub l periodcentered' l by periodcentered.CAT;
 	sub L periodcentered' L by periodcentered.CAT.case;
 } locl;
-
 feature liga {
 # Standard Ligatures
 
@@ -221,7 +218,6 @@ feature liga {
   sub f f t by f_f_t;
 #< feature
 } liga;
-
 feature ordn {
 # Ordinals
 
@@ -230,7 +226,6 @@ feature ordn {
   sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
 #< feature
 } ordn;
-
 feature ccmp {
 # Glyph Composition/Decomposition
 
@@ -244,7 +239,6 @@ feature ccmp {
 	# QJ descender collision
 	sub Q J' by J.ss01;
 } ccmp;
-
 feature case {
 # Case Sensitive Forms
 
@@ -264,7 +258,6 @@ feature case {
   sub questiondown by questiondown.case;
 #< feature
 } case;
-
 feature ss01 {
 # Stylistic Set 01–20
 
@@ -278,7 +271,6 @@ feature ss01 {
   sub Jcircumflex by Jcircumflex.ss01;
 #< feature
 } ss01;
-
 feature ss02 {
 # Stylistic Set 01–20
 	featureNames {
@@ -304,7 +296,6 @@ feature ss02 {
   sub ordfeminine by ordfeminine.ss02;
 #< feature
 } ss02;
-
 feature ss03 {
 # Stylistic Set 01–20
 	featureNames {
@@ -329,7 +320,6 @@ feature ss03 {
   sub scommaaccent by scommaaccent.ss03;
 #< feature
 } ss03;
-
 feature ss04 {
 # Stylistic Set 01–20
 	featureNames {
@@ -354,7 +344,6 @@ feature ss04 {
   sub scommaaccent by scommaaccent.ss03;
   sub five by five.ss03;
 } ss04;
-
 feature pnum {
 # Proportional Figures
 
@@ -390,7 +379,6 @@ feature pnum {
   sub zero.tf by zero;
 #< feature
 } pnum;
-
 feature tnum {
 # Tabular Figures
 
@@ -433,4 +421,3 @@ feature tnum {
   sub dollar.ss04 by dollar.ss04.tf;
   sub dollar.through.ss04 by dollar.through.ss04.tf;
 } tnum;
-

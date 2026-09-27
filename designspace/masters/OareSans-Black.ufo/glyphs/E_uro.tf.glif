@@ -2,7 +2,7 @@
 <glyph name="Euro.tf" format="2">
   <advance width="485"/>
   <outline>
-    <component base="Euro" xOffset="-23" yOffset="3.41061e-13"/>
+    <component base="Euro" xOffset="-23"/>
   </outline>
   <guideline angle="0" x="0" y="360"/>
   <guideline angle="86.6335" x="7" y="260"/>

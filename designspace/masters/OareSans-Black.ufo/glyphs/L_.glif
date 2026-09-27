@@ -3,20 +3,16 @@
   <advance width="348"/>
   <unicode hex="004C"/>
   <anchor x="117" y="680" name="top"/>
-  <anchor x="183.919" y="0" name="bottom"/>
+  <anchor x="183.915" y="0" name="bottom"/>
   <anchor x="205" y="700" name="caronapos"/>
   <outline>
     <contour>
       <point x="30" y="0" type="line"/>
-      <point x="205" y="0" type="line"/>
+      <point x="337.83" y="0" type="line"/>
+      <point x="337.83" y="160" type="line"/>
+      <point x="205" y="160" type="line"/>
       <point x="205" y="700" type="line"/>
       <point x="30" y="700" type="line"/>
-    </contour>
-    <contour>
-      <point x="117.175" y="0" type="line"/>
-      <point x="337.838" y="0" type="line"/>
-      <point x="337.838" y="160" type="line"/>
-      <point x="117.175" y="160" type="line"/>
     </contour>
   </outline>
   <lib>

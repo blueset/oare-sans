@@ -3,7 +3,7 @@
   <advance width="259"/>
   <unicode hex="013D"/>
   <anchor x="70" y="670" name="top"/>
-  <anchor x="146.818" y="0" name="bottom"/>
+  <anchor x="146.815" y="0" name="bottom"/>
   <outline>
     <component base="L"/>
     <component base="caroncomb.alt" xOffset="235" yOffset="-35"/>

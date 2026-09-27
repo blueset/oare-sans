@@ -2,7 +2,7 @@
 <glyph name="emdash.case" format="2">
   <advance width="720"/>
   <outline>
-    <component base="emdash" xOffset="-2.27374e-13" yOffset="78"/>
+    <component base="emdash" yOffset="78"/>
   </outline>
   <lib>
   <dict>

@@ -2,7 +2,7 @@
 <glyph name="guilsinglleft.case" format="2">
   <advance width="204"/>
   <outline>
-    <component base="guilsinglleft" xOffset="-3.41061e-12" yOffset="43"/>
+    <component base="guilsinglleft" yOffset="43"/>
   </outline>
   <lib>
   <dict>

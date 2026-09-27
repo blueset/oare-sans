@@ -279,10 +279,10 @@ you're checking.</p>
         <th>⚠️ WARN</th><th>ℹ️ INFO</th><th>✅ PASS</th><th>⏩ SKIP</th>
     </tr>
     <tr>
-        <td>10 </td> <td>8 </td> <td>113 </td> <td>57 </td> 
+        <td>9 </td> <td>8 </td> <td>114 </td> <td>57 </td> 
     </tr>
     <tr>
-        <td>5%</td> <td>4%</td> <td>60%</td> <td>30%</td> 
+        <td>5%</td> <td>4%</td> <td>61%</td> <td>30%</td> 
     </tr>
 </table>
 
@@ -387,11 +387,6 @@ codepoint assignment of these to make sure they are correct.</p>
 <pre><code>The following glyphs do not have the recommended number of contours:
 </code></pre>
 <ul>
-<li>S (U+0053): found 3, expected one of: {2, 5, 1}</li>
-<li>Sacute (U+015A): found 4, expected one of: {2, 6, 3}</li>
-<li>sacute (U+015B): found 4, expected one of: {6, 2, 3}</li>
-<li>scircumflex (U+015D): found 4, expected one of: {2, 6, 3}</li>
-<li>dollar.tf (unencoded): found 5, expected one of: {2, 1, 3}</li>
 <li>plusminus.tf (unencoded): found 3, expected one of: {2}</li>
 </ul>
                                 
@@ -538,14 +533,14 @@ codepoint assignment of these to make sure they are correct.</p>
 
                             <span class='details_text'>
                                 
-                                    <p>The most common width is 373 among a set of 9  math glyphs.
+                                    <p>The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=360: multiply
-width=370: divide
-width=440: equal
-width=390: logicalnot, plusminus
 width=420: minus
-width=380: plus</p>
+width=360: multiply
+width=373: less, greater
+width=380: plus
+width=440: equal
+width=370: divide</p>
                                 
                                 
                                      [code: width-outliers]
@@ -756,11 +751,11 @@ width=380: plus</p>
 <ul>
 <li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, tifinagh, coptic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, syriac, tai-le, malayalam, hebrew, duployan, old-permic, coptic, todhri, tifinagh, math</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, tifinagh, math</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: duployan, hebrew, todhri, math, coptic, syriac, malayalam, old-permic, tifinagh, canadian-aboriginal, tai-le</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le
 ... and 7 others</li>
@@ -841,23 +836,11 @@ width=380: plus</p>
 <tbody>
 <tr>
 <td>Auxiliary orthography codepoints:</td>
-<td>* nb_Latn (Norwegian Bokmål)</td>
+<td>* de_Latn (German)</td>
 </tr>
 <tr>
-<td>The following auxiliary characters are missing from the font: Ŋ</td>
-<td></td>
-</tr>
-<tr>
-<td>The following auxiliary characters are missing from the font: Ŧ</td>
-<td></td>
-</tr>
-<tr>
-<td>The following auxiliary characters are missing from the font: ŋ</td>
-<td></td>
-</tr>
-<tr>
-<td>The following auxiliary characters are missing from the font: ŧ</td>
-<td></td>
+<td>The following auxiliary characters are missing from the font: ſ</td>
+<td>* fr_Latn (French)</td>
 </tr>
 <tr>
 <td>Auxiliary orthography codepoints:</td>
@@ -905,11 +888,23 @@ width=380: plus</p>
 </tr>
 <tr>
 <td>Auxiliary orthography codepoints:</td>
-<td>* de_Latn (German)</td>
+<td>* nb_Latn (Norwegian Bokmål)</td>
 </tr>
 <tr>
-<td>The following auxiliary characters are missing from the font: ſ</td>
-<td>* fr_Latn (French)</td>
+<td>The following auxiliary characters are missing from the font: Ŋ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ŧ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ŋ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ŧ</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -1327,71 +1322,6 @@ If you registered it recently, then it's safe to ignore this warning message. Ot
     
 
     
-
-    
-        <h3>Check there are no overlapping path segments</h3>
-<div class='check__idlabel'>Check ID: overlapping_path_segments</div>
-
-<div class="rationale">
-    
-        <p>Some rasterizers encounter difficulties when rendering glyphs with overlapping path segments.</p>
-<p>A path segment is a section of a path defined by two on-curve points. When two segments share the same coordinates, they are considered overlapping.</p>
-
-
-    <ul>
-    
-        
-            <li>Original proposal: <a href="https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;fonts&#x2F;issues&#x2F;7594#issuecomment-2401909084">https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;fonts&#x2F;issues&#x2F;7594#issuecomment-2401909084</a></li>
-        
-    
-    </ul>
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                ⚠️
-                OareSans[slnt,wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
-
-                            <span class='details_text'>
-                                
-                                    <p>The following glyphs have overlapping path segments:</p>
-<ul>
-<li>B (U+0042): Line(Line { p0: (87.0, 338.0), p1: (87.0, 410.0) }) has the same coordinates as a previous segment.</li>
-<li>X (U+0058): Line(Line { p0: (181.0, 350.0), p1: (271.0, 350.0) }) has the same coordinates as a previous segment.</li>
-<li>X (U+0058): Line(Line { p0: (201.0, 350.0), p1: (291.0, 350.0) }) has the same coordinates as a previous segment.</li>
-<li>x (U+0078): Line(Line { p0: (139.0, 263.0), p1: (225.0, 263.0) }) has the same coordinates as a previous segment.</li>
-<li>x (U+0078): Line(Line { p0: (155.0, 263.0), p1: (241.0, 263.0) }) has the same coordinates as a previous segment.</li>
-<li>dagger (U+2020): Line(Line { p0: (155.0, 534.0), p1: (208.0, 534.0) }) has the same coordinates as a previous segment.</li>
-<li>daggerdbl (U+2021): Line(Line { p0: (155.0, 565.0), p1: (208.0, 565.0) }) has the same coordinates as a previous segment.</li>
-<li>daggerdbl (U+2021): Line(Line { p0: (149.0, 433.0), p1: (214.0, 433.0) }) has the same coordinates as a previous segment.</li>
-<li>daggerdbl (U+2021): Line(Line { p0: (155.0, 300.0), p1: (208.0, 300.0) }) has the same coordinates as a previous segment.</li>
-</ul>
-                                
-                                
-                                     [code: overlapping-path-segments]
-                                
-                            </span>
-                        </li>
-                
-                
-                </ul>
-            </div>
-        </details>
-    
-
 
     
 

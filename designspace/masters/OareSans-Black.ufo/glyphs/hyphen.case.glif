@@ -2,7 +2,7 @@
 <glyph name="hyphen.case" format="2">
   <advance width="300"/>
   <outline>
-    <component base="hyphen" xOffset="1.13687e-13" yOffset="100"/>
+    <component base="hyphen" yOffset="100"/>
   </outline>
   <lib>
   <dict>

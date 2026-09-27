@@ -7,31 +7,23 @@
   <outline>
     <contour>
       <point x="209" y="200" type="line"/>
-      <point x="224" y="200" type="line"/>
-      <point x="230" y="226" type="line"/>
-      <point x="90" y="700" type="line"/>
-      <point x="70" y="700" type="line"/>
-      <point x="95" y="584" type="line"/>
-    </contour>
-    <contour>
-      <point x="55" y="0" type="line"/>
-      <point x="85" y="0" type="line"/>
-      <point x="85" y="700" type="line"/>
-      <point x="55" y="700" type="line"/>
-    </contour>
-    <contour>
       <point x="226" y="200" type="line"/>
       <point x="340" y="584" type="line"/>
-      <point x="365" y="700" type="line"/>
-      <point x="345" y="700" type="line"/>
-      <point x="205" y="226" type="line"/>
-      <point x="211" y="200" type="line"/>
-    </contour>
-    <contour>
+      <point x="353.16" y="645.063" type="line"/>
+      <point x="350" y="645.4" type="line"/>
+      <point x="350" y="0" type="line"/>
       <point x="380" y="0" type="line"/>
       <point x="380" y="700" type="line"/>
-      <point x="350" y="700" type="line"/>
-      <point x="350" y="0" type="line"/>
+      <point x="345" y="700" type="line"/>
+      <point x="213.251" y="253.934" type="line"/>
+      <point x="221.749" y="253.934" type="line"/>
+      <point x="90" y="700" type="line"/>
+      <point x="55" y="700" type="line"/>
+      <point x="55" y="0" type="line"/>
+      <point x="85" y="0" type="line"/>
+      <point x="85" y="645.4" type="line"/>
+      <point x="81.8398" y="645.063" type="line"/>
+      <point x="95" y="584" type="line"/>
     </contour>
   </outline>
   <lib>

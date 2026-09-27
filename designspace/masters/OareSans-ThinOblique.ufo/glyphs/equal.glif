@@ -4,16 +4,16 @@
   <unicode hex="003D"/>
   <outline>
     <contour>
+      <point x="84.8333" y="473" type="line"/>
       <point x="80.1667" y="445" type="line"/>
       <point x="380.167" y="445" type="line"/>
       <point x="384.833" y="473" type="line"/>
-      <point x="84.8333" y="473" type="line"/>
     </contour>
     <contour>
+      <point x="51.8333" y="275" type="line"/>
       <point x="47.1667" y="247" type="line"/>
       <point x="347.167" y="247" type="line"/>
       <point x="351.833" y="275" type="line"/>
-      <point x="51.8333" y="275" type="line"/>
     </contour>
   </outline>
   <guideline angle="0" x="0" y="360"/>

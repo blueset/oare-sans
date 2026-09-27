@@ -7,15 +7,13 @@
   <outline>
     <contour>
       <point x="94" y="0" type="line"/>
-      <point x="124" y="0" type="line"/>
-      <point x="93.5" y="525" type="line"/>
-      <point x="63.5" y="525" type="line"/>
-    </contour>
-    <contour>
       <point x="140" y="0" type="line"/>
       <point x="345.5" y="525" type="line"/>
       <point x="313.5" y="525" type="line"/>
-      <point x="108" y="0" type="line"/>
+      <point x="116.462" y="21.622" type="line"/>
+      <point x="122.8" y="20.6152" type="line"/>
+      <point x="93.5" y="525" type="line"/>
+      <point x="63.5" y="525" type="line"/>
     </contour>
   </outline>
   <lib>

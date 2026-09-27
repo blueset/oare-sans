@@ -2,7 +2,6 @@
 $ErrorActionPreference = "Stop"
 
 $documents = [Environment]::GetFolderPath("MyDocuments")
-$desktop = [Environment]::GetFolderPath("Desktop")
 $cwd = $PSScriptRoot
 
 $sourcesDir = Join-Path $cwd "sources"
@@ -17,7 +16,7 @@ $otfFontsDir = Join-Path $fontsDir "otf"
 $ttfFontsDir = Join-Path $fontsDir "ttf"
 $woff2FontsDir = Join-Path $fontsDir "woff2"
 
-$designspaceBuildDir = Join-Path $desktop "OareSans\DesignSpace-UFO"
+$designspaceBuildDir = Join-Path $cwd "sources\OareSans\DesignSpace-UFO"
 $fontBuildDir = Join-Path $designspaceBuildDir "build"
 $googleFontsBuildDir = Join-Path $fontBuildDir "google-fonts"
 
@@ -68,9 +67,6 @@ function Sync-FontFiles {
 # ----------
 
 New-Item -ItemType Directory -Path $sourcesDir, $designspaceDir, $fontsDir, $variableFontsDir, $otfFontsDir, $ttfFontsDir, $woff2FontsDir, $scriptsDir, $reportsDir, $proofsDir -Force | Out-Null
-
-# Copy FontLab source
-Copy-Item -LiteralPath (Join-Path $documents "Fonts\OareSans-Regular.vfj") -Destination (Join-Path $sourcesDir "OareSans-Regular.vfj") -Force
 
 # Copy Designspace source
 Copy-Item -LiteralPath (Join-Path $designspaceBuildDir "OareSans-Regular.designspace") -Destination (Join-Path $designspaceDir "OareSans-Regular.designspace") -Force

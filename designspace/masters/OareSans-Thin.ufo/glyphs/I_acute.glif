@@ -2,7 +2,7 @@
 <glyph name="Iacute" format="2">
   <advance width="140"/>
   <unicode hex="00CD"/>
-  <anchor x="101" y="0" name="bottom"/>
+  <anchor x="70" y="0" name="bottom"/>
   <anchor x="85" y="0" name="ogonek"/>
   <anchor x="70" y="794" name="top"/>
   <outline>

@@ -2,7 +2,7 @@
 <glyph name="colon.case" format="2">
   <advance width="193"/>
   <outline>
-    <component base="colon" xOffset="1.13687e-13" yOffset="100"/>
+    <component base="colon" yOffset="100"/>
   </outline>
   <lib>
   <dict>

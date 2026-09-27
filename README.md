@@ -1,6 +1,6 @@
 # Oare Sans
 
-<!-- Version begin -->Version 0.006<!-- Version end -->
+<!-- Version begin -->Version 0.007<!-- Version end -->
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
@@ -42,6 +42,8 @@
 
 ## Changelog
 
+- v0.007:
+  - Simplify the contours of several glyphs for better compatibility of legacy software.
 - v0.006:
   - Added feature `case` (Case-Sensitive Forms) to glyphs `/hyphen`, `/endash`, `/emdash`, `/guillemotleft`, `/guillemotright`, `/guilsinglleft`, `/guilsinglright`, `/exclamdown`, `/questiondown`, `/colon`, `/asterisk`, and `/at`.
   - Added feature `tnum` (Tabular Figures) to glyphs `/zero` to `/nine`, `/dollar`, `/cent`, `/sterling`, `/yen`, `/Euro`, `/numbersign`, `/plus`, `/minus`, `/equal`, `/multiply`, `/divide`, `/plusminus`, `/less`, `/greater`, `/logicalnot`, `/asciitilde`, `/period`, `/comma`, `/colon`, `/semicolon`, `/slash`, and `/space`.
