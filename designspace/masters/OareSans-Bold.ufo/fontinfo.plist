@@ -81,7 +81,7 @@ https://openfontlicense.org</string>
   <key>openTypeNamePreferredFamilyName</key>
   <string>Oare Sans</string>
   <key>openTypeNameVersion</key>
-  <string>Version 0.007</string>
+  <string>Version 1.000</string>
   <key>openTypeOS2Panose</key>
   <array>
     <integer>0</integer>
@@ -180,9 +180,9 @@ https://openfontlicense.org</string>
   <key>unitsPerEm</key>
   <integer>1000</integer>
   <key>versionMajor</key>
-  <integer>0</integer>
+  <integer>1</integer>
   <key>versionMinor</key>
-  <integer>7</integer>
+  <integer>0</integer>
   <key>xHeight</key>
   <integer>525</integer>
 </dict>

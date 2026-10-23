@@ -1,6 +1,6 @@
 # Oare Sans
 
-<!-- Version begin -->Version 0.007<!-- Version end -->
+<!-- Version begin -->Version 1.000<!-- Version end -->
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
@@ -42,6 +42,7 @@
 
 ## Changelog
 
+- v1.000: Initial stable release.
 - v0.007:
   - Simplify the contours of several glyphs for better compatibility of legacy software.
 - v0.006:

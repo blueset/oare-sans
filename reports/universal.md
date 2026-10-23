@@ -109,12 +109,12 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 - ⚠️ **WARN** The most common width is 373 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=440: equal
 width=370: divide
-width=360: multiply
+width=390: logicalnot, plusminus
 width=420: minus
-width=390: plusminus, logicalnot
-width=380: plus [code: width-outliers]
+width=440: equal
+width=380: plus
+width=360: multiply [code: width-outliers]
   
   
 

@@ -30,9 +30,9 @@
       <point x="263.408" y="160"/>
       <point x="228.667" y="160" type="curve" smooth="yes"/>
       <point x="173.014" y="160" type="line"/>
-      <point x="185.557" y="145.203" type="line"/>
+      <point x="185.557" y="145.202" type="line"/>
       <point x="283.524" y="735" type="line"/>
-      <point x="108.524" y="734.81" type="line"/>
+      <point x="108.524" y="734.809" type="line"/>
     </contour>
   </outline>
   <guideline angle="0" x="0" y="537"/>

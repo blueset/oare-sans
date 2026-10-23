@@ -2,7 +2,7 @@
 <glyph name="sacute.ss03" format="2">
   <advance width="355"/>
   <anchor x="135" y="0" name="bottom"/>
-  <anchor x="243.662" y="649" name="top"/>
+  <anchor x="243.661" y="649" name="top"/>
   <outline>
     <component base="s.ss03"/>
     <component base="acutecomb" xOffset="179.522"/>

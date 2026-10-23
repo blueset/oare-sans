@@ -12,7 +12,7 @@
       <point x="73.5" y="525" type="line"/>
     </contour>
     <contour>
-      <point x="64.2444" y="0" type="line"/>
+      <point x="64.244" y="0" type="line"/>
       <point x="232" y="0" type="line" smooth="yes"/>
       <point x="352.426" y="0"/>
       <point x="441.423" y="92.5361"/>
@@ -35,7 +35,7 @@
       <point x="280.286" y="175.714"/>
       <point x="263.408" y="160"/>
       <point x="228.667" y="160" type="curve" smooth="yes"/>
-      <point x="86.9756" y="160" type="line"/>
+      <point x="86.9757" y="160" type="line"/>
     </contour>
   </outline>
   <guideline angle="0" x="0" y="535"/>

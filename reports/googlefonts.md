@@ -109,12 +109,12 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 - ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
+width=373: greater, less
 width=420: minus
-width=360: multiply
-width=373: less, greater
-width=380: plus
 width=440: equal
-width=370: divide [code: width-outliers]
+width=370: divide
+width=380: plus
+width=360: multiply [code: width-outliers]
   
   
 
@@ -174,6 +174,11 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |-------------------------------------------------------------------|------------------------------|
 | Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
 |   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           |
+| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
+|   The following auxiliary characters are missing from the font: Ŋ |                              |
+|   The following auxiliary characters are missing from the font: Ŧ |                              |
+|   The following auxiliary characters are missing from the font: ŋ |                              |
+|   The following auxiliary characters are missing from the font: ŧ |                              |
 | Auxiliary orthography codepoints:                                 | * fi_Latn (Finnish)          |
 |   The following auxiliary characters are missing from the font: Ǥ |                              |
 |   The following auxiliary characters are missing from the font: Ŋ |                              |
@@ -184,12 +189,7 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŋ |                              |
 |   The following auxiliary characters are missing from the font: ŧ |                              |
 |   The following auxiliary characters are missing from the font: ʒ |                              |
-|   The following auxiliary characters are missing from the font: ǯ |                              |
-| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
-|   The following auxiliary characters are missing from the font: Ŋ |                              |
-|   The following auxiliary characters are missing from the font: Ŧ |                              |
-|   The following auxiliary characters are missing from the font: ŋ |                              |
-|   The following auxiliary characters are missing from the font: ŧ |                              | [code: warning-language-shaping]
+|   The following auxiliary characters are missing from the font: ǯ |                              | [code: warning-language-shaping]
   
   
 
@@ -354,15 +354,15 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and http
 
 - ⚠️ **WARN** C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
 
-* U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
 * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
-* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, tifinagh, math
+* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, cherokee, math
 * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
-* U+0307 COMBINING DOT ABOVE: try adding one of: duployan, hebrew, todhri, math, coptic, syriac, malayalam, old-permic, tifinagh, canadian-aboriginal, tai-le
+* U+0307 COMBINING DOT ABOVE: try adding one of: math, malayalam, canadian-aboriginal, duployan, todhri, hebrew, old-permic, coptic, tifinagh, tai-le, syriac
 * U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
-* U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+* U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 ... and 7 others
 
 Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin [code: unreachable-subsetting]
