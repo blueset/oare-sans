@@ -1,4 +1,4 @@
-Copyright 2026 The Oare Sans Authors (https://github.com/blueset/oare-sans)
+Copyright 2026 The Oare Sans Project Authors (https://github.com/blueset/oare-sans)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

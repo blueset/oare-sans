@@ -279,10 +279,10 @@ you're checking.</p>
         <th>⚠️ WARN</th><th>ℹ️ INFO</th><th>✅ PASS</th><th>⏩ SKIP</th>
     </tr>
     <tr>
-        <td>9 </td> <td>8 </td> <td>114 </td> <td>57 </td> 
+        <td>11 </td> <td>8 </td> <td>125 </td> <td>59 </td> 
     </tr>
     <tr>
-        <td>5%</td> <td>4%</td> <td>61%</td> <td>30%</td> 
+        <td>5%</td> <td>4%</td> <td>62%</td> <td>29%</td> 
     </tr>
 </table>
 
@@ -308,7 +308,163 @@ immediately.
 <p>(but other kinds of bug reports and/or feature requests
     are also always welcome, of course!)</p>
 
-<p>Fontspector version: 1.5.2</p>
+<p>Fontspector version: 1.9.0</p>
+        
+            <h2>Opentype Specification Checks</h2>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3>Check that OS&#x2F;2 fsSelection WWS bit is set correctly.</h3>
+<div class='check__idlabel'>Check ID: opentype&#x2F;fsselection_wws</div>
+
+<div class="rationale">
+    
+        <p>According to the OpenType specification, OS/2.fsSelection bit 8 (WWS) should be set if the font has name table strings consistent with a weight/width/slope family without requiring use of name IDs 21 and 22.</p>
+<p>Conversely, if name IDs 21 and 22 are present (indicating the font names are not WWS-conformant), the WWS bit should not be set.</p>
+
+
+    <ul>
+    
+        
+            <li>Original proposal: <a href="https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontspector&#x2F;issues&#x2F;577">https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontspector&#x2F;issues&#x2F;577</a></li>
+        
+    
+    </ul>
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                OareSans[slnt,wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.</p>
+                                
+                                
+                                     [code: no-wws-without-wws-names]
+                                
+                            </span>
+                        </li>
+                
+                
+                </ul>
+            </div>
+        </details>
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
         
             <h2>Universal Profile Checks</h2>
 
@@ -387,7 +543,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <pre><code>The following glyphs do not have the recommended number of contours:
 </code></pre>
 <ul>
-<li>plusminus.tf (unencoded): found 3, expected one of: {2}</li>
+<li>plusminus.tf (unencoded): found 3, expected one of: [2]</li>
 </ul>
                                 
                                 
@@ -402,6 +558,8 @@ codepoint assignment of these to make sure they are correct.</p>
         </details>
     
 
+
+    
 
     
 
@@ -475,7 +633,7 @@ codepoint assignment of these to make sure they are correct.</p>
 
                             <span class='details_text'>
                                 
-                                    <p>The font does not include an avar table.</p>
+                                    <p>The font does not include an avar table.  If the progression rates of axes is linear and no user-mapping is expected, this is fine, and this check can be ignored or excluded.</p>
                                 
                                 
                                      [code: missing-avar]
@@ -533,14 +691,14 @@ codepoint assignment of these to make sure they are correct.</p>
 
                             <span class='details_text'>
                                 
-                                    <p>The most common width is 390 among a set of 9  math glyphs.
+                                    <p>The most common width is 373 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=373: greater, less
-width=420: minus
 width=440: equal
-width=370: divide
 width=380: plus
-width=360: multiply</p>
+width=390: plusminus, logicalnot
+width=360: multiply
+width=370: divide
+width=420: minus</p>
                                 
                                 
                                      [code: width-outliers]
@@ -682,6 +840,64 @@ width=360: multiply</p>
 
     
 
+    
+
+    
+        <h3>Ensure variable fonts have relatively consistent sidebearings.</h3>
+<div class='check__idlabel'>Check ID: suspicious_sidebearings</div>
+
+<div class="rationale">
+    
+        <p>Glyphs in variable fonts should vary across the designspace in a consistent way. If there are outliers the advance width, left or right sidebearings of glyphs at certain locations in the designspace, this may indicate design issue with the font.</p>
+
+
+    <ul>
+    
+        
+            <li>Original proposal: <a href="https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontspector&#x2F;issues&#x2F;557">https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontspector&#x2F;issues&#x2F;557</a></li>
+        
+    
+    </ul>
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                OareSans[slnt,wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>Glyph &quot;numbersign&quot; has suspiciously high variation (z-score 10.37) in advance widths at locations:
+slnt=-10.00</p>
+                                
+                                
+                                     [code: large-aw-variation]
+                                
+                            </span>
+                        </li>
+                
+                
+                </ul>
+            </div>
+        </details>
+    
+
+
+    
+
 
         
             <h2>Metadata Checks</h2>
@@ -752,12 +968,12 @@ width=360: multiply</p>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, cherokee, math</li>
-<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, malayalam, canadian-aboriginal, duployan, todhri, hebrew, old-permic, coptic, tifinagh, tai-le, syriac</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, malayalam, old-permic, syriac, tifinagh, todhri, duployan, tai-le, hebrew, canadian-aboriginal, math</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
-<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
+<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le
 ... and 7 others</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin</p>
@@ -836,14 +1052,6 @@ width=360: multiply</p>
 <tbody>
 <tr>
 <td>Auxiliary orthography codepoints:</td>
-<td>* de_Latn (German)</td>
-</tr>
-<tr>
-<td>The following auxiliary characters are missing from the font: ſ</td>
-<td>* fr_Latn (French)</td>
-</tr>
-<tr>
-<td>Auxiliary orthography codepoints:</td>
 <td>* nb_Latn (Norwegian Bokmål)</td>
 </tr>
 <tr>
@@ -906,6 +1114,14 @@ width=360: multiply</p>
 <td>The following auxiliary characters are missing from the font: ǯ</td>
 <td></td>
 </tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* de_Latn (German)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ſ</td>
+<td>* fr_Latn (French)</td>
+</tr>
 </tbody>
 </table>
                                 
@@ -949,19 +1165,59 @@ width=360: multiply</p>
     
 
     
-        <h3>Check variable font instances</h3>
-<div class='check__idlabel'>Check ID: googlefonts&#x2F;fvar_instances</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3>Variable fonts with slnt axis need a separate Italic file for Google Workspace compatibility.</h3>
+<div class='check__idlabel'>Check ID: googlefonts&#x2F;varfont&#x2F;slnt_needs_italic</div>
 
 <div class="rationale">
     
-        <p>Check a font's fvar instance coordinates comply with our guidelines: <a href="https://googlefonts.github.io/gf-guide/variable.html#fvar-instances">https://googlefonts.github.io/gf-guide/variable.html#fvar-instances</a></p>
-<p>This check is skipped for fonts that have a Morph (MORF) axis since we allow users to define their own custom instances.</p>
+        <p>Google Workspace applications (Docs, Sheets, Slides) do not currently support the 'slnt' (Slant) axis for selecting italic styles. If a variable font family relies solely on a Slant axis for its italic styles, those styles will not be accessible in Workspace apps.</p>
+<p>To ensure full compatibility, font families with a Slant axis should also provide a separate Italic file so that Workspace users can access italic styles through the standard Bold/Italic toggles.</p>
 
 
     <ul>
     
         
-            <li>Original proposal: <a href="https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontbakery&#x2F;pull&#x2F;3800">https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontbakery&#x2F;pull&#x2F;3800</a></li>
+            <li>Original proposal: <a href="https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontspector&#x2F;issues&#x2F;647">https:&#x2F;&#x2F;github.com&#x2F;fonttools&#x2F;fontspector&#x2F;issues&#x2F;647</a></li>
         
     
     </ul>
@@ -987,112 +1243,10 @@ width=360: multiply</p>
 
                             <span class='details_text'>
                                 
-                                    <p>fvar instance coordinates for non-wght axes are not the same as the fvar defaults. This may be intentional so please check with the font author:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>current</th>
-<th>expected</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Thin</td>
-<td>slnt=0, wght=100</td>
-<td>slnt=0, wght=100</td>
-</tr>
-<tr>
-<td>Thin Italic</td>
-<td>slnt=-10, wght=100</td>
-<td>slnt=0, wght=100</td>
-</tr>
-<tr>
-<td>ExtraLight</td>
-<td>slnt=0, wght=200</td>
-<td>slnt=0, wght=200</td>
-</tr>
-<tr>
-<td>ExtraLight Italic</td>
-<td>slnt=-10, wght=200</td>
-<td>slnt=0, wght=200</td>
-</tr>
-<tr>
-<td>Light</td>
-<td>slnt=0, wght=300</td>
-<td>slnt=0, wght=300</td>
-</tr>
-<tr>
-<td>Light Italic</td>
-<td>slnt=-10, wght=300</td>
-<td>slnt=0, wght=300</td>
-</tr>
-<tr>
-<td>Regular</td>
-<td>slnt=0, wght=400</td>
-<td>slnt=0, wght=400</td>
-</tr>
-<tr>
-<td>Italic</td>
-<td>slnt=-10, wght=400</td>
-<td>slnt=0, wght=400</td>
-</tr>
-<tr>
-<td>Medium</td>
-<td>slnt=0, wght=500</td>
-<td>slnt=0, wght=500</td>
-</tr>
-<tr>
-<td>Medium Italic</td>
-<td>slnt=-10, wght=500</td>
-<td>slnt=0, wght=500</td>
-</tr>
-<tr>
-<td>SemiBold</td>
-<td>slnt=0, wght=600</td>
-<td>slnt=0, wght=600</td>
-</tr>
-<tr>
-<td>SemiBold Italic</td>
-<td>slnt=-10, wght=600</td>
-<td>slnt=0, wght=600</td>
-</tr>
-<tr>
-<td>Bold</td>
-<td>slnt=0, wght=700</td>
-<td>slnt=0, wght=700</td>
-</tr>
-<tr>
-<td>Bold Italic</td>
-<td>slnt=-10, wght=700</td>
-<td>slnt=0, wght=700</td>
-</tr>
-<tr>
-<td>ExtraBold</td>
-<td>slnt=0, wght=800</td>
-<td>slnt=0, wght=800</td>
-</tr>
-<tr>
-<td>ExtraBold Italic</td>
-<td>slnt=-10, wght=800</td>
-<td>slnt=0, wght=800</td>
-</tr>
-<tr>
-<td>Black</td>
-<td>slnt=0, wght=900</td>
-<td>slnt=0, wght=900</td>
-</tr>
-<tr>
-<td>Black Italic</td>
-<td>slnt=-10, wght=900</td>
-<td>slnt=0, wght=900</td>
-</tr>
-</tbody>
-</table>
-
+                                    <p>This variable font has a 'slnt' (Slant) axis but no 'ital' axis. Google Workspace apps (Docs, Sheets, Slides) do not support the Slant axis for selecting italic styles. Please ensure this font family also includes a separate Italic file so that italic styles are accessible in Workspace applications.</p>
                                 
                                 
-                                     [code: suspicious-fvar-coords]
+                                     [code: needs-italic]
                                 
                             </span>
                         </li>
@@ -1103,34 +1257,6 @@ width=360: multiply</p>
         </details>
     
 
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
 
     
 
@@ -1196,6 +1322,8 @@ If you registered it recently, then it's safe to ignore this warning message. Ot
         </details>
     
 
+
+    
 
     
 

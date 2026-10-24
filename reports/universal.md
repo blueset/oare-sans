@@ -1,6 +1,6 @@
 ## FontSpector report
 
-fontspector version: 1.5.2
+fontspector version: 1.9.0
 
 
 
@@ -12,8 +12,37 @@ fontspector version: 1.5.2
 
 
 
-<details><summary>[5] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans-Regular-VF.ttf</summary>
+<details><summary>[7] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans-Regular-VF.ttf</summary>
 <div>
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check that OS/2 fsSelection WWS bit is set correctly. (opentype/fsselection_wws)</summary>
+    <div>
+
+
+> According to the OpenType specification, OS/2.fsSelection bit 8 (WWS) should be set if the font has name table strings consistent with a weight/width/slope family without requiring use of name IDs 21 and 22.
+> 
+> Conversely, if name IDs 21 and 22 are present (indicating the font names are not WWS-conformant), the WWS bit should not be set.
+
+
+
+
+Original proposal: [https://github.com/fonttools/fontspector/issues/577]
+
+
+
+
+
+- ⚠️ **WARN** OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set. [code: no-wws-without-wws-names]
+  
+  
+
+</div>
+</details>
+
+
+
 
 
 <details>
@@ -47,7 +76,7 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* plusminus.tf (unencoded): found 3, expected one of: {2} [code: contour-count]
+* plusminus.tf (unencoded): found 3, expected one of: [2] [code: contour-count]
   
   
 
@@ -78,7 +107,7 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3100]
 
 
 
-- ⚠️ **WARN** The font does not include an avar table. [code: missing-avar]
+- ⚠️ **WARN** The font does not include an avar table.  If the progression rates of axes is linear and no user-mapping is expected, this is fine, and this check can be ignored or excluded. [code: missing-avar]
   
   
 
@@ -107,14 +136,14 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 
 
-- ⚠️ **WARN** The most common width is 373 among a set of 9  math glyphs.
+- ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=370: divide
-width=390: logicalnot, plusminus
-width=420: minus
-width=440: equal
 width=380: plus
-width=360: multiply [code: width-outliers]
+width=373: greater, less
+width=360: multiply
+width=370: divide
+width=440: equal
+width=420: minus [code: width-outliers]
   
   
 
@@ -180,6 +209,34 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3170]
 </details>
 
 
+
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure variable fonts have relatively consistent sidebearings. (suspicious_sidebearings)</summary>
+    <div>
+
+
+> Glyphs in variable fonts should vary across the designspace in a consistent way. If there are outliers the advance width, left or right sidebearings of glyphs at certain locations in the designspace, this may indicate design issue with the font.
+
+
+
+
+Original proposal: [https://github.com/fonttools/fontspector/issues/557]
+
+
+
+
+
+- ⚠️ **WARN** Glyph "numbersign" has suspiciously high variation (z-score 10.37) in advance widths at locations:
+    slnt=-10.00 [code: large-aw-variation]
+  
+  
+
+</div>
+</details>
+
+
 </div>
 </details>
 
@@ -192,8 +249,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3170]
 
 | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
 | ---|---|---|---|
-| 5 | 2 | 87 | 25 | 
-| 4% | 2% | 73% | 21% | 
+| 7 | 2 | 91 | 25 | 
+| 6% | 2% | 73% | 20% | 
 
 
 

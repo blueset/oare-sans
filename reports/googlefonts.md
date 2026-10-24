@@ -1,6 +1,6 @@
 ## FontSpector report
 
-fontspector version: 1.5.2
+fontspector version: 1.9.0
 
 
 
@@ -12,8 +12,84 @@ fontspector version: 1.5.2
 
 
 
-<details><summary>[8] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf</summary>
+<details><summary>[1] C:\Users\ilove\Codebase\oare-sans\fonts\variable</summary>
 <div>
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. (googlefonts/metadata/unreachable_subsetting)</summary>
+    <div>
+
+
+> This check ensures that all encoded glyphs in the font are covered by a subset declared in the METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the `subsets` field and the subset definitions in the `glyphsets` repository.
+> 
+> Any encoded glyphs which are not by any of these subset definitions will not be served in the subsetted fonts, and so will be unreachable to the end user.
+
+
+
+
+Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and https://github.com/fonttools/fontbakery/pull/4273]
+
+
+
+
+
+- ⚠️ **WARN** C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
+
+* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+* U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+* U+0307 COMBINING DOT ABOVE: try adding one of: coptic, malayalam, old-permic, syriac, tifinagh, todhri, duployan, tai-le, hebrew, canadian-aboriginal, math
+* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+* U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+... and 7 others
+
+Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin [code: unreachable-subsetting]
+  
+  
+
+</div>
+</details>
+
+
+</div>
+</details>
+
+
+<details><summary>[10] C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf</summary>
+<div>
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check that OS/2 fsSelection WWS bit is set correctly. (opentype/fsselection_wws)</summary>
+    <div>
+
+
+> According to the OpenType specification, OS/2.fsSelection bit 8 (WWS) should be set if the font has name table strings consistent with a weight/width/slope family without requiring use of name IDs 21 and 22.
+> 
+> Conversely, if name IDs 21 and 22 are present (indicating the font names are not WWS-conformant), the WWS bit should not be set.
+
+
+
+
+Original proposal: [https://github.com/fonttools/fontspector/issues/577]
+
+
+
+
+
+- ⚠️ **WARN** OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set. [code: no-wws-without-wws-names]
+  
+  
+
+</div>
+</details>
+
+
+
 
 
 <details>
@@ -47,7 +123,7 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
     The following glyphs do not have the recommended number of contours:
-* plusminus.tf (unencoded): found 3, expected one of: {2} [code: contour-count]
+* plusminus.tf (unencoded): found 3, expected one of: [2] [code: contour-count]
   
   
 
@@ -78,7 +154,7 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3100]
 
 
 
-- ⚠️ **WARN** The font does not include an avar table. [code: missing-avar]
+- ⚠️ **WARN** The font does not include an avar table.  If the progression rates of axes is linear and no user-mapping is expected, this is fine, and this check can be ignored or excluded. [code: missing-avar]
   
   
 
@@ -107,14 +183,14 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 
 
-- ⚠️ **WARN** The most common width is 390 among a set of 9  math glyphs.
+- ⚠️ **WARN** The most common width is 373 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
-width=373: greater, less
-width=420: minus
 width=440: equal
-width=370: divide
 width=380: plus
-width=360: multiply [code: width-outliers]
+width=390: plusminus, logicalnot
+width=360: multiply
+width=370: divide
+width=420: minus [code: width-outliers]
   
   
 
@@ -153,6 +229,34 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/2967]
 
 
 <details>
+    <summary>⚠️ <b>WARN</b> Ensure variable fonts have relatively consistent sidebearings. (suspicious_sidebearings)</summary>
+    <div>
+
+
+> Glyphs in variable fonts should vary across the designspace in a consistent way. If there are outliers the advance width, left or right sidebearings of glyphs at certain locations in the designspace, this may indicate design issue with the font.
+
+
+
+
+Original proposal: [https://github.com/fonttools/fontspector/issues/557]
+
+
+
+
+
+- ⚠️ **WARN** Glyph "numbersign" has suspiciously high variation (z-score 10.37) in advance widths at locations:
+    slnt=-10.00 [code: large-aw-variation]
+  
+  
+
+</div>
+</details>
+
+
+
+
+
+<details>
     <summary>⚠️ <b>WARN</b> Shapes languages in all GF glyphsets. (googlefonts/glyphsets/shape_languages)</summary>
     <div>
 
@@ -172,8 +276,6 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 | Message                                                           | Languages                    |
 |-------------------------------------------------------------------|------------------------------|
-| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
-|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           |
 | Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
 |   The following auxiliary characters are missing from the font: Ŋ |                              |
 |   The following auxiliary characters are missing from the font: Ŧ |                              |
@@ -189,7 +291,9 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŋ |                              |
 |   The following auxiliary characters are missing from the font: ŧ |                              |
 |   The following auxiliary characters are missing from the font: ʒ |                              |
-|   The following auxiliary characters are missing from the font: ǯ |                              | [code: warning-language-shaping]
+|   The following auxiliary characters are missing from the font: ǯ |                              |
+| Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
+|   The following auxiliary characters are missing from the font: ſ | * fr_Latn (French)           | [code: warning-language-shaping]
   
   
 
@@ -241,47 +345,24 @@ Original proposal: [https://github.com/fonttools/fontbakery/pull/3088]
 
 
 <details>
-    <summary>⚠️ <b>WARN</b> Check variable font instances (googlefonts/fvar_instances)</summary>
+    <summary>⚠️ <b>WARN</b> Variable fonts with slnt axis need a separate Italic file for Google Workspace compatibility. (googlefonts/varfont/slnt_needs_italic)</summary>
     <div>
 
 
-> Check a font's fvar instance coordinates comply with our guidelines: https://googlefonts.github.io/gf-guide/variable.html#fvar-instances
+> Google Workspace applications (Docs, Sheets, Slides) do not currently support the 'slnt' (Slant) axis for selecting italic styles. If a variable font family relies solely on a Slant axis for its italic styles, those styles will not be accessible in Workspace apps.
 > 
-> This check is skipped for fonts that have a Morph (MORF) axis since we allow users to define their own custom instances.
+> To ensure full compatibility, font families with a Slant axis should also provide a separate Italic file so that Workspace users can access italic styles through the standard Bold/Italic toggles.
 
 
 
 
-Original proposal: [https://github.com/fonttools/fontbakery/pull/3800]
+Original proposal: [https://github.com/fonttools/fontspector/issues/647]
 
 
 
 
 
-- ⚠️ **WARN** fvar instance coordinates for non-wght axes are not the same as the fvar defaults. This may be intentional so please check with the font author:
-
-| Name              | current            | expected         |
-|-------------------|--------------------|------------------|
-| Thin              | slnt=0, wght=100   | slnt=0, wght=100 |
-| Thin Italic       | slnt=-10, wght=100 | slnt=0, wght=100 |
-| ExtraLight        | slnt=0, wght=200   | slnt=0, wght=200 |
-| ExtraLight Italic | slnt=-10, wght=200 | slnt=0, wght=200 |
-| Light             | slnt=0, wght=300   | slnt=0, wght=300 |
-| Light Italic      | slnt=-10, wght=300 | slnt=0, wght=300 |
-| Regular           | slnt=0, wght=400   | slnt=0, wght=400 |
-| Italic            | slnt=-10, wght=400 | slnt=0, wght=400 |
-| Medium            | slnt=0, wght=500   | slnt=0, wght=500 |
-| Medium Italic     | slnt=-10, wght=500 | slnt=0, wght=500 |
-| SemiBold          | slnt=0, wght=600   | slnt=0, wght=600 |
-| SemiBold Italic   | slnt=-10, wght=600 | slnt=0, wght=600 |
-| Bold              | slnt=0, wght=700   | slnt=0, wght=700 |
-| Bold Italic       | slnt=-10, wght=700 | slnt=0, wght=700 |
-| ExtraBold         | slnt=0, wght=800   | slnt=0, wght=800 |
-| ExtraBold Italic  | slnt=-10, wght=800 | slnt=0, wght=800 |
-| Black             | slnt=0, wght=900   | slnt=0, wght=900 |
-| Black Italic      | slnt=-10, wght=900 | slnt=0, wght=900 |
-
- [code: suspicious-fvar-coords]
+- ⚠️ **WARN** This variable font has a 'slnt' (Slant) axis but no 'ital' axis. Google Workspace apps (Docs, Sheets, Slides) do not support the Slant axis for selecting italic styles. Please ensure this font family also includes a separate Italic file so that italic styles are accessible in Workspace applications. [code: needs-italic]
   
   
 
@@ -330,53 +411,6 @@ If you registered it recently, then it's safe to ignore this warning message. Ot
 </details>
 
 
-<details><summary>[1] C:\Users\ilove\Codebase\oare-sans\fonts\variable</summary>
-<div>
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. (googlefonts/metadata/unreachable_subsetting)</summary>
-    <div>
-
-
-> This check ensures that all encoded glyphs in the font are covered by a subset declared in the METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the `subsets` field and the subset definitions in the `glyphsets` repository.
-> 
-> Any encoded glyphs which are not by any of these subset definitions will not be served in the subsetted fonts, and so will be unreachable to the end user.
-
-
-
-
-Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and https://github.com/fonttools/fontbakery/pull/4273]
-
-
-
-
-
-- ⚠️ **WARN** C:\Users\ilove\Codebase\oare-sans\fonts\variable\OareSans[slnt,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
-
-* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
-* U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
-* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, cherokee, math
-* U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
-* U+0307 COMBINING DOT ABOVE: try adding one of: math, malayalam, canadian-aboriginal, duployan, todhri, hebrew, old-permic, coptic, tifinagh, tai-le, syriac
-* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
-* U+030C COMBINING CARON: try adding one of: tai-le, cherokee
-... and 7 others
-
-Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin [code: unreachable-subsetting]
-  
-  
-
-</div>
-</details>
-
-
-</div>
-</details>
-
-
 
 
 
@@ -385,8 +419,8 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 
 | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
 | ---|---|---|---|
-| 9 | 8 | 114 | 57 | 
-| 5% | 4% | 61% | 30% | 
+| 11 | 8 | 125 | 59 | 
+| 5% | 4% | 62% | 29% | 
 
 
 
