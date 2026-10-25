@@ -9,15 +9,15 @@
 [psctf]: https://1a23.com/works/design/project-sekai-ctf/
 [luna]: https://1a23.com/works/open-source/luna-for-ctfd/
 
-![Banner](./documentation/Banner.png)
-![Styles](./documentation/Styles.png)
-![Poster 1: Thin Oblique](./documentation/Poster1.png)
-![Poster 2: Waterfall](./documentation/Poster2.png)
-![Poster 3: Black](./documentation/Poster3.png)
-![Poster 5: Type Specimen](./documentation/Poster5.png)
-![Poster 6: Type Specimen](./documentation/Poster6.png)
-![Poster 7: Glyphs Showcase](./documentation/Poster7.png)
-![Poster 4: Stylistic Set](./documentation/Poster4.png)
+![Banner](./documentation/article/Banner.png)
+![Styles](./documentation/article/Styles.png)
+![Poster 1: Thin Oblique](./documentation/article/Poster1.png)
+![Poster 2: Waterfall](./documentation/article/Poster2.png)
+![Poster 3: Black](./documentation/article/Poster3.png)
+![Poster 5: Type Specimen](./documentation/article/Poster5.png)
+![Poster 6: Type Specimen](./documentation/article/Poster6.png)
+![Poster 7: Glyphs Showcase](./documentation/article/Poster7.png)
+![Poster 4: Stylistic Set](./documentation/article/Poster4.png)
 
 ## OpenType Features
 
