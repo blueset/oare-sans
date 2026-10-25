@@ -1,6 +1,6 @@
 # Oare Sans
 
-<!-- Version begin -->Version 1.000<!-- Version end -->
+<!-- Version begin -->Version 1.001<!-- Version end -->
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
@@ -40,8 +40,28 @@
 - [Static OTF](./fonts/otf/)
 - [Static WOFF2](./fonts/woff2/)
 
+## Building
+
+The **Build fonts and reports** GitHub Actions workflow builds the checked-in
+`sources/designspace/` sources on pushes to `master`, pull requests affecting the
+build, or manual dispatch. Its `oare-sans-fonts-and-reports` artifact contains the
+same `fonts/` layout as `Update.ps1`, plus universal and Google Fonts Fontspector
+reports in Markdown and HTML under `reports/`. Artifacts are uploaded even when
+quality checks fail; those failures still mark the workflow as failed. No proofs
+are generated and no files are committed.
+
+To build just the binaries locally with [uv](https://docs.astral.sh/uv/):
+
+```sh
+uv run scripts/build_fonts.py --output-dir build/fonts
+```
+
 ## Changelog
 
+- v1.001:
+  - Fix metrics for Windows ascenders
+  - Fix licensing information
+  - Add build pipelines
 - v1.000: Initial stable release.
 - v0.007:
   - Simplify the contours of several glyphs for better compatibility of legacy software.

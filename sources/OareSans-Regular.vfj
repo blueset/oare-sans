@@ -4213,7 +4213,7 @@
                 "nonSpacing":true,
                 "active":true,
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -6151,7 +6151,7 @@
                   "xOffset":50
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -6230,7 +6230,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -6309,7 +6309,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -6391,7 +6391,7 @@
                   "xOffset":-90
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -6472,7 +6472,7 @@
                   "xOffset":42
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -6550,7 +6550,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -6590,7 +6590,7 @@
                   "xOffset":50
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2,
                   "proportion":0
                 }
@@ -6669,7 +6669,7 @@
               {
                 "elementData":"CircledRing:Thin",
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2,
                   "proportion":0
                 }
@@ -6748,7 +6748,7 @@
               {
                 "elementData":"CircledRing:Regular",
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2,
                   "proportion":0
                 }
@@ -6834,7 +6834,7 @@
                   "xOffset":-90
                 },
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2,
                   "proportion":0
                 }
@@ -6919,7 +6919,7 @@
                   "xOffset":42
                 },
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2,
                   "proportion":0
                 }
@@ -6998,7 +6998,7 @@
               {
                 "elementData":"CircledRing:Black",
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2,
                   "proportion":0
                 }
@@ -43295,8 +43295,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -43506,8 +43506,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -43686,8 +43686,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -43861,8 +43861,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -44045,8 +44045,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "BottomMark"
+          "BottomMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -44223,8 +44223,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -44401,8 +44401,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -44579,8 +44579,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -44760,8 +44760,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -44936,8 +44936,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -45072,8 +45072,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "BottomMark"
+          "BottomMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -45253,8 +45253,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -45431,8 +45431,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -45615,8 +45615,8 @@
           }
         ],
         "tags":[
-          "MarkSpacing",
-          "TopMark"
+          "TopMark",
+          "MarkSpacing"
         ]
       },
       {
@@ -46097,8 +46097,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -46466,8 +46466,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -46842,8 +46842,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -47208,8 +47208,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -47545,8 +47545,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -47919,8 +47919,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -48300,8 +48300,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -48715,8 +48715,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -49126,8 +49126,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -49493,8 +49493,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -49869,8 +49869,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
@@ -50161,8 +50161,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "BottomMarkComb"
+          "BottomMarkComb",
+          "Mark"
         ]
       },
       {
@@ -53671,8 +53671,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "BottomMarkComb"
+          "BottomMarkComb",
+          "Mark"
         ]
       },
       {
@@ -55905,8 +55905,8 @@
           }
         ],
         "tags":[
-          "Mark",
-          "BottomMarkComb"
+          "BottomMarkComb",
+          "Mark"
         ]
       },
       {
@@ -56310,14 +56310,14 @@
           }
         ],
         "tags":[
-          "Mark",
-          "TopMarkComb"
+          "TopMarkComb",
+          "Mark"
         ]
       },
       {
         "name":"A",
         "unicode":"0041",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -57135,7 +57135,7 @@
       {
         "name":"C",
         "unicode":"0043",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -57881,7 +57881,7 @@
       {
         "name":"E",
         "unicode":"0045",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -58518,7 +58518,7 @@
       {
         "name":"G",
         "unicode":"0047",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -58941,7 +58941,7 @@
       {
         "name":"H",
         "unicode":"0048",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -59273,7 +59273,7 @@
       {
         "name":"I",
         "unicode":"0049",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -59625,7 +59625,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -59669,7 +59669,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -59713,7 +59713,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -59761,7 +59761,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -59809,7 +59809,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -59853,7 +59853,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -59873,7 +59873,7 @@
       {
         "name":"K",
         "unicode":"004b",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -60348,7 +60348,7 @@
       {
         "name":"L",
         "unicode":"004c",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -61326,7 +61326,7 @@
       {
         "name":"O",
         "unicode":"004f",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -65142,7 +65142,7 @@
       {
         "name":"U",
         "unicode":"0055",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -65543,7 +65543,7 @@
       {
         "name":"V",
         "unicode":"0056",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -71076,7 +71076,7 @@
       {
         "name":"a",
         "unicode":"0061",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -72132,7 +72132,7 @@
       {
         "name":"c",
         "unicode":"0063",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -73163,7 +73163,7 @@
       {
         "name":"e",
         "unicode":"0065",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -74293,7 +74293,7 @@
       {
         "name":"g",
         "unicode":"0067",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -75345,13 +75345,17 @@
             "metricsRight":"|",
             "elements":[
               {
-                "component":{
-                  "glyphName":"dotlessi"
+                "elementData":{
+                  "component":{
+                    "glyphName":"dotlessi"
+                  }
                 }
               },
               {
-                "component":{
-                  "glyphName":"dotaccentcomb"
+                "elementData":{
+                  "component":{
+                    "glyphName":"dotaccentcomb"
+                  }
                 },
                 "transform":{
                   "xOffset":92.5
@@ -75644,13 +75648,17 @@
             "metricsRight":"i",
             "elements":[
               {
-                "component":{
-                  "glyphName":"dotlessj"
+                "elementData":{
+                  "component":{
+                    "glyphName":"dotlessj"
+                  }
                 }
               },
               {
-                "component":{
-                  "glyphName":"dotaccentcomb"
+                "elementData":{
+                  "component":{
+                    "glyphName":"dotaccentcomb"
+                  }
                 },
                 "transform":{
                   "xOffset":92
@@ -75667,7 +75675,7 @@
               },
               {
                 "name":"top",
-                "point":"92 649",
+                "point":"92.5 649",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -78100,7 +78108,7 @@
       {
         "name":"o",
         "unicode":"006f",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -78579,7 +78587,7 @@
       {
         "name":"p",
         "unicode":"0070",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -79126,7 +79134,7 @@
       {
         "name":"q",
         "unicode":"0071",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -81128,7 +81136,7 @@
       {
         "name":"v",
         "unicode":"0076",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -81414,7 +81422,7 @@
       {
         "name":"w",
         "unicode":"0077",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -81748,7 +81756,7 @@
       {
         "name":"x",
         "unicode":"0078",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -81992,7 +82000,7 @@
       {
         "name":"y",
         "unicode":"0079",
-        "lastModified":"2026-10-24 22:11:15",
+        "lastModified":"2026-10-25 00:21:25",
         "openTypeGlyphClass":1,
         "colorFlag":301,
         "layers":[
@@ -90402,17 +90410,13 @@
             "metricsRight":"=10",
             "elements":[
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"A"
-                  }
+                "component":{
+                  "glyphName":"A"
                 }
               },
               {
-                "elementData":{
-                  "component":{
-                    "glyphName":"ringcomb"
-                  }
+                "component":{
+                  "glyphName":"ringcomb"
                 },
                 "transform":{
                   "xOffset":231,
@@ -112303,7 +112307,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"61 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -112887,7 +112891,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"123 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -113471,7 +113475,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -114055,7 +114059,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"91.5 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -114643,7 +114647,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.0255 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -115217,14 +115221,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"63 670",
+                "point":"92.5 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"63 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -115748,7 +115752,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92.6176 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -116368,7 +116372,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"91.5 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -116943,7 +116947,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"92 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -118533,14 +118537,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"193.5 670",
+                "point":"295 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"193.5 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -118804,7 +118808,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"185 0",
+                "point":"235 -175",
                 "appearance":6,
                 "exprX":"width/2",
                 "exprY":"baseline"
@@ -118817,7 +118821,7 @@
               },
               {
                 "name":"top",
-                "point":"277 649",
+                "point":"277.5 649",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -121298,7 +121302,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"188 0",
+                "point":"221.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -121566,7 +121570,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"182.61 0",
+                "point":"184.11 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -121861,7 +121865,7 @@
             "anchors":[
               {
                 "name":"bottom",
-                "point":"123 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -122984,14 +122988,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"162 735",
+                "point":"92.5 735",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"ascender"
               },
               {
                 "name":"bottom",
-                "point":"162 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -123696,7 +123700,7 @@
               },
               {
                 "name":"bottom",
-                "point":"210.742 0",
+                "point":"184.11 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -123961,14 +123965,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"196.242 735",
+                "point":"92.5 735",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"ascender"
               },
               {
                 "name":"bottom",
-                "point":"196.242 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -139368,7 +139372,7 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"148.75 525",
+                "point":"151 525",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"x_height"
@@ -170612,7 +170616,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -170656,7 +170660,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -170700,7 +170704,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -170745,7 +170749,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -170789,7 +170793,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -170833,7 +170837,7 @@
                 },
                 "active":true,
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -171167,14 +171171,14 @@
             "anchors":[
               {
                 "name":"top",
-                "point":"221 670",
+                "point":"354 670",
                 "appearance":5,
                 "exprX":"center",
                 "exprY":"CapsTopMark"
               },
               {
                 "name":"bottom",
-                "point":"221 0",
+                "point":"92.5 0",
                 "appearance":6,
                 "exprX":"center",
                 "exprY":"baseline"
@@ -174470,7 +174474,7 @@
               },
               {
                 "name":"top",
-                "point":"215 649",
+                "point":"210 649",
                 "appearance":5,
                 "exprX":"width/2"
               }
@@ -190496,7 +190500,7 @@
       "designer":"Eana Hufwe",
       "designerURL":"https://1a23.studio/",
       "license":"This Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttps://openfontlicense.org",
-      "licenseURL":"https://openfontlicense.org/",
+      "licenseURL":"https://openfontlicense.org",
       "manufacturer":"1A23 Studio",
       "manufacturerURL":"https://1a23.studio/",
       "vendorID":"1A23",
@@ -190533,7 +190537,7 @@
           "measurement":232,
           "weight":900,
           "width":3,
-          "safeTop":1025,
+          "safeTop":1100,
           "safeBottom":250,
           "underlineThickness":150,
           "underlinePosition":-50,
@@ -190581,7 +190585,6 @@
             "hhea_descender":-175,
             "hhea_line_gap":0,
             "hhea_use_custom":false,
-            "hinting.forceBold":0,
             "strikeout_position":290,
             "strikeout_size":50,
             "subscript_x_offset":0,
@@ -192772,7 +192775,7 @@
           "weight":900,
           "width":3,
           "italic_angle":-9.5,
-          "safeTop":1025,
+          "safeTop":1100,
           "safeBottom":250,
           "underlineThickness":150,
           "underlinePosition":-50,
@@ -192822,7 +192825,6 @@
             "hhea_descender":-175,
             "hhea_line_gap":0,
             "hhea_use_custom":false,
-            "hinting.forceBold":0,
             "strikeout_position":290,
             "strikeout_size":50,
             "subscript_x_offset":0,
@@ -194953,7 +194955,7 @@
           "weight":400,
           "width":3,
           "italic_angle":-9.5,
-          "safeTop":1025,
+          "safeTop":1100,
           "safeBottom":250,
           "underlineThickness":80,
           "underlinePosition":-100,
@@ -195002,7 +195004,6 @@
             "hhea_descender":-175,
             "hhea_line_gap":0,
             "hhea_use_custom":false,
-            "hinting.forceBold":0,
             "strikeout_position":300,
             "strikeout_size":50,
             "subscript_x_offset":0,
@@ -197154,7 +197155,7 @@
           "measurement":243,
           "weight":400,
           "width":3,
-          "safeTop":1025,
+          "safeTop":1100,
           "safeBottom":250,
           "underlineThickness":80,
           "underlinePosition":-100,
@@ -197201,7 +197202,6 @@
             "hhea_descender":-175,
             "hhea_line_gap":0,
             "hhea_use_custom":false,
-            "hinting.forceBold":0,
             "strikeout_position":300,
             "strikeout_size":50,
             "subscript_x_offset":0,
@@ -199387,7 +199387,7 @@
           "measurement":199,
           "weight":100,
           "width":3,
-          "safeTop":1025,
+          "safeTop":1100,
           "safeBottom":250,
           "underlineThickness":30,
           "underlinePosition":-150,
@@ -199434,7 +199434,6 @@
             "hhea_descender":-175,
             "hhea_line_gap":0,
             "hhea_use_custom":false,
-            "hinting.forceBold":0,
             "strikeout_position":300,
             "strikeout_size":30,
             "subscript_x_offset":0,
@@ -201540,7 +201539,7 @@
           "weight":100,
           "width":3,
           "italic_angle":-9.5,
-          "safeTop":1025,
+          "safeTop":1100,
           "safeBottom":250,
           "underlineThickness":30,
           "underlinePosition":-150,
@@ -201589,7 +201588,6 @@
             "hhea_descender":-175,
             "hhea_line_gap":0,
             "hhea_use_custom":false,
-            "hinting.forceBold":0,
             "strikeout_position":300,
             "strikeout_size":30,
             "subscript_x_offset":0,
@@ -203979,7 +203977,7 @@
           "openTypeOS2TypoAscender":1020,
           "openTypeOS2TypoDescender":-250,
           "openTypeOS2TypoLineGap":0,
-          "openTypeOS2WinAscent":1020,
+          "openTypeOS2WinAscent":1100,
           "openTypeOS2WinDescent":250,
           "postscriptFontName":"OareSans-Regular",
           "styleMapFamilyName":"Oare Sans",
@@ -204063,7 +204061,6 @@
         }
       }
     },
-    "searchStorage":"",
     "expressionsUpdated":true
   }
 }

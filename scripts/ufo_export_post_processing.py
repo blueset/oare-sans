@@ -9,6 +9,8 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 
+UV_BIN_DIR = Path.home() / ".local" / "bin"
+
 POSTSCRIPT_NAME_PART_RE = re.compile(r"[^A-Za-z0-9]")
 VERSION_STRING_RE = re.compile(
     r"^\s*(?:Version\s+)?(?P<major>\d+)(?P<rest>\.\d+.*)?\s*$",
@@ -1128,7 +1130,7 @@ def apply_google_fonts_flavor(ttf_path, config):
         write_google_fonts_patcher_script(patcher_path)
 
         cmd = [
-            "uv",
+            str(UV_BIN_DIR / "uv.exe"),
             "run",
             "--script",
             str(patcher_path),
@@ -1158,7 +1160,7 @@ def apply_google_fonts_flavor(ttf_path, config):
 
 def run_fontmake(designspace, output_dir, outputs, interpolate=None):
     cmd = [
-        "uvx",
+        str(UV_BIN_DIR / "uvx.exe"),
         "--with",
         "ttfautohint-py",
         "fontmake",

@@ -5,7 +5,7 @@ $documents = [Environment]::GetFolderPath("MyDocuments")
 $cwd = $PSScriptRoot
 
 $sourcesDir = Join-Path $cwd "sources"
-$designspaceDir = Join-Path $cwd "designspace"
+$designspaceDir = Join-Path $sourcesDir "designspace"
 $mastersDir = Join-Path $designspaceDir "masters"
 $fontsDir = Join-Path $cwd "fonts"
 $scriptsDir = Join-Path $cwd "scripts"

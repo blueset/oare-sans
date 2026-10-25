@@ -1,0 +1,83 @@
+name: Build fonts and reports
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - sources/designspace/**
+      - scripts/**.py
+      - Update.ps1
+      - .github/workflows/build-fonts.yml
+  pull_request:
+    paths:
+      - sources/designspace/**
+      - scripts/**.py
+      - Update.ps1
+      - .github/workflows/build-fonts.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-fonts-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ARTIFACT_DIR: font-build
+      FONTSPECTOR_VERSION: 1.9.0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up uv and Python
+        uses: astral-sh/setup-uv@v10
+        with:
+          python-version: "3.13"
+
+      - name: Test build helpers
+        run: uv run --with 'fonttools[woff]' python -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Build and package fonts
+        id: build
+        run: uv run scripts/build_fonts.py --output-dir "$ARTIFACT_DIR/fonts"
+
+      - name: Install Fontspector
+        run: |
+          mkdir -p "$RUNNER_TEMP/fontspector" "$ARTIFACT_DIR/reports"
+          curl --fail --location --retry 3 \
+            "https://github.com/fonttools/fontspector/releases/download/fontspector-v${FONTSPECTOR_VERSION}/fontspector-${FONTSPECTOR_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
+            --output "$RUNNER_TEMP/fontspector.tar.gz"
+          tar -xzf "$RUNNER_TEMP/fontspector.tar.gz" -C "$RUNNER_TEMP/fontspector" --strip-components=1
+          echo "$RUNNER_TEMP/fontspector" >> "$GITHUB_PATH"
+
+      - name: Generate universal reports
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: |
+          fontspector --profile universal \
+            --ghmarkdown "$ARTIFACT_DIR/reports/universal.md" \
+            --html "$ARTIFACT_DIR/reports/universal.html" \
+            "$ARTIFACT_DIR/fonts/variable/OareSans-Regular-VF.ttf"
+
+      - name: Generate Google Fonts reports
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: |
+          fontspector --profile googlefonts \
+            --ghmarkdown "$ARTIFACT_DIR/reports/googlefonts.md" \
+            --html "$ARTIFACT_DIR/reports/googlefonts.html" \
+            "$ARTIFACT_DIR/fonts/variable/OareSans[slnt,wght].ttf"
+
+      - name: Upload fonts and reports
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: oare-sans-fonts-and-reports
+          path: ${{ env.ARTIFACT_DIR }}
+          if-no-files-found: error
