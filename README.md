@@ -8,7 +8,7 @@
 
 A variable weight axis spans Thin (100) to Black (900), offering a range from fine strokes to dense, emphatic shapes. A separate slant axis allows the letterforms to lean into oblique styles, giving designers independent control over weight and slant.
 
-OpenType features include stylistic sets for alternative letterforms, common ligatures, and case-sensitive forms for uppercase settings. Oare Sans covers the Google Fonts Latin Basic character set, with additional support for common Pinyin diacritics.
+OpenType features include stylistic sets for alternative letterforms, common ligatures, and case-sensitive forms for uppercase settings. Oare Sans covers the GF Latin Core character set, with additional support for common Pinyin diacritics.
 
 ![Banner](./documentation/article/Banner.png)
 ![Styles](./documentation/article/Styles.png)
