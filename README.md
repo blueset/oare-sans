@@ -46,10 +46,8 @@ OpenType features include stylistic sets for alternative letterforms, common lig
 The **Build fonts and reports** GitHub Actions workflow builds the checked-in
 `sources/designspace/` sources on pushes to `master`, pull requests affecting the
 build, or manual dispatch. Its `oare-sans-fonts-and-reports` artifact contains the
-same `fonts/` layout as `Update.ps1`, plus universal and Google Fonts Fontspector
-reports in Markdown and HTML under `reports/`. Artifacts are uploaded even when
-quality checks fail; those failures still mark the workflow as failed. No proofs
-are generated and no files are committed.
+`fonts/` output plus universal and Google Fonts Fontspector reports in Markdown and
+HTML under `reports/`.
 
 To build just the binaries locally with [uv](https://docs.astral.sh/uv/):
 

@@ -11,6 +11,15 @@ from pathlib import Path
 
 UV_BIN_DIR = Path.home() / ".local" / "bin"
 
+
+def uv_command(tool):
+    executable = shutil.which(tool)
+    if executable:
+        return executable
+    suffix = ".exe" if sys.platform == "win32" else ""
+    return str(UV_BIN_DIR / f"{tool}{suffix}")
+
+
 POSTSCRIPT_NAME_PART_RE = re.compile(r"[^A-Za-z0-9]")
 VERSION_STRING_RE = re.compile(
     r"^\s*(?:Version\s+)?(?P<major>\d+)(?P<rest>\.\d+.*)?\s*$",
@@ -1130,7 +1139,7 @@ def apply_google_fonts_flavor(ttf_path, config):
         write_google_fonts_patcher_script(patcher_path)
 
         cmd = [
-            str(UV_BIN_DIR / "uv.exe"),
+            uv_command("uv"),
             "run",
             "--script",
             str(patcher_path),
@@ -1160,7 +1169,7 @@ def apply_google_fonts_flavor(ttf_path, config):
 
 def run_fontmake(designspace, output_dir, outputs, interpolate=None):
     cmd = [
-        str(UV_BIN_DIR / "uvx.exe"),
+        uv_command("uvx"),
         "--with",
         "ttfautohint-py",
         "fontmake",
@@ -1211,6 +1220,25 @@ def build_google_fonts_variable_flavor(designspace, build_dir, config):
     google_fonts_ttf = build_google_fonts_flavor(designspace, build_dir, config)
     if google_fonts_ttf:
         apply_google_fonts_flavor(google_fonts_ttf, config)
+    return google_fonts_ttf
+
+
+def build_fonts(designspace, build_dir):
+    build_dir.mkdir(parents=True, exist_ok=True)
+
+    output_ttf = build_dir / f"{designspace.stem}-VF.ttf"
+    default_designspace = prepare_default_designspace(
+        designspace,
+        build_dir,
+        output_ttf.name,
+    )
+    build_default_flavor(default_designspace, build_dir)
+
+    print(f"Built default flavor variable font: {output_ttf}")
+    print("Built default flavor CFF2 variable font and static TTF/OTF-CFF2 instances.")
+
+    google_fonts_config = load_google_fonts_config(designspace)
+    return build_google_fonts_variable_flavor(designspace, build_dir, google_fonts_config)
 
 
 def postprocess(data):
@@ -1234,20 +1262,4 @@ def postprocess(data):
         return
 
     designspace = designspaces[0]
-
-    build_dir = designspace.parent / "build"
-    build_dir.mkdir(exist_ok=True)
-
-    output_ttf = build_dir / f"{designspace.stem}-VF.ttf"
-    default_designspace = prepare_default_designspace(
-        designspace,
-        build_dir,
-        output_ttf.name,
-    )
-    build_default_flavor(default_designspace, build_dir)
-
-    print(f"Built default flavor variable font: {output_ttf}")
-    print("Built default flavor CFF2 variable font and static TTF/OTF-CFF2 instances.")
-
-    google_fonts_config = load_google_fonts_config(designspace)
-    build_google_fonts_variable_flavor(designspace, build_dir, google_fonts_config)
+    build_fonts(designspace, designspace.parent / "build")
