@@ -4,10 +4,11 @@
 
 > **oare** *n.* [o.ˈa.ɾɛ] moon
 
-**Oare Sans** is a condensed geometric display sans-serif typeface with variable axes for weight and slant. This typeface is an expansion of the [custom logotype created for PSCTF][psctf] from a limited set of letters to cover the GF Latin Core character set, and with variable expansion from Thin to Black and Regular to Oblique. This design was initiated from the desire to create a typeface that would match the initial design of the unconventional letter shapes of S and C. The name “Oare” is also named after the [Luna CTFd theme][luna] commissioned by the same team.
+**Oare Sans** is a condensed display sans-serif typeface that combines narrow proportions with open apertures and distinctive letterforms. Letters such as C and S bring an open quality to its compact design, while the uppercase J descends below the baseline, its tail pairing with the curve of the preceding letter.
 
-[psctf]: https://1a23.com/works/design/project-sekai-ctf/
-[luna]: https://1a23.com/works/open-source/luna-for-ctfd/
+A variable weight axis spans Thin (100) to Black (900), offering a range from fine strokes to dense, emphatic shapes. A separate slant axis allows the letterforms to lean into oblique styles, giving designers independent control over weight and slant.
+
+OpenType features include stylistic sets for alternative letterforms, common ligatures, and case-sensitive forms for uppercase settings. Oare Sans covers the Google Fonts Latin Basic character set, with additional support for common Pinyin diacritics.
 
 ![Banner](./documentation/article/Banner.png)
 ![Styles](./documentation/article/Styles.png)
@@ -85,8 +86,15 @@ uv run scripts/build_fonts.py --output-dir build/fonts
 
 ## License
 
-> Copyright (c) 2026 Eana Hufwe, 1A23 Studio (https://1A23.studio)
+> Copyright (c) 2026 Eana Hufwe, 1A23 Studio (https://1A23.studio), The Oare Sans Project Authors
 > 
 > This Font Software is licensed under the SIL Open Font License, Version 1.1.
 > This license is in this repo LICENSE.md, and is also available with a FAQ at:
 > https://openfontlicense.org
+
+## Trivia
+
+This typeface is an expansion of the [custom logotype created for PSCTF][psctf] from a limited set of letters to cover the GF Latin Core character set, and with variable expansion from Thin to Black and Regular to Oblique. This design was initiated from the desire to create a typeface that would match the initial design of the unconventional letter shapes of S and C. The name “Oare” is also named after the [Luna CTFd theme][luna] commissioned by the same team.
+
+[psctf]: https://1a23.com/works/design/project-sekai-ctf/
+[luna]: https://1a23.com/works/open-source/luna-for-ctfd/
